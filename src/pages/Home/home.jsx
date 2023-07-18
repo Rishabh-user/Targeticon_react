@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
     return (
-        <div className="rishabh rawat">
+        <div>
             {/*start main slider  */}
             <section className="home-hero slide-hero">
                 <div className="hero-owl owl-carousel ">
