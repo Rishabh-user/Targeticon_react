@@ -1,4 +1,12 @@
 import React from "react";
+import marketing from '../../assets/images/GIF/marketing.gif';
+import hero from '../../assets/images/hero.webp';
+import hero1 from '../../assets/images/hero.png';
+import softwaredevelp from '../../assets/images/icons/Software-Development.webp';
+import softwaredevelp1 from '../../assets/images/icons/Software-Development.png'
+import mobiledevlp from '../../assets/images/icons/mobile-and-web-development.webp';
+import mobiledevlp1 from '../../assets/images/icons/mobile-and-web-development.png';
+
 
 const About = () => {
     return (
@@ -20,7 +28,7 @@ const About = () => {
                         <div className="col-lg-6">
                             <div className="pt30 pb30">
                                 <img
-                                    src="images/GIF/marketing.gif"
+                                    src={marketing}
                                     alt="Targeticon office"
                                     className="img-fluid"
                                     data-aos="fade-in"
@@ -66,11 +74,11 @@ const About = () => {
                         <div className="col-lg-4">
                             <div className="text-center mt30 mb30">
                                 <picture>
-                                    <source srcSet="images/hero.webp" type="image/webp" />
-                                    <source srcSet="images/hero.png" type="image/png" />
+                                    <source srcSet={hero} type="image/webp" />
+                                    <source srcSet={hero1} type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/hero.png"
+                                        src={hero1}
                                         className="img-fluid mb20"
                                         alt="About"
                                         width={500}
@@ -149,16 +157,16 @@ const About = () => {
                                         <div className="about-targeticon-card-img">
                                             <picture>
                                                 <source
-                                                    srcSet="images/icons/Software-Development.webp"
+                                                    srcSet={softwaredevelp}
                                                     type="image/webp"
                                                 />
                                                 <source
-                                                    srcSet="images/icons/Software-Development.png"
+                                                    srcSet={softwaredevelp1}
                                                     type="image/png"
                                                 />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/Software-Development.png"
+                                                    src={softwaredevelp1}
                                                     className="img-fluid"
                                                     alt="Software-Development"
                                                     width={85}
@@ -176,16 +184,16 @@ const About = () => {
                                         <div className="about-targeticon-card-img">
                                             <picture>
                                                 <source
-                                                    srcSet="images/icons/mobile-and-web-development.webp"
+                                                    srcSet={mobiledevlp}
                                                     type="image/webp"
                                                 />
                                                 <source
-                                                    srcSet="images/icons/mobile-and-web-development.png"
+                                                    srcSet={mobiledevlp1}
                                                     type="image/png"
                                                 />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/mobile-and-web-development.png"
+                                                    src={mobiledevlp1}
                                                     className="img-fluid"
                                                     alt="mobile-and-web-development"
                                                     width={85}

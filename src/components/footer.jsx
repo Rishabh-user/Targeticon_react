@@ -1,12 +1,13 @@
 import React from "react";
-import Appfuture from '../assets/images/brand-logo/app-futura.png';
-import AppfutureWebp from '../assets/images/brand-logo/app-futura.webp';
-import Appfutulogo from '../assets/images/brand-logo/appfutura-logo.png';
-import Appfutulogowebp from '../assets/images/brand-logo/appfutura-logo.webp';
-import GoodFirm from '../assets/images/brand-logo/goodfirm-logo.png';
-import GoodFirmwebp from '../assets/images/brand-logo/goodfirm-logo.webp';
-import Itfirm from '../assets/images/brand-logo/itfirm.png';
-import Itfirmwebp from '../assets/images/brand-logo/itfirm.webp';
+import brandlogo from '../assets/images/brand-logo/app-futura.webp';
+import brandlogo1 from '../assets/images/brand-logo/app-futura.png';
+import appfutura from '../assets/images/brand-logo/appfutura-logo.webp';
+import appfutura1 from '../assets/images/brand-logo/appfutura-logo.png';
+import goodfirm from '../assets/images/brand-logo/goodfirm.webp';
+import goodfirm1 from '../assets/images/brand-logo/goodfirm.png';
+import itfirm from '../assets/images/brand-logo/itfirm.webp';
+import itfirm1 from '../assets/images/brand-logo/itfirm.png';
+
 
 const Footer = () => {
     return (
@@ -213,16 +214,16 @@ const Footer = () => {
                                                     <div className="award-achivt">
                                                         <picture>
                                                             <source
-                                                                srcSet={AppfutureWebp}
+                                                                srcSet={brandlogo}
                                                                 type="image/webp"
                                                             />
                                                             <source
-                                                                srcSet={Appfuture}
+                                                                srcSet={brandlogo1}
                                                                 type="image/png"
                                                             />
                                                             <img
                                                                 loading="lazy"
-                                                                srcSet={Appfuture}
+                                                                src={brandlogo1}
                                                                 className="img-fluid"
                                                                 alt="app-futura"
                                                                 width={238}
@@ -233,16 +234,16 @@ const Footer = () => {
                                                     <div className="award-achivt">
                                                         <picture>
                                                             <source
-                                                                srcSet={Appfutulogowebp}
+                                                                srcSet={appfutura}
                                                                 type="image/webp"
                                                             />
                                                             <source
-                                                                srcSet={Appfutulogo}
+                                                                srcSet={appfutura1}
                                                                 type="image/png"
                                                             />
                                                             <img
                                                                 loading="lazy"
-                                                                srcSet={Appfutulogo}
+                                                                src={appfutura1}
                                                                 className="img-fluid"
                                                                 alt="appfutura-logo"
                                                                 width={238}
@@ -253,16 +254,16 @@ const Footer = () => {
                                                     <div className="award-achivt">
                                                         <picture>
                                                             <source
-                                                                srcSet={GoodFirmwebp}
+                                                                srcSet={goodfirm}
                                                                 type="image/webp"
                                                             />
                                                             <source
-                                                                srcSet={GoodFirm}
+                                                                srcSet={goodfirm1}
                                                                 type="image/png"
                                                             />
                                                             <img
                                                                 loading="lazy"
-                                                                srcSet={GoodFirm}
+                                                                src={goodfirm1}
                                                                 className="img-fluid"
                                                                 alt="goodfirm"
                                                                 width={238}
@@ -273,16 +274,16 @@ const Footer = () => {
                                                     <div className="award-achivt">
                                                         <picture>
                                                             <source
-                                                                srcSet={Itfirmwebp}
+                                                                srcSet={itfirm}
                                                                 type="image/webp"
                                                             />
                                                             <source
-                                                                srcSet={Itfirm}
+                                                                srcSet={itfirm1}
                                                                 type="image/png"
                                                             />
                                                             <img
                                                                 loading="lazy"
-                                                                srcSet={Itfirm}
+                                                                src={itfirm1}
                                                                 className="img-fluid"
                                                                 alt="itfirm"
                                                                 width={238}
