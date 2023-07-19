@@ -5,7 +5,7 @@ import Slider from "./components/slider";
 const Home = () => {
     return (
         <div>
-            <Slider />
+            {/* <Slider /> */}
             {/*we are targeticon*/}
             <section
                 className="home-about pt60 pb60 r-bg-acf"

@@ -1,6 +1,6 @@
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+//import OwlCarousel from 'react-owl-carousel';
+//import 'owl.carousel/dist/assets/owl.carousel.css';
+//import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Slider = () =>{
     const options = {
@@ -24,12 +24,12 @@ const Slider = () =>{
             {/*start main slider  */}
             
             <section className="home-hero slide-hero">
-                <OwlCarousel className="owl-theme" {...options}>
+                {/* <OwlCarousel className="owl-theme" {...options}>
                     <div className="item">
                         <img src="image1.jpg" alt="Image 1" />
                     </div>
                 
-                </OwlCarousel>
+                </OwlCarousel> */}
                 <div className="hero-owl owl-carousel ">
                     <div className="slide owlbg11 career-detail-banner pb60 pt60">
                         <div className="container">

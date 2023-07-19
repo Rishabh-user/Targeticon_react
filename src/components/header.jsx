@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from '../assets/images/logo.png';
 import Logoweb from '../assets/images/logo.webp';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
                     <div className="menu-header horzontl">
                         <div className="menu-logo">
                             <div className="dskt-logo">
-                                <NavLink to='/home' className="nav-brand"></NavLink>
+                                <NavLink to='/home' className="nav-brand">
                                 <picture>
                                     <source
                                         srcSet={Logoweb}
@@ -31,7 +31,7 @@ const Header = () => {
                                         height={61}
                                     />
                                 </picture>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                     <div className="ree-nav" role="navigation">
