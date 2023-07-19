@@ -1,6 +1,8 @@
 import React from "react";
-import Logo from '../assets/images/logo.png'
-import Logoweb from '../assets/images/logo.webp'
+import Logo from '../assets/images/logo.png';
+import Logoweb from '../assets/images/logo.webp';
+import { NavLink } from 'react-router-dom';
+
 
 const Header = () => {
     return (
