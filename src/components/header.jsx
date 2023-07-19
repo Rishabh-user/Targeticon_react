@@ -1,4 +1,6 @@
 import React from "react";
+import Logo from '../assets/images/logo.png'
+import Logoweb from '../assets/images/logo.webp'
 
 const Header = () => {
     return (
@@ -11,16 +13,16 @@ const Header = () => {
                                 <a className="nav-brand" href="index.php">
                                     <picture>
                                         <source
-                                            srcSet="<?php echo BASE_URL; ?>images/logo.webp"
+                                            srcSet={Logoweb}
                                             type="image/webp"
                                         />
                                         <source
-                                            srcSet="<?php echo BASE_URL; ?>images/logo.png"
+                                            srcSet={Logo}
                                             type="image/png"
                                         />
                                         <img
                                             loading="lazy"
-                                            src="<?php echo BASE_URL; ?>images/logo.png"
+                                            srcSet={Logo}
                                             className="img-fluid"
                                             alt="Target-logo"
                                             width={300}
