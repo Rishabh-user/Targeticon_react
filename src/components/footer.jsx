@@ -1,4 +1,13 @@
 import React from "react";
+import brandlogo from '../assets/images/brand-logo/app-futura.webp';
+import brandlogo1 from '../assets/images/brand-logo/app-futura.png';
+import appfutura from '../assets/images/brand-logo/appfutura-logo.webp';
+import appfutura1 from '../assets/images/brand-logo/appfutura-logo.png';
+import goodfirm from '../assets/images/brand-logo/goodfirm.webp';
+import goodfirm1 from '../assets/images/brand-logo/goodfirm.png';
+import itfirm from '../assets/images/brand-logo/itfirm.webp';
+import itfirm1 from '../assets/images/brand-logo/itfirm.png';
+
 
 const Footer = () => {
     return (
@@ -205,16 +214,16 @@ const Footer = () => {
                                                     <div className="award-achivt">
                                                         <picture>
                                                             <source
-                                                                srcSet="<?php echo BASE_URL; ?>images/brand-logo/app-futura.webp"
+                                                                srcSet={brandlogo}
                                                                 type="image/webp"
                                                             />
                                                             <source
-                                                                srcSet="<?php echo BASE_URL; ?>images/brand-logo/app-futura.png"
+                                                                srcSet={brandlogo1}
                                                                 type="image/png"
                                                             />
                                                             <img
                                                                 loading="lazy"
-                                                                src="<?php echo BASE_URL; ?>images/brand-logo/app-futura.png"
+                                                                src={brandlogo1}
                                                                 className="img-fluid"
                                                                 alt="app-futura"
                                                                 width={238}
@@ -225,16 +234,16 @@ const Footer = () => {
                                                     <div className="award-achivt">
                                                         <picture>
                                                             <source
-                                                                srcSet="<?php echo BASE_URL; ?>images/brand-logo/appfutura-logo.webp"
+                                                                srcSet={appfutura}
                                                                 type="image/webp"
                                                             />
                                                             <source
-                                                                srcSet="<?php echo BASE_URL; ?>images/brand-logo/appfutura-logo.png"
+                                                                srcSet={appfutura1}
                                                                 type="image/png"
                                                             />
                                                             <img
                                                                 loading="lazy"
-                                                                src="<?php echo BASE_URL; ?>images/brand-logo/appfutura-logo.png"
+                                                                src={appfutura1}
                                                                 className="img-fluid"
                                                                 alt="appfutura-logo"
                                                                 width={238}
@@ -245,16 +254,16 @@ const Footer = () => {
                                                     <div className="award-achivt">
                                                         <picture>
                                                             <source
-                                                                srcSet="<?php echo BASE_URL; ?>images/brand-logo/goodfirm.webp"
+                                                                srcSet={goodfirm}
                                                                 type="image/webp"
                                                             />
                                                             <source
-                                                                srcSet="<?php echo BASE_URL; ?>images/brand-logo/goodfirm.png"
+                                                                srcSet={goodfirm1}
                                                                 type="image/png"
                                                             />
                                                             <img
                                                                 loading="lazy"
-                                                                src="<?php echo BASE_URL; ?>images/brand-logo/goodfirm.png"
+                                                                src={goodfirm1}
                                                                 className="img-fluid"
                                                                 alt="goodfirm"
                                                                 width={238}
@@ -265,16 +274,16 @@ const Footer = () => {
                                                     <div className="award-achivt">
                                                         <picture>
                                                             <source
-                                                                srcSet="<?php echo BASE_URL; ?>images/brand-logo/itfirm.webp"
+                                                                srcSet={itfirm}
                                                                 type="image/webp"
                                                             />
                                                             <source
-                                                                srcSet="<?php echo BASE_URL; ?>images/brand-logo/itfirm.png"
+                                                                srcSet={itfirm1}
                                                                 type="image/png"
                                                             />
                                                             <img
                                                                 loading="lazy"
-                                                                src="<?php echo BASE_URL; ?>images/brand-logo/itfirm.png"
+                                                                src={itfirm1}
                                                                 className="img-fluid"
                                                                 alt="itfirm"
                                                                 width={238}
