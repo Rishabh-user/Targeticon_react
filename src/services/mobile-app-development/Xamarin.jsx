@@ -1,4 +1,10 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import xamarin1 from '../../assets/images/Xamarin.png';
+import xamarin2 from '../../assets/images/xamarin2.png';
+import xamarinlogo from '../../assets/images/icons/xamarin-logo.png';
+import girlbro from '../../assets/images/girl-bro.png';
+
 
 const Xamarin = () => {
     return (
@@ -40,11 +46,9 @@ const Xamarin = () => {
                                 data-aos-delay={200}
                             >
                                 <picture>
-                                    <source srcSet="images/Xamarin.webp" type="image/webp" />
-                                    <source srcSet="images/Xamarin.png" type="image/png" />
                                     <img
                                         fetchpriority="high"
-                                        src="images/Xamarin.png"
+                                        src={xamarin1}
                                         className="img-fluid"
                                         alt="xamarin"
                                         width={500}
@@ -64,11 +68,9 @@ const Xamarin = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/xamarin2.webp" type="image/webp" />
-                                    <source srcSet="images/xamarin2.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/xamarin2.png"
+                                        src={xamarin2}
                                         className="img-fluid"
                                         alt="hybird-app"
                                         width={732}
@@ -125,17 +127,9 @@ const Xamarin = () => {
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/xamarin-logo.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/xamarin-logo.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/xamarin-logo.png"
+                                                    src={xamarinlogo}
                                                     className="img-fluid mb20"
                                                     alt="Xamarin"
                                                     width={60}
@@ -165,17 +159,9 @@ const Xamarin = () => {
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/xamarin-logo.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/xamarin-logo.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/xamarin-logo.png"
+                                                    src={xamarinlogo}
                                                     className="img-fluid mb20"
                                                     alt="Xamarin"
                                                     width={60}
@@ -204,17 +190,9 @@ const Xamarin = () => {
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/xamarin-logo.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/xamarin-logo.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/xamarin-logo.png"
+                                                    src={xamarinlogo}
                                                     className="img-fluid mb20"
                                                     alt="Xamarin"
                                                     width={60}
@@ -242,17 +220,9 @@ const Xamarin = () => {
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/xamarin-logo.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/xamarin-logo.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/xamarin-logo.png"
+                                                    src={xamarinlogo}
                                                     className="img-fluid mb20"
                                                     alt="Xamarin"
                                                     width={60}
@@ -306,11 +276,9 @@ const Xamarin = () => {
                         <div className="col-lg-6">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={girlbro}
                                         className="img-fluid"
                                         alt="Conclusion"
                                         width={590}

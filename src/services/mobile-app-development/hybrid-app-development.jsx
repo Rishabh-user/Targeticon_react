@@ -1,4 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import hybridgif from '../../assets/images/GIF/HybridApp-Development.gif';
+import overview from '../../assets/images/overview.png';
+import userinterface from '../../assets/images/icons/user-interfaces2.png';
+import developmentcost from '../../assets/images/icons/development-cost.png';
+import offlinesupport from '../../assets/images/icons/offline-support.png';
+import integration from '../../assets/images/icons/intergration-icon.png';
+import girlbro from '../../assets/images/girl-bro.png';
 
 const HybridAppDevelopment = () => {
     return (
@@ -24,15 +32,14 @@ const HybridAppDevelopment = () => {
                                     application developing companies trust the programmers to fill in
                                     these areas that are a special discipline in themselves.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={100}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -42,7 +49,7 @@ const HybridAppDevelopment = () => {
                                 data-aos-delay={200}
                             >
                                 <img
-                                    src="images/GIF/HybridApp-Development.gif"
+                                    src={hybridgif}
                                     alt="Targeticon"
                                     className="img-fluid"
                                     width={550}
@@ -60,11 +67,9 @@ const HybridAppDevelopment = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/overview.webp" type="image/webp" />
-                                    <source srcSet="images/overview.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/overview.png"
+                                        src={overview}
                                         className="img-fluid mb20"
                                         alt="overview"
                                         width={590}
@@ -121,23 +126,15 @@ const HybridAppDevelopment = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-6 col-md-6 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/user-interfaces2.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/user-interfaces2.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/user-interfaces2.png"
+                                                    src={userinterface}
                                                     className="img-fluid mb20"
                                                     alt="interfaces"
                                                     width={50}
@@ -158,26 +155,18 @@ const HybridAppDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/development-cost.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/development-cost.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/development-cost.png"
+                                                    src={developmentcost}
                                                     className="img-fluid mb20"
                                                     alt="development-cost"
                                                     width={50}
@@ -197,26 +186,18 @@ const HybridAppDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/offline-support.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/offline-support.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/offline-support.png"
+                                                    src={offlinesupport}
                                                     className="img-fluid mb20"
                                                     alt="offline-support"
                                                     width={50}
@@ -236,26 +217,18 @@ const HybridAppDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/intergration-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/intergration-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/intergration-icon.png"
+                                                    src={integration}
                                                     className="img-fluid mb20"
                                                     alt="intergration-icon"
                                                     width={50}
@@ -273,7 +246,7 @@ const HybridAppDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -302,11 +275,9 @@ const HybridAppDevelopment = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={girlbro}
                                         className="img-fluid mb20"
                                         alt="interfaces"
                                         width={500}

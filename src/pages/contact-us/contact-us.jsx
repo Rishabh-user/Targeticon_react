@@ -1,4 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import contactus2 from '../../assets/images/contact-us2.png';
+import communicate from '../../assets/images/icons/Communicate.png';
+import understanding from '../../assets/images/icons/understanding.png';
+import clientneed from '../../assets/images/icons/clients-need.png';
+import timezone from '../../assets/images/icons/time-zone.png';
+import timeon from '../../assets/images/icons/on-time.png';
+import hours from '../../assets/images/icons/24-hours.png';
+import rate from '../../assets/images/icons/rate.png';
+import trophy from '../../assets/images/icons/trophy.png';
 
 const ContactUs = () => {
     return (
@@ -22,11 +32,9 @@ const ContactUs = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="m-mt30">
                                 <picture>
-                                    <source srcSet="images/contact-us2.webp" type="image/webp" />
-                                    <source srcSet="images/contact-us2.png" type="image/png" />
                                     <img
                                         fetchpriority="high"
-                                        src="images/contact-us2.png"
+                                        src={contactus2}
                                         className="img-fluid"
                                         alt="contact-us"
                                         width={590}
@@ -63,14 +71,9 @@ const ContactUs = () => {
                         <div className="col-lg-4 col-sm-6">
                             <div className="ree-card mt30 pera-block ree-card-content">
                                 <picture>
-                                    <source
-                                        srcSet="images/icons/Communicate.webp"
-                                        type="image/webp"
-                                    />
-                                    <source srcSet="images/icons/Communicate.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/icons/Communicate.png"
+                                        src={communicate}
                                         className="img-fluid mb20"
                                         alt="Communicate"
                                         width={100}
@@ -87,17 +90,9 @@ const ContactUs = () => {
                         <div className="col-lg-4 col-sm-6">
                             <div className="ree-card mt30 pera-block ree-card-content">
                                 <picture>
-                                    <source
-                                        srcSet="images/icons/understanding.webp"
-                                        type="image/webp"
-                                    />
-                                    <source
-                                        srcSet="images/icons/understanding.png"
-                                        type="image/png"
-                                    />
                                     <img
                                         loading="lazy"
-                                        src="images/icons/understanding.png"
+                                        src={understanding}
                                         className="img-fluid mb20"
                                         alt="understanding"
                                         width={100}
@@ -114,17 +109,9 @@ const ContactUs = () => {
                         <div className="col-lg-4 col-sm-6">
                             <div className="ree-card mt30 pera-block ree-card-content">
                                 <picture>
-                                    <source
-                                        srcSet="images/icons/clients-need.webp"
-                                        type="image/webp"
-                                    />
-                                    <source
-                                        srcSet="images/icons/Commuclients-neednicate.png"
-                                        type="image/png"
-                                    />
                                     <img
                                         loading="lazy"
-                                        src="images/icons/clients-need.png"
+                                        src={clientneed}
                                         className="img-fluid mb20"
                                         alt="clients-need"
                                         width={100}
@@ -151,14 +138,9 @@ const ContactUs = () => {
                             <div className="icon-block-ree">
                                 <div className="icon-card-title">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/time-zone.webp"
-                                            type="image/webp"
-                                        />
-                                        <source srcSet="images/icons/time-zone.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/time-zone.png"
+                                            src={timezone}
                                             className="img-fluid"
                                             alt="Work at Your Time Zone"
                                             width={80}
@@ -169,11 +151,9 @@ const ContactUs = () => {
                                 </div>
                                 <div className="icon-card-title">
                                     <picture>
-                                        <source srcSet="images/icons/on-time.webp" type="image/webp" />
-                                        <source srcSet="images/icons/on-time.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/on-time.png"
+                                            src={timeon}
                                             className="img-fluid"
                                             alt="Easy & Timely Communication"
                                             width={80}
@@ -184,11 +164,9 @@ const ContactUs = () => {
                                 </div>
                                 <div className="icon-card-title">
                                     <picture>
-                                        <source srcSet="images/icons/24-hours.webp" type="image/webp" />
-                                        <source srcSet="images/icons/24-hours.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/24-hours.png"
+                                            src={hours}
                                             className="img-fluid"
                                             alt="Support Available at 24 Hours"
                                             width={80}
@@ -199,11 +177,9 @@ const ContactUs = () => {
                                 </div>
                                 <div className="icon-card-title">
                                     <picture>
-                                        <source srcSet="images/icons/rate.webp" type="image/webp" />
-                                        <source srcSet="images/icons/rate.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/rate.png"
+                                            src={rate}
                                             className="img-fluid"
                                             alt="Ratings 4.9 out of 8,500 Clients"
                                             width={80}
@@ -214,11 +190,9 @@ const ContactUs = () => {
                                 </div>
                                 <div className="icon-card-title">
                                     <picture>
-                                        <source srcSet="images/icons/trophy.webp" type="image/webp" />
-                                        <source srcSet="images/icons/trophy.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/trophy.png"
+                                            src={trophy}
                                             className="img-fluid"
                                             alt="Award Wining Service and Support"
                                             width={80}

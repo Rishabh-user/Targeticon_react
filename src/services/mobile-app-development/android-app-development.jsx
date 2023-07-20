@@ -1,4 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import androidgif from '../../assets/images/GIF/Android.gif';
+import portfolio1 from '../../assets/images/portfolio/portfolio-1.jpg';
+import portfolio2 from '../../assets/images/portfolio/portfolio-2.jpg';
+import portfolio3 from '../../assets/images/portfolio/portfolio-3.jpg';
+import userinterface from '../../assets/images/icons/user-interface.png';
+import mobility from '../../assets/images/icons/mobility.png';
+import creativity from '../../assets/images/icons/app-cretivity.png';
+import price from '../../assets/images/icons/reasonable-price.png';
+import compatibility from '../../assets/images/icons/compatibility.png';
+import girlbro from '../../assets/images/girl-bro.png';
+
 
 const AndroidAppDevelopment = () => {
     return (
@@ -31,21 +43,20 @@ const AndroidAppDevelopment = () => {
                                     have acquired a considerable share of the overall mobile app
                                     market in the developing countries.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={300}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img " data-aos="fade-in">
                                 <img
-                                    src="images/GIF/Android.gif"
+                                    src={androidgif}
                                     alt="Targeticon"
                                     className="img-fluid"
                                 />
@@ -67,9 +78,9 @@ const AndroidAppDevelopment = () => {
                         </div>
                         <div className="col-lg-6 col-sm-4 vcenter">
                             <div className="link-sol-header">
-                                <a href="https://separateweb.com/" className="ree-card-link-two">
+                                <NavLink to="https://separateweb.com/" className="ree-card-link-two">
                                     View All <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
@@ -78,136 +89,136 @@ const AndroidAppDevelopment = () => {
                             <div className="full-work-block  owl-carousel">
                                 <div className="fwb-main-x fwb-a h-100">
                                     <div className="work-thumbnails">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             <img
-                                                src="images/portfolio/portfolio-1.jpg"
+                                                src={portfolio1}
                                                 alt="portfolio Targeticon"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                     <div className="work-details">
                                         <h4>
-                                            <a href="#"> Custom iPhone Apps</a>{" "}
+                                            <NavLink to="#"> Custom iPhone Apps</NavLink>{" "}
                                         </h4>
                                     </div>
                                 </div>
                                 <div className="fwb-main-x fwb-a h-100">
                                     <div className="work-thumbnails">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src="images/portfolio/portfolio-2.jpg"
+                                                src={portfolio2}
                                                 alt="portfolio Targeticon"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                     <div className="work-details">
                                         <h4>
-                                            <a href="#">iPhone/iPad Games</a>
+                                            <NavLink to="#">iPhone/iPad Games</NavLink>
                                         </h4>
                                     </div>
                                 </div>
                                 <div className="fwb-main-x fwb-a h-100">
                                     <div className="work-thumbnails">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src="images/portfolio/portfolio-3.jpg"
+                                                src={portfolio3}
                                                 alt="portfolio Targeticon"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                     <div className="work-details">
                                         <h4>
-                                            <a href="#">Enterprise iPhone Apps </a>
+                                            <NavLink to="#">Enterprise iPhone Apps </NavLink>
                                         </h4>
                                     </div>
                                 </div>
                                 <div className="fwb-main-x fwb-a h-100">
                                     <div className="work-thumbnails">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src="images/portfolio/portfolio-2.jpg"
+                                                src={portfolio2}
                                                 alt="portfolio Targeticon"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                     <div className="work-details">
                                         <h4>
-                                            <a href="#">iPhone App UX/UI Design</a>
+                                            <NavLink to="#">iPhone App UX/UI Design</NavLink>
                                         </h4>
                                     </div>
                                 </div>
                                 <div className="fwb-main-x fwb-a h-100">
                                     <div className="work-thumbnails">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src="images/portfolio/portfolio-2.jpg"
+                                                src={portfolio2}
                                                 alt="portfolio Targeticon"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                     <div className="work-details">
                                         <h4>
-                                            <a href="#">iPhone Widget/Extension Development</a>
+                                            <NavLink to="#">iPhone Widget/Extension Development</NavLink>
                                         </h4>
                                     </div>
                                 </div>
                                 <div className="fwb-main-x fwb-a h-100">
                                     <div className="work-thumbnails">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src="images/portfolio/portfolio-2.jpg"
+                                                src={portfolio2}
                                                 alt="portfolio Targeticon"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                     <div className="work-details">
                                         <h4>
-                                            <a href="#">iPhone Consultation</a>
+                                            <NavLink to="#">iPhone Consultation</NavLink>
                                         </h4>
                                     </div>
                                 </div>
                                 <div className="fwb-main-x fwb-a h-100">
                                     <div className="work-thumbnails">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src="images/portfolio/portfolio-2.jpg"
+                                                src={portfolio2}
                                                 alt="portfolio Targeticon"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                     <div className="work-details">
                                         <h4>
-                                            <a href="#">iPhone App Support Optimization</a>
+                                            <NavLink to="#">iPhone App Support Optimization</NavLink>
                                         </h4>
                                     </div>
                                 </div>
                                 <div className="fwb-main-x fwb-a h-100">
                                     <div className="work-thumbnails">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src="images/portfolio/portfolio-2.jpg"
+                                                src={portfolio2}
                                                 alt="portfolio Targeticon"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                     <div className="work-details">
                                         <h4>
-                                            <a href="#">iPhone App Integration</a>
+                                            <NavLink to="#">iPhone App Integration</NavLink>
                                         </h4>
                                     </div>
                                 </div>
@@ -235,13 +246,13 @@ const AndroidAppDevelopment = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <img
-                                                src="images/icons/user-interface.png"
+                                                src={userinterface}
                                                 alt="service"
                                                 className="icon70 mb20"
                                             />
@@ -254,16 +265,16 @@ const AndroidAppDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <img
-                                                src="images/icons/mobility.png"
+                                                src={mobility}
                                                 alt="service"
                                                 className="icon70 mb20"
                                             />
@@ -276,16 +287,16 @@ const AndroidAppDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <img
-                                                src="images/icons/app-cretivity.png"
+                                                src={creativity}
                                                 alt="service"
                                                 className="icon70 mb20"
                                             />
@@ -298,16 +309,16 @@ const AndroidAppDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <img
-                                                src="images/icons/reasonable-price.png"
+                                                src={price}
                                                 alt="service"
                                                 className="icon70 mb20"
                                             />
@@ -320,16 +331,16 @@ const AndroidAppDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card">
                                     <span className="setps hst-3">05</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <img
-                                                src="images/icons/compatibility.png"
+                                                src={compatibility}
                                                 alt="service"
                                                 className="icon70 mb20"
                                             />
@@ -342,7 +353,7 @@ const AndroidAppDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -359,11 +370,9 @@ const AndroidAppDevelopment = () => {
                                 data-aos-delay={200}
                             >
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={girlbro}
                                         className="img-fluid mb20 mt20"
                                         alt="reviews"
                                         width={500}

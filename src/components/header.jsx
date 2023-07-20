@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from '../assets/images/logo.png';
 import Logoweb from '../assets/images/logo.webp';
 import healthcare from '../assets/images/Industries/Health-Care.png';
@@ -14,9 +14,6 @@ import logistics from '../assets/images/Industries/Logistics-Business.png';
 import manufacturing from '../assets/images/Industries/Manufacturing.png';
 
 
-
-
-
 const Header = () => {
     return (
         <div>
@@ -25,7 +22,7 @@ const Header = () => {
                     <div className="menu-header horzontl">
                         <div className="menu-logo">
                             <div className="dskt-logo">
-                                <Link className="nav-brand" to="/">
+                                <NavLink className="nav-brand" to="/">
                                     <picture>
                                         <source
                                             srcSet={Logoweb}
@@ -44,20 +41,20 @@ const Header = () => {
                                             height={61}
                                         />
                                     </picture>
-                                </Link>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="ree-nav" role="navigation">
                             <ul className="nav-list">
                                 <li className="megamenu mega-small">
-                                    <a href="/" className="menu-links">
+                                    <NavLink to="/" className="menu-links">
                                         Home
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="megamenu mega-small">
-                                    <a href="/about" className="menu-links">
+                                    <NavLink to="/about" className="menu-links">
                                         About Us
-                                    </a>
+                                    </NavLink>
                                     {/* <div class="menu-dropdown">
                         <div class="menu-block-set"> 
                         <a class="dropdown-item" href="portfolio.php">Portfolio</a>
@@ -66,9 +63,9 @@ const Header = () => {
                     </div> */}
                                 </li>
                                 <li className="megamenu">
-                                    <a href="#" className="menu-links">
+                                    <NavLink to="#" className="menu-links">
                                         Services
-                                    </a>
+                                    </NavLink>
                                     <div className="menu-dropdown">
                                         <div className="menu-block-set">
                                             <div className="container">
@@ -78,195 +75,185 @@ const Header = () => {
                                                         <h4>
                                                             We Will Shape Your Brand With Our Digital Solutions
                                                         </h4>
-                                                        <a
-                                                            href="contact-us.php"
-                                                            className="ree-btn ree-btn0 ree-btn-grdt2 mt30"
-                                                        >
+                                                        <NavLink to="/contact-us" className="ree-btn ree-btn0 ree-btn-grdt2 mt30">
                                                             {" "}
                                                             Request Quote{" "}
                                                             <i className="fas fa-arrow-right fa-btn" />
-                                                        </a>
+                                                        </NavLink>
                                                     </div>
                                                     <div className="mega-menu-blocks">
                                                         <div className="menu-inner-block-a">
                                                             <div className="inner-blockss">
                                                                 <label className="menu-headings">
-                                                                    <a href="mobile-app-development.php">
+                                                                    <NavLink to="/mobile-app-development">
                                                                         Mobile App Development
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <a href="Android-app-development.php">
+                                                                        <NavLink to="/android-app-development">
                                                                             Android App Development
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="ios-app-development.php">
+                                                                        <NavLink to="/ios-app-development">
                                                                             iOS App Development
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="hybrid-app-development.php">
+                                                                        <NavLink to="/hybrid-app-development">
                                                                             Hybrid App Development
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="xamarin.php">Xamarin</a>
+                                                                        <NavLink to="/xamarin">Xamarin</NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="blockchain-development.php">
+                                                                        <NavLink to="/blockchain-development">
                                                                             Blockchain Development
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                 </ul>
                                                             </div>
                                                             <div className="inner-blockss">
                                                                 <label className="menu-headings">
-                                                                    <a href="web-app-development.php">
+                                                                    <NavLink to="/web-app-development">
                                                                         Web App Development
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <a href="dot-net-development.php">
+                                                                        <NavLink to="/dot-net-development">
                                                                             Dot Net Development
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="php-development.php">
+                                                                        <NavLink to="/php-development">
                                                                             PHP Development
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="java-development.php">
+                                                                        <NavLink to="/java-development">
                                                                             Java Development
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="ecommerce-development.php">
+                                                                        <NavLink to="/ecommerce-development">
                                                                             Ecommerce Development
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="progressive-web-app.php">
+                                                                        <NavLink to="/progressive-web-app">
                                                                             Progressive Web App (PWA)
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                 </ul>
                                                             </div>
                                                             <div className="inner-blockss">
                                                                 <label className="menu-headings">
-                                                                    <a href="UI-UX-design.php">UI/UX Design</a>
+                                                                    <NavLink to="/ui-ux-design">UI/UX Design</NavLink>
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <a href="website-designing.php" className="">
+                                                                        <NavLink to="/website-application" className="">
                                                                             Website Designing
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a
-                                                                            href="android-application-design.php"
+                                                                        <NavLink to="/android-application-design"
                                                                             className=""
                                                                         >
                                                                             Android Application Design
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a
-                                                                            href="iOS-Application-Designing.php"
-                                                                            className=""
-                                                                        >
+                                                                        <NavLink to="/ios-application-designing" className="">
                                                                             iOS Application Designing
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="ux-design.php" className="">
+                                                                        <NavLink to="/ux-design" className="">
                                                                             UX Design
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                 </ul>
                                                             </div>
                                                             <div className="inner-blockss">
                                                                 <label className="menu-headings">
-                                                                    <a href="Cloud.php">Cloud</a>
+                                                                    <NavLink to="/cloud">Cloud</NavLink>
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <a href="AWS.php" className="">
+                                                                        <NavLink to="/aws" className="">
                                                                             AWS
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a
-                                                                            href="Azure-Cloud-Migration.php"
-                                                                            className=""
-                                                                        >
+                                                                        <NavLink to="/azure-cloud-migration" className="" >
                                                                             Azure Cloud Migration
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                 </ul>
                                                             </div>
                                                             <div className="inner-blockss">
                                                                 <label className="menu-headings">
-                                                                    <a href="JS-Stack-Development.php">
+                                                                    <NavLink to="/JS-Stack-Development">
                                                                         JS Stack Development
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <a href="Mean-Stack.php" className="">
+                                                                        <NavLink to="/Mean-Stack" className="">
                                                                             MEAN STACK
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="React-Js.php" className="">
+                                                                        <NavLink to="/React-Js" className="">
                                                                             React JS
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                 </ul>
                                                             </div>
                                                             <div className="inner-blockss">
                                                                 <label className="menu-headings">
-                                                                    <a href="Oracle-Forms-Development.php">
+                                                                    <NavLink to="/oracle-forms-development">
                                                                         Oracle Forms Development
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <a href="D2K-forms.php" className="">
+                                                                        <NavLink to="/d2f-forms" className="">
                                                                             D2K Forms
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="D2K-Reports.php" className="">
+                                                                        <NavLink to="/d2f-reports" className="">
                                                                             D2K reports
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                 </ul>
                                                             </div>
                                                             <div className="inner-blockss">
                                                                 <label className="menu-headings">
-                                                                    <a href="Enterprise-Integration.php">
+                                                                    <NavLink to="/enterprise-integration">
                                                                         Enterprise Integration
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <a href="Salesforce.php" className="">
+                                                                        <NavLink to="/salesforce" className="">
                                                                             Salesforce
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="MS-CRM.php" className="">
+                                                                        <NavLink to="/ms-crm" className="">
                                                                             MS CRM
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="Sharepoint.php" className="">
+                                                                        <NavLink to="/sharepoint" className="">
                                                                             Sharepoint
-                                                                        </a>
+                                                                        </NavLink>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -286,9 +273,9 @@ const Header = () => {
                                                                     <i className="far fa-envelope" />{" "}
                                                                 </div>
                                                             </div>
-                                                            <a href="mailto:info@targeticon.com">
+                                                            <NavLink to="mailto:info@targeticon.com">
                                                                 info@targeticon.com
-                                                            </a>
+                                                            </NavLink>
                                                         </li>
                                                         <li>
                                                             <div className="menu-icon-ree">
@@ -297,7 +284,7 @@ const Header = () => {
                                                                     <i className="fas fa-phone-alt" />{" "}
                                                                 </div>
                                                             </div>
-                                                            <a href="tel:+911204171403">+91 120 4171403</a>
+                                                            <NavLink to="tel:+911204171403">+91 120 4171403</NavLink>
                                                         </li>
                                                         <li>
                                                             <div className="menu-icon-ree">
@@ -306,9 +293,9 @@ const Header = () => {
                                                                     <i className="fab fa-whatsapp" />{" "}
                                                                 </div>
                                                             </div>
-                                                            <a href="https://wa.me/+91-9818757597">
+                                                            <NavLink to="https://wa.me/+91-9818757597">
                                                                 +91-9818757597
-                                                            </a>
+                                                            </NavLink>
                                                         </li>
                                                         <li>
                                                             <div className="menu-icon-ree">
@@ -317,7 +304,7 @@ const Header = () => {
                                                                     <i className="fab fa-skype" />{" "}
                                                                 </div>
                                                             </div>
-                                                            <a href="skype:target.icon">target.icon</a>
+                                                            <NavLink to="skype:target.icon">target.icon</NavLink>
                                                         </li>
                                                         <li>
                                                             <div className="menu-icon-ree">
@@ -326,7 +313,7 @@ const Header = () => {
                                                                     <i className="fas fa-question" />{" "}
                                                                 </div>
                                                             </div>
-                                                            <a href="index.php">Why Choose Us</a>
+                                                            <NavLink to="/">Why Choose Us</NavLink>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -335,9 +322,9 @@ const Header = () => {
                                     </div>
                                 </li>
                                 <li className="megamenu">
-                                    <a href="#" className="menu-links">
+                                    <NavLink to="#" className="menu-links">
                                         Industry Served
-                                    </a>
+                                    </NavLink>
                                     <div className="menu-dropdown">
                                         <div className="menu-block-set">
                                             <div className="container">
@@ -348,21 +335,19 @@ const Header = () => {
                                                             We begin with a deep understanding of your needs and
                                                             create a planning template.
                                                         </h4>
-                                                        <a
-                                                            href="contact-us.php"
+                                                        <NavLink to="/contact-us"
                                                             className="ree-btn ree-btn0 ree-btn-grdt2 mt30"
                                                         >
                                                             {" "}
                                                             Request Quote{" "}
                                                             <i className="fas fa-arrow-right fa-btn" />
-                                                        </a>
+                                                        </NavLink>
                                                     </div>
                                                     <div className="mega-menu-blocks">
                                                         <div className="menu-inner-block-a">
                                                             <div className="inner-blockss Industries-menu">
                                                                 <label className="">
-                                                                    <a
-                                                                        href="Health-Care.php"
+                                                                    <NavLink to="/health-care"
                                                                         className="Industries-menu-icons"
                                                                     >
                                                                         <figure>
@@ -377,11 +362,10 @@ const Header = () => {
                                                                         <figcaption>
                                                                             <span>Health Care</span>
                                                                         </figcaption>
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <label className="">
-                                                                    <a
-                                                                        href="Insurance.php"
+                                                                    <NavLink to="/insurance"
                                                                         className="Industries-menu-icons"
                                                                     >
                                                                         <figure>
@@ -396,10 +380,10 @@ const Header = () => {
                                                                         <figcaption>
                                                                             <span>Insurance</span>
                                                                         </figcaption>
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <label className="">
-                                                                    <a href="#" className="Industries-menu-icons">
+                                                                    <NavLink to="#" className="Industries-menu-icons">
                                                                         <figure>
                                                                             <img
                                                                                 loading="lazy"
@@ -412,11 +396,10 @@ const Header = () => {
                                                                         <figcaption>
                                                                             <span>Energy Sector</span>
                                                                         </figcaption>
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <label className="">
-                                                                    <a
-                                                                        href="Retail.php"
+                                                                    <NavLink to="/retail"
                                                                         className="Industries-menu-icons"
                                                                     >
                                                                         <figure>
@@ -431,11 +414,10 @@ const Header = () => {
                                                                         <figcaption>
                                                                             <span>Retail</span>
                                                                         </figcaption>
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <label className="">
-                                                                    <a
-                                                                        href="Banking-Finance.php"
+                                                                    <NavLink to="/banking-finance"
                                                                         className="Industries-menu-icons"
                                                                     >
                                                                         <figure>
@@ -450,11 +432,10 @@ const Header = () => {
                                                                         <figcaption>
                                                                             <span>Banking &amp; Finance</span>
                                                                         </figcaption>
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <label className="">
-                                                                    <a
-                                                                        href="Education.php"
+                                                                    <NavLink to="/education"
                                                                         className="Industries-menu-icons"
                                                                     >
                                                                         <figure>
@@ -469,11 +450,10 @@ const Header = () => {
                                                                         <figcaption>
                                                                             <span>Education</span>
                                                                         </figcaption>
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <label className="">
-                                                                    <a
-                                                                        href="Media-Advertising.php"
+                                                                    <NavLink to="/media-advertising"
                                                                         className="Industries-menu-icons"
                                                                     >
                                                                         <figure>
@@ -488,11 +468,10 @@ const Header = () => {
                                                                         <figcaption>
                                                                             <span>Media &amp; Advertising</span>
                                                                         </figcaption>
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <label className="">
-                                                                    <a
-                                                                        href="Travel-Social.php"
+                                                                    <NavLink to="/travel-social"
                                                                         className="Industries-menu-icons"
                                                                     >
                                                                         <figure>
@@ -507,11 +486,10 @@ const Header = () => {
                                                                         <figcaption>
                                                                             <span>Travel &amp; Social</span>
                                                                         </figcaption>
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <label className="">
-                                                                    <a
-                                                                        href="Logistics-Business.php"
+                                                                    <NavLink to="/logistics-business"
                                                                         className="Industries-menu-icons"
                                                                     >
                                                                         <figure>
@@ -526,11 +504,10 @@ const Header = () => {
                                                                         <figcaption>
                                                                             <span>Logistics and Business</span>
                                                                         </figcaption>
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                                 <label className="">
-                                                                    <a
-                                                                        href="Manufacturing.php"
+                                                                    <NavLink to="/manufacturing"
                                                                         className="Industries-menu-icons"
                                                                     >
                                                                         <figure>
@@ -545,7 +522,7 @@ const Header = () => {
                                                                         <figcaption>
                                                                             <span>Manufacturing</span>
                                                                         </figcaption>
-                                                                    </a>
+                                                                    </NavLink>
                                                                 </label>
                                                             </div>
                                                         </div>
@@ -564,9 +541,9 @@ const Header = () => {
                                                                     <i className="far fa-envelope" />{" "}
                                                                 </div>
                                                             </div>
-                                                            <a href="mailto:info@targeticon.com">
+                                                            <NavLink to="mailto:info@targeticon.com">
                                                                 info@targeticon.com
-                                                            </a>
+                                                            </NavLink>
                                                         </li>
                                                         <li>
                                                             <div className="menu-icon-ree">
@@ -575,7 +552,7 @@ const Header = () => {
                                                                     <i className="fas fa-phone-alt" />{" "}
                                                                 </div>
                                                             </div>
-                                                            <a href="tel:+911204171403">+91 120 4171403</a>
+                                                            <NavLink to="tel:+911204171403">+91 120 4171403</NavLink>
                                                         </li>
                                                         <li>
                                                             <div className="menu-icon-ree">
@@ -584,9 +561,9 @@ const Header = () => {
                                                                     <i className="fab fa-whatsapp" />{" "}
                                                                 </div>
                                                             </div>
-                                                            <a href="https://wa.me/+919818757597">
+                                                            <NavLink to="https://wa.me/+919818757597">
                                                                 +91 981 875 7597
-                                                            </a>
+                                                            </NavLink>
                                                         </li>
                                                         <li>
                                                             <div className="menu-icon-ree">
@@ -595,7 +572,7 @@ const Header = () => {
                                                                     <i className="fab fa-skype" />{" "}
                                                                 </div>
                                                             </div>
-                                                            <a href="skype:target.icon">target.icon</a>
+                                                            <NavLink to="skype:target.icon">target.icon</NavLink>
                                                         </li>
                                                         <li>
                                                             <div className="menu-icon-ree">
@@ -604,7 +581,7 @@ const Header = () => {
                                                                     <i className="fas fa-question" />{" "}
                                                                 </div>
                                                             </div>
-                                                            <a href="index.php">Why Choose Us</a>
+                                                            <NavLink to="/">Why Choose Us</NavLink>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -613,45 +590,43 @@ const Header = () => {
                                     </div>
                                 </li>
                                 <li className="megamenu mega-small">
-                                    <a href="/hire-developers" className="menu-links">
+                                    <NavLink to="/hire-app-developers" className="menu-links">
                                         Hire app developers
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="megamenu mega-small">
-                                    <a href="blog.php" className="menu-links">
+                                    <NavLink to="/blog" className="menu-links">
                                         Blogs
-                                    </a>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
                         <div className="ree-nav-cta">
                             <ul>
                                 <li>
-                                    <a
-                                        href="<?php echo BASE_URL; ?>/contact-us.php"
+                                    <NavLink to="/contact-us"
                                         className="ree-btn ree-btn0 ree-btn-grdt2"
                                     >
                                         {" "}
                                         Contact Us
-                                    </a>{" "}
+                                    </NavLink>{" "}
                                 </li>
                             </ul>
                         </div>
                         <div className="mobile-menu2">
                             <ul className="mob-nav2">
                                 <li>
-                                    <a
-                                        href="mailto:sales@targeticon.com"
+                                    <NavLink to="mailto:sales@targeticon.com"
                                         className="ree-btn2 ree-btn-grdt1"
                                     >
                                         <i className="fas fa-envelope-open-text" />
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="navm-">
-                                    <a className="toggle" href="#">
+                                    <NavLink to="#" className="toggle">
                                         {" "}
                                         <span />{" "}
-                                    </a>{" "}
+                                    </NavLink>{" "}
                                 </li>
                             </ul>
                         </div>
@@ -659,210 +634,210 @@ const Header = () => {
                         <nav id="main-nav">
                             <ul>
                                 <li>
-                                    <a href="index.php">Home</a>
+                                    <NavLink to="/">Home</NavLink>
                                 </li>
                                 <li>
-                                    <a href="about.php">About us</a>
+                                    <NavLink to="/about">About us</NavLink>
                                     {/* <ul>
                         <li><a href="portfolio.php">Portfolio</a></li>
                         <li><a href="team.php">Team</a></li>
                     </ul>  */}
                                 </li>
                                 <li>
-                                    <a href="#">Services</a>
+                                    <NavLink to="#">Services</NavLink>
                                     <ul>
                                         <li>
-                                            <a href="UI-UX-design.php">UI/UX Design</a>
+                                            <NavLink to="/ui-ux-design">UI/UX Design</NavLink>
                                             <ul>
                                                 <li>
-                                                    <a href="website-designing.php">Website Designing</a>
+                                                    <NavLink to="/website-application">Website Designing</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="android-application-design.php">
+                                                    <NavLink to="/android-application-design">
                                                         Android Application Design
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="iOS-Application-Designing.php">
+                                                    <NavLink to="/ios-application-designing">
                                                         iOS Application Designing
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="ux-design.php">UX Design</a>
+                                                    <NavLink TO="/ux-design">UX Design</NavLink>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="web-app-development.php">Web App Development</a>
+                                            <NavLink to="/web-app-development">Web App Development</NavLink>
                                             <ul>
                                                 <li>
-                                                    <a href="dot-net-development.php">Dot Net Development</a>
+                                                    <NavLink to="/dot-net-development">Dot Net Development</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="php-development.php">PHP Development</a>
+                                                    <NavLink to="/php-development">PHP Development</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="java-development.php">Java Development</a>
+                                                    <NavLink to="/java-development">Java Development</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce-development.php">
+                                                    <NavLink to="/ecommerce-development">
                                                         Ecommerce Development
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="progressive-web-app.php">
+                                                    <NavLink to="/progressive-web-app">
                                                         Progressive Web App (PWA)
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="mobile-app-development.php">
+                                            <NavLink to="/mobile-app-development">
                                                 Mobile App Development
-                                            </a>
+                                            </NavLink>
                                             <ul>
                                                 <li>
-                                                    <a href="Android-app-development.php">
+                                                    <NavLink to="/android-app-development">
                                                         Android App Development
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="ios-app-development.php">iOS App Development</a>
+                                                    <NavLink to="/ios-app-development">iOS App Development</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="hybrid-app-development.php">
+                                                    <NavLink to="/hybrid-app-development">
                                                         Hybrid App Development
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="xamarin.php">Xamarin</a>
+                                                    <NavLink to="/xamarin">Xamarin</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="blockchain-development.php">
+                                                    <NavLink to="/blockchain-development">
                                                         Blockchain Development
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="Cloud.php">Cloud</a>
+                                            <NavLink to="/cloud">Cloud</NavLink>
                                             <ul>
                                                 <li>
-                                                    <a href="AWS.php" className="">
+                                                    <NavLink TO="/aws" className="">
                                                         AWS
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="Azure-Cloud-Migration.php" className="">
+                                                    <NavLink to="/azure-cloud-migration" className="">
                                                         Azure Cloud Migration
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="JS-Stack-Development.php">JS Stack Development</a>
+                                            <NavLink to="/js-stack-development">JS Stack Development</NavLink>
                                             <ul>
                                                 <li>
-                                                    <a href="Mean-Stack.php" className="">
+                                                    <NavLink to="/mean-stack" className="">
                                                         MEAN STACK
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="React-Js.php" className="">
+                                                    <NavLink to="/react-js" className="">
                                                         React JS
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="Oracle-Forms-Development.php">
+                                            <NavLink to="/oracle-forms-development">
                                                 Oracle Forms Development
-                                            </a>
+                                            </NavLink>
                                             <ul>
                                                 <li>
-                                                    <a href="D2K-forms.php" className="">
+                                                    <NavLink to="/d2f-forms" className="">
                                                         D2K Forms
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="D2K-Reports.php" className="">
+                                                    <NavLink to="/d2f-reports" className="">
                                                         D2K reports
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="Enterprise-Integration.php">
+                                            <NavLink to="/enterprise-integration">
                                                 Enterprise Integration
-                                            </a>
+                                            </NavLink>
                                             <ul>
                                                 <li>
-                                                    <a href="Salesforce.php" className="">
+                                                    <NavLink to="/salesforce" className="">
                                                         Salesforce
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="MS-CRM.php" className="">
+                                                    <NavLink to="/ms-crm" className="">
                                                         MS CRM
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="Sharepoint.php" className="">
+                                                    <NavLink to="/sharepoint" className="">
                                                         Sharepoint
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Industry Served</a>
+                                    <NavLink to="#">Industry Served</NavLink>
                                     <ul>
                                         <li>
-                                            <a href="Health-Care.php">Health Care</a>
+                                            <NavLink to="/health-care">Health Care</NavLink>
                                         </li>
                                         <li>
-                                            <a href="Insurance.php">Insurance</a>
+                                            <NavLink to="/insurance">Insurance</NavLink>
                                         </li>
                                         <li>
-                                            <a href="#">Energy Sector</a>
+                                            <NavLink to="#">Energy Sector</NavLink>
                                         </li>
                                         <li>
-                                            <a href="Retail.php">Retail</a>
+                                            <NavLink to="/retail">Retail</NavLink>
                                         </li>
                                         <li>
-                                            <a href="Banking-Finance.php">Banking &amp; Finance</a>
+                                            <NavLink to="/banking-finance">Banking &amp; Finance</NavLink>
                                         </li>
                                         <li>
-                                            <a href="Education.php">Education</a>
+                                            <NavLink to="/education">Education</NavLink>
                                         </li>
                                         <li>
-                                            <a href="Media-Advertising.php">Media &amp; Advertising</a>
+                                            <NavLink to="/media-advertising">Media &amp; Advertising</NavLink>
                                         </li>
                                         <li>
-                                            <a href="Travel-Social.php">Travel &amp; Social</a>
+                                            <NavLink to="/travel-social">Travel &amp; Social</NavLink>
                                         </li>
                                         <li>
-                                            <a href="Logistics-Business.php">Logistics and Business</a>
+                                            <NavLink to="/logistics-business">Logistics and Business</NavLink>
                                         </li>
                                         <li>
-                                            <a href="Manufacturing.php">Manufacturing</a>
+                                            <NavLink to="/manufacturing">Manufacturing</NavLink>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="/hire-developers">Hire app developers</a>
+                                    <NavLink to="/hire-app-developers">Hire app developers</NavLink>
                                 </li>
                                 <li>
-                                    <a href="blog.php">Blogs</a>
+                                    <NavLink to="/blog">Blogs</NavLink>
                                 </li>
                                 <li>
-                                    <a href="contact-us.php">Contact Us</a>
+                                    <NavLink to="/contact-us">Contact Us</NavLink>
                                 </li>
                             </ul>
                             <ul className="bottom-nav">
                                 <li className="ree-hc">
-                                    <a href="tel:+1-718-395-2545" rel="noreferrer" target="_blank">
+                                    <NavLink to="tel:+1-718-395-2545" rel="noreferrer" target="_blank">
                                         <svg
                                             version="1.1"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -877,10 +852,10 @@ const Header = () => {
                                                 <path d="M22.079,17.835c-1.548-1.324-3.119-2.126-4.648-0.804l-0.913,0.799 c-0.668,0.58-1.91,3.29-6.712-2.234C5.005,10.079,7.862,9.22,8.531,8.645l0.918-0.8c1.521-1.325,0.947-2.993-0.15-4.71l-0.662-1.04  C7.535,0.382,6.335-0.743,4.81,0.58L3.986,1.3C3.312,1.791,1.428,3.387,0.971,6.419c-0.55,3.638,1.185,7.804,5.16,12.375c3.97,4.573,7.857,6.87,11.539,6.83c3.06-0.033,4.908-1.675,5.486-2.272l0.827-0.721c1.521-1.322,0.576-2.668-0.973-3.995 L22.079,17.835z" />
                                             </g>
                                         </svg>
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="ree-hc">
-                                    <a href="mailto:sales@targeticon.com" target="_blank">
+                                    <NavLink to="mailto:sales@targeticon.com" target="_blank">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width={24}
@@ -890,18 +865,17 @@ const Header = () => {
                                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                                             <path d="M0 0h24v24H0z" fill="none" />
                                         </svg>
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="ree-hc">
-                                    <a href="skype:target.icon" rel="noreferrer" target="_blank">
+                                    <NavLink to="skype:target.icon" rel="noreferrer" target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                             <path d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z" />
                                         </svg>
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="ree-hc">
-                                    <a
-                                        href="https://wa.me/+917183952545"
+                                    <NavLink to="https://wa.me/+917183952545"
                                         rel="noreferrer"
                                         target="_blank"
                                     >
@@ -919,7 +893,7 @@ const Header = () => {
                                                 <path d="M256.064,0h-0.128C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104l98.4-31.456 C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z M405.024,361.504 c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264C189.888,347.2,141.44,270.752,137.664,265.792c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304c6.176-6.304,16.384-9.184,26.176-9.184 c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64c6.176,14.88,21.216,51.616,23.008,55.392 c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744c-3.776,4.352-7.36,7.68-11.136,12.352 c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616c28.576,25.44,51.744,33.568,60.032,37.024 c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496c5.12-7.232,11.584-8.128,18.368-5.568 c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736C411.2,329.152,411.2,344.032,405.024,361.504z" />
                                             </g>
                                         </svg>
-                                    </a>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </nav>

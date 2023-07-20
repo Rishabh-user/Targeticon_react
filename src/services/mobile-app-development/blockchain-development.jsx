@@ -1,4 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import blockchaingif from '../../assets/images/GIF/blockchain-development.gif';
+import overview from '../../assets/images/overview.png';
+import pocicon from '../../assets/images/icons/poc-icon.png';
+import blockchain from '../../assets/images/icons/private-blockchain.png';
+import smartcontract from '../../assets/images/icons/smart-contracts.png';
+import consulating from '../../assets/images/icons/blockchain-consulting.png';
+import hyperledger from '../../assets/images/icons/hyperledger-icon.png';
+import supplychain from '../../assets/images/icons/supply-chain.png';
+import cryptocurrency from '../../assets/images/icons/cryptocurrency.png';
+import girlbro from '../../assets/images/girl-bro.png';
+
 
 const BlockChainDevelopment = () => {
     return (
@@ -32,15 +44,14 @@ const BlockChainDevelopment = () => {
                                     location. The records that are kept in the blockchain database are
                                     public and easily verifiable.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={200}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -50,7 +61,7 @@ const BlockChainDevelopment = () => {
                                 data-aos-delay={200}
                             >
                                 <img
-                                    src="images/GIF/blockchain-development.gif"
+                                    src={blockchaingif}
                                     alt="Targeticon"
                                     className="img-fluid"
                                     width="600px"
@@ -68,11 +79,9 @@ const BlockChainDevelopment = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/overview.webp" type="image/webp" />
-                                    <source srcSet="images/overview.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/overview.png"
+                                        src={overview}
                                         className="img-fluid mb20"
                                         alt="overview"
                                         width={590}
@@ -114,23 +123,15 @@ const BlockChainDevelopment = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/poc-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/poc-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/poc-icon.png"
+                                                    src={pocicon}
                                                     className="img-fluid mb20"
                                                     alt="poc-icon"
                                                     width={50}
@@ -145,26 +146,18 @@ const BlockChainDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/private-blockchain.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/private-blockchain.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/private-blockchain.png"
+                                                    src={blockchain}
                                                     className="img-fluid mb20"
                                                     alt="private-blockchain"
                                                     width={50}
@@ -179,26 +172,18 @@ const BlockChainDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/smart-contracts.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/smart-contracts.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/smart-contracts.png"
+                                                    src={smartcontract}
                                                     className="img-fluid mb20"
                                                     alt="smart-contracts"
                                                     width={50}
@@ -213,26 +198,18 @@ const BlockChainDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/blockchain-consulting.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/blockchain-consulting.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/blockchain-consulting.png"
+                                                    src={consulating}
                                                     className="img-fluid mb20"
                                                     alt="blockchain-consulting"
                                                     width={50}
@@ -247,26 +224,18 @@ const BlockChainDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">05</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/hyperledger-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/hyperledger-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/hyperledger-icon.png"
+                                                    src={hyperledger}
                                                     className="img-fluid mb20"
                                                     alt="hyperledger-icon"
                                                     width={50}
@@ -281,26 +250,18 @@ const BlockChainDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">06</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/supply-chain.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/supply-chain.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/supply-chain.png"
+                                                    src={supplychain}
                                                     className="img-fluid mb20"
                                                     alt="supply-chain"
                                                     width={50}
@@ -315,26 +276,18 @@ const BlockChainDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">07</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/cryptocurrency.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/cryptocurrency.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/cryptocurrency.png"
+                                                    src={cryptocurrency}
                                                     className="img-fluid mb20"
                                                     alt="cryptocurrency"
                                                     width={50}
@@ -349,7 +302,7 @@ const BlockChainDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -380,11 +333,9 @@ const BlockChainDevelopment = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={girlbro}
                                         className="img-fluid mb20"
                                         alt="interfaces"
                                         width={500}

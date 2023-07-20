@@ -1,4 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import webgif from '../../assets/images/GIF/web.gif';
+import webappgif from '../../assets/images/GIF/web-app-development.gif';
+import dotnet from '../../assets/images/icons/dot-net.png';
+import php from '../../assets/images/icons/php.png';
+import javalogo from '../../assets/images/icons/java-logo.png';
+import retailservice from '../../assets/images/icons/retail-service1.png';
+import pwa from '../../assets/images/icons/pwa.png';
 
 const WebAppDevelopment = () => {
     return (
@@ -21,21 +29,20 @@ const WebAppDevelopment = () => {
                                     this, with the help of Targeticon’s expert application developers
                                     you can finally create your dream web application.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40 mb40"
                                     data-aos="fade-up"
                                     data-aos-delay={200}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
                                 <img
-                                    src="images/GIF/web.gif"
+                                    src={webgif}
                                     alt="Targeticon"
                                     className="img-fluid"
                                 />
@@ -51,7 +58,7 @@ const WebAppDevelopment = () => {
                         <div className="col-lg-6">
                             <div className="ct-sol-img mb15 mt20">
                                 <img
-                                    src="images/GIF/web-app-development.gif"
+                                    src={webappgif}
                                     alt="hybird-app"
                                     className="img-fluid"
                                 />
@@ -118,11 +125,9 @@ const WebAppDevelopment = () => {
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source srcSet="images/icons/dot-net.webp" type="image/webp" />
-                                        <source srcSet="images/icons/dot-net.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/dot-net.png"
+                                            src={dotnet}
                                             className="img-fluid mb20"
                                             alt="dot-net"
                                             width={50}
@@ -132,7 +137,7 @@ const WebAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <a href="dot-net-development.php">ASP.Net development</a>
+                                        <NavLink to="/dot-net-development">ASP.Net development</NavLink>
                                     </h3>
                                     <p>
                                         ASP.Net has a large number of advantages in real world
@@ -141,9 +146,9 @@ const WebAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <a href="dot-net-development.php" className="ree-card-link mt40">
+                                    <NavLink to="/dot-net-development" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />{" "}
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -155,11 +160,9 @@ const WebAppDevelopment = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
                                     <picture>
-                                        <source srcSet="images/icons/php.webp" type="image/webp" />
-                                        <source srcSet="images/icons/php.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/php.png"
+                                            src={php}
                                             className="img-fluid mb20"
                                             alt="php"
                                             width={50}
@@ -169,7 +172,7 @@ const WebAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <a href="php-development.php">PHP development</a>
+                                        <NavLink to="/php-development">PHP development</NavLink>
                                     </h3>
                                     <p>
                                         Being the best PHP development company in India, target Icon
@@ -178,9 +181,9 @@ const WebAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <a href="php-development.php" className="ree-card-link mt40">
+                                    <NavLink to="/php-development" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -192,14 +195,9 @@ const WebAppDevelopment = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/java-logo.webp"
-                                            type="image/webp"
-                                        />
-                                        <source srcSet="images/icons/java-logo.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/java-logo.png"
+                                            src={javalogo}
                                             className="img-fluid mb20"
                                             alt="java-logo"
                                             width={50}
@@ -209,7 +207,7 @@ const WebAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <a href="java-development.php">JAVA development</a>
+                                        <NavLink to="/java-development">JAVA development</NavLink>
                                     </h3>
                                     <p>
                                         JAVA is the most popular platform used in today’s world. the
@@ -219,9 +217,9 @@ const WebAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <a href="java-development.php" className="ree-card-link mt40">
+                                    <NavLink to="/java-development" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -233,17 +231,9 @@ const WebAppDevelopment = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/retail-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/retail-service1.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/retail-service1.png"
+                                            src={retailservice}
                                             className="img-fluid mb20"
                                             alt="Ecommerce-development"
                                             width={50}
@@ -253,7 +243,7 @@ const WebAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <a href="ecommerce-development.php">Ecommerce development</a>
+                                        <NavLink to="/ecommerce-development">Ecommerce development</NavLink>
                                     </h3>
                                     <p>
                                         Target Icon also provides you guidance for setting up your own
@@ -261,12 +251,11 @@ const WebAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <a
-                                        href="ecommerce-development.php"
+                                    <NavLink to="/ecommerce-development"
                                         className="ree-card-link mt40"
                                     >
                                         Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -278,11 +267,9 @@ const WebAppDevelopment = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
                                     <picture>
-                                        <source srcSet="images/icons/pwa.webp" type="image/webp" />
-                                        <source srcSet="images/icons/pwa.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/pwa.png"
+                                            src={pwa}
                                             className="img-fluid mb20"
                                             alt="pwa"
                                             width={50}
@@ -292,7 +279,7 @@ const WebAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <a href="progressive-web-app.php">Progressive web app (PWA)</a>
+                                        <NavLink to="/progressive-web-app">Progressive web app (PWA)</NavLink>
                                     </h3>
                                     <p>
                                         These are the applications that work like regular websites but
@@ -301,9 +288,9 @@ const WebAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <a href="progressive-web-app.php" className="ree-card-link mt40">
+                                    <NavLink to="/progressive-web-app" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -316,9 +303,9 @@ const WebAppDevelopment = () => {
                                         Hire World-Class{" "}
                                         <span className="ree-text rt40">Developers</span>
                                     </h3>
-                                    <a href="contact-us.php" className="ree-btn  ree-btn-grdt1 mw-80">
+                                    <NavLink to="/contact-us" className="ree-btn  ree-btn-grdt1 mw-80">
                                         Hire Now <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>

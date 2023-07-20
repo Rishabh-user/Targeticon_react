@@ -1,4 +1,19 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import mobileGif from '../../assets/images/GIF/Mobile-app-development.gif';
+import officeView from '../../assets/images/others/office-view-2.png';
+import targeticon from '../../assets/images/Target-icon.png';
+import appdeveloper from '../../assets/images/others/app-development.webp';
+import brandlogo from '../../assets/images/brand-logo/top-it.png';
+import appfutura from '../../assets/images/brand-logo/appfutura-logo.png';
+import goodfirm from '../../assets/images/brand-logo/goodfirm-logo.png';
+import cluchlogo from '../../assets/images/brand-logo/clutch-logo.png';
+import mobilelogo from '../../assets/images/brand-logo/mobile-app-logo.png';
+import android from '../../assets/images/android.png';
+import apple from '../../assets/images/apple.png';
+import hybrid from '../../assets/images/icons/Hybrid.png';
+import xamarin from '../../assets/images/icons/Xamarin.png';
+import blockchain from '../../assets/images/icons/Blockchain.png';
 
 const MobileAppDevelopment = () => {
     return (
@@ -21,21 +36,20 @@ const MobileAppDevelopment = () => {
                                     to fulfill all your requirements and create an application that
                                     satisfies your needs.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={100}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6 vcenter">
                             <div className="sol-img" data-aos="fade-in" data-aos-delay={200}>
                                 <img
-                                    src="images/GIF/Mobile-app-development.gif"
+                                    src={mobileGif}
                                     alt="Targeticon"
                                     className="img-fluid"
                                     width="600px"
@@ -75,7 +89,7 @@ const MobileAppDevelopment = () => {
                 <div className="agency-info-ree mt100">
                     <div className="agency-picture">
                         <img
-                            src="images/others/office-view-2.png"
+                            src={officeView}
                             alt="Office-team"
                             className="img-fluid"
                             width="100%"
@@ -86,13 +100,12 @@ const MobileAppDevelopment = () => {
                         <div className="row key-and-award">
                             <div className="ree-app-st-a flx-end m-order2">
                                 <div className="btnctm">
-                                    <a
-                                        href="about.php"
+                                    <NavLink to="/about"
                                         className="ree-btn ree-btn-grdt2 mw-80 m-mt30"
                                     >
                                         Know More Targeticon
                                         <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                             <div className="ree-app-st-b m-order1">
@@ -125,13 +138,12 @@ const MobileAppDevelopment = () => {
                                     </div>
                                     <div className="agency-info-anim text-center">
                                         <div className="animated-logo">
-                                            <img
-                                                src="images/Target-icon.png"
+                                            <img src={targeticon}
                                                 alt="Targeticon logo"
                                                 className="logo-anim"
                                             />
                                             <img
-                                                src="images/others/app-development.webp"
+                                                src={appdeveloper}
                                                 alt="Targeticon icon"
                                                 className="circle-anim"
                                             />
@@ -147,53 +159,53 @@ const MobileAppDevelopment = () => {
                         <div className="col-md-12">
                             <div className="app-awards owl-carousesl">
                                 <div className="award-achivt">
-                                    <a href="#">
+                                    <NavLink to="#">
                                         <img
-                                            src="images/brand-logo/top-it.png"
+                                            src={brandlogo}
                                             alt="top it"
                                             className="img-fluid"
                                         />
-                                    </a>
+                                    </NavLink>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <a href="#">
+                                    <NavLink to="#">
                                         <img
-                                            src="images/brand-logo/appfutura-logo.png"
+                                            src={appfutura}
                                             alt="top it"
                                             className="img-fluid"
                                         />
-                                    </a>
+                                    </NavLink>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <a href="#">
+                                    <NavLink to="#">
                                         <img
-                                            src="images/brand-logo/goodfirm-logo.png"
+                                            src={goodfirm}
                                             alt="top it"
                                             className="img-fluid"
                                         />
-                                    </a>
+                                    </NavLink>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <a href="#">
+                                    <NavLink to="#">
                                         <img
-                                            src="images/brand-logo/clutch-logo.png"
+                                            src={cluchlogo}
                                             alt="top it"
                                             className="img-fluid"
                                         />
-                                    </a>
+                                    </NavLink>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <a href="#">
+                                    <NavLink to="#">
                                         <img
-                                            src="images/brand-logo/mobile-app-logo.png"
+                                            src={mobilelogo}
                                             alt="top it"
                                             className="img-fluid"
                                         />
-                                    </a>
+                                    </NavLink>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                             </div>
@@ -228,15 +240,15 @@ const MobileAppDevelopment = () => {
                         >
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
-                                    <img src="images/android.png" alt="services" />{" "}
+                                    <img src={android} alt="services" />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <a href="Android-app-development.php">
+                                        <NavLink to="/android-app-development">
                                             {" "}
                                             Android App <br />
                                             Development
-                                        </a>
+                                        </NavLink>
                                     </h3>
                                     <p>
                                         These are the applications that can only run on the mobiles
@@ -244,12 +256,11 @@ const MobileAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <a
-                                        href="Android-app-development.php"
+                                    <NavLink to="/android-app-development"
                                         className="ree-card-link mt40"
                                     >
                                         Read More <i className="fas fa-arrow-right fa-btn" />{" "}
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -260,14 +271,14 @@ const MobileAppDevelopment = () => {
                         >
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
-                                    <img src="images/apple.png" alt="services" />{" "}
+                                    <img src={apple} alt="services" />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <a href="ios-app-development.php">
+                                        <NavLink to="/ios-app-development">
                                             iOS App
                                             <br /> Development
-                                        </a>
+                                        </NavLink>
                                     </h3>
                                     <p>
                                         These applications are only meant for iOS operating system and
@@ -275,9 +286,9 @@ const MobileAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <a href="ios-app-development.php" className="ree-card-link mt40">
+                                    <NavLink to="/ios-app-development" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -288,14 +299,14 @@ const MobileAppDevelopment = () => {
                         >
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
-                                    <img src="images/icons/Hybrid.png" alt="services" />{" "}
+                                    <img src={hybrid} alt="services" />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <a href="hybrid-app-development.php">
+                                        <NavLink to="/hybrid-app-development">
                                             Hybrid App
                                             <br /> Development
-                                        </a>
+                                        </NavLink>
                                     </h3>
                                     <p>
                                         Targeticon product design services cover The hybrid apps can
@@ -303,12 +314,11 @@ const MobileAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <a
-                                        href="hybrid-app-development.php"
+                                    <NavLink to="/hybrid-app-development"
                                         className="ree-card-link mt40"
                                     >
                                         Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -319,11 +329,11 @@ const MobileAppDevelopment = () => {
                         >
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
-                                    <img src="images/icons/Xamarin.png" alt="services" />{" "}
+                                    <img src={xamarin} alt="services" />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <a href="xamarin.php">Xamarin</a>
+                                        <NavLink to="/xamarin">Xamarin</NavLink>
                                     </h3>
                                     <p>
                                         These are the apps that are available for windows and macOS.
@@ -331,9 +341,9 @@ const MobileAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <a href="xamarin.php" className="ree-card-link mt40">
+                                    <NavLink to="/xamarin" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -344,11 +354,11 @@ const MobileAppDevelopment = () => {
                         >
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
-                                    <img src="images/icons/Blockchain.png" alt="services" />{" "}
+                                    <img src={blockchain} alt="services" />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <a href="blockchain-development.php">Blockchain Development</a>
+                                        <NavLink to="/blockchain-development">Blockchain Development</NavLink>
                                     </h3>
                                     <p>
                                         These are the applications which are build for performing
@@ -356,12 +366,11 @@ const MobileAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <a
-                                        href="blockchain-development.php"
+                                    <NavLink to="/blockchain-development"
                                         className="ree-card-link mt40"
                                     >
                                         Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -374,12 +383,11 @@ const MobileAppDevelopment = () => {
                                         Hire World-Class{" "}
                                         <span className="ree-text rt40">Developers</span>
                                     </h3>
-                                    <a
-                                        href="hire-app-developers.php"
+                                    <NavLink to="/hire-app-developers"
                                         className="ree-btn  ree-btn-grdt1 mw-80"
                                     >
                                         Hire Now <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
