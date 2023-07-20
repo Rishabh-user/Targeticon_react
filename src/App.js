@@ -8,20 +8,18 @@ import HireDevelopers from './pages/hire-app-developers/hire-app-developers';
 
 function App() {
   return (
-    <div>
-      <Router forceRefresh>
-        {/* <div>
-          <Link to="/"></Link>
-          <Link to="/about"></Link>
-          <Link to="/hire-developers"></Link>
-        </div> */}
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/hire-developers" element={<HireDevelopers />} />
-        </Routes>
-      </Router>
-    </div>
+    <Router forceRefresh>
+      <div>
+        <Link to="/"></Link>
+        <Link to="/about"></Link>
+        <Link to="/hire-developers"></Link>
+      </div>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/hire-developers" element={<HireDevelopers />} />
+      </Routes>
+    </Router>
   );
 }
 

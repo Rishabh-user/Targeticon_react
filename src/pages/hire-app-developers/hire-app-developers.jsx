@@ -1,4 +1,27 @@
 import React from "react";
+import hire from '../../assets/images/GIF/hire-app-dev.gif';
+import part_time from '../../assets/images/icons/part-time.png';
+import full_time from '../../assets/images/icons/full-time.png';
+import hourly_time from '../../assets/images/icons/hourly-time.png';
+import developer_2 from '../../assets/images/hire-developer-2.webp';
+import developer_2_1 from '../../assets/images/hire-developer-2.png';
+import badge_a from '../../assets/images/icons/badge-a.webp';
+import badge_a1 from '../../assets/images/icons/badge-a.png';
+import badge_b from '../../assets/images/icons/badge-b.webp';
+import badge_b1 from '../../assets/images/icons/badge-b.png';
+import badge_c from '../../assets/images/icons/badge-c.webp';
+import badge_c1 from '../../assets/images/icons/badge-c.png';
+import resourse from '../../assets/images/icons/resources.webp';
+import resourse1 from '../../assets/images/icons/resources.png';
+import report from '../../assets/images/icons/report.webp';
+import report1 from '../../assets/images/icons/report.png';
+import developer from '../../assets/images/icons/developer.webp';
+import developer1 from '../../assets/images/icons/developer.png';
+import support from '../../assets/images/icons/support.webp';
+import support1 from '../../assets/images/icons/support.png';
+
+
+
 
 const HireAppDevelopers = () => {
     return (
@@ -54,7 +77,7 @@ const HireAppDevelopers = () => {
                         <div className="col-lg-6 col-md-6">
                             <div className="sol-image">
                                 <img
-                                    src="images/GIF/hire-app-dev.gif"
+                                    src={hire}
                                     alt="web development"
                                     className="img-fluid"
                                     data-aos="fade-in"
@@ -83,7 +106,7 @@ const HireAppDevelopers = () => {
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <img
-                                                src="images/icons/part-time.png"
+                                                src={part_time}
                                                 alt="service"
                                                 className="icon70 mb20"
                                             />
@@ -105,7 +128,7 @@ const HireAppDevelopers = () => {
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <img
-                                                src="images/icons/full-time.png"
+                                                src={full_time}
                                                 alt="service"
                                                 className="icon70 mb20"
                                             />
@@ -127,7 +150,7 @@ const HireAppDevelopers = () => {
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <img
-                                                src="images/icons/hourly-time.png"
+                                                src={hourly_time}
                                                 alt="service"
                                                 className="icon70 mb20"
                                             />
@@ -153,11 +176,11 @@ const HireAppDevelopers = () => {
                         <div className="col-lg-6 ">
                             <div className="text-center pt30 pb30">
                                 <picture>
-                                    <source srcSet="images/hire-developer-2.webp" type="image/webp" />
-                                    <source srcSet="images/hire-developer-2.png" type="image/png" />
+                                    <source srcSet={developer_2} type="image/webp" />
+                                    <source srcSet={developer_2_1} type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/hire-developer-2.png"
+                                        src={developer_2_1}
                                         className="img-fluid mb20"
                                         alt="hire-developer"
                                         width={500}
@@ -221,13 +244,13 @@ const HireAppDevelopers = () => {
                                     <div className="img-budges">
                                         <picture>
                                             <source
-                                                srcSet="images/icons/badge-a.webp"
+                                                srcSet={badge_a}
                                                 type="image/webp"
                                             />
-                                            <source srcSet="images/icons/badge-a.png" type="image/png" />
+                                            <source srcSet={badge_a1} type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/icons/badge-a.png"
+                                                src={badge_a1}
                                                 className="img-fluid mb20"
                                                 alt="Awards badges"
                                                 width={110}
@@ -238,13 +261,13 @@ const HireAppDevelopers = () => {
                                     <div className="img-budges">
                                         <picture>
                                             <source
-                                                srcSet="images/icons/badge-b.webp"
+                                                srcSet={badge_b}
                                                 type="image/webp"
                                             />
-                                            <source srcSet="images/icons/badge-b.png" type="image/png" />
+                                            <source srcSet={badge_b1} type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/icons/badge-b.png"
+                                                src={badge_b1}
                                                 className="img-fluid mb20"
                                                 alt="Awards badges"
                                                 width={110}
@@ -255,13 +278,13 @@ const HireAppDevelopers = () => {
                                     <div className="img-budges">
                                         <picture>
                                             <source
-                                                srcSet="images/icons/badge-c.webp"
+                                                srcSet={badge_c}
                                                 type="image/webp"
                                             />
-                                            <source srcSet="images/icons/badge-c.png" type="image/png" />
+                                            <source srcSet={badge_c1} type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/icons/badge-c.png"
+                                                src={badge_c1}
                                                 className="img-fluid mb20"
                                                 alt="Awards badges"
                                                 width={110}
@@ -291,16 +314,16 @@ const HireAppDevelopers = () => {
                                                 <div className="process-icon">
                                                     <picture>
                                                         <source
-                                                            srcSet="images/icons/resources.webp"
+                                                            srcSet={resourse}
                                                             type="image/webp"
                                                         />
                                                         <source
-                                                            srcSet="images/icons/resources.png"
+                                                            srcSet={resourse1}
                                                             type="image/png"
                                                         />
                                                         <img
                                                             loading="lazy"
-                                                            src="images/icons/resources.png"
+                                                            src={resourse1}
                                                             className="img-fluid mb20"
                                                             alt="resources"
                                                             width={60}
@@ -325,16 +348,16 @@ const HireAppDevelopers = () => {
                                                 <div className="process-icon">
                                                     <picture>
                                                         <source
-                                                            srcSet="images/icons/report.webp"
+                                                            srcSet={report}
                                                             type="image/webp"
                                                         />
                                                         <source
-                                                            srcSet="images/icons/report.png"
+                                                            srcSet={report1}
                                                             type="image/png"
                                                         />
                                                         <img
                                                             loading="lazy"
-                                                            src="images/icons/report.png"
+                                                            src={report1}
                                                             className="img-fluid mb20"
                                                             alt="report"
                                                             width={60}
@@ -361,16 +384,16 @@ const HireAppDevelopers = () => {
                                                 <div className="process-icon">
                                                     <picture>
                                                         <source
-                                                            srcSet="images/icons/developer.webp"
+                                                            srcSet={developer}
                                                             type="image/webp"
                                                         />
                                                         <source
-                                                            srcSet="images/icons/developer.png"
+                                                            srcSet={developer1}
                                                             type="image/png"
                                                         />
                                                         <img
                                                             loading="lazy"
-                                                            src="images/icons/developer.png"
+                                                            src={developer1}
                                                             className="img-fluid mb20"
                                                             alt="developer"
                                                             width={60}
@@ -395,16 +418,16 @@ const HireAppDevelopers = () => {
                                                 <div className="process-icon">
                                                     <picture>
                                                         <source
-                                                            srcSet="images/icons/support.webp"
+                                                            srcSet={support}
                                                             type="image/webp"
                                                         />
                                                         <source
-                                                            srcSet="images/icons/support.png"
+                                                            srcSet={support1}
                                                             type="image/png"
                                                         />
                                                         <img
                                                             loading="lazy"
-                                                            src="images/icons/support.png"
+                                                            src={support1}
                                                             className="img-fluid mb20"
                                                             alt="support"
                                                             width={60}

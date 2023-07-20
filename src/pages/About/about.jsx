@@ -6,8 +6,40 @@ import softwaredevelp from '../../assets/images/icons/Software-Development.webp'
 import softwaredevelp1 from '../../assets/images/icons/Software-Development.png'
 import mobiledevlp from '../../assets/images/icons/mobile-and-web-development.webp';
 import mobiledevlp1 from '../../assets/images/icons/mobile-and-web-development.png';
-
-
+import customer_centric from '../../assets/images/icons/Customer-Centric.webp';
+import customer_centric1 from '../../assets/images/icons/Customer-Centric.png';
+import countries from '../../assets/images/icons/countries.webp';
+import countries1 from '../../assets/images/icons/countries.png';
+import hero_11 from '../../assets/images/here-11.webp';
+import hero_11_1 from '../../assets/images/here-11.png';
+import vision from '../../assets/images/vision.webp';
+import vision1 from '../../assets/images/vision.png';
+import hero_team from '../../assets/images/hero-team.webp';
+import hero_team1 from '../../assets/images/hero-team.png';
+import businessprocess from '../../assets/images/icons/Business-process.webp';
+import businessprocess1 from '../../assets/images/icons/Business-process.png';
+import defining_goals from '../../assets/images/icons/Defining-Goals.webp';
+import defining_goals1 from '../../assets/images/icons/Defining-Goals.png';
+import effective from '../../assets/images/icons/Effective-Collaboration.webp';
+import effective1 from '../../assets/images/icons/Effective-Collaboration.png';
+import implementation from '../../assets/images/icons/Implementation.webp';
+import implementation1 from '../../assets/images/icons/Implementation.png';
+import result from '../../assets/images/icons/Measuring-Results.webp';
+import result1 from '../../assets/images/icons/Measuring-Results.png';
+import customer from '../../assets/images/icons/Customer-service.webp';
+import customer1 from '../../assets/images/icons/Customer-service.png';
+import techinal from '../../assets/images/icons/Technical-Support.webp';
+import techinal1 from '../../assets/images/icons/Technical-Support.png';
+import legal_process from '../../assets/images/icons/Legal-process.webp';
+import legal_process1 from '../../assets/images/icons/Legal-process.png';
+import time_material from '../../assets/images/icons/time-material.webp';
+import time_material1 from '../../assets/images/icons/time-material.png';
+import fix_cost from '../../assets/images/icons/fixed-cost.webp';
+import fix_cost1 from '../../assets/images/icons/fixed-cost.png';
+import resourse from '../../assets/images/icons/Dedicated-Resource.webp';
+import resourse1 from '../../assets/images/icons/Dedicated-Resource.png';
+import infrastructure from '../../assets/images/infrastructure.webp';
+import infrastructure1 from '../../assets/images/infrastructure.png';
 const About = () => {
     return (
         <div>
@@ -211,16 +243,16 @@ const About = () => {
                                         <div className="about-targeticon-card-img">
                                             <picture>
                                                 <source
-                                                    srcSet="images/icons/Customer-Centric.webp"
+                                                    srcSet={customer_centric}
                                                     type="image/webp"
                                                 />
                                                 <source
-                                                    srcSet="images/icons/Customer-Centric.png"
+                                                    srcSet={customer_centric1}
                                                     type="image/png"
                                                 />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/Customer-Centric.png"
+                                                    src={customer_centric1}
                                                     className="img-fluid"
                                                     alt="Customer-Centric"
                                                     width={85}
@@ -238,16 +270,16 @@ const About = () => {
                                         <div className="about-targeticon-card-img">
                                             <picture>
                                                 <source
-                                                    srcSet="images/icons/countries.webp"
+                                                    srcSet={countries}
                                                     type="image/webp"
                                                 />
                                                 <source
-                                                    srcSet="images/icons/countries.png"
+                                                    srcSet={countries1}
                                                     type="image/png"
                                                 />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/countries.png"
+                                                    src={countries1}
                                                     className="img-fluid"
                                                     alt="countries"
                                                     width={85}
@@ -337,13 +369,13 @@ const About = () => {
                                                 <div className="text-center">
                                                     <picture>
                                                         <source
-                                                            srcSet="images/here-11.webp"
+                                                            srcSet={hero_11}
                                                             type="image/webp"
                                                         />
-                                                        <source srcSet="images/here-11.png" type="image/png" />
+                                                        <source srcSet={hero_11_1} type="image/png" />
                                                         <img
                                                             loading="lazy"
-                                                            src="images/here-11.png"
+                                                            src={hero_11_1}
                                                             className="img-fluid mb20"
                                                             alt="About"
                                                             width={500}
@@ -378,11 +410,11 @@ const About = () => {
                                             <div className="hovr-scale-main">
                                                 <div className="text-center">
                                                     <picture>
-                                                        <source srcSet="images/vision.webp" type="image/webp" />
-                                                        <source srcSet="images/vision.png" type="image/png" />
+                                                        <source srcSet={vision} type="image/webp" />
+                                                        <source srcSet={vision1} type="image/png" />
                                                         <img
                                                             loading="lazy"
-                                                            src="images/vision.png"
+                                                            src={vision1}
                                                             className="img-fluid mb20"
                                                             alt="About"
                                                             width={500}
@@ -418,16 +450,16 @@ const About = () => {
                                                 <div className="text-center">
                                                     <picture>
                                                         <source
-                                                            srcSet="images/hero-team.webp"
+                                                            srcSet={hero_team}
                                                             type="image/webp"
                                                         />
                                                         <source
-                                                            srcSet="images/hero-team.png"
+                                                            srcSet={hero_team1}
                                                             type="image/png"
                                                         />
                                                         <img
                                                             loading="lazy"
-                                                            src="images/hero-team.png"
+                                                            src={hero_team1}
                                                             className="img-fluid mb20"
                                                             alt="About"
                                                             width={500}
@@ -480,16 +512,16 @@ const About = () => {
                                 <div className="ree-card-img">
                                     <picture>
                                         <source
-                                            srcSet="images/icons/Business-process.webp"
+                                            srcSet={businessprocess}
                                             type="image/webp"
                                         />
                                         <source
-                                            srcSet="images/icons/Business-process.png"
+                                            srcSet={businessprocess1}
                                             type="image/png"
                                         />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/Business-process.png"
+                                            src={businessprocess1}
                                             className="img-fluid"
                                             alt="Business-process"
                                             width={50}
@@ -511,16 +543,16 @@ const About = () => {
                                 <div className="ree-card-img">
                                     <picture>
                                         <source
-                                            srcSet="images/icons/Defining-Goals.webp"
+                                            srcSet={defining_goals}
                                             type="image/webp"
                                         />
                                         <source
-                                            srcSet="images/icons/Defining-Goals.png"
+                                            srcSet={defining_goals1}
                                             type="image/png"
                                         />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/Defining-Goals.png"
+                                            src={defining_goals1}
                                             className="img-fluid"
                                             alt="Defining-Goals"
                                             width={50}
@@ -542,16 +574,16 @@ const About = () => {
                                 <div className="ree-card-img">
                                     <picture>
                                         <source
-                                            srcSet="images/icons/Effective-Collaboration.webp"
+                                            srcSet={effective}
                                             type="image/webp"
                                         />
                                         <source
-                                            srcSet="images/icons/Effective-Collaboration.png"
+                                            srcSet={effective1}
                                             type="image/png"
                                         />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/Effective-Collaboration.png"
+                                            src={effective1}
                                             className="img-fluid"
                                             alt="Effective-Collaboration"
                                             width={50}
@@ -573,16 +605,16 @@ const About = () => {
                                 <div className="ree-card-img">
                                     <picture>
                                         <source
-                                            srcSet="images/icons/Implementation.webp"
+                                            srcSet={implementation}
                                             type="image/webp"
                                         />
                                         <source
-                                            srcSet="images/icons/Implementation.png"
+                                            srcSet={implementation1}
                                             type="image/png"
                                         />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/Implementation.png"
+                                            src={implementation1}
                                             className="img-fluid"
                                             alt="Implementation"
                                             width={50}
@@ -604,16 +636,16 @@ const About = () => {
                                 <div className="ree-card-img">
                                     <picture>
                                         <source
-                                            srcSet="images/icons/Measuring-Results.webp"
+                                            srcSet={result}
                                             type="image/webp"
                                         />
                                         <source
-                                            srcSet="images/icons/Measuring-Results.png"
+                                            srcSet={result1}
                                             type="image/png"
                                         />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/Measuring-Results.png"
+                                            src={result1}
                                             className="img-fluid"
                                             alt="Measuring-Results"
                                             width={50}
@@ -635,16 +667,16 @@ const About = () => {
                                 <div className="ree-card-img">
                                     <picture>
                                         <source
-                                            srcSet="images/icons/Customer-service.webp"
+                                            srcSet={customer}
                                             type="image/webp"
                                         />
                                         <source
-                                            srcSet="images/icons/Customer-service.png"
+                                            srcSet={customer1}
                                             type="image/png"
                                         />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/Customer-service.png"
+                                            src={customer1}
                                             className="img-fluid"
                                             alt="Customer-service"
                                             width={50}
@@ -667,16 +699,16 @@ const About = () => {
                                 <div className="ree-card-img">
                                     <picture>
                                         <source
-                                            srcSet="images/icons/Technical-Support.webp"
+                                            srcSet={techinal}
                                             type="image/webp"
                                         />
                                         <source
-                                            srcSet="images/icons/Technical-Support.png"
+                                            srcSet={techinal1}
                                             type="image/png"
                                         />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/Technical-Support.png"
+                                            src={techinal1}
                                             className="img-fluid"
                                             alt="Technical-Support"
                                             width={50}
@@ -698,16 +730,16 @@ const About = () => {
                                 <div className="ree-card-img">
                                     <picture>
                                         <source
-                                            srcSet="images/icons/Legal-process.webp"
+                                            srcSet={legal_process}
                                             type="image/webp"
                                         />
                                         <source
-                                            srcSet="images/icons/Legal-process.png"
+                                            srcSet={legal_process1}
                                             type="image/png"
                                         />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/Legal-process.png"
+                                            src={legal_process1}
                                             className="img-fluid"
                                             alt="Legal-process"
                                             width={50}
@@ -758,16 +790,16 @@ const About = () => {
                                         <div className="process-icon">
                                             <picture>
                                                 <source
-                                                    srcSet="images/icons/time-material.webp"
+                                                    srcSet={time_material}
                                                     type="image/webp"
                                                 />
                                                 <source
-                                                    srcSet="images/icons/time-material.png"
+                                                    srcSet={time_material1}
                                                     type="image/png"
                                                 />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/time-material.png"
+                                                    src={time_material1}
                                                     className="img-fluid mb20"
                                                     alt="About"
                                                     width={80}
@@ -804,16 +836,16 @@ const About = () => {
                                         <div className="process-icon">
                                             <picture>
                                                 <source
-                                                    srcSet="images/icons/fixed-cost.webp"
+                                                    srcSet={fix_cost}
                                                     type="image/webp"
                                                 />
                                                 <source
-                                                    srcSet="images/icons/fixed-cost.png"
+                                                    srcSet={fix_cost1}
                                                     type="image/png"
                                                 />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/fixed-cost.png"
+                                                    src={fix_cost1}
                                                     className="img-fluid mb20"
                                                     alt="About"
                                                     width={80}
@@ -848,16 +880,16 @@ const About = () => {
                                         <div className="process-icon">
                                             <picture>
                                                 <source
-                                                    srcSet="images/icons/Dedicated-Resource.webp"
+                                                    srcSet={resourse}
                                                     type="image/webp"
                                                 />
                                                 <source
-                                                    srcSet="images/icons/Dedicated-Resource.png"
+                                                    srcSet={resourse1}
                                                     type="image/png"
                                                 />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/Dedicated-Resource.png"
+                                                    src={resourse1}
                                                     className="img-fluid mb20"
                                                     alt="About"
                                                     width={80}
@@ -920,11 +952,11 @@ const About = () => {
                             <div className="vcenter">
                                 <div className="pt20 pb20">
                                     <picture>
-                                        <source srcSet="images/infrastructure.webp" type="image/webp" />
-                                        <source srcSet="images/infrastructure.png" type="image/png" />
+                                        <source srcSet={infrastructure} type="image/webp" />
+                                        <source srcSet={infrastructure1} type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/infrastructure.png"
+                                            src={infrastructure1}
                                             className="img-fluid mb20"
                                             alt="About"
                                             width={690}
