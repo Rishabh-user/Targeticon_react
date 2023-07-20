@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from '../assets/images/logo.png';
 import Logoweb from '../assets/images/logo.webp';
 import healthcare from '../assets/images/Industries/Health-Care.png';
@@ -24,7 +25,7 @@ const Header = () => {
                     <div className="menu-header horzontl">
                         <div className="menu-logo">
                             <div className="dskt-logo">
-                                <a className="nav-brand" href="index.php">
+                                <Link className="nav-brand" to="/">
                                     <picture>
                                         <source
                                             srcSet={Logoweb}
@@ -43,7 +44,7 @@ const Header = () => {
                                             height={61}
                                         />
                                     </picture>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="ree-nav" role="navigation">
