@@ -1063,29 +1063,31 @@ padding: 15px 15px;
 background: #fff;
 border-radius: 14px;
 }
-.tab-17.tabs-layout .nav-tabs .nav-link.active {
+.tab-17.tabs-layout .react-tabs__tab.react-tabs__tab--selected {
 color: #0065b0;
 background-color: transparent;
 border-color: transparent;
 border-radius: 0;
 border-bottom: 1px solid #0065b0;
 }
-.tab-17.tabs-layout .nav-tabs .nav-link {
-/*font-weight: 500;*/
+.tab-17.tabs-layout .react-tabs__tab {
+font-weight: 500;
 border: 0 solid transparent;
 color: #110a32;
 background-color: transparent;
 border-radius: 0;
 padding: 15px;
-border-bottom: 0 solid #f6f6f7;
+border-bottom: 0 solid #f6f6f7;font-size: 20px;
 }
-.tabs-layout .nav-tabs .nav-link.active {
+.tabs-layout .react-tabs__tab.react-tabs__tab--selected  {
 color: #fff;
 background-color: #00baff;
 border-color: #00baff;
 border-radius: 100px;
 }
-.tabs-layout .nav-tabs .nav-link {
+.react-tabs__tab:focus:after{background: #6a6a8e;height: 0;}
+.react-tabs__tab-list{display: flex;justify-content: center;}
+.tabs-layout .react-tabs__tab {
 border: 0 solid transparent;
 color: #6a6a8e;
 background-color: #efefef;
@@ -2177,8 +2179,8 @@ font-size: 20px;
 .owl-carousel .owl-dots .owl-dot {
 position: relative;
 display: inline-block;
-width: 18px;
-height: 18px;
+width: 20px;
+height: 20px;
 margin: 0 2px;
 vertical-align: middle;
 }
@@ -3924,10 +3926,16 @@ width: 100%;
 .search-filter .form-control:focus { background-color: transparent; color: #fff;}
 .go-button .apply-btn {background-color: #ff5e00; border: 1px solid transparent; border-radius: 50px; padding: 10px 20px; color: #fff;}
 .go-button .apply-btn:hover {background-color: transparent; border: 1px solid #fff; border-radius: 50px; padding: 10px 20px; color: #fff;}
+.hero-owl .item{position: relative;
+    background-repeat: no-repeat; background-position: center center; background-size:cover; height: 650px;    z-index: 0;display: flex;align-items: center;
+}
+.hero-owl .item .container .hero-content-x { z-index: 9;}
+.career-detail-banner { background-image: url(../images/career-detail-bg.png); }
+.career-detail-banner:before {content:''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgb(0,103,176); background: linear-gradient(0deg, rgba(0,103,176,1) 0%, rgba(0,0,0,0) 100%);z-index:-1;}
+.software-slider {background-image: url(../images/software-banner.png);}
+.software-slider:before {content:''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgb(0,103,176); background: linear-gradient(0deg, rgba(0,103,176,1) 0%, rgba(0,0,0,0) 100%);
+    z-index:-1;}
 
-
-.career-detail-banner {position: relative; background-image: url(../images/career-detail-bg.png); background-repeat: no-repeat; background-position: center center; background-size:cover; height: 100%;}
-.career-detail-banner:before {content:''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgb(0,103,176); background: linear-gradient(0deg, rgba(0,103,176,1) 0%, rgba(0,0,0,0) 100%);}
 .go-button { text-align: right;}
 .career-detail-head .go-button a { color: #0067b0; padding: 10px 50px; border: 1px solid transparent; border-radius: 6px; background-color: #fff; }
 .career-detail-head .go-button a:hover { color: #fff; padding: 10px 50px; border: 1px solid #fff; border-radius: 6px; background-color: transparent; }
@@ -4015,9 +4023,6 @@ input#floatingInput::placeholder { color: #fff;}
 .multiselect-container .dropdown-menu  li { padding: 5px !important;}
 .multiselect-container .dropdown-menu  li label { width: 100% !important;}
 input[type="checkbox"] {margin-right: 8px;}
-
-.software-slider {background-image: url(../images/software-banner.png); background-repeat: no-repeat; background-position: center center; background-size:cover; height: 100%;}
-.software-slider:before {content:''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgb(0,103,176); background: linear-gradient(0deg, rgba(0,103,176,1) 0%, rgba(0,0,0,0) 100%);}
 
 
 .portfolio-page {position: relative; background-image: url(../images/portfolio-bg.png); background-repeat: no-repeat; background-position: center center; background-size:cover; height: 100%;}

@@ -1,4 +1,39 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Apple from '../assets/images/apple.png';
+import Android from '../assets/images/android.png';
+import Flutter from '../assets/images/icons/flutterio-icon.svg';
+import Java from '../assets/images/java-logo.png';
+import ReactNative from '../assets/images/icons/physics.svg';
+import Python from '../assets/images/python.png';
+import HTML5 from '../assets/images/icons/html5.png';
+import Swift from '../assets/images/icons/swift.svg';
+import PWA from '../assets/images/icons/pwa.png';
+import Angular from '../assets/images/icons/angular.svg';
+import NpmLogo from '../assets/images/icons/Npm-logo.svg';
+import Typescript from '../assets/images/icons/typescript.svg';
+import VueJs from '../assets/images/icons/vuejs.svg';
+import Bootstrap from '../assets/images/icons/bootstrap.svg';
+import NodeJs from '../assets/images/icons/Node.js_logo.svg';
+import MariaDb from '../assets/images/icons/MariaDB.svg';
+import MongoDb from '../assets/images/icons/mongodb-icon.svg';
+import Redis from '../assets/images/icons/redis-official.svg';
+import Mysql from '../assets/images/icons/mysql.svg';
+import PostgreSql from '../assets/images/icons/postgresql-icon.svg';
+import oracle from '../assets/images/icons/oracle.svg';
+import Sqlite from '../assets/images/icons/sqlite.svg';
+import AWSRds from '../assets/images/icons/aws-rds.svg';
+import MicrosoftAccess from '../assets/images/icons/microsoft-access.svg';
+import Sopify from '../assets/images/icons/shopify.svg';
+import Magento from '../assets/images/icons/magento.svg';
+import Wordpress from '../assets/images/icons/wordpress.svg';
+import Joomla from '../assets/images/icons/joomla.svg';
+import Drupal from '../assets/images/icons/drupal.svg';
+import Wix from '../assets/images/icons/wix.svg';
+import Bigcommerce from '../assets/images/icons/bigcommerce-icon.svg';
+import Woocommerce from '../assets/images/icons/woo.svg';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 const OursTools = () => {
     return (
@@ -19,261 +54,198 @@ const OursTools = () => {
                     <div className="row justify-content-center">
                         <div className="col-md-10 mt60">
                             <div className="tab-17 tabs-layout">
-                                <ul
-                                    className="nav nav-tabs justify-content-center"
-                                    id="myTab3"
-                                    role="tablist"
-                                >
-                                    <li className="nav-item">
-                                        <a
-                                            className="nav-link active"
-                                            id="tab1a"
-                                            data-toggle="tab"
-                                            href="#tab1"
-                                            role="tab"
-                                            aria-controls="tab1"
-                                            aria-selected="true"
-                                        >
-                                            Mobile
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a
-                                            className="nav-link"
-                                            id="tab2b"
-                                            data-toggle="tab"
-                                            href="#tab2"
-                                            role="tab"
-                                            aria-controls="tab2"
-                                            aria-selected="false"
-                                        >
-                                            Front End
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a
-                                            className="nav-link"
-                                            id="tab3c"
-                                            data-toggle="tab"
-                                            href="#tab3"
-                                            role="tab"
-                                            aria-controls="tab3"
-                                            aria-selected="false"
-                                        >
-                                            Database{" "}
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a
-                                            className="nav-link"
-                                            id="tab4c"
-                                            data-toggle="tab"
-                                            href="#tab4"
-                                            role="tab"
-                                            aria-controls="tab4"
-                                            aria-selected="false"
-                                        >
-                                            CMS{" "}
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div className="tab-content" id="myTabContent3">
-                                    <div
-                                        className="tab-pane fade active show"
-                                        id="tab1"
-                                        role="tabpanel"
-                                        aria-labelledby="tab1a"
-                                    >
-                                        <div className="tab-data-cont">
-                                            <div className="row justify-content-center">
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/apple.png"
-                                                                    alt="Apple"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>iOS</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                <Tabs>
+                                    <TabList>
+                                        <Tab>Mobile</Tab>
+                                        <Tab>Front End</Tab>
+                                        <Tab>Database</Tab>
+                                        <Tab>CMS</Tab>
+                                    </TabList>
+                                    {/* Mobile start */}
+                                    <TabPanel>
+                                        <div className="row justify-content-center">
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Apple}
+                                                                alt="Apple"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>iOS</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/android.png"
-                                                                    alt="Android"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Android</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Android}
+                                                                alt="Android"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Android</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/flutterio-icon.svg"
-                                                                    alt="Flutter"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Flutter</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Flutter}
+                                                                alt="Flutter"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Flutter</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/java-logo.png"
-                                                                    alt="Java"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Java</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Java}
+                                                                alt="Java"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Java</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/physics.svg"
-                                                                    alt="React Native"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>React Native</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={ReactNative}
+                                                                alt="React Native"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>React Native</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/python.png"
-                                                                    alt="python"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Python</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Python}
+                                                                alt="python"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Python</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/html5.png"
-                                                                    alt="html-5"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Html-5</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={HTML5}
+                                                                alt="html-5"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Html-5</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/swift.svg"
-                                                                    alt="Apswiftple"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Swift</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Swift}
+                                                                alt="Apswiftple"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Swift</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/pwa.svg"
-                                                                    alt="pwa"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>PWA</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={PWA}
+                                                                alt="pwa"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>PWA</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div
-                                        className="tab-pane fade"
-                                        id="tab2"
-                                        role="tabpanel"
-                                        aria-labelledby="tab2b"
-                                    >
-                                        <div className="tab-data-cont">
-                                            <div className="row justify-content-center">
+                                    </TabPanel>
+                                    {/* Frond End Start */}
+                                    <TabPanel>
+                                    <div className="row justify-content-center">
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/angular.svg"
+                                                                    src={Angular}
                                                                     alt="Angular.JS"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -284,15 +256,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Angular.JS</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/physics.svg"
+                                                                    src={ReactNative}
                                                                     alt="React JS"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -303,15 +275,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>React JS</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/Npm-logo.svg"
+                                                                    src={NpmLogo}
                                                                     alt="Npm-logo"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -322,15 +294,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Npm </p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/typescript.svg"
+                                                                    src={Typescript}
                                                                     alt="typescript"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -341,15 +313,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Typescript</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/html-5.svg"
+                                                                    src={HTML5}
                                                                     alt="html-5"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -360,15 +332,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>HTML5</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/vuejs.svg"
+                                                                    src={VueJs}
                                                                     alt="vuejs"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -379,15 +351,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Vue JS</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/bootstrap.svg"
+                                                                    src={Bootstrap}
                                                                     alt="bootstrap"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -398,15 +370,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Bootstrap</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/Node.js_logo.svg"
+                                                                    src={NodeJs}
                                                                     alt="Node.js_logo"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -417,26 +389,20 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Node.JS</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="tab-pane fade"
-                                        id="tab3"
-                                        role="tabpanel"
-                                        aria-labelledby="tab3c"
-                                    >
-                                        <div className="tab-data-cont">
-                                            <div className="row justify-content-center">
+                                    </TabPanel>
+                                    {/* Database Start */}
+                                    <TabPanel>
+                                    <div className="row justify-content-center">
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/MariaDB.svg"
+                                                                    src={MariaDb}
                                                                     alt="MariaDB"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -447,15 +413,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>MariaDB</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/mongodb-icon.svg"
+                                                                    src={MongoDb}
                                                                     alt="mongodb-icon"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -466,15 +432,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>MongoDB</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/redis-official.svg"
+                                                                    src={Redis}
                                                                     alt="redis"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -485,15 +451,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Redis</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/mysql.svg"
+                                                                    src={Mysql}
                                                                     alt="mysql-official"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -504,15 +470,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>MySQL</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/postgresql-icon.svg"
+                                                                    src={PostgreSql}
                                                                     alt="postgresql-icon"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -523,15 +489,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>PostgreSQL</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/oracle.svg"
+                                                                    src={oracle}
                                                                     alt="oracle-logo"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -542,15 +508,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Oracle</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/sqlite.svg"
+                                                                    src={Sqlite}
                                                                     alt="sqlite"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -561,15 +527,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Sqlite</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/aws-rds.svg"
+                                                                    src={AWSRds}
                                                                     alt="aws-rds"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -580,15 +546,15 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>AWS-RDS</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
+                                                        <Link to="javascript:void(0)">
                                                             <div className="iwt-icon">
                                                                 <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/microsoft-access.svg"
+                                                                    src={MicrosoftAccess}
                                                                     alt="microsoft-access"
                                                                     className="img-fluid"
                                                                     loading="lazy"
@@ -599,176 +565,169 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Microsoft-Access</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="tab-pane fade"
-                                        id="tab4"
-                                        role="tabpanel"
-                                        aria-labelledby="tab4c"
-                                    >
-                                        <div className="tab-data-cont">
-                                            <div className="row justify-content-center">
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/shopify.svg"
-                                                                    alt="shopify"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Shopify</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                    </TabPanel>
+                                    {/* CMS Start */}
+                                    <TabPanel>
+                                        <div className="row justify-content-center">
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Sopify}
+                                                                alt="shopify"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Shopify</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/magento.svg"
-                                                                    alt="magento"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Magento</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Magento}
+                                                                alt="magento"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Magento</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/wordpress.svg"
-                                                                    alt="wordpress"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Wordpress</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Wordpress}
+                                                                alt="wordpress"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Wordpress</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/joomla.svg"
-                                                                    alt="joomla"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Joomla</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Joomla}
+                                                                alt="joomla"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Joomla</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/drupal.svg"
-                                                                    alt="drupal"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Drupal</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Drupal}
+                                                                alt="drupal"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Drupal</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/wix.svg"
-                                                                    alt="wix"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Wix</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Wix}
+                                                                alt="wix"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Wix</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/bigcommerce-icon.svg"
-                                                                    alt="bigcommerce-icon"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Big Commerce</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Bigcommerce}
+                                                                alt="bigcommerce-icon"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Big Commerce</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <a href="javascript:void(0)">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src="<?php echo BASE_URL; ?>images/icons/woo.svg"
-                                                                    alt="WooCommerce"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Woo Commerce</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <Link to="javascript:void(0)">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Woocommerce}
+                                                                alt="WooCommerce"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Woo Commerce</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </TabPanel>
+                                </Tabs>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import HireAppDeveloper from '../assets/images/Hire_world_class_Developers-mobile.jpg';
 
 const JoinOurTeam = () => {
     return (
@@ -12,17 +14,9 @@ const JoinOurTeam = () => {
                             <div className="col-lg-6 hide-for-mobile">
                                 <div className="ct-sol-img mt-0 mb-5">
                                     <picture>
-                                        <source
-                                            srcSet="images/Hire_world_class_Developers-mobile.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/Hire_world_class_Developers-mobile.jpg"
-                                            type="image/jpg"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/Hire_world_class_Developers-mobile.jpg"
+                                            src={HireAppDeveloper}
                                             className="img-fluid"
                                             alt="Hire_world_class_Developers"
                                             width={700}
@@ -48,13 +42,13 @@ const JoinOurTeam = () => {
                                         developers that works on clients projects excellently and
                                         delivers the project on timeline.
                                     </p>
-                                    <a
-                                        href="hire-app-developers.php"
+                                    <Link
+                                        to="/hire-app-developers"
                                         target="_blank"
                                         className="ree-btn  ree-btn-grdt1 mw-80 mt40"
                                     >
                                         Start Your Project <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
