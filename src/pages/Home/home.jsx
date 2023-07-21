@@ -1,11 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "./components/slider";
-
+import TopBrandsTrustSlider from "../../components/top-brands-trust-slider";
+import officeviewimg from '../../assets/images/others/office-view-2.png';
+import Tageticoncircle from '../../assets/images/Target-icon.png';
+import Cicleround from '../../assets/images/others/app-development.webp';
+import TopIt from '../../assets/images/brand-logo/top-it.png';
+import AppfuturaLogo from '../../assets/images/brand-logo/appfutura-logo.png';
+import GoodFirmlogo from '../../assets/images/brand-logo/goodfirm-logo.png';
+import ClutchLogo from '../../assets/images/brand-logo/clutch-logo.png';
+import MobileAppLogo from '../../assets/images/brand-logo/mobile-app-logo.png';
+import MobileAppDevelopment from '../../assets/images/Awesome-Services/mobile-app-development.png';
+import Webapplication from '../../assets/images/Awesome-Services/web-application.png';
+import UiUx from '../../assets/images/Awesome-Services/ui-ux.png';
+import Cloud from '../../assets/images/Awesome-Services/cloud.png';
+import JS from '../../assets/images/Awesome-Services/js.png';
+import Webtesting from '../../assets/images/Awesome-Services/web-testing.png';
+import Enterprise from '../../assets/images/Awesome-Services/enterprice-intergration.png';
+import OursTools from "../../components/our-tools";
+import JoinOurTeam from "../../components/join-our-team";
+import ServeIndustries from "../../components/industries-serve";
+import FormInfo from "../../components/form-info";
+import Location from "../../components/location";
 
 const Home = () => {
     return (
         <div>
-            {/* <Slider /> */}
+            <Slider />
+            <TopBrandsTrustSlider />
             {/*we are targeticon*/}
             <section
                 className="home-about pt60 pb60 r-bg-acf"
@@ -36,19 +58,12 @@ const Home = () => {
                         <picture>
                             <source
                                 media="(max-width:991px)"
-                                srcSet="images/others/office-view-2-mobile.webp"
-                                type="image/webp"
-                            />
-                            <source
-                                media="(max-width:991px)"
                                 srcSet="images/others/office-view-2-mobile.jpg"
                                 type="image/jpg"
-                            />
-                            <source srcSet="images/others/office-view-2.webp" type="image/webp" />
-                            <source srcSet="images/others/office-view-2.png" type="image/png" />
+                            />                            
                             <img
                                 loading="lazy"
-                                src="images/others/office-view-2.png"
+                                srcSet={officeviewimg}
                                 className="w-100 img-fluid"
                                 alt="Office-team"
                                 width={1600}
@@ -60,13 +75,13 @@ const Home = () => {
                         <div className="row key-and-award">
                             <div className="ree-app-st-a flx-end m-order2">
                                 <div className="btnctm">
-                                    <a
-                                        href="about.php"
+                                    <Link
+                                        to="/about"
                                         className="ree-btn ree-btn-grdt2 mw-80 m-mt30"
                                     >
                                         Know More Targeticon
                                         <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="ree-app-st-b m-order1">
@@ -104,14 +119,9 @@ const Home = () => {
                                     <div className="agency-info-anim text-center">
                                         <div className="animated-logo">
                                             <picture>
-                                                <source
-                                                    srcSet="images/Target-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source srcSet="images/Target-icon.png" type="image/png" />
-                                                <img
+                                             <img
                                                     loading="lazy"
-                                                    src="images/Target-icon.png"
+                                                    srcSet={Tageticoncircle}
                                                     className="logo-anim img-fluid"
                                                     alt="Targeticon"
                                                     width={101}
@@ -119,7 +129,7 @@ const Home = () => {
                                                 />
                                             </picture>
                                             <img
-                                                src="images/others/app-development.webp"
+                                                src={Cicleround}
                                                 alt="Targeticon icon"
                                                 className="circle-anim"
                                             />
@@ -135,118 +145,78 @@ const Home = () => {
                         <div className="col-md-12">
                             <div className="app-awards owl-carousesl">
                                 <div className="award-achivt">
-                                    <a href="#">
+                                    <Link to="#">
                                         <picture>
-                                            <source
-                                                srcSet="images/brand-logo/top-it.webp"
-                                                type="image/webp"
-                                            />
-                                            <source
-                                                srcSet="images/brand-logo/top-it.png"
-                                                type="image/png"
-                                            />
                                             <img
                                                 loading="lazy"
-                                                src="images/brand-logo/top-it.png"
+                                                srcSet={TopIt}
                                                 className="img-fluid"
                                                 alt="Top App Developer Genuine Quality"
                                                 width={228}
                                                 height={226}
                                             />
                                         </picture>
-                                    </a>
+                                    </Link>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <a href="#">
+                                    <Link to="#">
                                         <picture>
-                                            <source
-                                                srcSet="images/brand-logo/appfutura-logo.webp"
-                                                type="image/webp"
-                                            />
-                                            <source
-                                                srcSet="images/brand-logo/appfutura-logo.png"
-                                                type="image/png"
-                                            />
                                             <img
                                                 loading="lazy"
-                                                src="images/brand-logo/appfutura-logo.png"
+                                                srcSet={AppfuturaLogo}
                                                 className="img-fluid"
                                                 alt="Top App Developer Genuine Quality"
                                                 width={228}
                                                 height={226}
                                             />
                                         </picture>
-                                    </a>
+                                    </Link>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <a href="#">
+                                    <Link to="#">
                                         <picture>
-                                            <source
-                                                srcSet="images/brand-logo/goodfirm-logo.webp"
-                                                type="image/webp"
-                                            />
-                                            <source
-                                                srcSet="images/brand-logo/goodfirm-logo.png"
-                                                type="image/png"
-                                            />
                                             <img
                                                 loading="lazy"
-                                                src="images/brand-logo/goodfirm-logo.png"
+                                                srcSet={GoodFirmlogo}
                                                 className="img-fluid"
                                                 alt="Top App Developer Genuine Quality"
                                                 width={228}
                                                 height={226}
                                             />
                                         </picture>
-                                    </a>
+                                    </Link>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <a href="#">
+                                    <Link to="#">
                                         <picture>
-                                            <source
-                                                srcSet="images/brand-logo/clutch-logo.webp"
-                                                type="image/webp"
-                                            />
-                                            <source
-                                                srcSet="images/brand-logo/clutch-logo.png"
-                                                type="image/png"
-                                            />
                                             <img
                                                 loading="lazy"
-                                                src="images/brand-logo/clutch-logo.png"
+                                                srcSet={ClutchLogo}
                                                 className="img-fluid"
                                                 alt="Top App Developer Genuine Quality"
                                                 width={228}
                                                 height={226}
                                             />
                                         </picture>
-                                    </a>
+                                    </Link>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <a href="#">
+                                    <Link to="#">
                                         <picture>
-                                            <source
-                                                srcSet="images/brand-logo/mobile-app-logo.webp"
-                                                type="image/webp"
-                                            />
-                                            <source
-                                                srcSet="images/brand-logo/mobile-app-logo.png"
-                                                type="image/png"
-                                            />
                                             <img
                                                 loading="lazy"
-                                                src="images/brand-logo/mobile-app-logo.png"
+                                                srcSet={MobileAppLogo}
                                                 className="img-fluid"
                                                 alt="Top App Developer Genuine Quality"
                                                 width={228}
                                                 height={226}
                                             />
                                         </picture>
-                                    </a>
+                                    </Link>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                             </div>
@@ -271,35 +241,18 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="row mt30 justify-content-center">
-                        <div
-                            className="col-lg-3 col-sm-6 mt30"
-                            data-aos="fade-up"
-                            data-aos-delay={100}
-                        >
-                            <a
-                                href="mobile-app-development.php"
-                                className="ree-card reebgb h-100"
-                            >
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={100}>
+                            <Link tp="/mobile-app-development" className="ree-card reebgb h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">Mobile App Development</h4>
-                                    <p>
-                                        With the help of innovative technologies, develop customized
-                                        mobile apps.
-                                    </p>
+                                    <p>With the help of innovative technologies, develop customized
+                                        mobile apps.</p>
                                 </div>
                                 <div className="creative-img">
                                     <picture>
-                                        <source
-                                            srcSet="images/Awesome-Services/mobile-app-development.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/Awesome-Services/mobile-app-development.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/Awesome-Services/mobile-app-development.png"
+                                            src={MobileAppDevelopment}
                                             className="img-fluid"
                                             alt="Mobile App Development"
                                             width={500}
@@ -307,34 +260,21 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
-                        <div
-                            className="col-lg-3 col-sm-6 mt30"
-                            data-aos="fade-up"
-                            data-aos-delay={200}
-                        >
-                            <a href="web-app-development.php" className="ree-card reebgd h-100">
+                        <div  className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={200}>
+                            <Link to="/web-app-development" className="ree-card reebgd h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">Web Application Development</h4>
-                                    <p>
-                                        We have implemented feature-rich qualities and features for
+                                    <p>We have implemented feature-rich qualities and features for
                                         improved workflow.
                                     </p>
                                 </div>
                                 <div className="creative-img">
                                     <picture>
-                                        <source
-                                            srcSet="images/Awesome-Services/web-application.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/Awesome-Services/web-applicationt.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/Awesome-Services/web-application.png"
+                                            src={Webapplication}
                                             className="img-fluid"
                                             alt="Web Application Development"
                                             width={500}
@@ -342,34 +282,21 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
-                        <div
-                            className="col-lg-3 col-sm-6 mt30"
-                            data-aos="fade-up"
-                            data-aos-delay={300}
-                        >
-                            <a href="UI-UX-design.php" className="ree-card reebga h-100">
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={300}>
+                            <Link to="/UI-UX-design" className="ree-card reebga h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">UI/UX Design</h4>
-                                    <p>
-                                        We use the most resourceful and beneficial tools in creating a
+                                    <p>We use the most resourceful and beneficial tools in creating a
                                         versatile and empowering user.
                                     </p>
                                 </div>
                                 <div className="creative-img">
                                     <picture>
-                                        <source
-                                            srcSet="images/Awesome-Services/ui-ux.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/Awesome-Services/ui-ux.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/Awesome-Services/ui-ux.png"
+                                            src={UiUx}
                                             className="img-fluid"
                                             alt="UI/UX Design"
                                             width={500}
@@ -377,34 +304,20 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
-                        <div
-                            className="col-lg-3 col-sm-6 mt30"
-                            data-aos="fade-up"
-                            data-aos-delay={400}
-                        >
-                            <a href="Cloud.php" className="ree-card reebgc h-100">
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={400}>
+                            <Link to="/Cloud" className="ree-card reebgc h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">Cloud</h4>
-                                    <p>
-                                        We facilitate making affordable, reliable, and secure cloud
-                                        solutions.
-                                    </p>
+                                    <p> We facilitate making affordable, reliable, and secure cloud
+                                        solutions.</p>
                                 </div>
                                 <div className="creative-img">
                                     <picture>
-                                        <source
-                                            srcSet="images/Awesome-Services/cloud.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/Awesome-Services/cloud.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/Awesome-Services/cloud.png"
+                                            src={Cloud}
                                             className="img-fluid"
                                             alt="Cloud"
                                             width={500}
@@ -412,34 +325,20 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
-                        <div
-                            className="col-lg-3 col-sm-6 mt30"
-                            data-aos="fade-up"
-                            data-aos-delay={500}
-                        >
-                            <a href="JS-Stack-Development.php" className="ree-card reebgc h-100">
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={500}>
+                            <Link to="/JS-Stack-Development" className="ree-card reebgc h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">JS Stack Development</h4>
-                                    <p>
-                                        This versatile and robust development is convenient to use and
-                                        enhances progress.
-                                    </p>
+                                    <p>This versatile and robust development is convenient to use and
+                                        enhances progress.</p>
                                 </div>
                                 <div className="creative-img">
                                     <picture>
-                                        <source
-                                            srcSet="images/Awesome-Services/js.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/Awesome-Services/js.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/Awesome-Services/js.png"
+                                            src={JS}
                                             className="img-fluid"
                                             alt="JS Stack Development"
                                             width={500}
@@ -447,37 +346,20 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
-                        <div
-                            className="col-lg-3 col-sm-6 mt30"
-                            data-aos="fade-up"
-                            data-aos-delay={600}
-                        >
-                            <a
-                                href="Oracle-Forms-Development.php"
-                                className="ree-card reebgd h-100"
-                            >
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={600}>
+                            <Link to="/Oracle-Forms-Development" className="ree-card reebgd h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">Website Testing</h4>
-                                    <p>
-                                        Website for problems before you make that web application or
-                                        website live.
-                                    </p>
+                                    <p>Website for problems before you make that web application or
+                                        website live.</p>
                                 </div>
                                 <div className="creative-img">
                                     <picture>
-                                        <source
-                                            srcSet="images/Awesome-Services/web-testing.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/Awesome-Services/web-testing.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/Awesome-Services/web-testing.png"
+                                            src={Webtesting}
                                             className="img-fluid"
                                             alt="Website Testing"
                                             width={500}
@@ -485,17 +367,10 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
-                        <div
-                            className="col-lg-3 col-sm-6 mt30"
-                            data-aos="fade-up"
-                            data-aos-delay={700}
-                        >
-                            <a
-                                href="Enterprise-Integration.php"
-                                className="ree-card reebga h-100"
-                            >
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={700}>
+                            <Link to="/Enterprise-Integration" className="ree-card reebga h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">Enterprise Integration</h4>
                                     <p>
@@ -505,17 +380,9 @@ const Home = () => {
                                 </div>
                                 <div className="creative-img mt30">
                                     <picture>
-                                        <source
-                                            srcSet="images/Awesome-Services/enterprice-intergration.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/Awesome-Services/enterprice-intergration.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/Awesome-Services/enterprice-intergration.png"
+                                            src={Enterprise}
                                             className="img-fluid"
                                             alt="Enterprise Integration"
                                             width={500}
@@ -523,24 +390,18 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="cta-block-wide mt50">
                         <div className="row justify-content-center text-center">
                             <div className="col-lg-10 vcenter">
                                 <div className="cta-heading-wide-bt">
-                                    <h3>
-                                        Hire World-Class{" "}
-                                        <span className="ree-text rt40">Developers</span>
+                                    <h3> Hire World-Class{" "}<span className="ree-text rt40">Developers</span>
                                     </h3>
-                                    <a
-                                        href="hire-app-developers.php"
-                                        target="_blank"
-                                        className="ree-btn  ree-btn-grdt1 mw-80"
-                                    >
-                                        Hire Now <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    <Link to="/hire-app-developers" target="_blank" className="ree-btn  ree-btn-grdt1 mw-80"
+                                    > Hire Now <i className="fas fa-arrow-right fa-btn" />
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -548,32 +409,33 @@ const Home = () => {
                 </div>
             </section>
             {/*services end*/}
+
             {/*start technologies tools*/}
-            {/*?php include'include/our-tools.php';?*/}
+                <OursTools />
             {/*end technologies tools*/}
+
             {/*start Client Testimonial*/}
             {/* <section class="Testimonial">
             <?php //include'include/client-testimonial.php';?>
                 </section> */}
             {/*end Client Testimonial */}
-            {/*start join our team  */}
-            {/*?php include 'include/join-our-team.php';?*/}
-            {/*end join our team  */}
-            {/*Industries We Serve*/}
-            {/*?php include'include/industries-serve.php';?*/}
-            {/*Industries We Serve end*/}
-            {/*start blogs  */}
 
-            {/*end blogs*/}
+            {/*start join our team  */}
+                <JoinOurTeam />
+            {/*end join our team  */}
+
+            {/*Industries We Serve*/}
+                <ServeIndustries />
+            {/*Industries We Serve end*/}
+
             {/*contact info*/}
-            {/*?php include 'include/form-info.php';?*/}
+                <FormInfo />
             {/*contact info end*/}
+
             {/*start find us location  */}
-            {/*?php include 'include/location.php';?*/}
+                <Location />
             {/*end find us location  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+            
         </div>
     );
 };

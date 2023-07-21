@@ -1,4 +1,15 @@
 import React from "react";
+import Healthcare from '../assets/images/Industries/Health-Care.png'
+import Insurance from '../assets/images/Industries/Insurance.png';
+import EnergySector from '../assets/images/Industries/Energy-Sector.png';
+import Retail from '../assets/images/Industries/Retail.png';
+import BankingFinance from '../assets/images/Industries/Banking-Finance.png';
+import Education from '../assets/images/Industries/education.png';
+import MediaAdvertising from '../assets/images/Industries/Media-Advertising.png';
+import TravelSocial from '../assets/images/Industries/Travel-Social.png';
+import LogisticBusiness from '../assets/images/Industries/Logistics-Business.png';
+import Manufacturing from '../assets/images/Industries/Manufacturing.png';
+import { Link } from "react-router-dom";
 
 const ServeIndustries = () => {
     return (
@@ -21,20 +32,12 @@ const ServeIndustries = () => {
                         <div className="col-12 Industries-serve">
                             <ul className="Industries-ul">
                                 <li>
-                                    <a href="Health-Care.php" className="">
+                                    <Link to="/Health-Care" className="">
                                         <figure>
                                             <picture>
-                                                <source
-                                                    srcSet="images/Industries/Health-Care.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/Industries/Health-Care.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/Industries/Health-Care.png"
+                                                    src={Healthcare}
                                                     className="img-fluid"
                                                     alt="Health-Care"
                                                     width={80}
@@ -45,23 +48,15 @@ const ServeIndustries = () => {
                                         <figcaption>
                                             <h6>Health Care</h6>
                                         </figcaption>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="Insurance.php" className="">
+                                    <Link to="/Insurance" className="">
                                         <figure>
                                             <picture>
-                                                <source
-                                                    srcSet="images/Industries/Insurance.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/Industries/Insurance.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/Industries/Insurance.png"
+                                                    src={Insurance}
                                                     className="img-fluid"
                                                     alt="Insurance"
                                                     width={80}
@@ -72,23 +67,15 @@ const ServeIndustries = () => {
                                         <figcaption>
                                             <h6>Insurance</h6>
                                         </figcaption>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#" className="">
+                                    <Link to="#" className="">
                                         <figure>
                                             <picture>
-                                                <source
-                                                    srcSet="images/Industries/Energy-Sector.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/Industries/Energy-Sector.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/Industries/Energy-Sector.png"
+                                                    src={EnergySector}
                                                     className="img-fluid"
                                                     alt="Energy-Sector"
                                                     width={80}
@@ -99,23 +86,15 @@ const ServeIndustries = () => {
                                         <figcaption>
                                             <h6>Energy Sector</h6>
                                         </figcaption>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="Retail.php" className="">
+                                    <Link to="/Retail" className="">
                                         <figure>
                                             <picture>
-                                                <source
-                                                    srcSet="images/Industries/Retail.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/Industries/InRetailsurance.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/Industries/Retail.png"
+                                                    src={Retail}
                                                     className="img-fluid"
                                                     alt="Retail"
                                                     width={80}
@@ -126,23 +105,15 @@ const ServeIndustries = () => {
                                         <figcaption>
                                             <h6>Retail</h6>
                                         </figcaption>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="Banking-Finance.php" className="">
+                                    <Link to="/Banking-Finance" className="">
                                         <figure>
                                             <picture>
-                                                <source
-                                                    srcSet="images/Industries/Banking-Finance.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/Industries/Banking-Finance.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/Industries/Banking-Finance.png"
+                                                    src={BankingFinance}
                                                     className="img-fluid"
                                                     alt="Banking-Finance"
                                                     width={80}
@@ -153,23 +124,15 @@ const ServeIndustries = () => {
                                         <figcaption>
                                             <h6>Banking &amp; Finance</h6>
                                         </figcaption>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="Education.php" className="">
+                                    <Link to="/Education" className="">
                                         <figure>
                                             <picture>
-                                                <source
-                                                    srcSet="images/Industries/education.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/Industries/education.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/Industries/education.png"
+                                                    src={Education}
                                                     className="img-fluid"
                                                     alt="education"
                                                     width={80}
@@ -180,23 +143,15 @@ const ServeIndustries = () => {
                                         <figcaption>
                                             <h6>Education</h6>
                                         </figcaption>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="Media-Advertising.php" className="">
+                                    <Link to="/Media-Advertising" className="">
                                         <figure>
                                             <picture>
-                                                <source
-                                                    srcSet="images/Industries/Media-Advertising.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/Industries/Media-Advertising.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/Industries/Media-Advertising.png"
+                                                    src={MediaAdvertising}
                                                     className="img-fluid"
                                                     alt="Media-Advertising"
                                                     width={80}
@@ -207,23 +162,15 @@ const ServeIndustries = () => {
                                         <figcaption>
                                             <h6>Media &amp; Advertising</h6>
                                         </figcaption>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="Travel-Social.php" className="">
+                                    <Link to="/Travel-Social" className="">
                                         <figure>
                                             <picture>
-                                                <source
-                                                    srcSet="images/Industries/Travel-Social.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/Industries/Travel-Social.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/Industries/Travel-Social.png"
+                                                    src={TravelSocial}
                                                     className="img-fluid"
                                                     alt="Travel-Social"
                                                     width={80}
@@ -234,23 +181,15 @@ const ServeIndustries = () => {
                                         <figcaption>
                                             <h6>Travel &amp; Social</h6>
                                         </figcaption>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="Logistics-Business.php" className="">
+                                    <Link to="/Logistics-Business" className="">
                                         <figure>
                                             <picture>
-                                                <source
-                                                    srcSet="images/Industries/Logistics-Business.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/Industries/Logistics-Business.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/Industries/Logistics-Business.png"
+                                                    src={LogisticBusiness}
                                                     className="img-fluid"
                                                     alt="Logistics-Business"
                                                     width={80}
@@ -261,23 +200,15 @@ const ServeIndustries = () => {
                                         <figcaption>
                                             <h6>Logistics and Business</h6>
                                         </figcaption>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="Manufacturing.php" className="align-items-center">
+                                    <Link to="/Manufacturing" className="align-items-center">
                                         <figure>
                                             <picture>
-                                                <source
-                                                    srcSet="images/Industries/Manufacturing.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/Industries/Manufacturing.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/Industries/Manufacturing.png"
+                                                    src={Manufacturing}
                                                     className="img-fluid"
                                                     alt="Manufacturing"
                                                     width={80}
@@ -288,7 +219,7 @@ const ServeIndustries = () => {
                                         <figcaption>
                                             <h6>Manufacturing</h6>
                                         </figcaption>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

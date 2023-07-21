@@ -1,4 +1,8 @@
 import React from "react";
+import BestPrice from '../assets/images/icons/best-price.png';
+import QualityService from '../assets/images/icons/quality-service.png';
+import GoodSupport from '../assets/images/icons/good-support.png';
+import Satisfaction from '../assets/images/icons/satification.png';
 
 const FormInfo = () => {
     return (
@@ -151,17 +155,9 @@ const FormInfo = () => {
                                                     <div className="icon-rows">
                                                         <div className="icon-imgg">
                                                             <picture>
-                                                                <source
-                                                                    srcSet="images/icons/best-price.webp"
-                                                                    type="image/webp"
-                                                                />
-                                                                <source
-                                                                    srcSet="images/icons/best-price.png"
-                                                                    type="image/png"
-                                                                />
                                                                 <img
                                                                     loading="lazy"
-                                                                    src="images/icons/best-price.png"
+                                                                    src={BestPrice}
                                                                     className="img-fluid"
                                                                     alt="best-price"
                                                                     width={42}
@@ -176,17 +172,9 @@ const FormInfo = () => {
                                                     <div className="icon-rows">
                                                         <div className="icon-imgg">
                                                             <picture>
-                                                                <source
-                                                                    srcSet="images/icons/quality-service.webp"
-                                                                    type="image/webp"
-                                                                />
-                                                                <source
-                                                                    srcSet="images/icons/quality-service.png"
-                                                                    type="image/png"
-                                                                />
                                                                 <img
                                                                     loading="lazy"
-                                                                    src="images/icons/quality-service.png"
+                                                                    src={QualityService}
                                                                     className="img-fluid"
                                                                     alt="quality-service"
                                                                     width={42}
@@ -201,17 +189,9 @@ const FormInfo = () => {
                                                     <div className="icon-rows">
                                                         <div className="icon-imgg">
                                                             <picture>
-                                                                <source
-                                                                    srcSet="images/icons/good-support.webp"
-                                                                    type="image/webp"
-                                                                />
-                                                                <source
-                                                                    srcSet="images/icons/good-support.png"
-                                                                    type="image/png"
-                                                                />
                                                                 <img
                                                                     loading="lazy"
-                                                                    src="images/icons/good-support.png"
+                                                                    src={GoodSupport}
                                                                     className="img-fluid"
                                                                     alt="good-support"
                                                                     width={42}
@@ -226,17 +206,9 @@ const FormInfo = () => {
                                                     <div className="icon-rows">
                                                         <div className="icon-imgg">
                                                             <picture>
-                                                                <source
-                                                                    srcSet="images/icons/satification.webp"
-                                                                    type="image/webp"
-                                                                />
-                                                                <source
-                                                                    srcSet="images/icons/satification.png"
-                                                                    type="image/png"
-                                                                />
                                                                 <img
                                                                     loading="lazy"
-                                                                    src="images/icons/satification.png"
+                                                                    src={Satisfaction}
                                                                     className="img-fluid"
                                                                     alt="satification"
                                                                     width={42}

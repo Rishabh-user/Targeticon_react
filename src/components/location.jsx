@@ -1,4 +1,7 @@
 import React from "react";
+import India from '../assets/images/india.png';
+import USA from '../assets/images/USA.png';
+import { Link } from "react-router-dom";
 
 const Location = () => {
     return (
@@ -19,11 +22,9 @@ const Location = () => {
                             <div className="location-block- mt60">
                                 <figure className="location-image">
                                     <picture>
-                                        <source srcSet="images/india.webp" type="image/webp" />
-                                        <source srcSet="images/india.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/india.png"
+                                            src={India}
                                             className="img-fluid"
                                             alt="new-delhi"
                                             width={120}
@@ -43,8 +44,8 @@ const Location = () => {
                                         <br /> A-41, Sector-62, Noida-201301 Delhi NCR, India
                                     </p>
                                     <div className="location-phone-number">
-                                        <a
-                                            href="tel:+919818757597"
+                                        <Link
+                                            to="tel:+919818757597"
                                             target="blank"
                                             className="btn-outline rount-btn"
                                             data-toggle="tooltip"
@@ -52,36 +53,36 @@ const Location = () => {
                                         >
                                             <i className="fas fa-phone-alt" />
                                             <span>+91 981 875 7597</span>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="loc-contct mt20">
-                                        <a
-                                            href="https://goo.gl/maps/41xxF5oywoTKUusLA"
+                                        <Link
+                                            to="https://goo.gl/maps/41xxF5oywoTKUusLA"
                                             target="_blank"
                                             className="btn-outline rount-btn"
                                             data-toggle="tooltip"
                                             title="Map Location"
                                         >
                                             <i className="fas fa-map-marker-alt" />
-                                        </a>
-                                        <a
-                                            href="mailto:sales@targeticon.com"
+                                        </Link>
+                                        <Link
+                                            to="mailto:sales@targeticon.com"
                                             target="_blank"
                                             className="btn-outline rount-btn"
                                             data-toggle="tooltip"
                                             title="Email Address"
                                         >
                                             <i className="fas fa-envelope" />
-                                        </a>
-                                        <a
-                                            href="skype:target.icon?chat"
+                                        </Link>
+                                        <Link
+                                            to="skype:target.icon?chat"
                                             target="_blank"
                                             className="btn-outline rount-btn"
                                             data-toggle="tooltip"
                                             title="Skype Id"
                                         >
                                             <i className="fab fa-skype" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </figcaption>
                             </div>
@@ -90,11 +91,9 @@ const Location = () => {
                             <div className="location-block- mt60">
                                 <figure className="location-image">
                                     <picture>
-                                        <source srcSet="images/USA.webp" type="image/webp" />
-                                        <source srcSet="images/USA.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/USA.png"
+                                            src={USA}
                                             className="img-fluid"
                                             alt="USA"
                                             width={120}
@@ -114,8 +113,8 @@ const Location = () => {
                                         New York 11432
                                     </p>
                                     <div className="location-phone-number">
-                                        <a
-                                            href="tel:+17183952545"
+                                        <Link
+                                            to="tel:+17183952545"
                                             target="blank"
                                             className="btn-outline rount-btn"
                                             data-toggle="tooltip"
@@ -123,36 +122,36 @@ const Location = () => {
                                         >
                                             <i className="fas fa-phone-alt" />
                                             <span>+1 718 395 2545</span>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="loc-contct mt20">
-                                        <a
-                                            href="https://goo.gl/maps/41xxF5oywoTKUusLA"
+                                        <Link
+                                            to="https://goo.gl/maps/41xxF5oywoTKUusLA"
                                             target="blank"
                                             className="btn-outline rount-btn"
                                             data-toggle="tooltip"
                                             title="Map Location"
                                         >
                                             <i className="fas fa-map-marker-alt" />
-                                        </a>
-                                        <a
-                                            href="mailto:sales@targeticon.com"
+                                        </Link>
+                                        <Link
+                                            to="mailto:sales@targeticon.com"
                                             target="blank"
                                             className="btn-outline rount-btn"
                                             data-toggle="tooltip"
                                             title="Email Address"
                                         >
                                             <i className="fas fa-envelope" />
-                                        </a>
-                                        <a
-                                            href="skype:target.icon?chat"
+                                        </Link>
+                                        <Link
+                                            to="skype:target.icon?chat"
                                             target="blank"
                                             className="btn-outline rount-btn"
                                             data-toggle="tooltip"
                                             title="Skype Id"
                                         >
                                             <i className="fab fa-skype" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </figcaption>
                             </div>
