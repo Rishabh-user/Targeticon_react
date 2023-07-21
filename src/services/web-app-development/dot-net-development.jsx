@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import dotnetgif from '../../assets/images/GIF/dot-net.gif';
 import dotnetservice from '../../assets/images/GIF/dot-net-service.gif';
 import dotnetasp from '../../assets/images/icons/asp-dot-net-icon.png';
@@ -388,16 +389,12 @@ const DotNetDevelopment = () => {
                     </div>
                 </div>
             </section>
-            {/*Qualities of Our Advanced and Enterprise end*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

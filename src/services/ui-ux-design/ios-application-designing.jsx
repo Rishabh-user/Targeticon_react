@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import iosphone from '../../assets/images/ios-phone.png';
 import iphone from '../../assets/images/iphone-14-13.png';
 import investigation from '../../assets/images/icons/investigation-anlysis.png';
@@ -12,10 +13,6 @@ import whyus from '../../assets/images/why-us.png';
 const IosApplicationDesigning = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-cssdd pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -329,16 +326,12 @@ const IosApplicationDesigning = () => {
                     </div>
                 </div>
             </section>
-            {/*end Why Us?*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import ecommarsbanner from '../../assets/images/GIF/ecommars-banner.gif'
 import ecom1gif from '../../assets/images/GIF/ecom1.gif';
 import ecom2gif from '../../assets/images/GIF/ecom2.gif';
@@ -13,10 +14,6 @@ import responsivegif from '../../assets/images/GIF/responsive2.gif';
 const EcommerceDevelopment = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-we pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -468,16 +465,12 @@ const EcommerceDevelopment = () => {
                     </div>
                 </div>
             </section>
-            {/*end Responsive Web Design*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

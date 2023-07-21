@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import webgif from '../../assets/images/web-desining.gif';
 import overview from '../../assets/images/overview.png';
 import whyus from '../../assets/images/why-us.png';
@@ -11,10 +12,6 @@ import girlbro from '../../assets/images/girl-bro.png';
 const WebsiteDesigning = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -448,16 +445,12 @@ const WebsiteDesigning = () => {
                     </div>
                 </div>
             </section>
-            {/*end Conclusion*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

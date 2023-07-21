@@ -1,4 +1,5 @@
 import React from "react";
+import Tools from '../../components/our-tools';
 import { NavLink } from "react-router-dom";
 import mobileGif from '../../assets/images/GIF/Mobile-app-development.gif';
 import officeView from '../../assets/images/others/office-view-2.png';
@@ -18,10 +19,6 @@ import blockchain from '../../assets/images/icons/Blockchain.png';
 const MobileAppDevelopment = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-h pt60 pb60 mobile-app-dev">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -394,16 +391,11 @@ const MobileAppDevelopment = () => {
                     </div>
                 </div>
             </section>
-            {/*services end*/}
             {/*start client-testimonial  */}
-            {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client-testimonial  */}
             {/*start our-tools  */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our-tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

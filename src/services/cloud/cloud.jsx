@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import cloudgif from '../../assets/images/GIF/cloud.gif';
 import cloudservice from '../../assets/images/cloud-services.png';
 import awsservice from '../../assets/images/AWS-service.png';
@@ -8,10 +9,6 @@ import azuregif from '../../assets/images/GIF/Azure-Cloud-migration.gif';
 const Cloud = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-k pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -223,16 +220,12 @@ const Cloud = () => {
                     </div>
                 </div>
             </section>
-            {/*end The services which we provide under cloud are: */}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

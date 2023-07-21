@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import means from '../../assets/images/mean-s.png';
 import meanoverview from '../../assets/images/mean-overview.png';
 import mongodb from '../../assets/images/icons/mongodb-icon.png';
@@ -11,10 +12,6 @@ import MeanStact1 from '../../assets/images/mean-stack-1.png';
 const MeanStact = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-k pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -307,16 +304,13 @@ const MeanStact = () => {
                     </div>
                 </div>
             </section>
-            {/*end Conclusion*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+
         </div>
     );
 };

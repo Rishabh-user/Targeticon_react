@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import uxdesigngif from '../../assets/images/GIF/ux-design.gif';
 import uiux from '../../assets/images/UI-UX.png';
 import qwertygif from '../../assets/images/GIF/qwerty.gif';
@@ -12,10 +13,6 @@ import whyus from '../../assets/images/why-us.png';
 const UxDesign = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-zz pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -344,16 +341,13 @@ const UxDesign = () => {
                     </div>
                 </div>
             </section>
-            {/*end Why Us?*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+
         </div>
     );
 };

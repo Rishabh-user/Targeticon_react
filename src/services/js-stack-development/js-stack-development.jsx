@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import meanStactgif from '../../assets/images/GIF/JS-Stack-Development.gif';
 import meanstack from '../../assets/images/JS-Stack-Development-imgg.png';
 import easyway from '../../assets/images/icons/easy-use.png';
@@ -11,10 +12,6 @@ import timelywork from '../../assets/images/icons/timely-work.png';
 const JsStactDevelopment = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-k pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -254,16 +251,12 @@ const JsStactDevelopment = () => {
                     </div>
                 </div>
             </section>
-            {/*-The Process of UX Designing end*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import androiddesign from '../../assets/images/android-Design.png';
 import overview from '../../assets/images/overview.png';
 import sourceuse from '../../assets/images/icons/source-use.png';
@@ -11,10 +12,6 @@ import girlbro from '../../assets/images/girl-bro.png';
 const AndroidApplicationDesign = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-we pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -295,16 +292,13 @@ const AndroidApplicationDesign = () => {
                     </div>
                 </div>
             </section>
-            {/*end Conclusion*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+
         </div>
     );
 };

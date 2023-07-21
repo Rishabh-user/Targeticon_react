@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import javagif from '../../assets/images/GIF/java.gif';
 import javainfo3 from '../../assets/images/java-info3.png';
 import javainfo1 from '../../assets/images/java-info1.png';
@@ -10,10 +11,6 @@ import girlbro from '../../assets/images/girl-bro.png';
 const JavaDevelopment = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-cfd pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -377,16 +374,12 @@ const JavaDevelopment = () => {
                     </div>
                 </div>
             </section>
-            {/*end conclusion*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

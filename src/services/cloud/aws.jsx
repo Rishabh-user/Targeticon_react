@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import awsfriendly from '../../assets/images/AWS-friendly-exprince2.png';
 import meanstack from '../../assets/images/mean-stack-development-img.png';
 import aws from '../../assets/images/AWS-img.png';
@@ -10,10 +11,6 @@ import whyus from '../../assets/images/why-us.png';
 const AWS = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-k pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -433,16 +430,12 @@ const AWS = () => {
                     </div>
                 </div>
             </section>
-            {/*end Why Us?*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

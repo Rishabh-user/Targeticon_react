@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import progressiveweb from '../../assets/images/webapp-progressive-web-app-pwa.png';
 import overview from '../../assets/images/overview.png';
 import worker from '../../assets/images/icons/administration-worker.png';
@@ -382,16 +383,12 @@ const ProgressiveWebApp = () => {
                     </div>
                 </div>
             </section>
-            {/*end conclusion*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

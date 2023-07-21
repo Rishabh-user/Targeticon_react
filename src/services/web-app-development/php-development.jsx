@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import phpgif from '../../assets/images/GIF/php.gif';
 import overview from '../../assets/images/overview.png';
 import customphp from '../../assets/images/icons/custom-php.png';
@@ -14,10 +15,6 @@ import socialnetworking from '../../assets/images/GIF/social-networking.gif';
 const PhpDevelopment = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section
                 className="page-heading-sec pt60 pb60"
                 style={{ backgroundColor: "#eceff1" }}
@@ -363,16 +360,12 @@ const PhpDevelopment = () => {
                     </div>
                 </div>
             </section>
-            {/*end conclusion*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };
