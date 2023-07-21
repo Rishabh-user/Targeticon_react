@@ -1,4 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import ecommarsbanner from '../../assets/images/GIF/ecommars-banner.gif'
+import ecom1gif from '../../assets/images/GIF/ecom1.gif';
+import ecom2gif from '../../assets/images/GIF/ecom2.gif';
+import ecom3gif from '../../assets/images/GIF/ecom3.gif';
+import infrastructure from '../../assets/images/infrastructure.png';
+import girlbro from '../../assets/images/girl-bro.png';
+import responsivegif from '../../assets/images/GIF/responsive2.gif';
+
+
 
 const EcommerceDevelopment = () => {
     return (
@@ -33,21 +43,20 @@ const EcommerceDevelopment = () => {
                                     (Model View Controller) offering J2EE improvement set apart by the
                                     diminished many-sided quality and a steady venture platform.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={100}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
                                 <img
-                                    src="images/GIF/ecommars-banner.gif"
+                                    src={ecommarsbanner}
                                     alt="Targeticon"
                                     className="img-fluid"
                                 />
@@ -85,7 +94,7 @@ const EcommerceDevelopment = () => {
                             >
                                 <div className="mb15 mt15">
                                     <img
-                                        src="images/GIF/ecom1.gif"
+                                        src={ecom1gif}
                                         alt="portfolio"
                                         className="img-fluid"
                                         width="600px"
@@ -131,7 +140,7 @@ const EcommerceDevelopment = () => {
                             >
                                 <div className="mb15 mt15">
                                     <img
-                                        src="images/GIF/ecom2.gif"
+                                        src={ecom2gif}
                                         alt="portfolio"
                                         className="img-fluid"
                                         width="600px"
@@ -178,7 +187,7 @@ const EcommerceDevelopment = () => {
                             >
                                 <div className="mb15 mt15">
                                     <img
-                                        src="images/GIF/ecom3.gif"
+                                        src={ecom3gif}
                                         alt="portfolio"
                                         className="img-fluid"
                                         width="600px"
@@ -246,11 +255,9 @@ const EcommerceDevelopment = () => {
                         >
                             <div className="text-center">
                                 <picture>
-                                    <source srcSet="images/infrastructure.webp" type="image/webp" />
-                                    <source srcSet="images/infrastructure.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/infrastructure.png"
+                                        src={infrastructure}
                                         className="img-fluid mb20"
                                         alt="Advantages"
                                         width={640}
@@ -352,11 +359,9 @@ const EcommerceDevelopment = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={girlbro}
                                         className="img-fluid mb20"
                                         alt="conclusion"
                                         width={500}
@@ -413,7 +418,7 @@ const EcommerceDevelopment = () => {
                         <div className="col-lg-6">
                             <div className="ct-sol-img">
                                 <img
-                                    src="images/GIF/responsive2.gif"
+                                    src={responsivegif}
                                     alt="hybird-app"
                                     className="img-fluid"
                                     width="600px"

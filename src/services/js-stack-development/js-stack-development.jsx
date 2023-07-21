@@ -1,4 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import meanStactgif from '../../assets/images/GIF/JS-Stack-Development.gif';
+import meanstack from '../../assets/images/JS-Stack-Development-imgg.png';
+import easyway from '../../assets/images/icons/easy-use.png';
+import features from '../../assets/images/icons/features.png';
+import ourteam from '../../assets/images/icons/our-team.png';
+import timelywork from '../../assets/images/icons/timely-work.png';
+
 
 const JsStactDevelopment = () => {
     return (
@@ -30,21 +38,20 @@ const JsStactDevelopment = () => {
                                     more growth in popularity after it was able to be used on the
                                     server side as well.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
                                 <img
-                                    src="images/GIF/JS-Stack-Development.gif"
+                                    src={meanStactgif}
                                     alt="Targeticon"
                                     className="img-fluid"
                                     width="550px"
@@ -66,17 +73,9 @@ const JsStactDevelopment = () => {
                         >
                             <div className="JS-Stack-Development-img text-center">
                                 <picture>
-                                    <source
-                                        srcSet="images/JS-Stack-Development-imgg.webp"
-                                        type="image/webp"
-                                    />
-                                    <source
-                                        srcSet="images/JS-Stack-Development-imgg.png"
-                                        type="image/png"
-                                    />
                                     <img
                                         loading="lazy"
-                                        src="images/JS-Stack-Development-imgg.png"
+                                        src={meanstack}
                                         className="img-fluid mt20 mb20"
                                         alt="JS-Stack-Development-imgg"
                                         width={590}
@@ -145,23 +144,15 @@ const JsStactDevelopment = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/easy-use.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/easy-use.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/easy-use.png"
+                                                    src={easyway}
                                                     className="img-fluid mb20"
                                                     alt="easy-use"
                                                     width={60}
@@ -177,26 +168,18 @@ const JsStactDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/features.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/features.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/features.png"
+                                                    src={features}
                                                     className="img-fluid mb20"
                                                     alt="features"
                                                     width={60}
@@ -212,26 +195,18 @@ const JsStactDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/our-team.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/our-team.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/our-team.png"
+                                                    src={ourteam}
                                                     className="img-fluid mb20"
                                                     alt="our-team"
                                                     width={60}
@@ -247,26 +222,18 @@ const JsStactDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/timely-work.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/timely-work.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/timely-work.png"
+                                                    src={timelywork}
                                                     className="img-fluid mb20"
                                                     alt="timely-work"
                                                     width={60}
@@ -282,7 +249,7 @@ const JsStactDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

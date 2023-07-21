@@ -1,4 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import webgif from '../../assets/images/web-desining.gif';
+import overview from '../../assets/images/overview.png';
+import whyus from '../../assets/images/why-us.png';
+import byfunction from '../../assets/images/by-function.png';
+import content from '../../assets/images/content-based.png';
+import reponsive from '../../assets/images/by-resposive.png';
+import girlbro from '../../assets/images/girl-bro.png';
 
 const WebsiteDesigning = () => {
     return (
@@ -25,21 +33,20 @@ const WebsiteDesigning = () => {
                                     fingertips. The user mainly surfs over the internet to get more
                                     information about a particular product or about a company.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={250}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
                                 <img
-                                    src="images/web-desining.gif"
+                                    src={webgif}
                                     alt="web-desining"
                                     className="img-fluid"
                                     width={600}
@@ -84,11 +91,9 @@ const WebsiteDesigning = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/overview.webp" type="image/webp" />
-                                    <source srcSet="images/overview.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/overview.png"
+                                        src={overview}
                                         className="img-fluid"
                                         alt="Overview"
                                         width={590}
@@ -151,11 +156,9 @@ const WebsiteDesigning = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/why-us.webp" type="image/webp" />
-                                    <source srcSet="images/why-us.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/why-us.png"
+                                        src={whyus}
                                         className="img-fluid"
                                         alt="iphones"
                                         width={590}
@@ -196,11 +199,9 @@ const WebsiteDesigning = () => {
                             >
                                 <div className="hovr-scale-main text-center">
                                     <picture>
-                                        <source srcSet="images/by-function.webp" type="image/webp" />
-                                        <source srcSet="images/by-function.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/by-function.png"
+                                            src={byfunction}
                                             className="img-fluid"
                                             alt="Different Types of Websites Designs"
                                             width={500}
@@ -282,11 +283,9 @@ const WebsiteDesigning = () => {
                             >
                                 <div className="hovr-scale-main text-center">
                                     <picture>
-                                        <source srcSet="images/content-based.webp" type="image/webp" />
-                                        <source srcSet="images/content-based.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/content-based.png"
+                                            src={content}
                                             className="img-fluid"
                                             alt="Content-based website design"
                                             width={500}
@@ -395,11 +394,9 @@ const WebsiteDesigning = () => {
                             >
                                 <div className="hovr-scale-main text-center">
                                     <picture>
-                                        <source srcSet="images/by-resposive.webp" type="image/webp" />
-                                        <source srcSet="images/by-resposive.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/by-resposive.png"
+                                            src={reponsive}
                                             className="img-fluid"
                                             alt="Website design based on Responsiveness"
                                             width={500}
@@ -437,11 +434,9 @@ const WebsiteDesigning = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={girlbro}
                                         className="img-fluid"
                                         alt="Conclusion"
                                         width={590}

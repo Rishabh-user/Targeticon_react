@@ -1,4 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import uxdesigngif from '../../assets/images/GIF/ux-design.gif';
+import uiux from '../../assets/images/UI-UX.png';
+import qwertygif from '../../assets/images/GIF/qwerty.gif';
+import understandproblem from '../../assets/images/icons/understand-problem.png';
+import collectinginfo from '../../assets/images/icons/collecting-information.png';
+import planningtesting from '../../assets/images/icons/planning-testing.png';
+import designingicon from '../../assets/images/icons/designing-icon.png';
+import whyus from '../../assets/images/why-us.png';
 
 const UxDesign = () => {
     return (
@@ -33,21 +42,20 @@ const UxDesign = () => {
                                     The goal of the Target Icon is to provide the best services with
                                     high quality and cost-effective to its customer.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
                                 <img
-                                    src="images/GIF/ux-design.gif"
+                                    src={uxdesigngif}
                                     alt="Targeticon"
                                     className="img-fluid"
                                     width="600px"
@@ -70,11 +78,9 @@ const UxDesign = () => {
                             <div className="hovr-scale-main text-center">
                                 <div className="portfolio-flimg">
                                     <picture>
-                                        <source srcSet="images/UI-UX.webp" type="image/webp" />
-                                        <source srcSet="images/UI-UX.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/UI-UX.png"
+                                            src={uiux}
                                             className="img-fluid"
                                             alt="UI-UX"
                                             width={600}
@@ -149,7 +155,7 @@ const UxDesign = () => {
                         <div className="col-lg-6 m-order1" data-aos="fade-up">
                             <div className="why-choose-img">
                                 <img
-                                    src="images/GIF/qwerty.gif"
+                                    src={qwertygif}
                                     alt="portfolio"
                                     className="img-fluid"
                                 />
@@ -179,23 +185,15 @@ const UxDesign = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/understand-problem.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/understand-problem.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/understand-problem.png"
+                                                    src={understandproblem}
                                                     className="img-fluid mb20"
                                                     alt="understand-problem"
                                                     width={60}
@@ -215,26 +213,18 @@ const UxDesign = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/collecting-information.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/collecting-information.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/collecting-information.png"
+                                                    src={collectinginfo}
                                                     className="img-fluid mb20"
                                                     alt="collecting-information"
                                                     width={60}
@@ -251,26 +241,18 @@ const UxDesign = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/planning-testing.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/planning-testing.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/planning-testing.png"
+                                                    src={planningtesting}
                                                     className="img-fluid mb20"
                                                     alt="planning-testing"
                                                     width={60}
@@ -289,26 +271,18 @@ const UxDesign = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/designing-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/designing-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/designing-icon.png"
+                                                    src={designingicon}
                                                     className="img-fluid mb20"
                                                     alt="designing-icon"
                                                     width={60}
@@ -325,7 +299,7 @@ const UxDesign = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -356,11 +330,9 @@ const UxDesign = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/why-us.webp" type="image/webp" />
-                                    <source srcSet="images/why-us.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/why-us.png"
+                                        src={whyus}
                                         className="img-fluid"
                                         alt="iphones"
                                         width={590}

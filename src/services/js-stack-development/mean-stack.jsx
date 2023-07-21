@@ -1,4 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import means from '../../assets/images/mean-s.png';
+import meanoverview from '../../assets/images/mean-overview.png';
+import mongodb from '../../assets/images/icons/mongodb-icon.png';
+import expressicon from '../../assets/images/icons/express-icon.png';
+import angularicon from '../../assets/images/icons/angular-icon.png';
+import nodejs from '../../assets/images/icons/node-js-icon.png';
+import MeanStact1 from '../../assets/images/mean-stack-1.png';
 
 const MeanStact = () => {
     return (
@@ -29,15 +37,14 @@ const MeanStact = () => {
                                     Mean stack development is an amazing combination of MongoDB,
                                     Express, AngularJS, and NodeJS.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -47,7 +54,7 @@ const MeanStact = () => {
                                 data-aos-delay={200}
                             >
                                 <img
-                                    src="images/mean-s.png"
+                                    src={means}
                                     alt="Targeticon"
                                     className="img-fluid"
                                 />
@@ -69,11 +76,9 @@ const MeanStact = () => {
                             <div className="hovr-scale-main">
                                 <div className="portfolio-flimg text-center">
                                     <picture>
-                                        <source srcSet="images/mean-overview.webp" type="image/webp" />
-                                        <source srcSet="images/mean-overview.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/mean-overview.png"
+                                            src={meanoverview}
                                             className="img-fluid"
                                             alt="mean-overview"
                                             width={590}
@@ -132,23 +137,15 @@ const MeanStact = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/mongodb-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/mongodb-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/mongodb-icon.png"
+                                                    src={mongodb}
                                                     className="img-fluid mb20"
                                                     alt="mongodb-icon"
                                                     width={60}
@@ -167,26 +164,18 @@ const MeanStact = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/express-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/express-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/express-icon.png"
+                                                    src={expressicon}
                                                     className="img-fluid mb20"
                                                     alt="express-icon"
                                                     width={60}
@@ -204,26 +193,18 @@ const MeanStact = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/angular-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/angular-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/angular-icon.png"
+                                                    src={angularicon}
                                                     className="img-fluid mb20"
                                                     alt="angular-icon"
                                                     width={60}
@@ -243,26 +224,18 @@ const MeanStact = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/node-js-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/node-js-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/node-js-icon.png"
+                                                    src={nodejs}
                                                     className="img-fluid mb20"
                                                     alt="node-js-icon"
                                                     width={60}
@@ -281,7 +254,7 @@ const MeanStact = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -320,11 +293,9 @@ const MeanStact = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="portfolio-flimg text-center">
                                 <picture>
-                                    <source srcSet="images/mean-stack-1.webp" type="image/webp" />
-                                    <source srcSet="images/mean-stack-1.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/mean-stack-1.png"
+                                        src={MeanStact1}
                                         className="img-fluid"
                                         alt="mean-stack-1"
                                         width={590}

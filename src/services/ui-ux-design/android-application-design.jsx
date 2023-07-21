@@ -1,4 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import androiddesign from '../../assets/images/android-Design.png';
+import overview from '../../assets/images/overview.png';
+import sourceuse from '../../assets/images/icons/source-use.png';
+import multipleuse from '../../assets/images/icons/multiple-use.png';
+import easyuse from '../../assets/images/icons/easy-use.png';
+import widelyuse from '../../assets/images/icons/widely-use.png';
+import girlbro from '../../assets/images/girl-bro.png';
 
 const AndroidApplicationDesign = () => {
     return (
@@ -29,25 +37,22 @@ const AndroidApplicationDesign = () => {
                                     depending upon the operating system and the smartphone user uses.
                                     Basically, most people make use of the Android platform.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30">
                                 <picture>
-                                    <source srcSet="images/android-Design.webp" type="image/webp" />
-                                    <source srcSet="images/android-Design.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/android-Design.png"
+                                        src={androiddesign}
                                         className="img-fluid"
                                         alt="Conclusion"
                                         width={590}
@@ -67,11 +72,9 @@ const AndroidApplicationDesign = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/overview.webp" type="image/webp" />
-                                    <source srcSet="images/overview.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/overview.png"
+                                        src={overview}
                                         className="img-fluid"
                                         alt="Overview"
                                         width={590}
@@ -127,23 +130,15 @@ const AndroidApplicationDesign = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-6 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/source-use.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/source-use.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/source-use.png"
+                                                    src={sourceuse}
                                                     className="img-fluid mb20"
                                                     alt="source-use"
                                                     width={60}
@@ -164,26 +159,18 @@ const AndroidApplicationDesign = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/multiple-use.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/multiple-use.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/multiple-use.png"
+                                                    src={multipleuse}
                                                     className="img-fluid mb20"
                                                     alt="multiple-use"
                                                     width={60}
@@ -202,26 +189,18 @@ const AndroidApplicationDesign = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/easy-use.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/easy-use.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/easy-use.png"
+                                                    src={easyuse}
                                                     className="img-fluid mb20"
                                                     alt="easy-use"
                                                     width={60}
@@ -241,26 +220,18 @@ const AndroidApplicationDesign = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/widely-use.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/widely-use.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/widely-use.png"
+                                                    src={widelyuse}
                                                     className="img-fluid mb20"
                                                     alt="widely-use"
                                                     width={60}
@@ -281,7 +252,7 @@ const AndroidApplicationDesign = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -310,11 +281,9 @@ const AndroidApplicationDesign = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={girlbro}
                                         className="img-fluid"
                                         alt="Conclusion"
                                         width={590}

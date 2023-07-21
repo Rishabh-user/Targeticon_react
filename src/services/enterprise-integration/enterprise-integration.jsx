@@ -1,4 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import enterpriseIntegration from '../../assets/images/Enterprise-Integration.png';
+import crm from '../../assets/images/CRM.png';
+import enterpriseIntegration2 from '../../assets/images/Enterprise-Integration2.png';
+import salesforce from '../../assets/images/icons/salesforce-icon.png';
+import crmicon from '../../assets/images/icons/crm-icon.png';
+import sharepoint from '../../assets/images/icons/sharepoint-icon.png';
+
 
 const EnterpriseIntegration = () => {
     return (
@@ -30,15 +38,14 @@ const EnterpriseIntegration = () => {
                                     application. A different platform is chosen for small scale and
                                     large scale projects depending upon the funds and support.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -48,17 +55,9 @@ const EnterpriseIntegration = () => {
                                 data-aos-delay={200}
                             >
                                 <picture>
-                                    <source
-                                        srcSet="images/Enterprise-Integration.webp"
-                                        type="image/webp"
-                                    />
-                                    <source
-                                        srcSet="images/Enterprise-Integration.png"
-                                        type="image/png"
-                                    />
                                     <img
                                         loading="lazy"
-                                        src="images/Enterprise-Integration.png"
+                                        src={enterpriseIntegration}
                                         className="img-fluid"
                                         alt="Enterprise-Integration"
                                         width={590}
@@ -101,11 +100,9 @@ const EnterpriseIntegration = () => {
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg text-center">
                                         <picture>
-                                            <source srcSet="images/CRM.webp" type="image/webp" />
-                                            <source srcSet="images/CRM.png" type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/CRM.png"
+                                                src={crm}
                                                 className="img-fluid"
                                                 alt="CRM"
                                                 width={590}
@@ -206,17 +203,9 @@ const EnterpriseIntegration = () => {
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg text-center">
                                         <picture>
-                                            <source
-                                                srcSet="images/Enterprise-Integration2.webp"
-                                                type="image/webp"
-                                            />
-                                            <source
-                                                srcSet="images/Enterprise-Integration2.png"
-                                                type="image/png"
-                                            />
                                             <img
                                                 loading="lazy"
-                                                src="images/Enterprise-Integration2.png"
+                                                src={enterpriseIntegration2}
                                                 className="img-fluid"
                                                 alt="Enterprise-Integration2"
                                                 width={590}
@@ -252,23 +241,15 @@ const EnterpriseIntegration = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="Salesforce.php">
+                            <NavLink to="/salesforce">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/salesforce-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/salesforce-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/salesforce-icon.png"
+                                                    src={salesforce}
                                                     className="img-fluid mb20"
                                                     alt="salesforce-icon"
                                                     width={60}
@@ -286,26 +267,18 @@ const EnterpriseIntegration = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="MS-CRM.php">
+                            <NavLink to="/ms-crm">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/crm-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/crm-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/crm-icon.png"
+                                                    src={crmicon}
                                                     className="img-fluid mb20"
                                                     alt="crm-icon"
                                                     width={60}
@@ -322,26 +295,18 @@ const EnterpriseIntegration = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="Sharepoint.php">
+                            <NavLink to="/sharepoint">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">03</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/sharepoint-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/sharepoint-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/sharepoint-icon.png"
+                                                    src={sharepoint}
                                                     className="img-fluid mb20"
                                                     alt="sharepoint-icon"
                                                     width={60}
@@ -359,7 +324,7 @@ const EnterpriseIntegration = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

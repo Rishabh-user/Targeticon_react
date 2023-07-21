@@ -1,4 +1,10 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import salesforce from '../../assets/images/salesforce.png';
+import overview from '../../assets/images/overview.png';
+import sharepoint from '../../assets/images/sharepoint.png';
+import sharepointicon from '../../assets/images/icons/sharepoint-icon.png';
+
 
 const Sharepoint = () => {
     return (
@@ -25,15 +31,14 @@ const Sharepoint = () => {
                                     applications. Mean stack development is an amazing combination of
                                     MongoDB, Express, AngularJS, and NodeJS.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={500}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -43,11 +48,9 @@ const Sharepoint = () => {
                                 data-aos-delay={200}
                             >
                                 <picture>
-                                    <source srcSet="images/salesforce.webp" type="image/webp" />
-                                    <source srcSet="images/salesforce.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/salesforce.png"
+                                        src={salesforce}
                                         className="img-fluid"
                                         alt="salesforce"
                                         width={590}
@@ -67,11 +70,9 @@ const Sharepoint = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/overview.webp" type="image/webp" />
-                                    <source srcSet="images/overview.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/overview.png"
+                                        src={overview}
                                         className="img-fluid"
                                         alt="overview"
                                         width={590}
@@ -152,11 +153,9 @@ const Sharepoint = () => {
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg text-center">
                                         <picture>
-                                            <source srcSet="images/sharepoint.webp" type="image/webp" />
-                                            <source srcSet="images/sharepoint.png" type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/sharepoint.png"
+                                                src={sharepoint}
                                                 className="img-fluid"
                                                 alt="sharepoint"
                                                 width={590}
@@ -191,23 +190,15 @@ const Sharepoint = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-6 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/sharepoint-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/sharepoint-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/sharepoint-icon.png"
+                                                    src={sharepointicon}
                                                     className="img-fluid mb20"
                                                     alt="sharepoint-icon"
                                                     width={60}
@@ -226,26 +217,18 @@ const Sharepoint = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/sharepoint-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/sharepoint-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/sharepoint-icon.png"
+                                                    src={sharepointicon}
                                                     className="img-fluid mb20"
                                                     alt="sharepoint-icon"
                                                     width={60}
@@ -262,26 +245,18 @@ const Sharepoint = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">03</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/sharepoint-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/sharepoint-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/sharepoint-icon.png"
+                                                    src={sharepointicon}
                                                     className="img-fluid mb20"
                                                     alt="sharepoint-icon"
                                                     width={60}
@@ -299,26 +274,18 @@ const Sharepoint = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">04</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/sharepoint-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/sharepoint-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/sharepoint-icon.png"
+                                                    src={sharepointicon}
                                                     className="img-fluid mb20"
                                                     alt="sharepoint-icon"
                                                     width={60}
@@ -336,7 +303,7 @@ const Sharepoint = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

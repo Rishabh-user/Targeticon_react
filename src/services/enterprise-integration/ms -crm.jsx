@@ -1,4 +1,11 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import crm from '../../assets/images/CRM.png';
+import overview from '../../assets/images/overview.png';
+import enterpriseintergration from '../../assets/images/Enterprise-Integration.png';
+import enterpriseintergration2 from '../../assets/images/Enterprise-Integration2.png';
+import sharepoint from '../../assets/images/sharepoint.png';
+import girlbro from '../../assets/images/girl-bro.png';
 
 const MsCrm = () => {
     return (
@@ -24,15 +31,14 @@ const MsCrm = () => {
                                     applications. Mean stack development is an amazing combination of
                                     MongoDB, Express, AngularJS, and NodeJS.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={450}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -42,11 +48,9 @@ const MsCrm = () => {
                                 data-aos-delay={200}
                             >
                                 <picture>
-                                    <source srcSet="images/CRM.webp" type="image/webp" />
-                                    <source srcSet="images/CRM.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/CRM.png"
+                                        src={crm}
                                         className="img-fluid"
                                         alt="CRM"
                                         width={590}
@@ -66,11 +70,9 @@ const MsCrm = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/overview.webp" type="image/webp" />
-                                    <source srcSet="images/overview.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/overview.png"
+                                        src={overview}
                                         className="img-fluid"
                                         alt="overview"
                                         width={590}
@@ -117,17 +119,9 @@ const MsCrm = () => {
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg text-center">
                                         <picture>
-                                            <source
-                                                srcSet="images/Enterprise-Integration.webp"
-                                                type="image/webp"
-                                            />
-                                            <source
-                                                srcSet="images/Enterprise-Integration.png"
-                                                type="image/png"
-                                            />
                                             <img
                                                 loading="lazy"
-                                                src="images/Enterprise-Integration.png"
+                                                src={enterpriseintergration}
                                                 className="img-fluid"
                                                 alt="Enterprise-Integration"
                                                 width={590}
@@ -208,17 +202,9 @@ const MsCrm = () => {
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg text-center">
                                         <picture>
-                                            <source
-                                                srcSet="images/Enterprise-Integration2.webp"
-                                                type="image/webp"
-                                            />
-                                            <source
-                                                srcSet="images/Enterprise-Integration2.png"
-                                                type="image/png"
-                                            />
                                             <img
                                                 loading="lazy"
-                                                src="images/Enterprise-Integration2.png"
+                                                src={enterpriseintergration2}
                                                 className="img-fluid"
                                                 alt="Enterprise-Integration2"
                                                 width={590}
@@ -239,11 +225,9 @@ const MsCrm = () => {
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg text-center">
                                         <picture>
-                                            <source srcSet="images/CRM.webp" type="image/webp" />
-                                            <source srcSet="images/CRM.png" type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/CRM.png"
+                                                src={crm}
                                                 className="img-fluid"
                                                 alt="CRM"
                                                 width={590}
@@ -328,11 +312,9 @@ const MsCrm = () => {
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg text-center">
                                         <picture>
-                                            <source srcSet="images/sharepoint.webp" type="image/webp" />
-                                            <source srcSet="images/sharepoint.png" type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/sharepoint.png"
+                                                src={sharepoint}
                                                 className="img-fluid"
                                                 alt="sharepoint"
                                                 width={590}
@@ -354,11 +336,9 @@ const MsCrm = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={girlbro}
                                         className="img-fluid"
                                         alt="girl-bro"
                                         width={500}
