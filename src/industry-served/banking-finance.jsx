@@ -1,11 +1,17 @@
 import React from "react";
+import OursTools from "../components/our-tools";
+import BankiGif from '../assets/images/GIF/banking.gif';
+import BankigImg from '../assets/images/banking-imgg.png';
+import BankingService1 from '../assets/images/icons/banking-service1.png';
+import BankingService6 from '../assets/images/icons/banking-service6.png';
+import BankingService7 from '../assets/images/icons/banking-service7.png';
+import BankingService8 from '../assets/images/icons/banking-service8.png';
+import BankingServicegirlimg from '../assets/images/girl-bro.png';
 
 const BankingFinance = () => {
-    return (
+    return (    
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
+            
             {/*start Hero Section  */}
             <section className="page-heading-sec r-bg-xxxx pt60 pb60">
                 <div className="container">
@@ -33,7 +39,7 @@ const BankingFinance = () => {
                         <div className="col-md-6 vcenter">
                             <div className="sol-image m-mt30">
                                 <img
-                                    src="images/GIF/banking.gif"
+                                    src={BankiGif}
                                     alt="banking"
                                     className="img-fluid"
                                     data-aos="fade-in"
@@ -70,11 +76,9 @@ const BankingFinance = () => {
                             <div className="col-lg-6">
                                 <div className="banking-imgg text-center">
                                     <picture>
-                                        <source srcSet="images/banking-imgg.webp" type="image/webp" />
-                                        <source srcSet="images/banking-imgg.png" type="image/png" />
-                                        <img
+                                       <img
                                             loading="lazy"
-                                            src="images/banking-imgg.png"
+                                            src={BankigImg}
                                             className="img-fluid mb20"
                                             alt="banking-img"
                                             width={500}
@@ -122,11 +126,9 @@ const BankingFinance = () => {
                             <div className="col-lg-6 m-order1">
                                 <div className="banking-imgg text-center">
                                     <picture>
-                                        <source srcSet="images/banking-imgg.webp" type="image/webp" />
-                                        <source srcSet="images/banking-imgg.png" type="image/png" />
-                                        <img
+                                      <img
                                             loading="lazy"
-                                            src="images/banking-imgg.png"
+                                            src={BankigImg}
                                             className="img-fluid mb20"
                                             alt="banking-img"
                                             width={500}
@@ -186,17 +188,9 @@ const BankingFinance = () => {
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/banking-service6.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/banking-service6.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/banking-service6.png"
+                                                    src={BankingService6}
                                                     className="img-fluid mb20"
                                                     alt="banking-service"
                                                     width={60}
@@ -221,17 +215,9 @@ const BankingFinance = () => {
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/banking-service7.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/banking-service7.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/banking-service7.png"
+                                                    src={BankingService7}
                                                     className="img-fluid mb20"
                                                     alt="banking-service"
                                                     width={60}
@@ -256,17 +242,9 @@ const BankingFinance = () => {
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/banking-service8.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/banking-service8.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/banking-service8.png"
+                                                    src={BankingService8}
                                                     className="img-fluid mb20"
                                                     alt="banking-service"
                                                     width={60}
@@ -314,17 +292,9 @@ const BankingFinance = () => {
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/banking-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/banking-service1.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/banking-service1.png"
+                                            src={BankingService1}
                                             className="img-fluid mb20"
                                             alt="banking-service"
                                             width={60}
@@ -369,17 +339,9 @@ const BankingFinance = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/banking-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/banking-service1.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/banking-service1.png"
+                                            src={BankingService1}
                                             className="img-fluid mb20"
                                             alt="banking-service"
                                             width={60}
@@ -424,17 +386,9 @@ const BankingFinance = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/banking-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/banking-service1.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/banking-service1.png"
+                                            src={BankingService1}
                                             className="img-fluid mb20"
                                             alt="banking-service"
                                             width={60}
@@ -479,17 +433,9 @@ const BankingFinance = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/banking-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/banking-service1.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/banking-service1.png"
+                                            src={BankingService1}
                                             className="img-fluid mb20"
                                             alt="banking-service"
                                             width={60}
@@ -538,17 +484,9 @@ const BankingFinance = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/banking-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/banking-service1.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/banking-service1.png"
+                                            src={BankingService1}
                                             className="img-fluid mb20"
                                             alt="banking-service"
                                             width={60}
@@ -670,11 +608,9 @@ const BankingFinance = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={BankingServicegirlimg}
                                         className="img-fluid mb20"
                                         alt="banking-service"
                                         width={590}
@@ -687,15 +623,15 @@ const BankingFinance = () => {
                 </div>
             </section>
             {/*end conclusion*/}
+
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
+
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+               <OursTools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+            
         </div>
     );
 };

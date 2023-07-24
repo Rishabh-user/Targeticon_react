@@ -1,11 +1,13 @@
 import React from "react";
+import OursTools from "../components/our-tools";
+import EducationImg from '../assets/images/education-img.png';
+import FormIndustries from "../components/form-industries";
+import EducationService from '../assets/images/icons/education-services .png'
+
 
 const Education = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
             {/*start Hero Section  */}
             <section className="page-heading-sec r-bg-k pt40 pb40">
                 <div className="container">
@@ -33,11 +35,9 @@ const Education = () => {
                         <div className="col-md-6 vcenter">
                             <div className="sol-image">
                                 <picture>
-                                    <source srcSet="images/education-img.webp" type="image/webp" />
-                                    <source srcSet="images/education-img.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/education-img.png"
+                                        src={EducationImg}
                                         className="img-fluid mb20"
                                         alt="education"
                                         width={500}
@@ -92,7 +92,7 @@ const Education = () => {
                         </div>
                         <div className="col-lg-5">
                             <div className="form-contact-hom pt20 pb20">
-                                {/*?php include 'include/form-indusries.php';?*/}
+                                <FormIndustries />
                             </div>
                         </div>
                     </div>
@@ -131,17 +131,9 @@ const Education = () => {
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/education-services .webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/education-services .png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/education-services .png"
+                                            src={EducationService}
                                             className="img-fluid mb20"
                                             alt="education-service"
                                             width={50}
@@ -162,17 +154,9 @@ const Education = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/education-services .webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/education-services .png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/education-services .png"
+                                            src={EducationService}
                                             className="img-fluid mb20"
                                             alt="education-service"
                                             width={50}
@@ -193,17 +177,9 @@ const Education = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/education-services .webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/education-services .png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/education-services .png"
+                                            src={EducationService}
                                             className="img-fluid mb20"
                                             alt="education-service"
                                             width={50}
@@ -224,17 +200,9 @@ const Education = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/education-services .webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/education-services .png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/education-services .png"
+                                            src={EducationService}
                                             className="img-fluid mb20"
                                             alt="education-service"
                                             width={50}
@@ -255,17 +223,9 @@ const Education = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/education-services .webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/education-services .png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/education-services .png"
+                                            src={EducationService}
                                             className="img-fluid mb20"
                                             alt="education-service"
                                             width={50}
@@ -283,14 +243,14 @@ const Education = () => {
             </section>
             {/*services end*/}
             {/*start client testimonial  */}
+
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
+
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+                <OursTools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+            
         </div>
     );
 };

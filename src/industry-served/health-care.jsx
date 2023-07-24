@@ -1,11 +1,9 @@
 import React from "react";
+import OursTools from "../components/our-tools";
 
 const HealthCare = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
             {/*start Hero Section  */}
             <section className="page-heading-sec r-bg-k pt120 pb60">
                 <div className="container">
@@ -274,15 +272,15 @@ const HealthCare = () => {
                 </div>
             </section>
             {/*services end*/}
+
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
+            
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+                <OursTools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+           
         </div>
     );
 };
