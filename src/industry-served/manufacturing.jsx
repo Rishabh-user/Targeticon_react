@@ -1,4 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../components/our-tools';
+import FormIndustries from "../components/form-industries";
+import manufacturinggif from '../assets/images/GIF/Manufacturing.gif';
+import manufacturingservice from '../assets/images/icons/manufacturing-service.png';
 
 const Manufacturing = () => {
     return (
@@ -20,20 +25,19 @@ const Manufacturing = () => {
                                     Our Manufacturing solutions support for the re-engineering process
                                     of business and escalate the global production.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40 mw-80"
                                     data-aos="fade-in"
                                     data-aos-delay={300}
                                 >
                                     Let's Talk <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-md-6 vcenter">
                             <div className="sol-image m-mt30">
                                 <img
-                                    src="images/GIF/Manufacturing.gif"
+                                    src={manufacturinggif}
                                     alt="Manufacturing"
                                     className="img-fluid"
                                     data-aos="fade-in"
@@ -85,7 +89,7 @@ const Manufacturing = () => {
                         </div>
                         <div className="col-lg-5">
                             <div className="form-contact-hom pt20 pb20">
-                                {/*?php include 'include/form-indusries.php';?*/}
+                                < FormIndustries />
                             </div>
                         </div>
                     </div>
@@ -117,17 +121,9 @@ const Manufacturing = () => {
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/manufacturing-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/manufacturing-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/manufacturing-service.png"
+                                            src={manufacturingservice}
                                             className="img-fluid mb20"
                                             alt="manufacturing-service"
                                             width={50}
@@ -148,17 +144,9 @@ const Manufacturing = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/manufacturing-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/manufacturing-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/manufacturing-service.png"
+                                            src={manufacturingservice}
                                             className="img-fluid mb20"
                                             alt="manufacturing-service"
                                             width={50}
@@ -181,17 +169,9 @@ const Manufacturing = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/manufacturing-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/manufacturing-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/manufacturing-service.png"
+                                            src={manufacturingservice}
                                             className="img-fluid mb20"
                                             alt="manufacturing-service"
                                             width={50}
@@ -212,17 +192,9 @@ const Manufacturing = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/manufacturing-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/manufacturing-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/manufacturing-service.png"
+                                            src={manufacturingservice}
                                             className="img-fluid mb20"
                                             alt="manufacturing-service"
                                             width={50}
@@ -243,17 +215,9 @@ const Manufacturing = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/manufacturing-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/manufacturing-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/manufacturing-service.png"
+                                            src={manufacturingservice}
                                             className="img-fluid mb20"
                                             alt="manufacturing-service"
                                             width={50}
@@ -269,16 +233,12 @@ const Manufacturing = () => {
                     </div>
                 </div>
             </section>
-            {/*services end*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };
