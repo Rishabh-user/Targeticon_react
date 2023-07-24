@@ -1,11 +1,13 @@
 import React from "react";
+import OursTools from "../components/our-tools";
+import MediaGif from '../assets/images/GIF/media-ad.gif';
+import FormIndustries from "../components/form-industries";
+import MediaService from '../assets/images/icons/media-advertising-service.png'
+
 
 const MediaAdvertising = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
             {/*start Hero Section  */}
             <section className="page-heading-sec r-bg-k pt60 pb60">
                 <div className="container">
@@ -33,7 +35,7 @@ const MediaAdvertising = () => {
                         <div className="col-md-6 vcenter">
                             <div className="sol-image m-mt30">
                                 <img
-                                    src="images/GIF/media-ad.gif"
+                                    src={MediaGif}
                                     alt="media0-advertising"
                                     className="img-fluid"
                                     data-aos="fade-in"
@@ -86,7 +88,7 @@ const MediaAdvertising = () => {
                         </div>
                         <div className="col-lg-5">
                             <div className="form-contact-hom pt20 pb20">
-                                {/*?php include 'include/form-indusries.php';?*/}
+                                <FormIndustries />
                             </div>
                         </div>
                     </div>
@@ -119,17 +121,9 @@ const MediaAdvertising = () => {
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/media-advertising-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/media-advertising-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/media-advertising-service.png"
+                                            src={MediaService}
                                             className="img-fluid mb20"
                                             alt="media-advertising-service"
                                             width={50}
@@ -150,17 +144,9 @@ const MediaAdvertising = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/media-advertising-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/media-advertising-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/media-advertising-service.png"
+                                            src={MediaService}
                                             className="img-fluid mb20"
                                             alt="media-advertising-service"
                                             width={50}
@@ -181,17 +167,9 @@ const MediaAdvertising = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/media-advertising-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/media-advertising-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/media-advertising-service.png"
+                                            src={MediaService}
                                             className="img-fluid mb20"
                                             alt="media-advertising-service"
                                             width={50}
@@ -212,17 +190,9 @@ const MediaAdvertising = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/media-advertising-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/media-advertising-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/media-advertising-service.png"
+                                            src={MediaService}
                                             className="img-fluid mb20"
                                             alt="media-advertising-service"
                                             width={50}
@@ -243,17 +213,9 @@ const MediaAdvertising = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/media-advertising-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/media-advertising-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/media-advertising-service.png"
+                                            src={MediaService}
                                             className="img-fluid mb20"
                                             alt="media-advertising-service"
                                             width={50}
@@ -270,15 +232,15 @@ const MediaAdvertising = () => {
                 </div>
             </section>
             {/*services end*/}
+            
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
+
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+                <OursTools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+            
         </div>
     );
 };

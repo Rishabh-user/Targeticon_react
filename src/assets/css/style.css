@@ -4491,9 +4491,9 @@ html body .header-bhv.sticky .mini-header-bar {
 
 .ree-tt {
     background: #0065b0;
-    background: -moz-linear-gradient(right, #0065b0, #fe6a00);
-    background: -webkit-linear-gradient(right, #0065b0, #fe6a00);
-    background: linear-gradient(right, #0065b0, #fe6a00);
+    background: -moz-linear-gradient(to left, #0065b0, #fe6a00);
+    background: -webkit-linear-gradient(to left, #0065b0, #fe6a00);
+    background: linear-gradient(to left, #0065b0, #fe6a00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

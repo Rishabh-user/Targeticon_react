@@ -1,11 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import FormIndustries from "../components/form-industries";
+import OursTools from "../components/our-tools";
+import TravelGif from '../assets/images/GIF/travel.gif';
+import TravelSocialService from '../assets/images/icons/travel-social-service.png'
 
 const TravelSocial = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
             {/*start Hero Section  */}
             <section className="page-heading-sec r-bg-k pt60 pb60">
                 <div className="container">
@@ -20,20 +22,20 @@ const TravelSocial = () => {
                                     Accomplish your traveling requirements with our digital solutions
                                     for Travel &amp; Social apps.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <Link
+                                    to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40 mw-80"
                                     data-aos="fade-in"
                                     data-aos-delay={300}
                                 >
                                     Let's Talk <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-md-6 vcenter">
                             <div className="sol-image m-mt30">
                                 <img
-                                    src="images/GIF/travel.gif"
+                                    src={TravelGif}
                                     alt="healthcare"
                                     className="img-fluid"
                                     data-aos="fade-in"
@@ -84,7 +86,7 @@ const TravelSocial = () => {
                         </div>
                         <div className="col-lg-5">
                             <div className="form-contact-hom pt20 pb20">
-                                {/*?php include 'include/form-indusries.php';?*/}
+                                <FormIndustries />
                             </div>
                         </div>
                     </div>
@@ -116,17 +118,9 @@ const TravelSocial = () => {
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/travel-social-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/travel-social-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/travel-social-service.png"
+                                            src={TravelSocialService}
                                             className="img-fluid mb20"
                                             alt="travel-social-service"
                                             width={50}
@@ -147,17 +141,9 @@ const TravelSocial = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/travel-social-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/travel-social-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/travel-social-service.png"
+                                            src={TravelSocialService}
                                             className="img-fluid mb20"
                                             alt="travel-social-service"
                                             width={50}
@@ -178,17 +164,9 @@ const TravelSocial = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/travel-social-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/travel-social-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/travel-social-service.png"
+                                            src={TravelSocialService}
                                             className="img-fluid mb20"
                                             alt="travel-social-service"
                                             width={50}
@@ -209,17 +187,9 @@ const TravelSocial = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/travel-social-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/travel-social-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/travel-social-service.png"
+                                            src={TravelSocialService}
                                             className="img-fluid mb20"
                                             alt="travel-social-service"
                                             width={50}
@@ -240,17 +210,9 @@ const TravelSocial = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/travel-social-service.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/travel-social-service.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/travel-social-service.png"
+                                            src={TravelSocialService}
                                             className="img-fluid mb20"
                                             alt="travel-social-service"
                                             width={50}
@@ -270,12 +232,11 @@ const TravelSocial = () => {
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
+
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+                <OursTools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+           
         </div>
     );
 };
