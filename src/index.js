@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/style.css';
 import './assets/css/all.min.css';
 import './assets/css/responsive.css';
+
 //import Header from './components/header';
 //import Footer from './components/footer';
 

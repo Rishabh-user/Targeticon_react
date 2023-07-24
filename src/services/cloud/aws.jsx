@@ -1,12 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
+import awsfriendly from '../../assets/images/AWS-friendly-exprince2.png';
+import meanstack from '../../assets/images/mean-stack-development-img.png';
+import aws from '../../assets/images/AWS-img.png';
+import awsfriendly2 from '../../assets/images/AWS-friendly-exprince.png';
+import awsicon from '../../assets/images/icons/aws-icon.png';
+import whyus from '../../assets/images/why-us.png';
 
 const AWS = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-k pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -29,15 +33,14 @@ const AWS = () => {
                                     Mean stack development is an amazing combination of MongoDB,
                                     Express, AngularJS, and NodeJS.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -47,17 +50,9 @@ const AWS = () => {
                                 data-aos-delay={200}
                             >
                                 <picture>
-                                    <source
-                                        srcSet="images/AWS-friendly-exprince2.webp"
-                                        type="image/webp"
-                                    />
-                                    <source
-                                        srcSet="images/AWS-friendly-exprince2.png"
-                                        type="image/png"
-                                    />
                                     <img
                                         loading="lazy"
-                                        src="images/AWS-friendly-exprince2.png"
+                                        src={awsfriendly}
                                         className="img-fluid"
                                         alt="AWS-friendly-exprince2"
                                         width={590}
@@ -82,17 +77,9 @@ const AWS = () => {
                             <div className="hovr-scale-main text-center">
                                 <div className="portfolio-flimg ">
                                     <picture>
-                                        <source
-                                            srcSet="images/mean-stack-development-img.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/mean-stack-development-img.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/mean-stack-development-img.png"
+                                            src={meanstack}
                                             className="img-fluid"
                                             alt="mean-stack-development-img"
                                             width={590}
@@ -168,11 +155,9 @@ const AWS = () => {
                         >
                             <div className="AWS-friendly-exprince-img text-center">
                                 <picture>
-                                    <source srcSet="images/AWS-img.webp" type="image/webp" />
-                                    <source srcSet="images/AWS-img.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/AWS-img.png"
+                                        src={aws}
                                         className="img-fluid"
                                         alt="AWS-img"
                                         width={590}
@@ -190,17 +175,9 @@ const AWS = () => {
                         >
                             <div className="AWS-friendly-exprince-img text-center">
                                 <picture>
-                                    <source
-                                        srcSet="images/AWS-friendly-exprince.webp"
-                                        type="image/webp"
-                                    />
-                                    <source
-                                        srcSet="images/AWS-friendly-exprince.png"
-                                        type="image/png"
-                                    />
                                     <img
                                         loading="lazy"
-                                        src="images/AWS-friendly-exprince.png"
+                                        src={awsfriendly2}
                                         className="img-fluid"
                                         alt="AWS-friendly-exprince"
                                         width={590}
@@ -307,23 +284,15 @@ const AWS = () => {
                     </div>
                     <div className="row justify-content-center mt30 vcenter">
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/aws-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/aws-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/aws-icon.png"
+                                                    src={awsicon}
                                                     className="img-fluid mb20"
                                                     alt="aws-icon"
                                                     width={60}
@@ -338,26 +307,18 @@ const AWS = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/aws-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/aws-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/aws-icon.png"
+                                                    src={awsicon}
                                                     className="img-fluid mb20"
                                                     alt="aws-icon"
                                                     width={60}
@@ -372,26 +333,18 @@ const AWS = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/aws-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/aws-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/aws-icon.png"
+                                                    src={awsicon}
                                                     className="img-fluid mb20"
                                                     alt="aws-icon"
                                                     width={60}
@@ -406,26 +359,18 @@ const AWS = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/aws-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/aws-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/aws-icon.png"
+                                                    src={awsicon}
                                                     className="img-fluid mb20"
                                                     alt="aws-icon"
                                                     width={60}
@@ -440,7 +385,7 @@ const AWS = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -471,11 +416,9 @@ const AWS = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/why-us.webp" type="image/webp" />
-                                    <source srcSet="images/why-us.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/why-us.png"
+                                        src={whyus}
                                         className="img-fluid mb20"
                                         alt="About"
                                         width={590}
@@ -487,16 +430,12 @@ const AWS = () => {
                     </div>
                 </div>
             </section>
-            {/*end Why Us?*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

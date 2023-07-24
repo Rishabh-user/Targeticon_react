@@ -1,12 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
+import saleforce from '../../assets/images/salesforce.png';
+import sharepoint from '../../assets/images/sharepoint.png';
+import whyus from '../../assets/images/why-us.png'
 
 const SalesForce = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-g pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -25,15 +26,14 @@ const SalesForce = () => {
                                     applications. Mean stack development is an amazing combination of
                                     MongoDB, Express, AngularJS, and NodeJS.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -43,11 +43,9 @@ const SalesForce = () => {
                                 data-aos-delay={200}
                             >
                                 <picture>
-                                    <source srcSet="images/salesforce.webp" type="image/webp" />
-                                    <source srcSet="images/salesforce.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/salesforce.png"
+                                        src={saleforce}
                                         className="img-fluid"
                                         alt="salesforce"
                                         width={590}
@@ -67,11 +65,9 @@ const SalesForce = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/sharepoint.webp" type="image/webp" />
-                                    <source srcSet="images/sharepoint.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/sharepoint.png"
+                                        src={sharepoint}
                                         className="img-fluid"
                                         alt="sharepoint"
                                         width={590}
@@ -144,11 +140,9 @@ const SalesForce = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/why-us.webp" type="image/webp" />
-                                    <source srcSet="images/why-us.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/why-us.png"
+                                        src={whyus}
                                         className="img-fluid"
                                         alt="why-us"
                                         width={590}
@@ -160,16 +154,12 @@ const SalesForce = () => {
                     </div>
                 </div>
             </section>
-            {/*end What has Target Icon got to provide?*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

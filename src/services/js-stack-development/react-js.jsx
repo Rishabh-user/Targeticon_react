@@ -1,12 +1,17 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
+import reactgif from '../../assets/images/GIF/React-development.gif';
+import overview from '../../assets/images/overview.png';
+import reactcycle from '../../assets/images/cycle-of-React-JS.png';
+import defining from '../../assets/images/icons/defining.png';
+import activate from '../../assets/images/icons/activate.png';
+import update from '../../assets/images/icons/updated.png';
+import deactivate from '../../assets/images/icons/deactivated.png';
 
 const ReactJs = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-k pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -29,21 +34,20 @@ const ReactJs = () => {
                                     Mean stack development is an amazing combination of MongoDB,
                                     Express, AngularJS, and NodeJS.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
                                 <img
-                                    src="images/GIF/React-development.gif"
+                                    src={reactgif}
                                     alt="Targeticon"
                                     className="img-fluid"
                                     width="550px"
@@ -66,11 +70,9 @@ const ReactJs = () => {
                             <div className="hovr-scale-main">
                                 <div className="portfolio-flimg text-center">
                                     <picture>
-                                        <source srcSet="images/overview.webp" type="image/webp" />
-                                        <source srcSet="images/overview.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/overview.png"
+                                            src={overview}
                                             className="img-fluid"
                                             alt="overview"
                                             width={590}
@@ -146,14 +148,9 @@ const ReactJs = () => {
                         >
                             <div className="portfolio-flimg text-center">
                                 <picture>
-                                    <source
-                                        srcSet="images/cycle-of-React-JS.webp"
-                                        type="image/webp"
-                                    />
-                                    <source srcSet="images/cycle-of-React-JS.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/cycle-of-React-JS.png"
+                                        src={reactcycle}
                                         className="img-fluid"
                                         alt="cycle-of-React-JS"
                                         width={590}
@@ -182,23 +179,15 @@ const ReactJs = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/defining.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/defining.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/defining.png"
+                                                    src={defining}
                                                     className="img-fluid mb20"
                                                     alt="defining"
                                                     width={60}
@@ -215,26 +204,18 @@ const ReactJs = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/activate.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/activate.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/activate.png"
+                                                    src={activate}
                                                     className="img-fluid mb20"
                                                     alt="activate"
                                                     width={60}
@@ -252,26 +233,18 @@ const ReactJs = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/updated.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/updated.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/updated.png"
+                                                    src={update}
                                                     className="img-fluid mb20"
                                                     alt="updated"
                                                     width={60}
@@ -290,26 +263,18 @@ const ReactJs = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/deactivated.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/deactivated.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/deactivated.png"
+                                                    src={deactivate}
                                                     className="img-fluid mb20"
                                                     alt="deactivated"
                                                     width={60}
@@ -327,21 +292,17 @@ const ReactJs = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
             </section>
-            {/*-The Process of UX Designing end*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

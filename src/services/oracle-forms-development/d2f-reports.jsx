@@ -1,4 +1,10 @@
 import React from "react";
+import d2kreports from '../../assets/images/d2k-reports-bg.png';
+import overview from '../../assets/images/overview.png';
+import oracleform3 from '../../assets/images/oracle-form3.png';
+import oracleform from '../../assets/images/oracle-form.png';
+import oracleform2 from '../../assets/images/oracle-form2.png';
+import girlbro from '../../assets/images/girl-bro.png';
 
 const D2fReports = () => {
     return (
@@ -7,7 +13,7 @@ const D2fReports = () => {
             {/*?php include 'include/header.php';?*/}
             {/*header end  */}
             <section className="header-title">
-                <img src="images/d2k-reports-bg.png" className="img-fluid" />
+                <img src={d2kreports} className="img-fluid" />
             </section>
             {/* Header title end */}
             {/*overview*/}
@@ -48,11 +54,9 @@ const D2fReports = () => {
                                 data-aos-delay={200}
                             >
                                 <picture>
-                                    <source srcSet="images/overview.webp" type="image/webp" />
-                                    <source srcSet="images/overview.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/overview.png"
+                                        src={overview}
                                         className="img-fluid"
                                         alt="overview"
                                         width={590}
@@ -77,11 +81,9 @@ const D2fReports = () => {
                             <div className="hovr-scale-main">
                                 <div className="portfolio-flimg text-center">
                                     <picture>
-                                        <source srcSet="images/oracle-form3.webp" type="image/webp" />
-                                        <source srcSet="images/oracle-form3.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/oracle-form3.png"
+                                            src={oracleform3}
                                             className="img-fluid"
                                             alt="oracle-form3"
                                             width={590}
@@ -186,11 +188,9 @@ const D2fReports = () => {
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg text-center">
                                         <picture>
-                                            <source srcSet="images/oracle-form.webp" type="image/webp" />
-                                            <source srcSet="images/oracle-form.png" type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/oracle-form.png"
+                                                src={oracleform}
                                                 className="img-fluid"
                                                 alt="oracle-form"
                                                 width={590}
@@ -211,11 +211,9 @@ const D2fReports = () => {
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg text-center">
                                         <picture>
-                                            <source srcSet="images/oracle-form2.webp" type="image/webp" />
-                                            <source srcSet="images/oracle-form2.png" type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/oracle-form2.png"
+                                                src={oracleform2}
                                                 className="img-fluid"
                                                 alt="oracle-form2"
                                                 width={590}
@@ -320,11 +318,9 @@ const D2fReports = () => {
                             <div className="hovr-scale-main">
                                 <div className="portfolio-flimg text-center">
                                     <picture>
-                                        <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                        <source srcSet="images/girl-bro.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/girl-bro.png"
+                                            src={girlbro}
                                             className="img-fluid"
                                             alt="girl-bro"
                                             width={590}

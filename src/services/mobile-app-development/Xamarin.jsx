@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import xamarin1 from '../../assets/images/Xamarin.png';
 import xamarin2 from '../../assets/images/xamarin2.png';
 import xamarinlogo from '../../assets/images/icons/xamarin-logo.png';
@@ -9,10 +10,6 @@ import girlbro from '../../assets/images/girl-bro.png';
 const Xamarin = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-g pt60 pb60">
                 <div className="container">
                     <div className="row vcenter">
@@ -28,15 +25,14 @@ const Xamarin = () => {
                                     coding. Along with the release of Xamarin 2.0, it also included
                                     two main components, Xamarin Studio.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={100}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -121,7 +117,7 @@ const Xamarin = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-6 col-md-6 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
@@ -150,10 +146,10 @@ const Xamarin = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
@@ -181,10 +177,10 @@ const Xamarin = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
@@ -211,10 +207,10 @@ const Xamarin = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
@@ -244,7 +240,7 @@ const Xamarin = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -290,16 +286,12 @@ const Xamarin = () => {
                     </div>
                 </div>
             </section>
-            {/*end overview*/}
             {/*start client testimonial  */}
-            {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+
         </div>
     );
 };

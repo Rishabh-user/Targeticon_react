@@ -1,12 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import FormIndustries from "../components/form-industries";
+import Tools from '../components/our-tools';
+import retailgif from '../assets/images/GIF/retail.gif';
+import retailservice from '../assets/images/icons/retail-service1.png';
 
 const Retail = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*start Hero Section  */}
             <section className="page-heading-sec r-bg-k pt60 pb60">
                 <div className="container">
                     <div className="row vcenter">
@@ -20,20 +21,19 @@ const Retail = () => {
                                     We spread a wide range of efficient Retail services and best
                                     solutions across the online business processes.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40 mw-80"
                                     data-aos="fade-in"
                                     data-aos-delay={250}
                                 >
                                     Let's Talk <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-md-6 vcenter">
                             <div className="sol-image m-mt30">
                                 <img
-                                    src="images/GIF/retail.gif"
+                                    src={retailgif}
                                     alt="retail"
                                     className="img-fluid"
                                     data-aos="fade-in"
@@ -84,7 +84,7 @@ const Retail = () => {
                         </div>
                         <div className="col-lg-5">
                             <div className="form-contact-hom pt20 pb20">
-                                {/*?php include 'include/form-indusries.php';?*/}
+                                <FormIndustries />
                             </div>
                         </div>
                     </div>
@@ -120,17 +120,9 @@ const Retail = () => {
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/retail-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/retail-service1.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/retail-service1.png"
+                                            src={retailservice}
                                             className="img-fluid mb20"
                                             alt="retail-service"
                                             width={50}
@@ -151,17 +143,9 @@ const Retail = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/retail-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/retail-service1.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/retail-service1.png"
+                                            src={retailservice}
                                             className="img-fluid mb20"
                                             alt="retail-service"
                                             width={50}
@@ -182,17 +166,10 @@ const Retail = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/retail-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/retail-service1.png"
-                                            type="image/png"
-                                        />
+
                                         <img
                                             loading="lazy"
-                                            src="images/icons/retail-service1.png"
+                                            src={retailservice}
                                             className="img-fluid mb20"
                                             alt="retail-service"
                                             width={50}
@@ -213,17 +190,9 @@ const Retail = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/retail-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/retail-service1.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/retail-service1.png"
+                                            src={retailservice}
                                             className="img-fluid mb20"
                                             alt="retail-service"
                                             width={50}
@@ -244,17 +213,9 @@ const Retail = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/retail-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/retail-service1.png"
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/retail-service1.png"
+                                            src={retailservice}
                                             className="img-fluid mb20"
                                             alt="retail-service"
                                             width={50}
@@ -270,12 +231,11 @@ const Retail = () => {
                     </div>
                 </div>
             </section>
-            {/*services end*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
             {/*start footer  */}
             {/*?php include 'include/footer.php';?*/}

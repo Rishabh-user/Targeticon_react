@@ -1,12 +1,18 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
+import azurecloudgif from '../../assets/images/GIF/Azure-Cloud-migration.gif';
+import overview from '../../assets/images/overview.png';
+import whatisazure from '../../assets/images/What-is-Azure.png';
+import azureicon from '../../assets/images/icons/Azure--Cloud-service-icon1.png';
+import azureicon2 from '../../assets/images/icons/Azure--Cloud-service-icon2.png';
+import azureicon3 from '../../assets/images/icons/Azure--Cloud-service-icon3.png';
+import girlbro from '../../assets/images/girl-bro.png';
+
 
 const AzureCloudMigration = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-k pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -28,21 +34,20 @@ const AzureCloudMigration = () => {
                                     applications. Mean stack development is an amazing combination of
                                     MongoDB, Express, AngularJS, and NodeJS.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
                                 <img
-                                    src="images/GIF/Azure-Cloud-Migration.gif"
+                                    src={azurecloudgif}
                                     alt="Targeticon"
                                     className="img-fluid"
                                 />
@@ -64,11 +69,9 @@ const AzureCloudMigration = () => {
                             <div className="hovr-scale-main">
                                 <div className="portfolio-flimg text-center">
                                     <picture>
-                                        <source srcSet="images/overview.webp" type="image/webp" />
-                                        <source srcSet="images/overview.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/overview.png"
+                                            src={overview}
                                             className="img-fluid"
                                             alt="overview"
                                             width={590}
@@ -148,11 +151,9 @@ const AzureCloudMigration = () => {
                         >
                             <div className="portfolio-flimg text-center">
                                 <picture>
-                                    <source srcSet="images/What-is-Azure.webp" type="image/webp" />
-                                    <source srcSet="images/What-is-Azure.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/What-is-Azure.png"
+                                        src={whatisazure}
                                         className="img-fluid"
                                         alt="What-is-Azure"
                                         width={590}
@@ -187,23 +188,15 @@ const AzureCloudMigration = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/Azure--Cloud-service-icon1.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/Azure--Cloud-service-icon1.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/Azure--Cloud-service-icon1.png"
+                                                    src={azureicon}
                                                     className="img-fluid mb20"
                                                     alt="Azure--Cloud-service-icon1"
                                                     width={60}
@@ -222,26 +215,18 @@ const AzureCloudMigration = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/Azure--Cloud-service-icon2.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/Azure--Cloud-service-icon2.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/Azure--Cloud-service-icon2.png"
+                                                    src={azureicon2}
                                                     className="img-fluid mb20"
                                                     alt="Azure--Cloud-service-icon2"
                                                     width={60}
@@ -259,26 +244,18 @@ const AzureCloudMigration = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/Azure--Cloud-service-icon3.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/Azure--Cloud-service-icon3.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/Azure--Cloud-service-icon3.png"
+                                                    src={azureicon3}
                                                     className="img-fluid mb20"
                                                     alt="Azure--Cloud-service-icon3"
                                                     width={60}
@@ -294,7 +271,7 @@ const AzureCloudMigration = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -331,11 +308,9 @@ const AzureCloudMigration = () => {
                             <div className="col-lg-6 vcenter">
                                 <div className="ct-sol-img">
                                     <picture>
-                                        <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                        <source srcSet="images/girl-bro.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/girl-bro.png"
+                                            src={girlbro}
                                             className="img-fluid mb20 mt20"
                                             alt="What-is-Azure"
                                             width={500}
@@ -348,16 +323,12 @@ const AzureCloudMigration = () => {
                     </div>
                 </div>
             </section>
-            {/*end Conclusion*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

@@ -1,12 +1,20 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
+import phpgif from '../../assets/images/GIF/php.gif';
+import overview from '../../assets/images/overview.png';
+import customphp from '../../assets/images/icons/custom-php.png';
+import phpweb from '../../assets/images/icons/php-web.png';
+import coprate from '../../assets/images/icons/corporate.png';
+import cms from '../../assets/images/icons/cms.png';
+import mysql from '../../assets/images/icons/php-mysql.png';
+import ecommers from '../../assets/images/icons/ecommers.png';
+import phpportal from '../../assets/images/icons/php-portal.png';
+import socialnetworking from '../../assets/images/GIF/social-networking.gif';
 
 const PhpDevelopment = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section
                 className="page-heading-sec pt60 pb60"
                 style={{ backgroundColor: "#eceff1" }}
@@ -30,21 +38,20 @@ const PhpDevelopment = () => {
                                     location. The records that are kept in the blockchain database are
                                     public and easily verifiable.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={100}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
                                 <img
-                                    src="images/GIF/php.gif"
+                                    src={phpgif}
                                     alt="Targeticon"
                                     className="img-fluid"
                                     width="600px"
@@ -62,11 +69,9 @@ const PhpDevelopment = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/overview.webp" type="image/webp" />
-                                    <source srcSet="images/overview.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/overview.png"
+                                        src={overview}
                                         className="img-fluid mb20"
                                         alt="overview"
                                         width={590}
@@ -116,23 +121,15 @@ const PhpDevelopment = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/custom-php.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/custom-php.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/custom-php.png"
+                                                    src={customphp}
                                                     className="img-fluid mb20"
                                                     alt="custom-php"
                                                     width={80}
@@ -150,26 +147,18 @@ const PhpDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/php-web.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/php-web.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/php-web.png"
+                                                    src={phpweb}
                                                     className="img-fluid mb20"
                                                     alt="php-web"
                                                     width={80}
@@ -185,26 +174,18 @@ const PhpDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/corporate.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/corporate.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/corporate.png"
+                                                    src={coprate}
                                                     className="img-fluid mb20"
                                                     alt="corporate"
                                                     width={80}
@@ -222,20 +203,18 @@ const PhpDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source srcSet="images/icons/cms.webp" type="image/webp" />
-                                                <source srcSet="images/icons/cms.png" type="image/png" />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/cms.png"
+                                                    src={cms}
                                                     className="img-fluid mb20"
                                                     alt="cms"
                                                     width={80}
@@ -252,26 +231,18 @@ const PhpDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">05</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/php-mysql.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/php-mysql.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/php-mysql.png"
+                                                    src={mysql}
                                                     className="img-fluid mb20"
                                                     alt="php-mysql"
                                                     width={80}
@@ -287,26 +258,18 @@ const PhpDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">06</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/ecommers.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/ecommers.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/ecommers.png"
+                                                    src={ecommers}
                                                     className="img-fluid mb20"
                                                     alt="ecommers"
                                                     width={80}
@@ -324,26 +287,18 @@ const PhpDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">07</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/php-portal.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/php-portal.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/php-portal.png"
+                                                    src={phpportal}
                                                     className="img-fluid mb20"
                                                     alt="php-portal"
                                                     width={80}
@@ -359,7 +314,7 @@ const PhpDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -395,7 +350,7 @@ const PhpDevelopment = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <img
-                                    src="images/GIF/social-networking.gif"
+                                    src={socialnetworking}
                                     alt="hybird-app"
                                     className="img-fluid"
                                     width="600px"
@@ -405,16 +360,12 @@ const PhpDevelopment = () => {
                     </div>
                 </div>
             </section>
-            {/*end conclusion*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

@@ -1,12 +1,18 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
+import iosphone from '../../assets/images/ios-phone.png';
+import iphone from '../../assets/images/iphone-14-13.png';
+import investigation from '../../assets/images/icons/investigation-anlysis.png';
+import designing from '../../assets/images/icons/designing-icon.png';
+import development from '../../assets/images/icons/developmenticon1.png';
+import testing from '../../assets/images/icons/intergration-testing.png';
+import launching from '../../assets/images/icons/launching-icon.png';
+import whyus from '../../assets/images/why-us.png';
 
 const IosApplicationDesigning = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-cssdd pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -33,15 +39,14 @@ const IosApplicationDesigning = () => {
                                     The goal of the Target Icon is to provide the best services with
                                     high quality and cost-effective to its customer.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={300}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -51,11 +56,9 @@ const IosApplicationDesigning = () => {
                                 data-aos-delay={200}
                             >
                                 <picture>
-                                    <source srcSet="images/ios-phone.webp" type="image/webp" />
-                                    <source srcSet="images/ios-phone.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/ios-phone.png"
+                                        src={iosphone}
                                         className="img-fluid"
                                         alt="ios-app"
                                         width={500}
@@ -75,11 +78,9 @@ const IosApplicationDesigning = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/iphone-14-13.webp" type="image/webp" />
-                                    <source srcSet="images/iphone-14-13.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/iphone-14-13.png"
+                                        src={iphone}
                                         className="img-fluid"
                                         alt="iphones"
                                         width={590}
@@ -140,23 +141,15 @@ const IosApplicationDesigning = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/investigation-anlysis.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/investigation-anlysis.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/investigation-anlysis.png"
+                                                    src={investigation}
                                                     className="img-fluid mb20"
                                                     alt="investigation-anlysis"
                                                     width={60}
@@ -173,26 +166,18 @@ const IosApplicationDesigning = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/designing-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/designing-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/designing-icon.png"
+                                                    src={designing}
                                                     className="img-fluid mb20"
                                                     alt="designing-icon"
                                                     width={60}
@@ -210,26 +195,18 @@ const IosApplicationDesigning = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/developmenticon1.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/developmenticon1.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/developmenticon1.png"
+                                                    src={development}
                                                     className="img-fluid mb20"
                                                     alt="developmenticon1"
                                                     width={60}
@@ -245,26 +222,18 @@ const IosApplicationDesigning = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/intergration-testing.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/intergration-testing.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/intergration-testing.png"
+                                                    src={testing}
                                                     className="img-fluid mb20"
                                                     alt="intergration-testing"
                                                     width={60}
@@ -282,26 +251,18 @@ const IosApplicationDesigning = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">05</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/launching-icon.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/launching-icon.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/launching-icon.png"
+                                                    src={launching}
                                                     className="img-fluid mb20"
                                                     alt="launching-icon"
                                                     width={60}
@@ -318,7 +279,7 @@ const IosApplicationDesigning = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -351,11 +312,9 @@ const IosApplicationDesigning = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/why-us.webp" type="image/webp" />
-                                    <source srcSet="images/why-us.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/why-us.png"
+                                        src={whyus}
                                         className="img-fluid"
                                         alt="iphones"
                                         width={590}
@@ -367,16 +326,12 @@ const IosApplicationDesigning = () => {
                     </div>
                 </div>
             </section>
-            {/*end Why Us?*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

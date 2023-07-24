@@ -1,4 +1,15 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
+import progressiveweb from '../../assets/images/webapp-progressive-web-app-pwa.png';
+import overview from '../../assets/images/overview.png';
+import worker from '../../assets/images/icons/administration-worker.png';
+import applicationcell from '../../assets/images/icons/application-cell.png';
+import manifest from '../../assets/images/icons/web-app-manifest.png';
+import quick from '../../assets/images/icons/Quick.png';
+import dependable from '../../assets/images/icons/Dependable.png';
+import lookin from '../../assets/images/icons/Locks-in.png';
+import girlbro from '../../assets/images/girl-bro.png';
 
 const ProgressiveWebApp = () => {
     return (
@@ -36,31 +47,22 @@ const ProgressiveWebApp = () => {
                                     gadget with a program. Also, you will have the capacity to utilize
                                     executioner local highlights, known from local.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={300}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
                                 <picture>
-                                    <source
-                                        srcSet="images/webapp-progressive-web-app-pwa.webp"
-                                        type="image/webp"
-                                    />
-                                    <source
-                                        srcSet="images/webapp-progressive-web-app-pwa.png"
-                                        type="image/png"
-                                    />
                                     <img
                                         loading="lazy"
-                                        src="images/webapp-progressive-web-app-pwa.png"
+                                        src={progressiveweb}
                                         className="img-fluid mb20"
                                         alt="webapp-progressive-web-app-pwa"
                                         width={590}
@@ -80,11 +82,9 @@ const ProgressiveWebApp = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/overview.webp" type="image/webp" />
-                                    <source srcSet="images/overview.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/overview.png"
+                                        src={overview}
                                         className="img-fluid mb20"
                                         alt="overview"
                                         width={590}
@@ -130,23 +130,15 @@ const ProgressiveWebApp = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/administration-worker.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/administration-worker.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/administration-worker.png"
+                                                    src={worker}
                                                     className="img-fluid mb20"
                                                     alt="administration-worker"
                                                     width={60}
@@ -165,26 +157,18 @@ const ProgressiveWebApp = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/application-cell.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/application-cell.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/application-cell.png"
+                                                    src={applicationcell}
                                                     className="img-fluid mb20"
                                                     alt="application-cell"
                                                     width={60}
@@ -203,26 +187,18 @@ const ProgressiveWebApp = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/web-app-manifest.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/web-app-manifest.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/web-app-manifest.png"
+                                                    src={manifest}
                                                     className="img-fluid mb20"
                                                     alt="web-app-manifest"
                                                     width={60}
@@ -241,7 +217,7 @@ const ProgressiveWebApp = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -266,11 +242,9 @@ const ProgressiveWebApp = () => {
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source srcSet="images/icons/Quick.webp" type="image/webp" />
-                                        <source srcSet="images/icons/Quick.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/Quick.png"
+                                            src={quick}
                                             className="img-fluid mb20"
                                             alt="Quick"
                                             width={60}
@@ -297,14 +271,9 @@ const ProgressiveWebApp = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
                                     <picture>
-                                        <source
-                                            srcSet="images/icons/Dependable.webp"
-                                            type="image/webp"
-                                        />
-                                        <source srcSet="images/icons/Dependable.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/Dependable.png"
+                                            src={dependable}
                                             className="img-fluid mb20"
                                             alt="Dependable"
                                             width={60}
@@ -331,11 +300,9 @@ const ProgressiveWebApp = () => {
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
                                     <picture>
-                                        <source srcSet="images/icons/Locks-in.webp" type="image/webp" />
-                                        <source srcSet="images/icons/Locks-in.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/Locks-in.png"
+                                            src={lookin}
                                             className="img-fluid mb20"
                                             alt="Locks-in"
                                             width={60}
@@ -363,12 +330,11 @@ const ProgressiveWebApp = () => {
                                         Hire World-Class{" "}
                                         <span className="ree-text rt40">Developers</span>
                                     </h3>
-                                    <a
-                                        href="hire-app-developers.php"
+                                    <NavLink to="/hire-app-developers"
                                         className="ree-btn  ree-btn-grdt1 mw-80"
                                     >
                                         Hire Now <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -403,11 +369,9 @@ const ProgressiveWebApp = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={girlbro}
                                         className="img-fluid mb20"
                                         alt="conclusion"
                                         width={500}
@@ -419,16 +383,12 @@ const ProgressiveWebApp = () => {
                     </div>
                 </div>
             </section>
-            {/*end conclusion*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

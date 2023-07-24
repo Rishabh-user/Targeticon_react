@@ -1,309 +1,371 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
+import dotnetgif from '../../assets/images/GIF/dot-net.gif';
+import dotnetservice from '../../assets/images/GIF/dot-net-service.gif';
+import dotnetasp from '../../assets/images/icons/asp-dot-net-icon.png';
+import expertise from '../../assets/images/asp-dot-net-Expertise.png';
+import advancewebapp from '../../assets/images/icons/Advanced-Web-Application.png';
+import enterpriceapp from '../../assets/images/icons/Enterprise-Applications.png';
+import pwa from '../../assets/images/icons/pwa.png';
 
 const DotNetDevelopment = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
-            <section className="page-heading-sec r-bg-h pt60 pb60 web-app-development-banner web-app-dev">
+            <section className="page-heading-sec r-bg-cd pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
-                        <div className="col-lg-6 align-item-center">
+                        <div className="col-lg-6">
                             <div className="page-headings">
                                 <h1 data-aos="fade-up" data-aos-delay={100}>
-                                    We build a unique <span className="ree-text rt45">web</span> App
-                                    Development
+                                    <span className="ree-text rt45 mr10">ASP.NET</span>Development
+                                    Services
                                 </h1>
                                 <p className="mt20 h-light" data-aos="fade-up" data-aos-delay={150}>
-                                    Creating your very own web application has never been easier than
-                                    this, with the help of Targeticon’s expert application developers
-                                    you can finally create your dream web application.
+                                    Full-cycle ASP.NET development services employing industry's best
+                                    practices for custom framework development for robust and scalable
+                                    applications using the full spectrum of Microsoft technologies.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
-                                    className="ree-btn  ree-btn-grdt1 mt40 mb40"
+                                <p className="mt20 h-light" data-aos="fade-up" data-aos-delay={200}>
+                                    Developed by Microsoft, ASP.Net is a web development platform. The
+                                    first version of the platform was developed in the year 2002.
+                                    Since then, it has been constantly updated and fixed to appeal to
+                                    all forms of developers out there.{" "}
+                                </p>
+                                <p className="mt20 h-light" data-aos="fade-up" data-aos-delay={250}>
+                                    The platform has a variety of uses ranging from web development to
+                                    mobile platform development services. These services can be used
+                                    for a variety of client applications.{" "}
+                                </p>
+                                <NavLink to="/contact-us"
+                                    className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
-                                    data-aos-delay={200}
+                                    data-aos-delay={250}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
                                 <img
-                                    src="images/GIF/web.gif"
+                                    src={dotnetgif}
                                     alt="Targeticon"
                                     className="img-fluid"
+                                    width="800px"
                                 />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            {/*start Web Application Development*/}
+            {/*page head end*/}
+            {/*start overview*/}
             <section className="r-bg-c pt60 pb60">
                 <div className="container">
                     <div className="row vcenter">
-                        <div className="col-lg-6">
-                            <div className="ct-sol-img mb15 mt20">
+                        <div className="col-lg-6 vcenter">
+                            <div className="ct-sol-img">
                                 <img
-                                    src="images/GIF/web-app-development.gif"
+                                    src={dotnetservice}
                                     alt="hybird-app"
                                     className="img-fluid"
                                 />
                             </div>
                         </div>
                         <div className="col-lg-6 vcenter">
-                            <div className="cta-heading mb15 mt20">
-                                <h2 className="mb15">Web Application Development</h2>
-                                <p>
-                                    The process and practice of developing web applications is known
-                                    as web application development. Target Icon technology consulting
-                                    services help you in developing your own website or application.
-                                    We give you the perfect advice for each and everything related to
-                                    the work.
+                            <div className="cta-heading">
+                                <h2 className="mb15 pt30">ASP.NET Development Services</h2>
+                                <p className="mt20 h-light" data-aos="fade-up" data-aos-delay={50}>
+                                    Developed by Microsoft, ASP.Net is a web development platform.{" "}
                                 </p>
-                                <p>
+                                <p className="mt20 h-light" data-aos="fade-up" data-aos-delay={80}>
                                     {" "}
-                                    A person who develops a web application is knows as a web
-                                    developer. We have with us a team of professional web developers
-                                    who give you and expert advice and help you throughout the working
-                                    of the project.
+                                    Due to its massive advantages in real-world applications, we at
+                                    TargetIcon use the platform to provide renowned ground-breaking
+                                    services in the web development arena. Due to our expertise in the
+                                    ASP.Net platform, we help critical business at developing
+                                    applications which make use of efficient project management and
+                                    transparent work methodologies
                                 </p>
-                                <p>
-                                    {" "}
-                                    Target Icon makes use of the best and popular platforms for
-                                    building up the projects. Choosing the right platform for building
-                                    up the project is one of the most difficult and important task to
-                                    do. The platform should be chosen according to the type of the
-                                    application. A different platform is chosen for small scale and
-                                    large scale projects depending upon the funds and support.
+                                <p className="mt20 h-light" data-aos="fade-up" data-aos-delay={100}>
+                                    Our integral team of programmers provide an improvised user
+                                    experience as demanded and desired by our clients. We ensure that
+                                    our team analyzes, defines, develops, tests and only after
+                                    conducting such operations do they deploy the application.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            {/*end Web Application Development*/}
-            {/*start services Major Platforms*/}
-            <section className="r-bg-i pt60 pb60">
+            {/*end overview*/}
+            {/*-our How PWA Works*/}
+            <section className="r-bg-xx pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
-                        <div className="col-lg-9">
-                            <div className="sec-heading text-center">
-                                <h3 className="mb15" style={{ color: "#0067b0" }}>
-                                    Major Platforms We Work On
-                                </h3>
+                        <div className="col-lg-10">
+                            <div className="page-headings text-center">
+                                <h2 className="mb15">How ASP.NET Works</h2>
                                 <p>
-                                    {" "}
-                                    If you are searching for the perfect platform to build up your own
-                                    website or application, then do give Targeticon a chance to aid
-                                    you with our services.We'll work as hard as you, for making your
-                                    experience with us the most delightful one.
+                                    This rich experience of PWAs is fueled by three in number columns:
+                                    the administration laborer, application shell, and the web
+                                    application show.
                                 </p>
-                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row justify-content-center mt30">
+                        <div className="col-lg-6 col-md-6 col-sm-12 mt30 mb15">
+                            <NavLink to="#">
+                                <div className="process-content ree-card h-100">
+                                    <span className="setps hst-1">01</span>
+                                    <div className="process-block">
+                                        <div className="process-icon">
+                                            <picture>
+                                                <img
+                                                    loading="lazy"
+                                                    src={dotnetasp}
+                                                    className="img-fluid mb20"
+                                                    alt="asp-dot-net-icon"
+                                                    width={50}
+                                                    height={50}
+                                                />
+                                            </picture>
+                                        </div>
+                                        <h4>Custom ASP.Net Development</h4>
+                                        <p>
+                                            ASP.Net was designed in a manner in which it could serve up
+                                            custom content to end users. In order to exploit this
+                                            advantage, our team of ASP.NET programmers employ
+                                            functionalities which fit the specific needs of our clients
+                                            and the end-users. Apart from a plethora of technical
+                                            advantages, the platform contains aspects which directly
+                                            affect the end-user. Another advantage of the ASP.Net platform
+                                            is that it is constantly updated during off-peak hours. This
+                                            enables people to have an application which is powered by the
+                                            latest version of the platform.
+                                        </p>
+                                    </div>
+                                </div>
+                            </NavLink>
+                        </div>
+                        <div className="col-lg-6 col-md-6 col-sm-12 mt30 mb15">
+                            <NavLink to="#">
+                                <div className="process-content ree-card h-100">
+                                    <span className="setps hst-2">02</span>
+                                    <div className="process-block ">
+                                        <div className="process-icon">
+                                            <picture>
+                                                <img
+                                                    loading="lazy"
+                                                    src={dotnetasp}
+                                                    className="img-fluid mb20"
+                                                    alt="asp-dot-net-icon"
+                                                    width={50}
+                                                    height={50}
+                                                />
+                                            </picture>
+                                        </div>
+                                        <h4>ASP.Net Integration</h4>
+                                        <p>
+                                            The platform various highly advantageous integration services.
+                                            Our highly skilled programmers provide solutions to clients
+                                            which are integrated with Microsoft’s platform. Integrating
+                                            existing with ASP.Net allows our programmers to deliver
+                                            products and services which are robust and highly progressive,
+                                            not to mention quite secure and functional. This allows our
+                                            clients to maximize their businesses to have an increase in
+                                            their performance while maintaining their costs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </NavLink>
+                        </div>
+                        <div className="col-lg-6 col-md-6 col-sm-12 mt30 mb15 ">
+                            <NavLink to="#">
+                                <div className="process-content ree-card h-100">
+                                    <span className="setps hst-3">03</span>
+                                    <div className="process-block">
+                                        <div className="process-icon">
+                                            <picture>
+                                                <img
+                                                    loading="lazy"
+                                                    src={dotnetasp}
+                                                    className="img-fluid mb20"
+                                                    alt="asp-dot-net-icon"
+                                                    width={50}
+                                                    height={50}
+                                                />
+                                            </picture>
+                                        </div>
+                                        <h4>3rd Party ASP.Net Customization</h4>
+                                        <p>
+                                            Third party customization allows for a range of controls with
+                                            unique features. To make sure this is a feature which is
+                                            completely utilized our coders efficiently customize third
+                                            party ASP.NET solutions which fit our clients’ businesses
+                                            perfectly. A few examples of services in which we offer
+                                            ASP.Net customization are CMS-enabled solutions,
+                                            customizable/configurable solutions etc. These solutions are
+                                            robust which enhance the enterprise’s functioning.
+                                        </p>
+                                    </div>
+                                </div>
+                            </NavLink>
+                        </div>
+                        <div className="col-lg-6 col-md-6 col-sm-12 mt30 mb15 ">
+                            <NavLink to="#">
+                                <div className="process-content ree-card h-100">
+                                    <span className="setps hst-3">04</span>
+                                    <div className="process-block">
+                                        <div className="process-icon">
+                                            <picture>
+                                                <img
+                                                    loading="lazy"
+                                                    src={dotnetasp}
+                                                    className="img-fluid mb20"
+                                                    alt="asp-dot-net-icon"
+                                                    width={50}
+                                                    height={50}
+                                                />
+                                            </picture>
+                                        </div>
+                                        <h4>Migration to ASP.Net</h4>
+                                        <p>
+                                            Owing to the new versions of ASP.Net, it becomes highly
+                                            necessary for migration activities. Migration activities are
+                                            an essential part of web development as they help in enhancing
+                                            the end-user experience. However, migrating is a quite tedious
+                                            job as it contains several tweakings such as recompilation of
+                                            existing web pages, choosing the right web application, right
+                                            wizard for execution etc. This is where we come into the scene
+                                            again. Our team of .Net programmers adopt strategies which
+                                            deliver the most adaptive and quick systems for migration.
+                                        </p>
+                                    </div>
+                                </div>
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/*-our How PWA Works end*/}
+            {/*start Our ASP.NET Expertise*/}
+            <section className="r-bg-xyz pt60 pb60">
+                <div className="container">
+                    <div className="row vcenter">
+                        <div className="col-lg-6 vcenter">
+                            <div className="cta-heading">
+                                <h2 className="mb15">Our ASP.NET Expertise</h2>
+                                <p className="mt20 h-light" data-aos="fade-up" data-aos-delay={50}>
+                                    We at TargetIcon provide one of the best services when it comes to
+                                    ASP.Net. This is due to our team of programmers who have invested
+                                    their time in training themselves and resources as well as in
+                                    developing highly-efficient practices using Microsoft’s .Net
+                                    architecture. It is owing to these practices that we enable the
+                                    development of rapid, error-free applications.{" "}
+                                </p>
+                                <p className="mt20 h-light" data-aos="fade-up" data-aos-delay={60}>
+                                    Our expertise and experience in the field of ASP.Net allows us to
+                                    develop and deliver enterprise products to our customer. These
+                                    products are successfully implemented with ASP.Net which are
+                                    specialized to be customized as per the needs of the customers
+                                    according to the business and the preferred technology.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 vcenter">
+                            <div className="ct-sol-img">
+                                <picture>
+                                    <img
+                                        loading="lazy"
+                                        src={expertise}
+                                        className="img-fluid mb20"
+                                        alt="asp-dot-net-Expertise"
+                                        width={500}
+                                        height={500}
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/*end Our ASP.NET Expertisen*/}
+            {/*start Qualities of Our Advanced and Enterprise*/}
+            <section className="r-bg-xx pt60 pb60">
+                <div className="container">
+                    <div className="row vcenter">
+                        <div className="col-lg-12">
+                            <div className="sec-heading text-center">
+                                <h2 className="mb15">Qualities of Our Advanced and Enterprise</h2>
                             </div>
                         </div>
                     </div>
                     <div className="row mt30 justify-content-center">
                         <div
-                            className="col-lg-4 col-sm-6"
+                            className="col-lg-6 col-sm-12"
                             data-aos="fade-up"
                             data-aos-delay={100}
                         >
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
                                     <picture>
-                                        <source srcSet="images/icons/dot-net.webp" type="image/webp" />
-                                        <source srcSet="images/icons/dot-net.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/dot-net.png"
+                                            src={advancewebapp}
                                             className="img-fluid mb20"
-                                            alt="dot-net"
-                                            width={50}
-                                            height={50}
+                                            alt="Advanced-Web-Application"
+                                            width={60}
+                                            height={60}
                                         />
                                     </picture>
                                 </div>
                                 <div className="ree-card-content mt40">
-                                    <h3 className="mb15">
-                                        <a href="dot-net-development.php">ASP.Net development</a>
-                                    </h3>
+                                    <h3 className="mb15">Advanced Web Application</h3>
                                     <p>
-                                        ASP.Net has a large number of advantages in real world
-                                        applications. Therefore, it is used as a platform for developing
-                                        web applications by target Icon.
+                                        Developing advanced web applications require successful design
+                                        and correct implementation ASP.Net. Our programmers make sure of
+                                        this and it is due to this that our applications have edge over
+                                        applications developed by other organizations. Apart from this,
+                                        our applications are coded to be dynamic and rich in ASP.Net
+                                        features and functionalities. These functionalities and features
+                                        allow our applications to be efficient which maximize our
+                                        client’s businesses by a huge margin.
                                     </p>
-                                </div>
-                                <div className="ree-card-content-link">
-                                    <a href="dot-net-development.php" className="ree-card-link mt40">
-                                        Read More <i className="fas fa-arrow-right fa-btn" />{" "}
-                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div
-                            className="col-lg-4 col-sm-6"
+                            className="col-lg-6 col-sm-12"
                             data-aos="fade-up"
-                            data-aos-delay={100}
+                            data-aos-delay={300}
                         >
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
                                     <picture>
-                                        <source srcSet="images/icons/php.webp" type="image/webp" />
-                                        <source srcSet="images/icons/php.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/icons/php.png"
+                                            src={enterpriceapp}
                                             className="img-fluid mb20"
-                                            alt="php"
-                                            width={50}
-                                            height={50}
+                                            alt="Enterprise-Applications"
+                                            width={60}
+                                            height={60}
                                         />
                                     </picture>
                                 </div>
                                 <div className="ree-card-content mt40">
-                                    <h3 className="mb15">
-                                        <a href="php-development.php">PHP development</a>
-                                    </h3>
+                                    <h3 className="mb15">Enterprise Applications</h3>
                                     <p>
-                                        Being the best PHP development company in India, target Icon
-                                        uses PHP platform for building dynamic, database-driven and high
-                                        performance enterprise web applications.
+                                        One of our top suits is developing enterprise applications by
+                                        making use of ASP.Net. We are highly adept in developing
+                                        collaborative enterprise web applications using the .Net
+                                        technology. Due to this, our signature applications are
+                                        flexible, reliable, reusable and have low-maintenance
+                                        requirements.
                                     </p>
-                                </div>
-                                <div className="ree-card-content-link">
-                                    <a href="php-development.php" className="ree-card-link mt40">
-                                        Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            className="col-lg-4 col-sm-6"
-                            data-aos="fade-up"
-                            data-aos-delay={100}
-                        >
-                            <div className="ree-card r-bg-c  mt60">
-                                <div className="ree-card-img">
-                                    <picture>
-                                        <source
-                                            srcSet="images/icons/java-logo.webp"
-                                            type="image/webp"
-                                        />
-                                        <source srcSet="images/icons/java-logo.png" type="image/png" />
-                                        <img
-                                            loading="lazy"
-                                            src="images/icons/java-logo.png"
-                                            className="img-fluid mb20"
-                                            alt="java-logo"
-                                            width={50}
-                                            height={50}
-                                        />
-                                    </picture>
-                                </div>
-                                <div className="ree-card-content mt40">
-                                    <h3 className="mb15">
-                                        <a href="java-development.php">JAVA development</a>
-                                    </h3>
-                                    <p>
-                                        JAVA is the most popular platform used in today’s world. the
-                                        major reason behind this is that java is platform independent
-                                        and thus any project built on any other language or platform can
-                                        be easily run on JAVA.
-                                    </p>
-                                </div>
-                                <div className="ree-card-content-link">
-                                    <a href="java-development.php" className="ree-card-link mt40">
-                                        Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            className="col-lg-4 col-sm-6"
-                            data-aos="fade-up"
-                            data-aos-delay={200}
-                        >
-                            <div className="ree-card r-bg-c  mt60">
-                                <div className="ree-card-img">
-                                    <picture>
-                                        <source
-                                            srcSet="images/icons/retail-service1.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet="images/icons/retail-service1.png"
-                                            type="image/png"
-                                        />
-                                        <img
-                                            loading="lazy"
-                                            src="images/icons/retail-service1.png"
-                                            className="img-fluid mb20"
-                                            alt="Ecommerce-development"
-                                            width={50}
-                                            height={50}
-                                        />
-                                    </picture>
-                                </div>
-                                <div className="ree-card-content mt40">
-                                    <h3 className="mb15">
-                                        <a href="ecommerce-development.php">Ecommerce development</a>
-                                    </h3>
-                                    <p>
-                                        Target Icon also provides you guidance for setting up your own
-                                        ecommerce store and selling your products throughout the world.
-                                    </p>
-                                </div>
-                                <div className="ree-card-content-link">
-                                    <a
-                                        href="ecommerce-development.php"
-                                        className="ree-card-link mt40"
-                                    >
-                                        Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            className="col-lg-4 col-sm-6"
-                            data-aos="fade-up"
-                            data-aos-delay={200}
-                        >
-                            <div className="ree-card r-bg-c  mt60">
-                                <div className="ree-card-img">
-                                    <picture>
-                                        <source srcSet="images/icons/pwa.webp" type="image/webp" />
-                                        <source srcSet="images/icons/pwa.png" type="image/png" />
-                                        <img
-                                            loading="lazy"
-                                            src="images/icons/pwa.png"
-                                            className="img-fluid mb20"
-                                            alt="pwa"
-                                            width={50}
-                                            height={50}
-                                        />
-                                    </picture>
-                                </div>
-                                <div className="ree-card-content mt40">
-                                    <h3 className="mb15">
-                                        <a href="progressive-web-app.php">Progressive web app (PWA)</a>
-                                    </h3>
-                                    <p>
-                                        These are the applications that work like regular websites but
-                                        offer some additional functionalities like working offline, push
-                                        notifications etc.
-                                    </p>
-                                </div>
-                                <div className="ree-card-content-link">
-                                    <a href="progressive-web-app.php" className="ree-card-link mt40">
-                                        Read More <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -316,25 +378,23 @@ const DotNetDevelopment = () => {
                                         Hire World-Class{" "}
                                         <span className="ree-text rt40">Developers</span>
                                     </h3>
-                                    <a href="contact-us.php" className="ree-btn  ree-btn-grdt1 mw-80">
+                                    <NavLink to="/hire-app-developers"
+                                        className="ree-btn  ree-btn-grdt1 mw-80"
+                                    >
                                         Hire Now <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            {/*Major Platforms services end*/}
-            {/*start client-testimonial  */}
+            {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
-            {/*end client-testimonial  */}
-            {/*start our-tools  */}
-            {/*?php include 'include/our-tools.php';?*/}
-            {/*end our-tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+            {/*end client testimonial  */}
+            {/*start our tools */}
+            <Tools />
+            {/*end our tools  */}
         </div>
     );
 };

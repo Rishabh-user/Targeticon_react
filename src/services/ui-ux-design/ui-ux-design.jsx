@@ -1,12 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
+import uxui from '../../assets/images/UI-UX.png';
+import websiteservice from '../../assets/images/GIF/our_services_website.gif';
+import uiuxgif from '../../assets/images/GIF/ui-ux-design.gif';
+import girlbro from '../../assets/images/girl-bro.png';
 
 const UiDesign = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-cd pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -26,15 +28,14 @@ const UiDesign = () => {
                                     you can be assured to get the most mind-blowing User interface and
                                     user experience.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
-                                    data-aos-delay={100}
+                                    data-aos-delay={250}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -44,7 +45,7 @@ const UiDesign = () => {
                                 data-aos-delay={100}
                             >
                                 <img
-                                    src="images/UI-UX.png"
+                                    src={uxui}
                                     alt="Targeticon"
                                     className="img-fluid"
                                     width="600px"
@@ -85,7 +86,7 @@ const UiDesign = () => {
                                 <div className="hovr-scale-main">
                                     <div className="text-center mb20">
                                         <img
-                                            src="images/GIF/our_services_website.gif"
+                                            src={websiteservice}
                                             alt="portfolio"
                                             className="img-fluid"
                                         />
@@ -143,7 +144,7 @@ const UiDesign = () => {
                                 <div className="hovr-scale-main">
                                     <div className="text-center mb20">
                                         <img
-                                            src="images/GIF/ui-ux-design.gif"
+                                            src={uiuxgif}
                                             alt="portfolio"
                                             className="img-fluid"
                                         />
@@ -199,11 +200,9 @@ const UiDesign = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={girlbro}
                                         className="img-fluid mb20"
                                         alt="conclusion"
                                         width={500}
@@ -240,16 +239,12 @@ const UiDesign = () => {
                     </div>
                 </div>
             </section>
-            {/*end Overview*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

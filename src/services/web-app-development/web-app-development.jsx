@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
 import webgif from '../../assets/images/GIF/web.gif';
 import webappgif from '../../assets/images/GIF/web-app-development.gif';
 import dotnet from '../../assets/images/icons/dot-net.png';
@@ -11,10 +12,6 @@ import pwa from '../../assets/images/icons/pwa.png';
 const WebAppDevelopment = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-h pt60 pb60 web-app-development-banner web-app-dev">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -312,16 +309,12 @@ const WebAppDevelopment = () => {
                     </div>
                 </div>
             </section>
-            {/*Major Platforms services end*/}
             {/*start client-testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client-testimonial  */}
             {/*start our-tools  */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our-tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

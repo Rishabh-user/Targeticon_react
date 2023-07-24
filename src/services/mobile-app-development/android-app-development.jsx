@@ -1,5 +1,9 @@
 import React from "react";
+import Tools from "../../components/our-tools";
 import { NavLink } from "react-router-dom";
+import OwlCarousel from 'react-owl-carousel2';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import androidgif from '../../assets/images/GIF/Android.gif';
 import portfolio1 from '../../assets/images/portfolio/portfolio-1.jpg';
 import portfolio2 from '../../assets/images/portfolio/portfolio-2.jpg';
@@ -13,12 +17,16 @@ import girlbro from '../../assets/images/girl-bro.png';
 
 
 const AndroidAppDevelopment = () => {
+    const options = {
+        items: 3,
+        margin: 20,
+        dot: true,
+        loop: true,
+        nav: false,
+    };
+
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="sec-pad r-bg-xyz Android-App-Dev">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -87,141 +95,143 @@ const AndroidAppDevelopment = () => {
                     <div className="row mt60">
                         <div className="col-lg-12 new">
                             <div className="full-work-block  owl-carousel">
-                                <div className="fwb-main-x fwb-a h-100">
-                                    <div className="work-thumbnails">
-                                        <NavLink to="#">
-                                            <img
-                                                src={portfolio1}
-                                                alt="portfolio Targeticon"
-                                                className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
+                                <OwlCarousel options={options} className="full-work-block ">
+                                    <div className="fwb-main-x fwb-a h-100">
+                                        <div className="work-thumbnails">
+                                            <NavLink to="#">
+                                                <img
+                                                    src={portfolio1}
+                                                    alt="portfolio Targeticon"
+                                                    className="img-fluid"
+                                                />{" "}
+                                            </NavLink>
+                                        </div>
+                                        <div className="work-details">
+                                            <h4>
+                                                <NavLink to="#"> Custom iPhone Apps</NavLink>{" "}
+                                            </h4>
+                                        </div>
                                     </div>
-                                    <div className="work-details">
-                                        <h4>
-                                            <NavLink to="#"> Custom iPhone Apps</NavLink>{" "}
-                                        </h4>
+                                    <div className="fwb-main-x fwb-a h-100">
+                                        <div className="work-thumbnails">
+                                            <NavLink to="#">
+                                                {" "}
+                                                <img
+                                                    src={portfolio2}
+                                                    alt="portfolio Targeticon"
+                                                    className="img-fluid"
+                                                />{" "}
+                                            </NavLink>
+                                        </div>
+                                        <div className="work-details">
+                                            <h4>
+                                                <NavLink to="#">iPhone/iPad Games</NavLink>
+                                            </h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="fwb-main-x fwb-a h-100">
-                                    <div className="work-thumbnails">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
-                                                src={portfolio2}
-                                                alt="portfolio Targeticon"
-                                                className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
+                                    <div className="fwb-main-x fwb-a h-100">
+                                        <div className="work-thumbnails">
+                                            <NavLink to="#">
+                                                {" "}
+                                                <img
+                                                    src={portfolio3}
+                                                    alt="portfolio Targeticon"
+                                                    className="img-fluid"
+                                                />{" "}
+                                            </NavLink>
+                                        </div>
+                                        <div className="work-details">
+                                            <h4>
+                                                <NavLink to="#">Enterprise iPhone Apps </NavLink>
+                                            </h4>
+                                        </div>
                                     </div>
-                                    <div className="work-details">
-                                        <h4>
-                                            <NavLink to="#">iPhone/iPad Games</NavLink>
-                                        </h4>
+                                    <div className="fwb-main-x fwb-a h-100">
+                                        <div className="work-thumbnails">
+                                            <NavLink to="#">
+                                                {" "}
+                                                <img
+                                                    src={portfolio2}
+                                                    alt="portfolio Targeticon"
+                                                    className="img-fluid"
+                                                />{" "}
+                                            </NavLink>
+                                        </div>
+                                        <div className="work-details">
+                                            <h4>
+                                                <NavLink to="#">iPhone App UX/UI Design</NavLink>
+                                            </h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="fwb-main-x fwb-a h-100">
-                                    <div className="work-thumbnails">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
-                                                src={portfolio3}
-                                                alt="portfolio Targeticon"
-                                                className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
+                                    <div className="fwb-main-x fwb-a h-100">
+                                        <div className="work-thumbnails">
+                                            <NavLink to="#">
+                                                {" "}
+                                                <img
+                                                    src={portfolio2}
+                                                    alt="portfolio Targeticon"
+                                                    className="img-fluid"
+                                                />{" "}
+                                            </NavLink>
+                                        </div>
+                                        <div className="work-details">
+                                            <h4>
+                                                <NavLink to="#">iPhone Widget/Extension Development</NavLink>
+                                            </h4>
+                                        </div>
                                     </div>
-                                    <div className="work-details">
-                                        <h4>
-                                            <NavLink to="#">Enterprise iPhone Apps </NavLink>
-                                        </h4>
+                                    <div className="fwb-main-x fwb-a h-100">
+                                        <div className="work-thumbnails">
+                                            <NavLink to="#">
+                                                {" "}
+                                                <img
+                                                    src={portfolio2}
+                                                    alt="portfolio Targeticon"
+                                                    className="img-fluid"
+                                                />{" "}
+                                            </NavLink>
+                                        </div>
+                                        <div className="work-details">
+                                            <h4>
+                                                <NavLink to="#">iPhone Consultation</NavLink>
+                                            </h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="fwb-main-x fwb-a h-100">
-                                    <div className="work-thumbnails">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
-                                                src={portfolio2}
-                                                alt="portfolio Targeticon"
-                                                className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
+                                    <div className="fwb-main-x fwb-a h-100">
+                                        <div className="work-thumbnails">
+                                            <NavLink to="#">
+                                                {" "}
+                                                <img
+                                                    src={portfolio2}
+                                                    alt="portfolio Targeticon"
+                                                    className="img-fluid"
+                                                />{" "}
+                                            </NavLink>
+                                        </div>
+                                        <div className="work-details">
+                                            <h4>
+                                                <NavLink to="#">iPhone App Support Optimization</NavLink>
+                                            </h4>
+                                        </div>
                                     </div>
-                                    <div className="work-details">
-                                        <h4>
-                                            <NavLink to="#">iPhone App UX/UI Design</NavLink>
-                                        </h4>
+                                    <div className="fwb-main-x fwb-a h-100">
+                                        <div className="work-thumbnails">
+                                            <NavLink to="#">
+                                                {" "}
+                                                <img
+                                                    src={portfolio2}
+                                                    alt="portfolio Targeticon"
+                                                    className="img-fluid"
+                                                />{" "}
+                                            </NavLink>
+                                        </div>
+                                        <div className="work-details">
+                                            <h4>
+                                                <NavLink to="#">iPhone App Integration</NavLink>
+                                            </h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="fwb-main-x fwb-a h-100">
-                                    <div className="work-thumbnails">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
-                                                src={portfolio2}
-                                                alt="portfolio Targeticon"
-                                                className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                    <div className="work-details">
-                                        <h4>
-                                            <NavLink to="#">iPhone Widget/Extension Development</NavLink>
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div className="fwb-main-x fwb-a h-100">
-                                    <div className="work-thumbnails">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
-                                                src={portfolio2}
-                                                alt="portfolio Targeticon"
-                                                className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                    <div className="work-details">
-                                        <h4>
-                                            <NavLink to="#">iPhone Consultation</NavLink>
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div className="fwb-main-x fwb-a h-100">
-                                    <div className="work-thumbnails">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
-                                                src={portfolio2}
-                                                alt="portfolio Targeticon"
-                                                className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                    <div className="work-details">
-                                        <h4>
-                                            <NavLink to="#">iPhone App Support Optimization</NavLink>
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div className="fwb-main-x fwb-a h-100">
-                                    <div className="work-thumbnails">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
-                                                src={portfolio2}
-                                                alt="portfolio Targeticon"
-                                                className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                    <div className="work-details">
-                                        <h4>
-                                            <NavLink to="#">iPhone App Integration</NavLink>
-                                        </h4>
-                                    </div>
-                                </div>
+                                </OwlCarousel>
                             </div>
                         </div>
                     </div>
@@ -407,16 +417,11 @@ const AndroidAppDevelopment = () => {
                     </div>
                 </div>
             </section>
-            {/*Final Reviews end*/}
             {/*start client testimonial  */}
-            {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
 
 
         </div>

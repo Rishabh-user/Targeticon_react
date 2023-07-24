@@ -1,12 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../../components/our-tools';
+import javagif from '../../assets/images/GIF/java.gif';
+import javainfo3 from '../../assets/images/java-info3.png';
+import javainfo1 from '../../assets/images/java-info1.png';
+import javainfo2 from '../../assets/images/java-info2.png';
+import overview from '../../assets/images/overview.png';
+import girlbro from '../../assets/images/girl-bro.png';
 
 const JavaDevelopment = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-cfd pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -32,21 +36,20 @@ const JavaDevelopment = () => {
                                     (Model View Controller) offering J2EE improvement set apart by the
                                     diminished many-sided quality and a steady venture platform.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt30"
                                     data-aos="fade-up"
                                     data-aos-delay={100}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
                                 <img
-                                    src="images/GIF/java.gif"
+                                    src={javagif}
                                     alt="Targeticon"
                                     className="img-fluid"
                                 />
@@ -79,11 +82,9 @@ const JavaDevelopment = () => {
                             >
                                 <div className="boxs-img text-center mt20 mb20">
                                     <picture>
-                                        <source srcSet="images/java-info3.webp" type="image/webp" />
-                                        <source srcSet="images/java-info3.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/java-info3.png"
+                                            src={javainfo3}
                                             className="img-fluid"
                                             alt="java-info3"
                                             width={686}
@@ -136,11 +137,9 @@ const JavaDevelopment = () => {
                             >
                                 <div className="boxs-img text-center mt20 mb20">
                                     <picture>
-                                        <source srcSet="images/java-info1.webp" type="image/webp" />
-                                        <source srcSet="images/java-info1.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/java-info1.png"
+                                            src={javainfo1}
                                             className="img-fluid"
                                             alt="java-info1"
                                             width={686}
@@ -199,11 +198,9 @@ const JavaDevelopment = () => {
                             >
                                 <div className="boxs-img text-center mt20 mb20">
                                     <picture>
-                                        <source srcSet="images/java-info2.webp" type="image/webp" />
-                                        <source srcSet="images/java-info2.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/java-info2.png"
+                                            src={javainfo2}
                                             className="img-fluid"
                                             alt="java-info2"
                                             width={686}
@@ -321,11 +318,9 @@ const JavaDevelopment = () => {
                             <div className="col-lg-6 m-order1">
                                 <div className="portfolio-flimg">
                                     <picture>
-                                        <source srcSet="images/overview.webp" type="image/webp" />
-                                        <source srcSet="images/overview.png" type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src="images/overview.png"
+                                            src={overview}
                                             className="img-fluid mb20"
                                             alt="overview"
                                             width={590}
@@ -365,11 +360,9 @@ const JavaDevelopment = () => {
                         <div className="col-lg-6 vcenter">
                             <div className="ct-sol-img">
                                 <picture>
-                                    <source srcSet="images/girl-bro.webp" type="image/webp" />
-                                    <source srcSet="images/girl-bro.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/girl-bro.png"
+                                        src={girlbro}
                                         className="img-fluid mb20"
                                         alt="conclusion"
                                         width={500}
@@ -381,16 +374,12 @@ const JavaDevelopment = () => {
                     </div>
                 </div>
             </section>
-            {/*end conclusion*/}
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

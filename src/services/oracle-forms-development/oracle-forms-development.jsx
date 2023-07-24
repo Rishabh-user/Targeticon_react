@@ -1,4 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import oracleforms from '../../assets/images/oracle-forms.png';
+import oracleform from '../../assets/images/oracle-form.png';
+import oracleform2 from '../../assets/images/oracle-form2.png';
+import oracleform3 from '../../assets/images/oracle-form3.png';
+import fulltimehiring from '../../assets/images/icons/fulltime-hiring.png';
+import hourlyhiring from '../../assets/images/icons/hourly-hiring.png';
+
+
 
 const OracleFormsDevelopment = () => {
     return (
@@ -29,15 +38,14 @@ const OracleFormsDevelopment = () => {
                                     application. A different platform is chosen for small scale and
                                     large scale projects depending upon the funds and support.{" "}
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={600}
                                 >
                                     Get In Touch
                                     <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -47,11 +55,9 @@ const OracleFormsDevelopment = () => {
                                 data-aos-delay={200}
                             >
                                 <picture>
-                                    <source srcSet="images/oracle-forms.webp" type="image/webp" />
-                                    <source srcSet="images/oracle-forms.png" type="image/png" />
                                     <img
                                         loading="lazy"
-                                        src="images/oracle-forms.png"
+                                        src={oracleforms}
                                         className="img-fluid"
                                         alt="oracle-forms"
                                         width={590}
@@ -94,11 +100,9 @@ const OracleFormsDevelopment = () => {
                                 <div className="hovr-scale-main text-center">
                                     <div className="portfolio-flimg">
                                         <picture>
-                                            <source srcSet="images/oracle-form.webp" type="image/webp" />
-                                            <source srcSet="images/oracle-form.png" type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/oracle-form.png"
+                                                src={oracleform}
                                                 className="img-fluid"
                                                 alt="oracle-form"
                                                 width={590}
@@ -194,11 +198,9 @@ const OracleFormsDevelopment = () => {
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg">
                                         <picture>
-                                            <source srcSet="images/oracle-form2.webp" type="image/webp" />
-                                            <source srcSet="images/oracle-form2.png" type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/oracle-form2.png"
+                                                src={oracleform2}
                                                 className="img-fluid"
                                                 alt="oracle-form2"
                                                 width={590}
@@ -219,11 +221,9 @@ const OracleFormsDevelopment = () => {
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg">
                                         <picture>
-                                            <source srcSet="images/oracle-form3.webp" type="image/webp" />
-                                            <source srcSet="images/oracle-form3.png" type="image/png" />
                                             <img
                                                 loading="lazy"
-                                                src="images/oracle-form3.png"
+                                                src={oracleform3}
                                                 className="img-fluid"
                                                 alt="oracle-form3"
                                                 width={590}
@@ -297,23 +297,15 @@ const OracleFormsDevelopment = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-6 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="/d2f-forms">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/fulltime-hiring.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/fulltime-hiring.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/fulltime-hiring.png"
+                                                    src={fulltimehiring}
                                                     className="img-fluid mb20"
                                                     alt="fulltime-hiring"
                                                     width={60}
@@ -330,26 +322,18 @@ const OracleFormsDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="/d2f-reports">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
                                         <div className="process-icon">
                                             <picture>
-                                                <source
-                                                    srcSet="images/icons/hourly-hiring.webp"
-                                                    type="image/webp"
-                                                />
-                                                <source
-                                                    srcSet="images/icons/hourly-hiring.png"
-                                                    type="image/png"
-                                                />
                                                 <img
                                                     loading="lazy"
-                                                    src="images/icons/hourly-hiring.png"
+                                                    src={hourlyhiring}
                                                     className="img-fluid mb20"
                                                     alt="hourly-hiring"
                                                     width={60}
@@ -366,7 +350,7 @@ const OracleFormsDevelopment = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
