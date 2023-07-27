@@ -62,6 +62,11 @@ const Header = () => {
                         </div>
                     </div> */}
                                 </li>
+                                <li className="megamenu mega-small">
+                                    <NavLink to="/career" className="menu-links">
+                                        Career
+                                    </NavLink>
+                                </li>
                                 <li className="megamenu">
                                     <NavLink to="#" className="menu-links">
                                         Services

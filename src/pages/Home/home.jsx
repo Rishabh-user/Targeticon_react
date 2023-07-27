@@ -60,7 +60,7 @@ const Home = () => {
                                 media="(max-width:991px)"
                                 srcSet="images/others/office-view-2-mobile.jpg"
                                 type="image/jpg"
-                            />                            
+                            />
                             <img
                                 loading="lazy"
                                 srcSet={officeviewimg}
@@ -119,7 +119,7 @@ const Home = () => {
                                     <div className="agency-info-anim text-center">
                                         <div className="animated-logo">
                                             <picture>
-                                             <img
+                                                <img
                                                     loading="lazy"
                                                     srcSet={Tageticoncircle}
                                                     className="logo-anim img-fluid"
@@ -262,7 +262,7 @@ const Home = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div  className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={200}>
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={200}>
                             <Link to="/web-app-development" className="ree-card reebgd h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">Web Application Development</h4>
@@ -411,7 +411,7 @@ const Home = () => {
             {/*services end*/}
 
             {/*start technologies tools*/}
-                <OursTools />
+            <OursTools />
             {/*end technologies tools*/}
 
             {/*start Client Testimonial*/}
@@ -421,21 +421,21 @@ const Home = () => {
             {/*end Client Testimonial */}
 
             {/*start join our team  */}
-                <JoinOurTeam />
+            <JoinOurTeam />
             {/*end join our team  */}
 
             {/*Industries We Serve*/}
-                <ServeIndustries />
+            <ServeIndustries />
             {/*Industries We Serve end*/}
 
             {/*contact info*/}
-                <FormInfo />
+            <FormInfo />
             {/*contact info end*/}
 
             {/*start find us location  */}
-                <Location />
+            <Location />
             {/*end find us location  */}
-            
+
         </div>
     );
 };

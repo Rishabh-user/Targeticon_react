@@ -1,10 +1,202 @@
-import React from "react";
+import React, { useState } from "react";
 import BestPrice from '../assets/images/icons/best-price.png';
 import QualityService from '../assets/images/icons/quality-service.png';
 import GoodSupport from '../assets/images/icons/good-support.png';
 import Satisfaction from '../assets/images/icons/satification.png';
 
 const FormInfo = () => {
+    const [formData, setFormData] = useState({
+        username: '',
+        email: '',
+        phone: '',
+        skype: '',
+        message: '',
+        recaptcha: '',
+    });
+
+    const [errors, setErrors] = useState({
+        username: '',
+        email: '',
+        phone: '',
+        skype: '',
+        message: '',
+        recaptcha: '',
+    });
+    // this is for setting the error
+
+    const [successMessage, setSuccessMessage] = useState('');
+    const [successMessage1, setSuccessMessage1] = useState('');
+    const [successMessage2, setSuccessMessage2] = useState('');
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+        // Clear the error message for the corresponding field when the user starts typing	
+        setErrors({
+            ...errors,
+            [name]: '',
+        });
+        switch (name) {
+            case 'username':
+                if (value.trim() && /^[a-zA-Z]{3,20}$/i.test(value)) {
+                    setErrors({
+                        ...errors,
+                        [name]: '',
+                    });
+                    setSuccessMessage('correct');
+                }
+                else {
+                    setSuccessMessage('');
+                }
+                break;
+            case 'email':
+                if (value.trim() && /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value)) {
+                    setErrors({
+                        ...errors,
+                        [name]: '',
+                    });
+                    setSuccessMessage1('correct');
+                }
+                else {
+                    setSuccessMessage1('');
+                }
+                break;
+            case 'phone':
+                if (value.trim() && /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/.test(value)) {
+                    setErrors({
+                        ...errors,
+                        [name]: '',
+                    });
+                    setSuccessMessage2('correct');
+                }
+                else {
+                    setSuccessMessage2('');
+                }
+                break;
+            case 'skype':
+                if (value.trim() && /^[a-zA-Z]{3,20}$/i.test(value)) {
+                    setErrors({
+                        ...errors,
+                        [name]: '',
+                    });
+                    setSuccessMessage('correct');
+                }
+                else {
+                    setSuccessMessage('');
+                }
+                break;
+            // case 'message':
+            //     if (value.trim() && /^.{3,}$/.test(value)) {
+            //         setErrors({
+            //             ...errors,
+            //             [name]: '',
+            //         });
+            //         setSuccessMessage('correct');
+            //     }
+            //     else {
+            //         setSuccessMessage('');
+            //     }
+            //     break;
+            default:
+                setSuccessMessage('');
+                break;
+        }
+    };
+
+    const validateForm = () => {
+        let isValid = true;
+        const newErrors = {};    //change
+
+        // ... (same as before)
+        const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const userRegex = /^[a-zA-Z]{3,20}$/i;
+        const phoneRegex = /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/i;
+        const skypeRegex = /^[a-zA-Z]{3,20}$/i; // Corrected regex for skype
+        const messageRegex = /^.{3,}$/; // Updated the regex for message to accept any 3 or more characters
+
+        if (!formData.username.trim()) {
+            isValid = false;
+            newErrors.username = 'Please Enter your Full Name';
+        } else if (!userRegex.test(formData.username)) {
+            isValid = false;
+            newErrors.username = 'Please Enter a valid Full Name (3-20 characters, only letters)';
+        }
+
+        if (!formData.email.trim()) {
+            isValid = false;
+            newErrors.email = 'Please Enter your Email ID';
+        } else if (!emailRegex.test(formData.email)) {
+            isValid = false;
+            newErrors.email = 'Please Enter a valid Email ID';
+        }
+
+
+        if (!formData.phone.trim()) {
+            isValid = false;
+            newErrors.phone = 'Please Enter a valid Phone Number';
+        } else if (!phoneRegex.test(formData.phone)) {
+            isValid = false;
+            newErrors.phone = 'Please Enter a valid Phone Number';
+        }
+
+        if (!formData.skype.trim()) {
+            isValid = false;
+            newErrors.skype = 'Please Enter your Skype ID';
+        } else if (!skypeRegex.test(formData.skype)) {
+            isValid = false;
+            newErrors.skype = 'Please Enter a valid Skype ID (3-20 characters, only letters)';
+        }
+
+        if (!formData.message.trim()) {
+            isValid = false;
+            newErrors.message = 'Please Enter your Message';
+        } else if (!messageRegex.test(formData.message)) {
+            isValid = false;
+            newErrors.message = 'Please Enter a valid Message (at least 3 characters)';
+        }
+
+        setErrors(newErrors);
+        console.log('formData:', formData); // Debugging statement to log formData
+        console.log('errors:', errors); // Debugging statement to log errors
+        return isValid;
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const isValid = validateForm();
+
+        if (isValid) {
+            // Submit the form data to your backend or perform other actions here
+            console.log('Form submitted:', formData);
+
+            // Reset the form fields after successful submission
+            setFormData({
+                username: "",
+                email: "",
+                phone: "",
+                skype: "",
+                message: "",
+                recaptcha: "",
+            });
+
+            // Clear the errors state
+            setErrors({
+                username: '',
+                email: '',
+                phone: '',
+                skype: '',
+                message: '',
+                recaptcha: '',
+            });
+        } else {
+            console.log('Form validation failed:', errors);
+        }
+    };
+
+
     return (
         <div>
             {/*start contact form*/}
@@ -18,7 +210,7 @@ const FormInfo = () => {
                                         <h3>Please fill in the form below.</h3>
                                     </div>
                                     <div className="form-body">
-                                        <form id="footer_contact" className="google-form">
+                                        <form className="google-form" onSubmit={handleSubmit}>
                                             <div className="fieldsets row">
                                                 <div className="col-md-6">
                                                     <input
@@ -26,9 +218,14 @@ const FormInfo = () => {
                                                         id="user_name"
                                                         className="txtName validate"
                                                         placeholder="Full Name"
-                                                        name="First_Name"
+                                                        name="username"
+                                                        value={formData.username}
+                                                        onChange={handleChange}
                                                     />
-                                                    <span id="errName" />
+                                                    {errors.username && <div className="error"><spam>{errors.username}</spam></div>}
+                                                    {successMessage && <div className="success"><spam>{successMessage}</spam></div>}
+                                                    {/* <span id="errName" /> */}
+
                                                 </div>
                                                 <div className="col-md-6">
                                                     <input
@@ -36,9 +233,14 @@ const FormInfo = () => {
                                                         id="user_email"
                                                         className="txtEmail validate"
                                                         placeholder="Email Address"
-                                                        name="Email_ID"
+                                                        name="email"
+                                                        value={formData.email}
+                                                        onChange={handleChange}
                                                     />
-                                                    <span id="errEmail" />
+                                                    {/* <span id="errEmail" /> */}
+
+                                                    {errors.email && <div className="error">{errors.email}</div>}
+                                                    {successMessage && <div className="success"><spam>{successMessage1}</spam></div>}
                                                 </div>
                                             </div>
                                             <div className="fieldsets row">
@@ -48,9 +250,15 @@ const FormInfo = () => {
                                                         id="user_phone"
                                                         className="txtPhone 10digit validate"
                                                         placeholder="Contact Number"
-                                                        name="Phone_Number"
+                                                        name="phone"
+                                                        value={formData.phone}
+                                                        onChange={handleChange}
                                                     />
-                                                    <span id="errPhoneno" />
+                                                    {/* <span id="errPhoneno" /> */}
+                                                    {errors.phone && <div className="error">{errors.phone}</div>}
+                                                    {successMessage && <div className="success"><spam>{successMessage2}</spam></div>}
+
+
                                                 </div>
                                                 <div className="col-md-6">
                                                     <input
@@ -58,9 +266,9 @@ const FormInfo = () => {
                                                         id="user_skype"
                                                         placeholder="Skype"
                                                         className="validate"
-                                                        name="Skype"
+                                                        name="skype"
                                                     />
-                                                    <span id="errSkype" />
+
                                                 </div>
                                             </div>
                                             <div className="fieldsets row">
@@ -141,6 +349,7 @@ const FormInfo = () => {
                                                     id="submit"
                                                     className="ree-btn ree-btn-grdt1 w-100"
                                                     name="submit"
+                                                    onClick={handleSubmit}
                                                     defaultValue="Send your inquiry"
                                                 />
                                                 <div className="form-response" />

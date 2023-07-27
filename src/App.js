@@ -8,7 +8,9 @@ import Home from './pages/Home/home';
 import About from './pages/About/about';
 import Contact from './pages/contact-us/contact-us';
 import Blog from './pages/blog/blog';
-
+import BlogDetail from "./pages/blog/blog-detail/blog-detail";
+import Career from "./pages/career/career";
+import CareerDetails from "./pages/career/career-details";
 import HireDevelopers from './pages/hire-app-developers/hire-app-developers';
 import MobileDevelopment from './services/mobile-app-development/mobile-app-development';
 import AndroidDevelopment from './services/mobile-app-development/android-app-development';
@@ -60,9 +62,12 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/career-details" element={< CareerDetails />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/hire-app-developers" element={<HireDevelopers />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog-details" element={<BlogDetail />} />
           <Route path="/mobile-app-development" element={<MobileDevelopment />} />
           <Route path="/android-app-development" element={<AndroidDevelopment />} />
           <Route path="/blockchain-development" element={<BlockchianDevelopment />} />

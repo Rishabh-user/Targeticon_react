@@ -1,0 +1,1 @@
+export const apiEndpoint = 'https://target-icon-cc2c549fc12a.herokuapp.com/api';
