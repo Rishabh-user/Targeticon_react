@@ -37,7 +37,7 @@ const JavaDevelopment = () => {
                                     diminished many-sided quality and a steady venture platform.{" "}
                                 </p>
                                 <NavLink to="/contact-us"
-                                    className="ree-btn  ree-btn-grdt1 mt30"
+                                    className="ree-btn  ree-btn-grdt1 mt30 cardadd"
                                     data-aos="fade-up"
                                     data-aos-delay={100}
                                 >

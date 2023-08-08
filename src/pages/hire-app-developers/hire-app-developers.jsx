@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import hire from '../../assets/images/GIF/hire-app-dev.gif';
 import part_time from '../../assets/images/icons/part-time.png';
 import full_time from '../../assets/images/icons/full-time.png';
@@ -64,14 +65,13 @@ const HireAppDevelopers = () => {
                                         Daily/Weekly/Monthly code delivery
                                     </li>
                                 </ul>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40 mb30 mw-80"
                                     data-aos="fade-in"
                                     data-aos-delay={100}
                                 >
                                     Let's Talk <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6">
@@ -100,7 +100,7 @@ const HireAppDevelopers = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
@@ -119,10 +119,10 @@ const HireAppDevelopers = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
@@ -141,10 +141,10 @@ const HireAppDevelopers = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
@@ -163,7 +163,7 @@ const HireAppDevelopers = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -209,14 +209,13 @@ const HireAppDevelopers = () => {
                                     Have an awesome idea? We will provide a quick analysis and free
                                     proposal for it. Don’t worry, it is secure and confidential.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40 mb30 mw-80"
                                     data-aos="fade-in"
                                     data-aos-delay={100}
                                 >
                                     Let's Talk <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
@@ -294,9 +293,9 @@ const HireAppDevelopers = () => {
                                     </div>
                                 </div>
                                 <div className="btn-sets">
-                                    <a href="about.php" className="ree-btn  ree-btn-grdt2 mr20">
+                                    <NavLink to="/about" className="ree-btn  ree-btn-grdt2 mr20">
                                         About Us <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                     <div className="vid-btntitl"></div>
                                 </div>
                             </div>
@@ -305,7 +304,7 @@ const HireAppDevelopers = () => {
                             <div className="company-stats">
                                 <div className="row">
                                     <div className="col-lg-6 col-12 m-pr7 why-choose-dev-from-targeticon">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             <div
                                                 className="stats-box stat-bx-1 process-content ree-card ree-card-new we-are-t-box"
                                                 data-aos="fade-up"
@@ -338,8 +337,8 @@ const HireAppDevelopers = () => {
                                                     sometimes by accident.
                                                 </p>
                                             </div>
-                                        </a>
-                                        <a href="#">
+                                        </NavLink>
+                                        <NavLink to="#">
                                             <div
                                                 className="stats-box stat-bx-2 mt20 process-content ree-card ree-card-new we-are-t-box"
                                                 data-aos="fade-up"
@@ -372,10 +371,10 @@ const HireAppDevelopers = () => {
                                                     sometimes by accident.
                                                 </p>
                                             </div>
-                                        </a>
+                                        </NavLink>
                                     </div>
                                     <div className="col-lg-6 col-12 m-pl7 why-choose-dev-from-targeticon">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             <div
                                                 className="stats-box stat-bx-3 mt100 process-content ree-card ree-card-new we-are-t-box"
                                                 data-aos="fade-up"
@@ -408,8 +407,8 @@ const HireAppDevelopers = () => {
                                                     sometimes by accident.
                                                 </p>
                                             </div>
-                                        </a>
-                                        <a href="#">
+                                        </NavLink>
+                                        <NavLink to="#">
                                             <div
                                                 className="stats-box stat-bx-4 mt20 process-content ree-card ree-card-new we-are-t-box"
                                                 data-aos="fade-up"
@@ -442,7 +441,7 @@ const HireAppDevelopers = () => {
                                                     sometimes by accident.
                                                 </p>
                                             </div>
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>

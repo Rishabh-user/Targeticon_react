@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Slider from "./components/slider";
 import TopBrandsTrustSlider from "../../components/top-brands-trust-slider";
 import officeviewimg from '../../assets/images/others/office-view-2.png';
@@ -75,13 +75,13 @@ const Home = () => {
                         <div className="row key-and-award">
                             <div className="ree-app-st-a flx-end m-order2">
                                 <div className="btnctm">
-                                    <Link
+                                    <NavLink
                                         to="/about"
                                         className="ree-btn ree-btn-grdt2 mw-80 m-mt30"
                                     >
                                         Know More Targeticon
                                         <i className="fas fa-arrow-right fa-btn" />
-                                    </Link>
+                                    </NavLink>
                                 </div>
                             </div>
                             <div className="ree-app-st-b m-order1">
@@ -145,7 +145,7 @@ const Home = () => {
                         <div className="col-md-12">
                             <div className="app-awards owl-carousesl">
                                 <div className="award-achivt">
-                                    <Link to="#">
+                                    <NavLink to="#">
                                         <picture>
                                             <img
                                                 loading="lazy"
@@ -156,11 +156,11 @@ const Home = () => {
                                                 height={226}
                                             />
                                         </picture>
-                                    </Link>
+                                    </NavLink>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <Link to="#">
+                                    <NavLink to="#">
                                         <picture>
                                             <img
                                                 loading="lazy"
@@ -171,11 +171,11 @@ const Home = () => {
                                                 height={226}
                                             />
                                         </picture>
-                                    </Link>
+                                    </NavLink>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <Link to="#">
+                                    <NavLink to="#">
                                         <picture>
                                             <img
                                                 loading="lazy"
@@ -186,11 +186,11 @@ const Home = () => {
                                                 height={226}
                                             />
                                         </picture>
-                                    </Link>
+                                    </NavLink>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <Link to="#">
+                                    <NavLink to="#">
                                         <picture>
                                             <img
                                                 loading="lazy"
@@ -201,11 +201,11 @@ const Home = () => {
                                                 height={226}
                                             />
                                         </picture>
-                                    </Link>
+                                    </NavLink>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                                 <div className="award-achivt">
-                                    <Link to="#">
+                                    <NavLink to="#">
                                         <picture>
                                             <img
                                                 loading="lazy"
@@ -216,7 +216,7 @@ const Home = () => {
                                                 height={226}
                                             />
                                         </picture>
-                                    </Link>
+                                    </NavLink>
                                     <p>Top App Developer Genuine Quality</p>
                                 </div>
                             </div>
@@ -242,7 +242,7 @@ const Home = () => {
                     </div>
                     <div className="row mt30 justify-content-center">
                         <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={100}>
-                            <Link tp="/mobile-app-development" className="ree-card reebgb h-100">
+                            <NavLink to="/mobile-app-development" className="ree-card reebgb h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">Mobile App Development</h4>
                                     <p>With the help of innovative technologies, develop customized
@@ -260,10 +260,10 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </div>
                         <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={200}>
-                            <Link to="/web-app-development" className="ree-card reebgd h-100">
+                            <NavLink to="/web-app-development" className="ree-card reebgd h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">Web Application Development</h4>
                                     <p>We have implemented feature-rich qualities and features for
@@ -282,10 +282,10 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </div>
                         <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={300}>
-                            <Link to="/UI-UX-design" className="ree-card reebga h-100">
+                            <NavLink to="/ui-ux-design" className="ree-card reebga h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">UI/UX Design</h4>
                                     <p>We use the most resourceful and beneficial tools in creating a
@@ -304,10 +304,10 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </div>
                         <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={400}>
-                            <Link to="/Cloud" className="ree-card reebgc h-100">
+                            <NavLink to="/cloud" className="ree-card reebgc h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">Cloud</h4>
                                     <p> We facilitate making affordable, reliable, and secure cloud
@@ -325,10 +325,10 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </div>
-                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={500}>
-                            <Link to="/JS-Stack-Development" className="ree-card reebgc h-100">
+                        <div className="col-lg-3 col-sm-6 mt30 cardadd" data-aos="fade-up" data-aos-delay={500}>
+                            <NavLink to="/js-stack-development" className="ree-card reebgc h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">JS Stack Development</h4>
                                     <p>This versatile and robust development is convenient to use and
@@ -346,10 +346,10 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </div>
-                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={600}>
-                            <Link to="/Oracle-Forms-Development" className="ree-card reebgd h-100">
+                        <div className="col-lg-3 col-sm-6 mt30 cardadd" data-aos="fade-up" data-aos-delay={600}>
+                            <NavLink to="" className="ree-card reebgd h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">Website Testing</h4>
                                     <p>Website for problems before you make that web application or
@@ -367,10 +367,10 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </div>
-                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={700}>
-                            <Link to="/Enterprise-Integration" className="ree-card reebga h-100">
+                        <div className="col-lg-3 col-sm-6 mt30 cardadd" data-aos="fade-up" data-aos-delay={700}>
+                            <NavLink to="/enterprise-integration" className="ree-card reebga h-100">
                                 <div className="creative-cntnt">
                                     <h4 className="mb15">Enterprise Integration</h4>
                                     <p>
@@ -390,7 +390,7 @@ const Home = () => {
                                         />
                                     </picture>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </div>
                     </div>
                     <div className="cta-block-wide mt50">
@@ -399,9 +399,9 @@ const Home = () => {
                                 <div className="cta-heading-wide-bt">
                                     <h3> Hire World-Class{" "}<span className="ree-text rt40">Developers</span>
                                     </h3>
-                                    <Link to="/hire-app-developers" target="_blank" className="ree-btn  ree-btn-grdt1 mw-80"
+                                    <NavLink to="/hire-app-developers" target="_blank" className="ree-btn  ree-btn-grdt1 mw-80"
                                     > Hire Now <i className="fas fa-arrow-right fa-btn" />
-                                    </Link>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>

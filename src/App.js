@@ -1,7 +1,10 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HelmetWrapper from './js/HelmetWrapper';
 import './App.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Helmet } from 'react-helmet';
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Home from './pages/Home/home';
@@ -29,9 +32,10 @@ import IosApplication from './services/ui-ux-design/ios-application-designing';
 import UiUxDesign from './services/ui-ux-design/ui-ux-design';
 import UxDesign from './services/ui-ux-design/ux-design';
 import WebsiteDesigning from './services/ui-ux-design/website-designing';
-import OracleFormsDevelopment from './services/oracle-forms-development/oracle-forms-development';
-import D2fForms from './services/oracle-forms-development/d2f-forms';
-import D2fReports from './services/oracle-forms-development/d2f-reports';
+import Application from './services/application/application';
+import MachineLearning from './services/application/machine-learning';
+import CyberSecurity from './services/application/cyber-security';
+import ArtificalIntelligence from './services/application/artifical-intelligence';
 import Cloud from './services/cloud/cloud';
 import Aws from './services/cloud/aws';
 import Azure from './services/cloud/azure-cloud-migration';
@@ -51,71 +55,115 @@ import Manufacturing from './industry-served/manufacturing';
 import Media from './industry-served/media-advertising';
 import Retail from './industry-served/retail';
 import TravelSocial from './industry-served/travel-social';
+import Portfolio from './portfolio/index';
+import FutureGeneralLife from './portfolio/future-general-life-insurance';
+import GetCashForLaptop from './portfolio/get-cash-for-laptop';
+import OlivaClinic from './portfolio/oliva-clinic';
+import PerformanceAudition from './portfolio/performance-auditions';
+import SocialLocket from './portfolio/social-locket';
+import TSig from './portfolio/t-sig-ltd';
+import Tstpc from './portfolio/tstpc';
+import VirtuallyVocal from './portfolio/virtually-vocal';
+import MicrosoftDynamics from "./services/microsoft-dynamics/microsoft-dynamics";
+import BusinessCentral from './services/microsoft-dynamics/business-central';
+import FinanceOperation from './services/microsoft-dynamics/finance-operation';
+import MicrosoftDynamicNavision from './services/microsoft-dynamics/microsoft-dynamic-navision';
+import PowerBi from './services/microsoft-dynamics/powerbi';
+import ScrollToTop from './js/scroll';
+
+
 
 
 function App() {
-  return (
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
+  return (
     <div>
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/career-details" element={< CareerDetails />} />
-          <Route path="/contact-us" element={<Contact />} />
-          <Route path="/hire-app-developers" element={<HireDevelopers />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog-details" element={<BlogDetail />} />
-          <Route path="/mobile-app-development" element={<MobileDevelopment />} />
-          <Route path="/android-app-development" element={<AndroidDevelopment />} />
-          <Route path="/blockchain-development" element={<BlockchianDevelopment />} />
-          <Route path="/hybrid-app-development" element={<HybridDevelopment />} />
-          <Route path="/ios-app-development" element={<IosDevelopment />} />
-          <Route path="/xamarin" element={<Xamarin />} />
-          <Route path="/web-app-development" element={<WebDevelopment />} />
-          <Route path="/dot-net-development" element={<DotNetDevelopment />} />
-          <Route path="/ecommerce-development" element={<EcommerceDevelopment />} />
-          <Route path="/java-development" element={<JavaDevelopment />} />
-          <Route path="/php-development" element={<PhpDevelopment />} />
-          <Route path="/progressive-web-app" element={<ProgressiveWebApp />} />
-          <Route path="/android-application-design" element={<AndroidApplication />} />
-          <Route path="/ios-application-designing" element={<IosApplication />} />
-          <Route path="/ui-ux-design" element={<UiUxDesign />} />
-          <Route path="/ux-design" element={<UxDesign />} />
-          <Route path="/website-application" element={<WebsiteDesigning />} />
-          <Route path="/oracle-forms-development" element={<OracleFormsDevelopment />} />
-          <Route path="/d2f-forms" element={<D2fForms />} />
-          <Route path="/d2f-reports" element={<D2fReports />} />
-          <Route path="/cloud" element={<Cloud />} />
-          <Route path="/aws" element={<Aws />} />
-          <Route path="/azure-cloud-migration" element={<Azure />} />
-          <Route path="/js-stack-development" element={<JsStactDevelopment />} />
-          <Route path="/mean-stack" element={<MeanStack />} />
-          <Route path="/react-js" element={<ReactJs />} />
-          <Route path="/enterprise-integration" element={<Enterprise />} />
-          <Route path="/ms-crm" element={<MsCrm />} />
-          <Route path="/salesforce" element={<Salesforce />} />
-          <Route path="/sharepoint" element={<Sharepoint />} />
-          <Route path="/banking-finance" element={<BankingFinance />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/health-care" element={<HealthCare />} />
-          <Route path="/insurance" element={<Insurance />} />
-          <Route path="/logistics-business" element={<Logistics />} />
-          <Route path="/manufacturing" element={<Manufacturing />} />
-          <Route path="/media-advertising" element={<Media />} />
-          <Route path="/retail" element={<Retail />} />
-          <Route path="/travel-social" element={<TravelSocial />} />
-
-
-
+          <Route path="/" element={<HelmetWrapper title="Home| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Home} />} />
+          <Route path="/about" element={<HelmetWrapper title="About| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={About} />} />
+          <Route path="/career" element={<HelmetWrapper title="Career| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Career} />} />
+          <Route path="career/career-details" element={<HelmetWrapper title="Career Details| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={CareerDetails} />} />
+          <Route path="/contact-us" element={<HelmetWrapper title="Contact| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Contact} />} />
+          <Route path="/hire-app-developers" element={<HelmetWrapper title="Hire App developers| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={HireDevelopers} />} />
+          <Route path="/blog" element={<HelmetWrapper title="Blog| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Blog} />} />
+          <Route path="blog/blog-details" element={<HelmetWrapper title="Blog Details| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={BlogDetail} />} />
+          <Route path="/mobile-app-development" element={<HelmetWrapper title="Mobile App Development| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={MobileDevelopment} />} />
+          <Route path="/mobile-app-development/android-app-development" element={<HelmetWrapper title="Android App Development| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={AndroidDevelopment} />} />
+          <Route path="/mobile-app-development/blockchain-development" element={<HelmetWrapper title="Blockchain Development| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={BlockchianDevelopment} />} />
+          <Route path="/mobile-app-development/hybrid-app-development" element={<HelmetWrapper title="Hybrid App Development| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={HybridDevelopment} />} />
+          <Route path="/mobile-app-development/ios-app-development" element={<HelmetWrapper title="Ios App Development| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={IosDevelopment} />} />
+          <Route path="/mobile-app-development/xamarin" element={<HelmetWrapper title="Xamarin| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Xamarin} />} />
+          <Route path="/web-app-development" element={<HelmetWrapper title="Web App Development| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={WebDevelopment} />} />
+          <Route path="/web-app-development/dot-net-development" element={<HelmetWrapper title="Dot Net Development| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={DotNetDevelopment} />} />
+          <Route path="/web-app-development/ecommerce-development" element={<HelmetWrapper title="Ecommerce Development| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={EcommerceDevelopment} />} />
+          <Route path="/web-app-development/java-development" element={<HelmetWrapper title="Java Development| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={JavaDevelopment} />} />
+          <Route path="/web-app-development/php-development" element={<HelmetWrapper title="PHP Development| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={PhpDevelopment} />} />
+          <Route path="/web-app-development/progressive-web-app" element={<HelmetWrapper title="Progressive Web App| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={ProgressiveWebApp} />} />
+          <Route path="/ui-ux-design/android-application-design" element={<HelmetWrapper title="Android Application Design| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={AndroidApplication} />} />
+          <Route path="/ui-ux-design/ios-application-designing" element={<HelmetWrapper title="Ios Application Design| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={IosApplication} />} />
+          <Route path="/ui-ux-design" element={<HelmetWrapper title="UI/UI Design| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={UiUxDesign} />} />
+          <Route path="/ui-ux-design/ux-design" element={<HelmetWrapper title="UX Design| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={UxDesign} />} />
+          <Route path="/ui-ux-design/website-Designing" element={<HelmetWrapper title="Website Designing| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={WebsiteDesigning} />} />
+          <Route path="/application" element={<HelmetWrapper title="Application| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Application} />} />
+          <Route path="/application/artifical-intelligence" element={<HelmetWrapper title="Artifical Intelligence| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={ArtificalIntelligence} />} />
+          <Route path="/application/machine-learning" element={<HelmetWrapper title="Machine Learning| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={MachineLearning} />} />
+          <Route path="/application/cyber-security" element={<HelmetWrapper title="Cyber Security| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={CyberSecurity} />} />
+          <Route path="/cloud" element={<HelmetWrapper title="Cloud| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Cloud} />} />
+          <Route path="/cloud/aws" element={<HelmetWrapper title="AWS| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Aws} />} />
+          <Route path="/cloud/azure-cloud-migration" element={<HelmetWrapper title="Azure Cloud Migiration| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Azure} />} />
+          <Route path="/js-stack-development" element={<HelmetWrapper title="JS Stact Development| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={JsStactDevelopment} />} />
+          <Route path="/js-stack-development/mean-stack" element={<HelmetWrapper title="Mean Stact| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={MeanStack} />} />
+          <Route path="/js-stack-development/react-js" element={<HelmetWrapper title="React JS| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={ReactJs} />} />
+          <Route path="/enterprise-integration" element={<HelmetWrapper title="Enterprise Integration| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Enterprise} />} />
+          <Route path="/enterprise-integration/ms-crm" element={<HelmetWrapper title="MS CRM| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={MsCrm} />} />
+          <Route path="/enterprise-integration/salesforce" element={<HelmetWrapper title="Salesforce| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Salesforce} />} />
+          <Route path="/enterprise-integration/sharepoint" element={<HelmetWrapper title="Sharepoint| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Sharepoint} />} />
+          <Route path="/banking-finance" element={<HelmetWrapper title="Banking Finance| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={BankingFinance} />} />
+          <Route path="/education" element={<HelmetWrapper title="Education| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Education} />} />
+          <Route path="/health-care" element={<HelmetWrapper title="Health Care| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={HealthCare} />} />
+          <Route path="/insurance" element={<HelmetWrapper title="Insurance| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Insurance} />} />
+          <Route path="/logistics-business" element={<HelmetWrapper title="Logistics Business| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Logistics} />} />
+          <Route path="/manufacturing" element={<HelmetWrapper title="Manufacturing| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Manufacturing} />} />
+          <Route path="/media-advertising" element={<HelmetWrapper title="Media Advertising| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Media} />} />
+          <Route path="/retail" element={<HelmetWrapper title="Retail| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Retail} />} />
+          <Route path="/travel-social" element={<HelmetWrapper title="Travel Social| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={TravelSocial} />} />
+          <Route path="/portfolio" element={<HelmetWrapper title="Portfolio| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Portfolio} />} />
+          <Route path="/portfolio/future-general-life-insurance" element={<HelmetWrapper title="Future General Life Insurance| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={FutureGeneralLife} />} />
+          <Route path="/portfolio/get-cash-for-laptop" element={<HelmetWrapper title="Get Cash For Laptop| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={GetCashForLaptop} />} />
+          <Route path="/portfolio/oliva-clinic" element={<HelmetWrapper title="Oliva Clinic| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={OlivaClinic} />} />
+          <Route path="/portfolio/performance-audition" element={<HelmetWrapper title="Performance Audition| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={PerformanceAudition} />} />
+          <Route path="/portfolio/social-locket" element={<HelmetWrapper title="Social Locket| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={SocialLocket} />} />
+          <Route path="/portfolio/t-sig" element={<HelmetWrapper title="T Sig| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={TSig} />} />
+          <Route path="/portfolio/tstpc" element={<HelmetWrapper title="TSTPC| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Tstpc} />} />
+          <Route path="/portfolio/virtually-vocal" element={<HelmetWrapper title="Virtually Vocal| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={VirtuallyVocal} />} />
+          <Route path="/microsoft-dynamics" element={<HelmetWrapper title="Microsoft Dynamics| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={MicrosoftDynamics} />} />
+          <Route path="/microsoft-dynamics/business-central" element={<HelmetWrapper title="Business Central| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={BusinessCentral} />} />
+          <Route path="/microsoft-dynamics/finance&operation" element={<HelmetWrapper title="Finance & Operation| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={FinanceOperation} />} />
+          <Route path="/microsoft-dynamics/microsoft-dynamic-navision" element={<HelmetWrapper title="Microsoft Dynamic Navision| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={MicrosoftDynamicNavision} />} />
+          <Route path="/microsoft-dynamics/power-bi" element={<HelmetWrapper title="Power BI| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={PowerBi} />} />
 
         </Routes>
         <Footer />
       </BrowserRouter>
     </div>
   );
-}
+};
+// const HelmetWrapper = ({ title, component: Component }) => {
+//   return (
+//     <React.Fragment>
+//       <Helmet>
+//         <title>{title}</title>
+//       </Helmet>
+//       <Component />
+//     </React.Fragment>
+//   );
+// };
 
 export default App;

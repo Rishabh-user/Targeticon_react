@@ -1,12 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../components/our-tools';
+import tstpc from '../assets/images/TSTPC-screen-short.png';
+
 
 const Tstpc = () => {
     return (
         <div>
-            {/* start header */}
-            {/*?php include '../include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-g pt60 pb60 portfolio-details-banner">
                 <div className="container">
                     <div className="row vcenter">
@@ -53,15 +53,14 @@ const Tstpc = () => {
                                     commodo ligula eget dolor. Aenean massa. Cum sociis natoque
                                     penatibus et magnis.
                                 </p>
-                                <a
-                                    href="https://tstpc.telangana.gov.in/"
+                                <NavLink to="https://tstpc.telangana.gov.in/"
                                     target="_blank"
                                     className="port-links mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={500}
                                 >
                                     Go to Website <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -71,7 +70,7 @@ const Tstpc = () => {
                                 data-aos-delay={400}
                             >
                                 <img
-                                    src=" <?php echo BASE_URL; ?>images/TSTPC-screen-short.png"
+                                    src={tstpc}
                                     alt="portfolio"
                                     className="img-fluid"
                                 />
@@ -206,13 +205,13 @@ const Tstpc = () => {
                     <div className="row justify-content-center mt40">
                         <div className="col-lg-6">
                             <div className="center-btn big-txt">
-                                <a href="#" className="ree-btn  ree-btn-grdt2">
+                                <NavLink to="#" className="ree-btn  ree-btn-grdt2">
                                     <i className="fas fa-arrow-left fa-btn mr5" /> Previous Project{" "}
-                                </a>
-                                <a href="#" className="ree-btn  ree-btn-grdt2">
+                                </NavLink>
+                                <NavLink to="#" className="ree-btn  ree-btn-grdt2">
                                     {" "}
                                     Next Project <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
@@ -223,11 +222,8 @@ const Tstpc = () => {
             {/*?php include '../include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include '../include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include '../include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

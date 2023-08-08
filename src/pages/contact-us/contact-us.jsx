@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import FormInfo from "../../components/form-info";
+import Location from "../../components/location";
 import contactus2 from '../../assets/images/contact-us2.png';
 import communicate from '../../assets/images/icons/Communicate.png';
 import understanding from '../../assets/images/icons/understanding.png';
@@ -13,10 +14,6 @@ import trophy from '../../assets/images/icons/trophy.png';
 const ContactUs = () => {
     return (
         <div>
-            {/*Start Header*/}
-            {/*?php include 'include/header.php';?*/}
-            {/* Header End */}
-            {/* start Header title */}
             <section className="header-title dark-bg pera-block Contactus-bg pt60">
                 <div className="container">
                     <div className="row ">
@@ -46,14 +43,12 @@ const ContactUs = () => {
                     </div>
                 </div>
             </section>
-            {/* Header title end */}
             {/*start contact form*/}
-            {/*?php include 'include/form-info.php';?*/}
+            <FormInfo />
             {/*contact form end*/}
             {/*start find us location*/}
-            {/*?php include 'include/location.php';?*/}
+            <Location />
             {/*end find us location*/}
-            {/* we Here to Help */}
             <section className="r-bg-c pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
@@ -206,10 +201,6 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            {/*end */}
-            {/*start footer */}
-            {/*?php include 'include/footer.php';?*/}
-            {/* end footer */}
         </div>
     );
 };

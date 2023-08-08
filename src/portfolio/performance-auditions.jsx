@@ -1,12 +1,11 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../components/our-tools';
+import performanceauditions from '../assets/images/Performer-Auditions-screen.png';
 
 const PerformanceAuditions = () => {
     return (
         <div>
-            {/* start header */}
-            {/*?php include '../include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-g pt60 pb60 portfolio-details-banner">
                 <div className="container">
                     <div className="row vcenter">
@@ -53,15 +52,14 @@ const PerformanceAuditions = () => {
                                     commodo ligula eget dolor. Aenean massa. Cum sociis natoque
                                     penatibus et magnis.
                                 </p>
-                                <a
-                                    href="http://stage.performerauditions.com/"
+                                <NavLink to="http://stage.performerauditions.com/"
                                     target="_blank"
                                     className="port-links mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
                                 >
                                     Go to Website <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -71,7 +69,7 @@ const PerformanceAuditions = () => {
                                 data-aos-delay={200}
                             >
                                 <img
-                                    src=" <?php echo BASE_URL; ?>images/Performer-Auditions-screen.png"
+                                    src={performanceauditions}
                                     alt="portfolio"
                                     className="img-fluid"
                                 />
@@ -206,28 +204,25 @@ const PerformanceAuditions = () => {
                     <div className="row justify-content-center mt40">
                         <div className="col-lg-6">
                             <div className="center-btn big-txt">
-                                <a href="#" className="ree-btn  ree-btn-grdt2">
+                                <NavLink to="#" className="ree-btn  ree-btn-grdt2">
                                     <i className="fas fa-arrow-left fa-btn mr5" /> Previous Project{" "}
-                                </a>
-                                <a href="#" className="ree-btn  ree-btn-grdt2">
+                                </NavLink>
+                                <NavLink to="#" className="ree-btn  ree-btn-grdt2">
                                     {" "}
                                     Next Project <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            {/*needs and solution end*/}
             {/*start client testimonial  */}
             {/*?php include '../include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include '../include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include '../include/footer.php';?*/}
-            {/*end footer  */}
+
         </div>
     );
 };

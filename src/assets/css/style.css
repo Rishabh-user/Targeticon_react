@@ -5600,3 +5600,13 @@ input[type="checkbox"] {
 .display .short-description a {
     color: #74777a;
 }
+
+
+/* extra  */
+.hc-nav-trigger.hc-nav-1 {
+    display: block;
+}
+
+.cardadd {
+    margin-top: 30px;
+}

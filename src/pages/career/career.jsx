@@ -5,15 +5,16 @@ import Tools from '../../components/our-tools';
 import { apiEndpoint } from '../../js/api';
 import career from '../../assets/images/career-page-img.png';
 import careerpage from '../../assets/images/career-page-img-mobile-view.png';
-const options = [
-    { value: 1, label: 'Java' },
-    { value: 2, label: 'React' },
-    { value: 3, label: 'Dot Net' },
-    { value: 4, label: 'HTML' },
-];
+// const option = [
+//     { value: 1, label: 'Java' },
+//     { value: 2, label: 'React' },
+//     { value: 3, label: 'Dot Net' },
+//     { value: 4, label: 'HTML' },
+// ];
 
 const Career = () => {
     const [users, setUsers] = useState([]);
+
     useEffect(() => {
         const fetchUsers = async () => {
             try {
@@ -31,6 +32,15 @@ const Career = () => {
 
         fetchUsers();
     }, []);
+    const options = users.map(user => ({
+        value: user.id,
+        label: user.title,
+    }));
+    const option = users.map(user => ({
+        value: user.id,
+        label: user.shortDescription,
+    }));
+
     return (
         <div>
             <section className="page-heading-sec r-bg-g pt60 pb60 career-banner">
@@ -79,11 +89,11 @@ const Career = () => {
                                             </li>
                                             <li>
                                                 <div className="Function-filter text-center">
-                                                    <select className="selectlocation" multiple="multiple">
-                                                        <option value={1}>Noida</option>
-                                                        <option value={2}>Gurugram</option>
-                                                        <option value={3}>Mumbai</option>
-                                                    </select>
+                                                    <Select
+                                                        isMulti
+                                                        options={option}
+                                                        placeholder="Choose Your location"
+                                                    />
                                                 </div>
                                             </li>
                                             <li>
@@ -165,18 +175,19 @@ const Career = () => {
                                 </p>
                             </div>
                         </div>
-                        {users.map(career => (
-                            <div className="col-md-9" key={career.id}>
-                                <div className="row mt30 justify-content-center">
-                                    <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box">
+                        <div className="col-md-9">
+                            <div className="row mt30 justify-content-center">
+                                {users.map((career, index) => (
+                                    <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box" key={career.id}>
                                         <div>
                                             <div className="process-content ree-card">
-                                                <span className="setps hst-1">01</span>
+                                                <span className="setps hst-1">{index + 1}</span>
                                                 <div className="process-block">
                                                     <div className="process-icon">
                                                         <h4>{career.title}</h4>
                                                         <h6 className="mb20 txt-blue">
                                                             <i className="fas fa-map-marker-alt mr10" />
+                                                            {/* {users.category[0].subCategory[0].experience} */}
 
                                                         </h6>
                                                     </div>
@@ -190,14 +201,15 @@ const Career = () => {
                                                             <NavLink to="#">Apply</NavLink>
                                                         </div>
                                                         <div className="see-detail">
-                                                            <NavLink to="/career-details">See Detail</NavLink>
+                                                            <NavLink to="career/career-details">See Detail</NavLink>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box">
+                                ))}
+                                {/* <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box">
                                         <div>
                                             <div className="process-content ree-card">
                                                 <span className="setps hst-1">02</span>
@@ -225,8 +237,8 @@ const Career = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box">
+                                    </div> */}
+                                {/* <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box">
                                         <div>
                                             <div className="process-content ree-card">
                                                 <span className="setps hst-1">03</span>
@@ -341,10 +353,10 @@ const Career = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </div> */}
                             </div>
-                        ))}
+                        </div>
+
                     </div>
                 </div>
             </section>

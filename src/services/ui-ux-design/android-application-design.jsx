@@ -188,7 +188,7 @@ const AndroidApplicationDesign = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 mt30 ">
+                        <div className="col-lg-6 col-md-6 col-sm-12 mt30 cardadd ">
                             <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
@@ -219,7 +219,7 @@ const AndroidApplicationDesign = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 mt30 ">
+                        <div className="col-lg-6 col-md-6 col-sm-12 mt30 cardadd">
                             <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>

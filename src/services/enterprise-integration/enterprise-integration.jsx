@@ -238,7 +238,7 @@ const EnterpriseIntegration = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <NavLink to="/salesforce">
+                            <NavLink to="/enterprise-integration/salesforce">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
@@ -267,7 +267,7 @@ const EnterpriseIntegration = () => {
                             </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <NavLink to="/ms-crm">
+                            <NavLink to="/enterprise-integration/ms-crm">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
@@ -295,7 +295,7 @@ const EnterpriseIntegration = () => {
                             </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 mt30">
-                            <NavLink to="/sharepoint">
+                            <NavLink to="/enterprise-integration/sharepoint">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">03</span>
                                     <div className="process-block ">

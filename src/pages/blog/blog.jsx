@@ -1,20 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { apiEndpoint } from '../../js/api';
+import { apiEndpoint1 } from '../../js/api';
 import Undermaintenance from '../../assets/images/Under-Maintenance.png'
 
 const Blog = () => {
+
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
         const fetchUsers = async () => {
+
             try {
-                const response = await fetch(`${apiEndpoint}/blog/get-all-blogs/`);
+                const response = await fetch(`${apiEndpoint1}/read`);
                 const data = await response.json();
+                console.log(data.items);
+                setUsers(data.items);
 
                 // Initialize viewCount property for each blog post
-                const blogsWithViews = data.map(blog => ({ ...blog, viewCount: 0 }));
-                setUsers(blogsWithViews);
+                // const blogsWithViews = data.map(blog => ({ ...blog, viewCount: 0 }));
+                // setUsers(blogsWithViews);
             } catch (error) {
                 console.error('Error fetching users:', error);
             }
@@ -118,39 +122,38 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
+            {/* {console.log(users)}; */}
             <div className="blog-block pt60 pb60">
                 <div className="container">
                     <div className="blog-post">
                         <div className="row vcenter">
+
                             {users.map(blog => (
-                                <div className="col-lg-4 col-sm-6">
-                                    <div className="ree-media-crd" key={blog.id} onClick={() => handlePostClick(blog.id)}>
-
-                                        {/* {console.log(users)}; */}
-
+                                <div className="col-lg-4 col-sm-6" key={blog.id}>
+                                    <div className="ree-media-crd"  >
                                         <div className="ree-media-crd blog" >
                                             <div className="rpl-img">
-                                                <NavLink to="/blog-details">
-                                                    <img src={blog.blogImageUrl} alt="loading" className="fill-fixed" />
+                                                <NavLink to="blog/blog-details">
+                                                    <img src={blog.blog_image} alt="loading" className="fill-fixed" />
                                                 </NavLink>
 
                                             </div>
                                             <div className="display">
                                                 <div className="time-zone">
-                                                    <spam className="category"> {blog.category.length > 0 ? blog.category[0].title : 'N/A'}</spam>
+                                                    <spam className="category"> </spam>
                                                     <span className="time">
                                                         <p>
                                                             <i className="fas fa-book reading icon" />
-                                                            {calculateReadingTime(blog.longDescription)}
+                                                            {calculateReadingTime(blog.long_desc)}
                                                         </p>
                                                     </span>
                                                 </div>
                                                 <div className="short-description">
                                                     <h4>
-                                                        {blog.title}
+                                                        {blog.blog_title}
                                                     </h4>
                                                     <p>
-                                                        <NavLink to="/blog-details">{blog.shortDescription}</NavLink>
+                                                        <NavLink to="/blog/blog-details">{blog.short_desc}</NavLink>
                                                     </p>
                                                 </div>
                                                 <div className="author">

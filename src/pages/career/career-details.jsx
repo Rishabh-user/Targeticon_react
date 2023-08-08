@@ -1,34 +1,57 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { apiEndpoint } from "../../js/api";
 import Tools from '../../components/our-tools';
 
 const CareerDetails = () => {
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        const fetchUsers = async () => {
+            try {
+                // [in this we write post beacause it is a API of posts,'/posts' is the specific endpoint for retrieving posts(ie. https://green.app.sociallocket.com/api/v1/posts) ]
+                const response = await fetch(`${apiEndpoint}/career/get-all-career/`);
+                const data = await response.json();
+                console.log(data); // Print the data array in the console and we write data.result because we are getting the data of result array not fully api as a array
+                // 'console.log(data.result)' it assumes that the API response has a result field containing the array of users.
+                setUsers(data);
+                // [here also we have done the same to get only values that are stored in result array otherwise it take full api as a array]
+            } catch (error) {
+                console.error('Error fetching users:', error);
+            }
+        };
+
+        fetchUsers();
+    }, []);
     return (
         <div>
             <section className="page-heading-sec r-bg-g pt60 pb60 career-detail-banner">
                 <div className="container">
                     <div className="row vcenter">
                         <div className="col-md-6">
-                            <div className="page-headings pb60 pt60 career-detail-head">
-                                <h1
-                                    data-aos="fade-up"
-                                    data-aos-delay={100}
-                                    className="ree-text txt-white mb20"
-                                >
-                                    Sr. UI Designer
-                                </h1>
-                                <h6
-                                    data-aos="fade-up"
-                                    data-aos-delay={50}
-                                    className="ree-text txt-white"
-                                >
-                                    React/HTML
-                                </h6>
-                            </div>
+                            {users.map(career => (
+                                <div className="page-headings pb60 pt60 career-detail-head" key={career.id}>
+                                    <h1
+                                        data-aos="fade-up"
+                                        data-aos-delay={100}
+                                        className="ree-text txt-white mb20"
+                                    >
+                                        {/* {careerdetail.title} */}
+                                    </h1>
+                                    <h6
+                                        data-aos="fade-up"
+                                        data-aos-delay={50}
+                                        className="ree-text txt-white"
+                                    >
+                                        React/HTML
+                                    </h6>
+                                </div>
+                            ))}
                         </div>
                         <div className="col-md-6 ">
                             <div className="page-headings pb60 pt60 career-detail-head">
                                 <div className="go-button">
-                                    <a href="#">Apply Now</a>
+                                    <NavLink to="#">Apply Now</NavLink>
                                 </div>
                             </div>
                         </div>
@@ -125,14 +148,14 @@ const CareerDetails = () => {
                                                 </p>
                                                 <div className="connect">
                                                     <div className="mb20 mt20">
-                                                        <a href="#">
+                                                        <NavLink To="#">
                                                             <i className="fas fa-phone-alt mr10 mb20" /> +91 981
                                                             875 7597
-                                                        </a>
-                                                        <a href="#">
+                                                        </NavLink>
+                                                        <NavLink To="#">
                                                             <i className="fas fa-envelope mr10" />
                                                             info@targeticon.com
-                                                        </a>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                             </div>
@@ -142,36 +165,32 @@ const CareerDetails = () => {
                                             <div className="mt15">
                                                 <ul className="footer-links-list social-linkz d-flex">
                                                     <li>
-                                                        <a
-                                                            href="https://www.linkedin.com/company/targeticon/"
+                                                        <NavLink to="https://www.linkedin.com/company/targeticon/"
                                                             target="_blank"
                                                         >
                                                             <i className="fab fa-linkedin" />
-                                                        </a>
+                                                        </NavLink>
                                                     </li>
                                                     <li>
-                                                        <a
-                                                            href="https://www.instagram.com/targeticoncompany/"
+                                                        <NavLink to="https://www.instagram.com/targeticoncompany/"
                                                             target="_blank"
                                                         >
                                                             <i className="fab fa-instagram" />
-                                                        </a>
+                                                        </NavLink>
                                                     </li>
                                                     <li>
-                                                        <a
-                                                            href="https://www.facebook.com/targeticon"
+                                                        <NavLink To="https://www.facebook.com/targeticon"
                                                             target="_blank"
                                                         >
                                                             <i className="fab fa-facebook-f" />
-                                                        </a>
+                                                        </NavLink>
                                                     </li>
                                                     <li>
-                                                        <a
-                                                            href="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
+                                                        <NavLink to="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
                                                             target="_blank"
                                                         >
                                                             <i className="fab fa-whatsapp" />
-                                                        </a>
+                                                        </NavLink>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -279,6 +298,7 @@ const CareerDetails = () => {
             {/*start our tools */}
             <Tools />
             {/*end our tools  */}
+
 
         </div>
     );

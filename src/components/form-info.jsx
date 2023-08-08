@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import BestPrice from '../assets/images/icons/best-price.png';
 import QualityService from '../assets/images/icons/quality-service.png';
 import GoodSupport from '../assets/images/icons/good-support.png';
@@ -222,8 +223,8 @@ const FormInfo = () => {
                                                         value={formData.username}
                                                         onChange={handleChange}
                                                     />
-                                                    {errors.username && <div className="error"><spam>{errors.username}</spam></div>}
-                                                    {successMessage && <div className="success"><spam>{successMessage}</spam></div>}
+                                                    {errors.username && <div className="error">{errors.username}</div>}
+                                                    {successMessage && <div className="success">{successMessage}</div>}
                                                     {/* <span id="errName" /> */}
 
                                                 </div>
@@ -240,7 +241,7 @@ const FormInfo = () => {
                                                     {/* <span id="errEmail" /> */}
 
                                                     {errors.email && <div className="error">{errors.email}</div>}
-                                                    {successMessage && <div className="success"><spam>{successMessage1}</spam></div>}
+                                                    {<div className="success">{successMessage1}</div>}
                                                 </div>
                                             </div>
                                             <div className="fieldsets row">
@@ -256,7 +257,8 @@ const FormInfo = () => {
                                                     />
                                                     {/* <span id="errPhoneno" /> */}
                                                     {errors.phone && <div className="error">{errors.phone}</div>}
-                                                    {successMessage && <div className="success"><spam>{successMessage2}</spam></div>}
+                                                    {<div className="success">{successMessage2}</div>}
+                                                    {/* {successMessage && <div className="success"><spam>{successMessage2}</spam></div>} */}
 
 
                                                 </div>
@@ -288,7 +290,7 @@ const FormInfo = () => {
                                                         className="validate"
                                                         name="Services"
                                                     >
-                                                        <option selected="" disabled="">
+                                                        <option value="" disabled="">
                                                             Select Service
                                                         </option>
                                                         <option>Mobile App Development</option>
@@ -333,7 +335,7 @@ const FormInfo = () => {
                                                     htmlFor="customCheck"
                                                 >
                                                     I agree to the{" "}
-                                                    <a href="javascript:void(0)">Terms &amp; Conditions</a> of
+                                                    <NavLink to="">Terms &amp; Conditions</NavLink> of
                                                     Targeticon.
                                                 </label>
                                             </div>
@@ -440,83 +442,83 @@ const FormInfo = () => {
                             <div className="get-conct-2 pera-block d-ml50">
                                 <h3>Get in touch</h3>
                                 <div className="contact-detalnk">
-                                    <a href="tel:+911204171403">
+                                    <NavLink to="tel:+911204171403">
                                         <i className="fas fa-phone-alt" /> <span>+91-120-4171403</span>
-                                    </a>
-                                    <a href="https://wa.me/+919818757597" target="_blank">
+                                    </NavLink>
+                                    <NavLink to="https://wa.me/+919818757597" target="_blank">
                                         <i className="fab fa-whatsapp" /> <span>+91-9818757597</span>
-                                    </a>
-                                    <a href="mailto:info@targeticon.com">
+                                    </NavLink>
+                                    <NavLink to="mailto:info@targeticon.com">
                                         <i className="fas fa-envelope" />
                                         <span>info@targeticon.com</span>
-                                    </a>
-                                    <a href="skype:target.icon?chat">
+                                    </NavLink>
+                                    <NavLink to="skype:target.icon?chat">
                                         <i className="fab fa-skype" /> <span>target.icon</span>
-                                    </a>
+                                    </NavLink>
                                 </div>
                                 <h3 className="mt60">Come meet us</h3>
                                 <div className="contact-detalnk">
-                                    <a
-                                        href="https://goo.gl/maps/41xxF5oywoTKUusLA"
+                                    <NavLink
+                                        to="https://goo.gl/maps/41xxF5oywoTKUusLA"
                                         target="_blank"
                                         className="contact-addressii"
                                     >
                                         <i className="fas fa-map-marker-alt" />
                                         Office No: 12A01, 13<sup>th</sup> Floor, The Iconic Corenthum,
                                         <br /> A-41, Sector-62, Noida (UP) - 201301{" "}
-                                    </a>
-                                    <a href="https://goo.gl/maps/41xxF5oywoTKUusLA" target="_blank">
+                                    </NavLink>
+                                    <NavLink to="https://goo.gl/maps/41xxF5oywoTKUusLA" target="_blank">
                                         <i className="fas fa-location-arrow" />{" "}
                                         <span>Get Directions</span>
-                                    </a>
+                                    </NavLink>
                                 </div>
                                 <h3 className="mt60">Follow us</h3>
                                 <ul className="footer_social mt30">
                                     <li>
-                                        <a
-                                            href="https://www.linkedin.com/company/targeticon/"
+                                        <NavLink
+                                            to="https://www.linkedin.com/company/targeticon/"
                                             target="_blank"
                                             data-toggle="tooltip"
                                             title=""
                                             data-original-title="Linkedin Account"
                                         >
                                             <i className="fab fa-linkedin-in" aria-hidden="true" />
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li>
                                         {" "}
-                                        <a
-                                            href="https://www.instagram.com/targeticon_tech/?igshid=YmMyMTA2M2Y%3D"
+                                        <NavLink
+                                            to="https://www.instagram.com/targeticon_tech/?igshid=YmMyMTA2M2Y%3D"
                                             target="_blank"
                                             data-toggle="tooltip"
                                             title=""
                                             data-original-title="Instagram Profile"
                                         >
                                             <i className="fab fa-instagram" aria-hidden="true" />
-                                        </a>{" "}
+                                        </NavLink>{" "}
                                     </li>
                                     <li>
                                         {" "}
-                                        <a
-                                            href="https://www.facebook.com/targeticon"
+                                        <NavLink
+                                            to="https://www.facebook.com/targeticon"
                                             target="_blank"
                                             data-toggle="tooltip"
                                             title=""
                                             data-original-title="Facebook Profile"
                                         >
                                             <i className="fab fa-facebook-f" aria-hidden="true" />
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <a
-                                            href="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
+                                        <NavLink
+                                            to="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
                                             target="_blank"
                                             data-toggle="tooltip"
                                             title=""
                                             data-original-title="Youtube Channel"
                                         >
                                             <i className="fab fa-youtube" aria-hidden="true" />
-                                        </a>
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </div>

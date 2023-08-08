@@ -1,12 +1,11 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../components/our-tools';
+import sociallocket1 from '../assets/images/sociallocket-screen.png';
 
 const sociallocket = () => {
     return (
         <div>
-            {/* start header */}
-            {/*?php include '../include/header.php';?*/}
-            {/*header end  */}
-            {/*page head*/}
             <section className="page-heading-sec r-bg-g pt60 pb60 portfolio-details-banner">
                 <div className="container">
                     <div className="row vcenter">
@@ -53,15 +52,14 @@ const sociallocket = () => {
                                     commodo ligula eget dolor. Aenean massa. Cum sociis natoque
                                     penatibus et magnis.
                                 </p>
-                                <a
-                                    href="https://green.app.sociallocket.com/da"
+                                <NavLink to="https://green.app.sociallocket.com/da"
                                     target="_blank"
                                     className="port-links mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
                                 >
                                     Go to Website <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -71,7 +69,7 @@ const sociallocket = () => {
                                 data-aos-delay={200}
                             >
                                 <img
-                                    src=" <?php echo BASE_URL; ?>images/sociallocket-screen.png"
+                                    src={sociallocket1}
                                     alt="portfolio"
                                     className="img-fluid"
                                 />
@@ -218,16 +216,13 @@ const sociallocket = () => {
                     </div>
                 </div>
             </section>
-            {/*needs and solution end*/}
+
             {/*start client testimonial  */}
             {/*?php include '../include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             {/*start our tools */}
-            {/*?php include '../include/our-tools.php';?*/}
+            <Tools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include '../include/footer.php';?*/}
-            {/*end footer  */}
         </div>
     );
 };

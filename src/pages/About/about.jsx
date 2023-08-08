@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import marketing from '../../assets/images/GIF/marketing.gif';
 import hero from '../../assets/images/hero.webp';
 import hero1 from '../../assets/images/hero.png';
@@ -43,16 +44,16 @@ import infrastructure1 from '../../assets/images/infrastructure.png';
 const About = () => {
     return (
         <div>
-            <section className="pt60 pb60">
+            {/* <section className="pt60 pb60">
                 <div className="container">
                     <div className="row vcenter">
-                        {/*<div>
+                        <div>
                 <img src="images/targeticon-slider-banner.jpg" class="img-fluid ">
                 
-                </div>*/}
+                </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/*page head*/}
             <section className="page-heading-sec about-pag-head pt60 pb60">
                 <div className="container">
@@ -314,43 +315,43 @@ const About = () => {
                                 aria-orientation="vertical"
                             >
                                 <li>
-                                    <a
+                                    <NavLink
                                         className="nav-link active"
                                         id="mission-tab"
                                         data-toggle="pill"
-                                        href="#pills-mission"
+                                        to="#pills-mission"
                                         role="tab"
                                         aria-controls="pills-mission"
                                         aria-selected="true"
                                     >
                                         <i className="fas fa-rocket" /> Our Mission
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <a
+                                    <NavLink
                                         className="nav-link"
                                         id="vision-tab"
                                         data-toggle="pill"
-                                        href="#pills-vision"
+                                        to="#pills-vision"
                                         role="tab"
                                         aria-controls="pills-vision"
                                         aria-selected="false"
                                     >
                                         <i className="far fa-eye" /> Our Vision
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <a
+                                    <NavLink
                                         className="nav-link"
                                         id="comit-tab"
                                         data-toggle="pill"
-                                        href="#pills-comit"
+                                        to="#pills-comit"
                                         role="tab"
                                         aria-controls="pills-comit"
                                         aria-selected="false"
                                     >
                                         <i className="fas fa-hands-helping" /> Our Team
-                                    </a>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
@@ -783,7 +784,7 @@ const About = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
@@ -826,10 +827,10 @@ const About = () => {
                                         </ul>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
@@ -870,10 +871,10 @@ const About = () => {
                                         </ul>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 mt30 ">
-                            <a href="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
@@ -912,7 +913,7 @@ const About = () => {
                                         </ul>
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

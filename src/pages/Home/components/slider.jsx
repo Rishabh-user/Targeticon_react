@@ -1,30 +1,31 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel2';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 
-const Slider = () =>{
+const Slider = () => {
     const options = {
-        items:1, 
-        dot: true, 
-        loop: true,       
+        items: 1,
+        dot: true,
+        loop: true,
         nav: false,
-      };
-      
-    return(
+    };
+
+    return (
         <div>
-            {/*start main slider  */}            
+            {/*start main slider  */}
             <section className="hero-owl">
-                <OwlCarousel options={options}>                   
-                    <div className='item career-detail-banner'>                   
+                <OwlCarousel options={options}>
+                    <div className='item career-detail-banner'>
                         <div className="container">
-                        <div className="row flex-row-reverse"> 
-                            <div className="col-lg-6 col-sm-12">
+                            <div className="row flex-row-reverse">
+                                <div className="col-lg-6 col-sm-12">
                                     <div className="sol-image m-mt30 mt50">
-                                        
+
                                     </div>
-                                </div>                              
+                                </div>
                                 <div className="col-md-6 col-sm-12">
                                     <div className="hero-content-x">
                                         <h1
@@ -56,30 +57,29 @@ const Slider = () =>{
                                                 Flexible Office hours depend on timezone
                                             </li>
                                         </ul>
-                                        <a
-                                            href="hire-app-developers.php"
+                                        <NavLink to="/hire-app-developers"
                                             className="ree-btn  ree-btn-grdt1 mt40 mw-80"
                                             data-aos="fade-in"
                                             data-aos-delay={800}
                                         >
                                             Let's Talk <i className="fas fa-arrow-right fa-btn" />
-                                        </a>
+                                        </NavLink>
                                     </div>
-                                </div>                                
+                                </div>
                             </div>
                         </div>
-                    
-                    </div>  
-                    <div className='item software-slider'>                   
+
+                    </div>
+                    <div className='item software-slider'>
                         <div className="container">
-                        <div className="row flex-row-reverse"> 
-                            <div className="col-lg-6 col-sm-12">
+                            <div className="row flex-row-reverse">
+                                <div className="col-lg-6 col-sm-12">
                                     <div className="sol-image m-mt30 mt50">
-                                        
+
                                     </div>
-                                </div>                              
+                                </div>
                                 <div className="col-md-6 col-sm-12">
-                                <div className="hero-content-x">
+                                    <div className="hero-content-x">
                                         <h1
                                             className="mb30 mt50 txt-white"
                                             data-aos="fade-in"
@@ -93,19 +93,18 @@ const Slider = () =>{
                                             secure, and user-friendly applications to drive business
                                             success.
                                         </p>
-                                        <a
-                                            href="contact-us.php"
+                                        <NavLink to="/contact-us"
                                             className="ree-btn  ree-btn-grdt1 mt40 mw-80"
                                             data-aos="fade-in"
                                             data-aos-delay={800}
                                         >
                                             Let's Talk <i className="fas fa-arrow-right fa-btn" />
-                                        </a>
+                                        </NavLink>
                                     </div>
-                                </div>                                
+                                </div>
                             </div>
-                        </div>                    
-                    </div>                 
+                        </div>
+                    </div>
                 </OwlCarousel>
                 {/* <div className="hero-owl owl-carousel ">
                     <div className="slide owlbg11 career-detail-banner pb60 pt60">

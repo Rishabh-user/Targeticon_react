@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import brandlogo from '../assets/images/brand-logo/app-futura.webp';
 import brandlogo1 from '../assets/images/brand-logo/app-futura.png';
 import appfutura from '../assets/images/brand-logo/appfutura-logo.webp';
@@ -7,6 +8,7 @@ import goodfirm from '../assets/images/brand-logo/goodfirm.webp';
 import goodfirm1 from '../assets/images/brand-logo/goodfirm.png';
 import itfirm from '../assets/images/brand-logo/itfirm.webp';
 import itfirm1 from '../assets/images/brand-logo/itfirm.png';
+import pdf from '../assets/images/Company_Brochure.pdf';
 
 
 const Footer = () => {
@@ -21,36 +23,36 @@ const Footer = () => {
                                 <h5>Contact info</h5>
                                 <ul className="footer-links-list social-linkz">
                                     <li>
-                                        <a href="tel:+17183952545">
+                                        <NavLink to="tel:+17183952545">
                                             <span>
                                                 <i className="fas fa-phone-square-alt" />
                                             </span>{" "}
                                             +1 718 395 2545
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <a href="https://wa.me/+919818757597" target="_blank">
+                                        <NavLink to="https://wa.me/+919818757597" target="_blank">
                                             <span>
                                                 <i className="fab fa-whatsapp-square" />
                                             </span>{" "}
                                             +91 981 875 7597
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <a href="mailto:info@targeticon.com">
+                                        <NavLink to="mailto:info@targeticon.com">
                                             <span>
                                                 <i className="fas fa-envelope" />
                                             </span>
                                             info@targeticon.com
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <a href="skype:target.icon">
+                                        <NavLink to="skype:target.icon">
                                             <span>
                                                 <i className="fab fa-skype" />
                                             </span>{" "}
                                             target.icon
-                                        </a>
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -58,45 +60,42 @@ const Footer = () => {
                                 <h5>Follow Us</h5>
                                 <ul className="footer-links-list social-linkz">
                                     <li>
-                                        <a
-                                            href="https://www.linkedin.com/company/targeticon/"
+                                        <NavLink to="https://www.linkedin.com/company/targeticon/"
                                             target="_blank"
                                         >
                                             <span>
                                                 <i className="fab fa-linkedin" />
                                             </span>{" "}
                                             Linked in
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <a
-                                            href="https://www.instagram.com/targeticoncompany/"
+                                        <NavLink to="https://www.instagram.com/targeticoncompany/"
                                             target="_blank"
                                         >
                                             <span>
                                                 <i className="fab fa-instagram" />
                                             </span>
                                             instagram
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <a href="https://www.facebook.com/targeticon" target="_blank">
+                                        <NavLink to="https://www.facebook.com/targeticon" target="_blank">
                                             <span>
                                                 <i className="fab fa-facebook-f" />
                                             </span>{" "}
                                             Facebook
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <a
-                                            href="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
+                                        <NavLink to="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
                                             target="_blank"
                                         >
                                             <span>
                                                 <i className="fab fa-youtube" />
                                             </span>{" "}
                                             Youtube
-                                        </a>
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -104,32 +103,35 @@ const Footer = () => {
                                 <h5>Services</h5>
                                 <ul className="footer-links-list">
                                     <li>
-                                        <a href="UI-UX-design.php">UI/UX Design</a>
+                                        <NavLink to="/ui-ux-design">UI/UX Design</NavLink>
                                     </li>
                                     <li>
-                                        <a href="web-app-development.php">
+                                        <NavLink to="/web-app-development">
                                             Web Application Development
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <a href="mobile-app-development.php">Mobile App Development</a>
+                                        <NavLink to="/mobile-app-development">Mobile App Development</NavLink>
                                     </li>
                                     <li>
-                                        <a href="Cloud.php">Cloud</a>
+                                        <NavLink to="/cloud">Cloud</NavLink>
                                     </li>
                                     <li>
-                                        <a href="JS-Stack-Development.php">JS Stack Development</a>
+                                        <NavLink to="/js-stack-development">JS Stack Development</NavLink>
                                     </li>
                                     <li>
-                                        <a href="Oracle-Forms-Development.php">
-                                            Oracle Forms Development
-                                        </a>
+                                        <NavLink to="/application">
+                                            Application
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <a href="Enterprise-Integration.php">Enterprise Integration</a>
+                                        <NavLink to="/enterprise-integration">Enterprise Integration</NavLink>
                                     </li>
                                     <li>
-                                        <a href="#">Website Testing</a>
+                                        <NavLink to="/microsoft-dynamics">Microsoft Dynamics</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="#">Website Testing</NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -137,34 +139,34 @@ const Footer = () => {
                                 <h5>Industries</h5>
                                 <ul className="footer-links-list">
                                     <li>
-                                        <a href="Health-Care.php">Health Care</a>
+                                        <NavLink to="/health-care">Health Care</NavLink>
                                     </li>
                                     <li>
-                                        <a href="Insurance.php">Insurance</a>
+                                        <NavLink to="/insurance">Insurance</NavLink>
                                     </li>
                                     <li>
-                                        <a href="#">Energy Sector</a>
+                                        <NavLink to="#">Energy Sector</NavLink>
                                     </li>
                                     <li>
-                                        <a href="Retail.php">Retail</a>
+                                        <NavLink to="/retail">Retail</NavLink>
                                     </li>
                                     <li>
-                                        <a href="Banking-Finance.php">Banking &amp; Finance</a>
+                                        <NavLink to="/banking-finance">Banking &amp; Finance</NavLink>
                                     </li>
                                     <li>
-                                        <a href="Education.php">Education</a>
+                                        <NavLink to="/education">Education</NavLink>
                                     </li>
                                     <li>
-                                        <a href="Media-Advertising.php">Media &amp; Advertising</a>
+                                        <NavLink to="/media-advertising">Media &amp; Advertising</NavLink>
                                     </li>
                                     <li>
-                                        <a href="Travel-Social.php">Travel &amp; Social</a>
+                                        <NavLink to="/travel-social">Travel &amp; Social</NavLink>
                                     </li>
                                     <li>
-                                        <a href="Logistics-Business.php">Logistics and Business</a>
+                                        <NavLink to="/logistics-business">Logistics and Business</NavLink>
                                     </li>
                                     <li>
-                                        <a href="Manufacturing.php">Manufacturing</a>
+                                        <NavLink to="/manufacturing">Manufacturing</NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -172,19 +174,19 @@ const Footer = () => {
                                 <h5>Company</h5>
                                 <ul className="footer-links-list">
                                     <li>
-                                        <a href="about.php">About us</a>
+                                        <NavLink to="/about">About us</NavLink>
                                     </li>
                                     <li>
-                                        <a href="#">Technologies</a>
+                                        <NavLink to="#">Technologies</NavLink>
                                     </li>
                                     <li>
-                                        <a href="blog.php">Blog</a>
+                                        <NavLink to="/blog">Blog</NavLink>
                                     </li>
                                     <li>
-                                        <a href="contact-us.php">Contact</a>
+                                        <NavLink to="/contact-us">Contact</NavLink>
                                     </li>
                                     <li>
-                                        <a href="portfolio.php">Portfolio</a>
+                                        <NavLink to="/portfolio">Portfolio</NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -296,14 +298,14 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
+                                {/* see this also */}
                                 <div className="col-lg-3 vcenter ft-btn">
-                                    <a
-                                        href="images/Company_Brochure.pdf"
+                                    <NavLink to={pdf}
                                         target="_blank"
                                         className="ree-btn ree-btn-grdt1 mw-80 no-shadows"
                                     >
                                         Our Brochure <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>

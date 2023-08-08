@@ -8,13 +8,17 @@ import './assets/css/style.css';
 import './assets/css/all.min.css';
 import './assets/css/responsive.css';
 
+// import './assets/css/plugin.min.css';
+
 //import Header from './components/header';
 //import Footer from './components/footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
     <App />
+
   </React.StrictMode>
 );
 
