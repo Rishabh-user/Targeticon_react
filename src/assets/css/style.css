@@ -261,9 +261,9 @@ html .mt25 {
     margin-top: 25px;
 }
 
-html .mt30 {
+/* html .mt30 {
     margin-top: 30px;
-}
+} */
 
 html .mt35 {
     margin-top: 35px;
@@ -377,17 +377,17 @@ html .mb15 {
     margin-bottom: 15px;
 }
 
-html .mb20 {
+/* html .mb20 {
     margin-bottom: 20px;
-}
+} */
 
 html .mb25 {
     margin-bottom: 25px;
 }
 
-html .mb30 {
+/* html .mb30 {
     margin-bottom: 30px;
-}
+} */
 
 html .mb35 {
     margin-bottom: 35px;
@@ -4943,9 +4943,9 @@ background-color: #f00; width: 100%; height: 100%; display: block; position: abs
     margin-top: -10px;
 }
 
-.form-body span.error {
+/* .form-body span.error {
     color: #fe6a00;
-}
+} */
 
 .form-body span.success {
     color: #4caf50;
@@ -5557,3 +5557,63 @@ input[type="checkbox"] {
     margin-top: 2rem;
 }
 
+/* for error */
+.error {
+    font-size: small;
+    color: #fe6a00;
+    float: right;
+    margin-top: -10px;
+}
+
+.success {
+    font-size: small;
+    color: green;
+    float: right;
+    margin-top: -10px;
+}
+
+.display {
+    padding: 20px;
+}
+
+
+.display .time-zone {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.display .short-description {
+    margin-bottom: 20px;
+}
+
+.display .author {
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.display .calc-time {
+    padding: 0px;
+}
+
+.display .short-description h4 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.display .short-description a {
+    color: #74777a;
+}
+
+
+/* extra  */
+.hc-nav-trigger.hc-nav-1 {
+    display: block;
+}
+
+.cardadd {
+    margin-top: 30px;
+}

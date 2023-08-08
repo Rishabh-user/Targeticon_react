@@ -321,7 +321,7 @@ const AndroidAppDevelopment = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 mt30 ">
+                        <div className="col-lg-4 col-md-4 col-sm-6 mt30 cardadd ">
                             <NavLink to="#">
                                 <div className="process-content ree-card">
                                     <span className="setps hst-3">04</span>
@@ -343,7 +343,7 @@ const AndroidAppDevelopment = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 mt30 ">
+                        <div className="col-lg-4 col-md-4 col-sm-6 mt30 cardadd ">
                             <NavLink to="#">
                                 <div className="process-content ree-card">
                                     <span className="setps hst-3">05</span>

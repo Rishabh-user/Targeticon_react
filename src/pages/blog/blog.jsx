@@ -22,7 +22,6 @@ const Blog = () => {
     
     return (
         <div>
-           
             {/*blog*/}
             <div className="r-bg-we pt60 pb60">
                 <div className="container">
@@ -84,6 +83,7 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
+            {/* {console.log(users)}; */}
             <div className="blog-block pt60 pb60">
                 <div className="container">
                     <div className="blog-post">
@@ -128,6 +128,9 @@ const Blog = () => {
                                             <p>{post.short_description.slice(0, MAX_DESCRIPTION_LENGTH)}..</p>
                                         )}
                                     </div>
+
+
+
                                 </div>
                             </div>
                             ))}                           
@@ -137,7 +140,6 @@ const Blog = () => {
                 </div>
             </div>
             {/*blog end*/}
-           
         </div>
     );
 };

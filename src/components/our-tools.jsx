@@ -36,6 +36,9 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 const OursTools = () => {
+    const handleAppleClick = () => {
+        // Your logic here when the iOS section is clicked
+    };
     return (
         <div>
             {/*start technologies tools*/}
@@ -594,7 +597,7 @@ const OursTools = () => {
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="">
+                                                    <Link to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Magento}
@@ -651,7 +654,7 @@ const OursTools = () => {
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="">
+                                                    <Link to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Drupal}

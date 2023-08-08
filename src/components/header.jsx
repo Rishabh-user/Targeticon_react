@@ -1,5 +1,6 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
+
 import Logo from '../assets/images/logo.png';
 import healthcare from '../assets/images/Industries/Health-Care.png';
 import insurance from '../assets/images/Industries/Insurance.png';
@@ -14,34 +15,25 @@ import manufacturing from '../assets/images/Industries/Manufacturing.png';
 
 
 const Header = () => {
-    // useEffect(() => {
-    //     const container = document.querySelector('#main-nav');
-    //     const toggleButton = document.querySelector('#mobile-menu-toggle');
-    
-    //     const offcanvasNav = new HCOFFCANVASNAV.Nav(container, {
-    //       button: toggleButton,
-    //       position: 'left',
-    //       pushContent: true,
-    //     });
-    
-    //     return () => {
-    //       offcanvasNav.destroy();
-    //     };
-    //   }, []);
-    // useEffect(() => {
-    //     // Use your custom function here
-    //     myCustomFunction();
-    //   }, []);
-    
+
+
     return (
         <div>
-            <header className="ree-header fixed-top">
+             <header className="ree-header fixed-top">
                 <div className="container-fluid m-p-l-r-0">
                     <div className="menu-header horzontl">
-                        <div className="menu-logo">
-                            <div className="dskt-logo">
+                        <div className="menu-logo" >
+                            <div className="dskt-logo" >
                                 <NavLink className="nav-brand" to="/">
                                     <picture>
+                                        <source
+                                            srcSet={Logoweb}
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcSet={Logo}
+                                            type="image/png"
+                                        />
                                         <img
                                             loading="lazy"
                                             srcSet={Logo}
@@ -54,7 +46,7 @@ const Header = () => {
                                 </NavLink>
                             </div>
                         </div>
-                        <div className="ree-nav" role="navigation">
+                        <div className="ree-nav page" role="navigation" >
                             <ul className="nav-list">
                                 <li className="megamenu mega-small">
                                     <NavLink to="/" className="menu-links">
@@ -71,6 +63,11 @@ const Header = () => {
                         <a class="dropdown-item" href="team.php">Teams</a>           
                         </div>
                     </div> */}
+                                </li>
+                                <li className="megamenu mega-small">
+                                    <NavLink to="/career" className="menu-links">
+                                        Career
+                                    </NavLink>
                                 </li>
                                 <li className="megamenu">
                                     <NavLink to="#" className="menu-links">
@@ -101,25 +98,25 @@ const Header = () => {
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <NavLink to="/android-app-development">
+                                                                        <NavLink to="/mobile-app-development/android-app-development">
                                                                             Android App Development
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/ios-app-development">
+                                                                        <NavLink to="/mobile-app-development/ios-app-development">
                                                                             iOS App Development
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/hybrid-app-development">
+                                                                        <NavLink to="/mobile-app-development/hybrid-app-development">
                                                                             Hybrid App Development
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/xamarin">Xamarin</NavLink>
+                                                                        <NavLink to="/mobile-app-development/xamarin">Xamarin</NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/blockchain-development">
+                                                                        <NavLink to="/mobile-app-development/blockchain-development">
                                                                             Blockchain Development
                                                                         </NavLink>
                                                                     </li>
@@ -133,27 +130,27 @@ const Header = () => {
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <NavLink to="/dot-net-development">
+                                                                        <NavLink to="/web-app-development/dot-net-development">
                                                                             Dot Net Development
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/php-development">
+                                                                        <NavLink to="/web-app-development/php-development">
                                                                             PHP Development
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/java-development">
+                                                                        <NavLink to="/web-app-development/java-development">
                                                                             Java Development
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/ecommerce-development">
+                                                                        <NavLink to="/web-app-development/ecommerce-development">
                                                                             Ecommerce Development
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/progressive-web-app">
+                                                                        <NavLink to="/web-app-development/progressive-web-app">
                                                                             Progressive Web App (PWA)
                                                                         </NavLink>
                                                                     </li>
@@ -165,24 +162,24 @@ const Header = () => {
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <NavLink to="/website-application" className="">
+                                                                        <NavLink to="/ui-ux-design/website-Designing" className="">
                                                                             Website Designing
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/android-application-design"
+                                                                        <NavLink to="/ui-ux-design/android-application-design"
                                                                             className=""
                                                                         >
                                                                             Android Application Design
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/ios-application-designing" className="">
+                                                                        <NavLink to="/ui-ux-design/ios-application-designing" className="">
                                                                             iOS Application Designing
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/ux-design" className="">
+                                                                        <NavLink to="/ui-ux-design/ux-design" className="">
                                                                             UX Design
                                                                         </NavLink>
                                                                     </li>
@@ -194,12 +191,12 @@ const Header = () => {
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <NavLink to="/aws" className="">
+                                                                        <NavLink to="/cloud/aws" className="">
                                                                             AWS
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/azure-cloud-migration" className="" >
+                                                                        <NavLink to="/cloud/azure-cloud-migration" className="" >
                                                                             Azure Cloud Migration
                                                                         </NavLink>
                                                                     </li>
@@ -207,18 +204,18 @@ const Header = () => {
                                                             </div>
                                                             <div className="inner-blockss">
                                                                 <label className="menu-headings">
-                                                                    <NavLink to="/JS-Stack-Development">
+                                                                    <NavLink to="/js-stack-development">
                                                                         JS Stack Development
                                                                     </NavLink>
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <NavLink to="/Mean-Stack" className="">
+                                                                        <NavLink to="/js-stack-development/mean-stack" className="">
                                                                             MEAN STACK
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/React-Js" className="">
+                                                                        <NavLink to="/js-stack-development/react-js" className="">
                                                                             React JS
                                                                         </NavLink>
                                                                     </li>
@@ -226,19 +223,24 @@ const Header = () => {
                                                             </div>
                                                             <div className="inner-blockss">
                                                                 <label className="menu-headings">
-                                                                    <NavLink to="/oracle-forms-development">
-                                                                        Oracle Forms Development
+                                                                    <NavLink to="/application">
+                                                                        Application
                                                                     </NavLink>
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <NavLink to="/d2f-forms" className="">
-                                                                            D2K Forms
+                                                                        <NavLink to="/application/machine-learning" className="">
+                                                                            Machine Learning
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/d2f-reports" className="">
-                                                                            D2K reports
+                                                                        <NavLink to="/application/artifical-intelligence" className="">
+                                                                            Artificial Intelligence
+                                                                        </NavLink>
+                                                                    </li>
+                                                                    <li>
+                                                                        <NavLink to="/application/cyber-security" className="">
+                                                                            Cyber Security
                                                                         </NavLink>
                                                                     </li>
                                                                 </ul>
@@ -251,18 +253,47 @@ const Header = () => {
                                                                 </label>
                                                                 <ul className="menu-li-link">
                                                                     <li>
-                                                                        <NavLink to="/salesforce" className="">
+                                                                        <NavLink to="/enterprise-integration/salesforce" className="">
                                                                             Salesforce
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/ms-crm" className="">
+                                                                        <NavLink to="/enterprise-integration/ms-crm" className="">
                                                                             MS CRM
                                                                         </NavLink>
                                                                     </li>
                                                                     <li>
-                                                                        <NavLink to="/sharepoint" className="">
+                                                                        <NavLink to="/enterprise-integration/sharepoint" className="">
                                                                             Sharepoint
+                                                                        </NavLink>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div className="inner-blockss">
+                                                                <label className="menu-headings">
+                                                                    <NavLink to="/microsoft-dynamics">
+                                                                        Microsoft Dynamics
+                                                                    </NavLink>
+                                                                </label>
+                                                                <ul className="menu-li-link">
+                                                                    <li>
+                                                                        <NavLink to="/microsoft-dynamics/microsoft-dynamic-navision" className="">
+                                                                            Microsoft Dynamics Navision
+                                                                        </NavLink>
+                                                                    </li>
+                                                                    <li>
+                                                                        <NavLink to="/microsoft-dynamics/business-central" className="">
+                                                                            Business Central
+                                                                        </NavLink>
+                                                                    </li>
+                                                                    <li>
+                                                                        <NavLink to="/microsoft-dynamics/finance&operation" className="">
+                                                                            Finance & Operations
+                                                                        </NavLink>
+                                                                    </li>
+                                                                    <li>
+                                                                        <NavLink to="/microsoft-dynamics/power-bi" className="">
+                                                                            Power BI
                                                                         </NavLink>
                                                                     </li>
                                                                 </ul>
@@ -633,7 +664,7 @@ const Header = () => {
                                     </NavLink>
                                 </li>
                                 <li className="navm-">
-                                    <NavLink to="#" className="toggle">
+                                    <NavLink to="#" className="toggle hc-nav-trigger hc-nav-1" role="button" aria-label="Open Menu" aria-controls="hc-nav-1" aria-expanded="false">
                                         {" "}
                                         <span />{" "}
                                     </NavLink>{" "}
@@ -641,7 +672,8 @@ const Header = () => {
                             </ul>
                         </div>
                         {/* mobile Nav */}
-                        <nav id="main-nav" >
+
+                        <nav id="main-nav" className="hc-nav-original hc-nav-1">
                             <ul>
                                 <li>
                                     <NavLink to="/">Home</NavLink>
@@ -673,7 +705,7 @@ const Header = () => {
                                                     </NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink TO="/ux-design">UX Design</NavLink>
+                                                    <NavLink to="/ux-design">UX Design</NavLink>
                                                 </li>
                                             </ul>
                                         </li>
@@ -733,7 +765,7 @@ const Header = () => {
                                             <NavLink to="/cloud">Cloud</NavLink>
                                             <ul>
                                                 <li>
-                                                    <NavLink TO="/aws" className="">
+                                                    <NavLink to="/aws" className="">
                                                         AWS
                                                     </NavLink>
                                                 </li>
@@ -907,9 +939,11 @@ const Header = () => {
                                 </li>
                             </ul>
                         </nav>
+
                     </div>
                 </div>
             </header>
+
         </div>
     );
 };

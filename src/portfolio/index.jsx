@@ -1,6 +1,50 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Tools from '../components/our-tools';
+import OwlCarousel from 'react-owl-carousel2';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import user from '../assets/images/users/user4.jpg';
+import fgil from '../assets/images/FGLI-screen-short.png';
+import customerlogo from '../assets/images/brand-logo/customer-logo-4.png';
+import oliva from '../assets/images/oliva-screen-short.png';
+import customerlogo2 from '../assets/images/brand-logo/customer-logo-2.png';
+import tstpc from '../assets/images/TSTPC-screen-short.png';
+import tstpclogo from '../assets/images/brand-logo/TSTPC-logo.png';
+import tsig from '../assets/images/T-SIG.png';
+import tsocial from '../assets/images/brand-logo/t-social.png';
+import gcli from '../assets/images/GCFL.png';
+import gclilogo from '../assets/images/brand-logo/GCFL-logo.png';
+import virtuallyvocal from '../assets/images/virtuallyvocal.png';
+import VirtuallyVocallogo from '../assets/images/brand-logo/virtuallyvocal-logo.png';
+import sociallocket from '../assets/images/sociallocket-screen.png';
+import sociallocketlogo from '../assets/images/brand-logo/sociallocket-logo.png';
+import performanceauditions from '../assets/images/Performer-Auditions-screen.png';
+import performanceauditionslogo from '../assets/images/brand-logo/PerformerAuditions-logo.png';
+import zandu from '../assets/images/zandu-care-screen.png';
+import zandulogo from '../assets/images/brand-logo/zandu-logo.png';
+import n1building from '../assets/images/n1-building-screen.png';
+import n1buildinglogo from '../assets/images/brand-logo/n1-Building-logo.png';
+import rafawater from '../assets/images/rafawater-screen.png';
+import rafawaterlogo from '../assets/images/brand-logo/rafawater-logo.png';
+import olivashop from '../assets/images/oliva-shop-screen.png';
+import remodlescreen from '../assets/images/remodle-screen.png';
+import customerlogo3 from '../assets/images/brand-logo/customer-logo-3.png';
+import portfolioappscreen from '../assets/images/case-study/portfolio-App-screen-make-1.png';
+import portfolioappscreen2 from '../assets/images/case-study/portfolio-App-screen-make-2.png';
+import portfolioappscreen3 from '../assets/images/case-study/portfolio-App-screen-make-3.png';
+import portfolioappscreen4 from '../assets/images/case-study/portfolio-App-screen-make-4.png';
+
 
 const Index = () => {
+    const options = {
+        items: 4,
+        margin: 20,
+        dot: true,
+        loop: true,
+        nav: false,
+    };
+
     return (
         <div>
             {/* Start Header */}
@@ -29,14 +73,13 @@ const Index = () => {
                                 <p className="txt-white" data-aos="fade-in" data-aos-delay={300}>
                                     We Have Built High Impact Solutions Across Industries.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40"
                                     data-aos="fade-in"
                                     data-aos-delay={400}
                                 >
                                     Get Quote <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-5">
@@ -58,7 +101,7 @@ const Index = () => {
                                         <div className="media vcenter">
                                             <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" <?php echo BASE_URL; ?>images/users/user4.jpg"
+                                                    src={user}
                                                     alt="img"
                                                     className="img-fluid"
                                                 />
@@ -85,7 +128,7 @@ const Index = () => {
                                         <div className="media vcenter">
                                             <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" <?php echo BASE_URL; ?>images/users/user4.jpg"
+                                                    src={user}
                                                     alt="img"
                                                     className="img-fluid"
                                                 />
@@ -136,14 +179,14 @@ const Index = () => {
                             >
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg hovr-scale-base">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src=" <?php echo BASE_URL; ?>images/FGLI-screen-short.png"
+                                                src={fgil}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -154,9 +197,9 @@ const Index = () => {
                             >
                                 <div className="portfolio-detls pdr-dtls">
                                     <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <a href="#" className="port-title-main">
+                                    <NavLink to="#" className="port-title-main">
                                         FGLI Creative Designing Service by Targeticon
-                                    </a>
+                                    </NavLink>
                                     <div className="client-of-item mt30">
                                         <div className="mb20">
                                             <p>
@@ -165,25 +208,23 @@ const Index = () => {
                                             </p>
                                         </div>
                                         <div className="mb20 portfolio-see-more-btn">
-                                            <a
-                                                href="https://life.futuregenerali.in/"
+                                            <NavLink to="https://life.futuregenerali.in/"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
-                                            <a
-                                                href="https://www.targeticon.com/portfolio/future-generali-life-insurance"
+                                            </NavLink>
+                                            <NavLink to="/portfolio/future-general-life-insurance"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="media vcenter ">
                                             <div className="ree-icon-set img-round80 shadows">
                                                 <img
-                                                    src=" <?php echo BASE_URL; ?>images/brand-logo/customer-logo-4.png"
+                                                    src={customerlogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -206,14 +247,14 @@ const Index = () => {
                             >
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg hovr-scale-base">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src=" <?php echo BASE_URL; ?>images/oliva-screen-short.png"
+                                                src={oliva}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -224,10 +265,10 @@ const Index = () => {
                             >
                                 <div className="portfolio-detls pdr-dtls">
                                     <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <a href="#" className="port-title-main">
+                                    <NavLink to="#" className="port-title-main">
                                         Oliva Skin &amp; Hair Clinic Creative Designing Service by
                                         Targeticon
-                                    </a>
+                                    </NavLink>
                                     <div className="client-of-item mt30">
                                         <div className="mb20">
                                             <p>
@@ -236,25 +277,23 @@ const Index = () => {
                                             </p>
                                         </div>
                                         <div className="mb20 portfolio-see-more-btn">
-                                            <a
-                                                href="https://www.olivaclinic.com/"
+                                            <NavLink to="https://www.olivaclinic.com/"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
-                                            <a
-                                                href="https://www.targeticon.com/portfolio/oliva-clinic"
+                                            </NavLink>
+                                            <NavLink to="/portfolio/oliva-clinic"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="media vcenter ">
                                             <div className="ree-icon-set img-round80 shadows">
                                                 <img
-                                                    src=" <?php echo BASE_URL; ?>images/brand-logo/customer-logo-2.png"
+                                                    src={customerlogo2}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -277,14 +316,14 @@ const Index = () => {
                             >
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg hovr-scale-base">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src=" <?php echo BASE_URL; ?>images/TSTPC-screen-short.png"
+                                                src={tstpc}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -295,9 +334,9 @@ const Index = () => {
                             >
                                 <div className="portfolio-detls pdr-dtls">
                                     <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <a href="#" className="port-title-main">
+                                    <NavLink to="#" className="port-title-main">
                                         TSTPC Ltd. Designing Service by Targeticon
-                                    </a>
+                                    </NavLink>
                                     <div className="client-of-item mt30">
                                         <div className="mb20">
                                             <p>
@@ -306,25 +345,23 @@ const Index = () => {
                                             </p>
                                         </div>
                                         <div className="mb20 portfolio-see-more-btn">
-                                            <a
-                                                href="https://tstpc.telangana.gov.in/"
+                                            <NavLink to="https://tstpc.telangana.gov.in/"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
-                                            <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                            </NavLink>
+                                            <NavLink to="/portfolio/tstpc"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="media vcenter ">
                                             <div className="ree-icon-set img-round80 shadows">
                                                 <img
-                                                    src=" <?php echo BASE_URL; ?>images/brand-logo/TSTPC-logo.png"
+                                                    src={tstpclogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -347,14 +384,14 @@ const Index = () => {
                             >
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg hovr-scale-base">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src=" <?php echo BASE_URL; ?>images/T-SIG.png"
+                                                src={tsig}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -365,9 +402,9 @@ const Index = () => {
                             >
                                 <div className="portfolio-detls pdr-dtls">
                                     <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <a href="#" className="port-title-main">
+                                    <NavLink to="#" className="port-title-main">
                                         T-SIG Ltd. Designing Service by Targeticon
-                                    </a>
+                                    </NavLink>
                                     <div className="client-of-item mt30">
                                         <div className="mb20">
                                             <p>
@@ -376,25 +413,23 @@ const Index = () => {
                                             </p>
                                         </div>
                                         <div className="mb20 portfolio-see-more-btn">
-                                            <a
-                                                href="https://csr.telangana.gov.in/"
+                                            <NavLink to="https://csr.telangana.gov.in/"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
-                                            <a
-                                                href="https://www.targeticon.com/portfolio/t-sig-ltd"
+                                            </NavLink>
+                                            <NavLink to="/portfolio/t-sig"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="media vcenter ">
                                             <div className="ree-icon-set img-round80 shadows">
                                                 <img
-                                                    src=" <?php echo BASE_URL; ?>images/brand-logo/t-social.png"
+                                                    src={tsocial}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -417,14 +452,14 @@ const Index = () => {
                             >
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg hovr-scale-base">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src=" <?php echo BASE_URL; ?>images/GCFL.png"
+                                                src={gcli}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -435,9 +470,9 @@ const Index = () => {
                             >
                                 <div className="portfolio-detls pdr-dtls">
                                     <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <a href="#" className="port-title-main">
+                                    <NavLink to="#" className="port-title-main">
                                         GetCashForLaptop Designing Service by Targeticon
-                                    </a>
+                                    </NavLink>
                                     <div className="client-of-item mt30">
                                         <div className="mb20">
                                             <p>
@@ -446,25 +481,23 @@ const Index = () => {
                                             </p>
                                         </div>
                                         <div className="mb20 portfolio-see-more-btn">
-                                            <a
-                                                href="https://www.getcashforlaptop.com/"
+                                            <NavLink to="https://www.getcashforlaptop.com/"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
-                                            <a
-                                                href="https://www.targeticon.com/portfolio/GetCashForLaptop"
+                                            </NavLink>
+                                            <NavLink to="/portfolio/get-cash-for-laptop"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="media vcenter ">
                                             <div className="ree-icon-set img-round80 shadows">
                                                 <img
-                                                    src=" <?php echo BASE_URL; ?>images/brand-logo/GCFL-logo.png"
+                                                    src={gclilogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -487,14 +520,14 @@ const Index = () => {
                             >
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg hovr-scale-base">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src=" <?php echo BASE_URL; ?>images/virtuallyvocal.png"
+                                                src={virtuallyvocal}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -505,9 +538,9 @@ const Index = () => {
                             >
                                 <div className="portfolio-detls pdr-dtls">
                                     <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <a href="#" className="port-title-main">
+                                    <NavLink to="#" className="port-title-main">
                                         Virtually Vocal Designing Service by Targeticon
-                                    </a>
+                                    </NavLink>
                                     <div className="client-of-item mt30">
                                         <div className="mb20">
                                             <p>
@@ -516,25 +549,23 @@ const Index = () => {
                                             </p>
                                         </div>
                                         <div className="mb20 portfolio-see-more-btn">
-                                            <a
-                                                href="https://www.virtuallyvocal.com/"
+                                            <NavLink to="https://www.virtuallyvocal.com/"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
-                                            <a
-                                                href="https://www.targeticon.com/portfolio/virtually-vocal"
+                                            </NavLink>
+                                            <NavLink to="/portfolio/virtually-vocal"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="media vcenter ">
                                             <div className="ree-icon-set img-round80 shadows">
                                                 <img
-                                                    src=" <?php echo BASE_URL; ?>images/brand-logo/virtuallyvocal-logo.png"
+                                                    src={VirtuallyVocallogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -557,14 +588,14 @@ const Index = () => {
                             >
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg hovr-scale-base">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src=" <?php echo BASE_URL; ?>images/sociallocket-screen.png"
+                                                src={sociallocket}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -575,9 +606,9 @@ const Index = () => {
                             >
                                 <div className="portfolio-detls pdr-dtls">
                                     <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <a href="#" className="port-title-main">
+                                    <NavLink to="#" className="port-title-main">
                                         Social Locket Designing Service by Targeticon
-                                    </a>
+                                    </NavLink>
                                     <div className="client-of-item mt30">
                                         <div className="mb20">
                                             <p>
@@ -586,25 +617,23 @@ const Index = () => {
                                             </p>
                                         </div>
                                         <div className="mb20 portfolio-see-more-btn">
-                                            <a
-                                                href="https://green.app.sociallocket.com/da"
+                                            <NavLink to="https://green.app.sociallocket.com/da"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
-                                            <a
-                                                href="https://www.targeticon.com/portfolio/sociallocket"
+                                            </NavLink>
+                                            <NavLink to="/portfolio/social-locket"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="media vcenter ">
                                             <div className="ree-icon-set img-round80 shadows">
                                                 <img
-                                                    src=" <?php echo BASE_URL; ?>images/brand-logo/sociallocket-logo.png"
+                                                    src={sociallocketlogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -627,14 +656,14 @@ const Index = () => {
                             >
                                 <div className="hovr-scale-main">
                                     <div className="portfolio-flimg hovr-scale-base">
-                                        <a href="#">
+                                        <NavLink to="#">
                                             {" "}
                                             <img
-                                                src=" <?php echo BASE_URL; ?>images/Performer-Auditions-screen.png"
+                                                src={performanceauditions}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                             />{" "}
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -645,9 +674,9 @@ const Index = () => {
                             >
                                 <div className="portfolio-detls pdr-dtls">
                                     <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <a href="#" className="port-title-main">
+                                    <NavLink to="#" className="port-title-main">
                                         Performer Auditions Designing Service by Targeticon
-                                    </a>
+                                    </NavLink>
                                     <div className="client-of-item mt30">
                                         <div className="mb20">
                                             <p>
@@ -656,25 +685,23 @@ const Index = () => {
                                             </p>
                                         </div>
                                         <div className="mb20 portfolio-see-more-btn">
-                                            <a
-                                                href="http://stage.performerauditions.com/"
+                                            <NavLink to="http://stage.performerauditions.com/"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
-                                            <a
-                                                href="https://www.targeticon.com/portfolio/performerauditions"
+                                            </NavLink>
+                                            <NavLink to="/portfolio/performance-audition"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                             >
                                                 See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="media vcenter ">
                                             <div className="ree-icon-set img-round80 shadows">
                                                 <img
-                                                    src=" <?php echo BASE_URL; ?>images/brand-logo/PerformerAuditions-logo.png"
+                                                    src={performanceauditionslogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -722,19 +749,19 @@ const Index = () => {
                     <div className="row mt20 dark-bg">
                         <div className="col-lg-4 col-md-6 col-sm-12 mt40 img-hover quality-work">
                             <div className="work-thumbnail">
-                                <a href="https://zanducare.com/" target="_blank">
+                                <NavLink to="https://zanducare.com/" target="_blank">
                                     {" "}
                                     <img
-                                        src=" <?php echo BASE_URL; ?>images/zandu-care-screen.png"
+                                        src={zandu}
                                         alt="portfolio reevan"
                                         className="img-fluid"
                                     />{" "}
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="media vcenter mt20">
                                 <div className="ree-icon-set img-round80 shadows">
                                     <img
-                                        src=" <?php echo BASE_URL; ?>images/brand-logo/zandu-logo.png"
+                                        src={zandulogo}
                                         alt="logo"
                                         className="img-fluid"
                                     />
@@ -745,37 +772,35 @@ const Index = () => {
                                 </div>
                             </div>
                             <div className="mb20 mt20 portfolio-see-more-btn">
-                                <a
-                                    href="https://zanducare.com/"
+                                <NavLink to="https://zanducare.com/"
                                     target="_blank"
                                     className="port-links ree-btn-grdt1"
                                 >
                                     Live view <i className="fas fa-arrow-right fa-btn" />
-                                </a>
-                                <a
-                                    href="https://www.targeticon.com/portfolio/performerauditions"
+                                </NavLink>
+                                <NavLink to="/portfolio/performance-audition"
                                     target="_blank"
                                     className="port-links ree-btn-grdt1"
                                 >
                                     See Details <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 mt40 img-hover quality-work">
                             <div className="work-thumbnail">
-                                <a href="https://www.n1buildingcontractors.com/" target="_blank">
+                                <NavLink to="https://www.n1buildingcontractors.com/" target="_blank">
                                     {" "}
                                     <img
-                                        src=" <?php echo BASE_URL; ?>images/n1-building-screen.png"
+                                        src={n1building}
                                         alt="portfolio reevan"
                                         className="img-fluid"
                                     />{" "}
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="media vcenter mt20">
                                 <div className="ree-icon-set img-round80 shadows">
                                     <img
-                                        src=" <?php echo BASE_URL; ?>images/brand-logo/n1-Building-logo.png"
+                                        src={n1buildinglogo}
                                         alt="logo"
                                         className="img-fluid"
                                     />
@@ -786,37 +811,35 @@ const Index = () => {
                                 </div>
                             </div>
                             <div className="mb20 mt20 portfolio-see-more-btn">
-                                <a
-                                    href="https://www.n1buildingcontractors.com/"
+                                <NavLink to="https://www.n1buildingcontractors.com/"
                                     target="_blank"
                                     className="port-links ree-btn-grdt1"
                                 >
                                     Live view <i className="fas fa-arrow-right fa-btn" />
-                                </a>
-                                <a
-                                    href="https://www.targeticon.com/portfolio/performerauditions"
+                                </NavLink>
+                                <NavLink to="/portfolio/performance-audition"
                                     target="_blank"
                                     className="port-links ree-btn-grdt1"
                                 >
                                     See Details <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 mt40 img-hover quality-work">
                             <div className="work-thumbnail">
-                                <a href="#">
+                                <NavLink to="https://www.rafawater.com/">
                                     {" "}
                                     <img
-                                        src=" <?php echo BASE_URL; ?>images/rafawater-screen.png"
+                                        src={rafawater}
                                         alt="portfolio reevan"
                                         className="img-fluid"
                                     />{" "}
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="media vcenter mt20">
                                 <div className="ree-icon-set img-round80 shadows">
                                     <img
-                                        src=" <?php echo BASE_URL; ?>images/brand-logo/rafawater-logo.png"
+                                        src={rafawaterlogo}
                                         alt="logo"
                                         className="img-fluid"
                                     />
@@ -827,37 +850,35 @@ const Index = () => {
                                 </div>
                             </div>
                             <div className="mb20 mt20 portfolio-see-more-btn">
-                                <a
-                                    href="https://www.rafawater.com/"
+                                <NavLink to="https://www.rafawater.com/"
                                     target="_blank"
                                     className="port-links ree-btn-grdt1"
                                 >
                                     Live view <i className="fas fa-arrow-right fa-btn" />
-                                </a>
-                                <a
-                                    href="https://www.targeticon.com/portfolio/performerauditions"
+                                </NavLink>
+                                <NavLink to="/portfolio/performance-audition"
                                     target="_blank"
                                     className="port-links ree-btn-grdt1"
                                 >
                                     See Details <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-8 col-md-6 col-sm-12 mt40 img-hover quality-work">
                             <div className="work-thumbnail">
-                                <a href="#">
+                                <NavLink to="#">
                                     {" "}
                                     <img
-                                        src=" <?php echo BASE_URL; ?>images/oliva-shop-screen.png"
+                                        src={olivashop}
                                         alt="portfolio reevan"
                                         className="img-fluid"
                                     />{" "}
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="media vcenter mt20">
                                 <div className="ree-icon-set img-round80 shadows">
                                     <img
-                                        src=" <?php echo BASE_URL; ?>images/brand-logo/customer-logo-2.png"
+                                        src={customerlogo2}
                                         alt="logo"
                                         className="img-fluid"
                                     />
@@ -868,37 +889,35 @@ const Index = () => {
                                 </div>
                             </div>
                             <div className="mb20 mt20 portfolio-see-more-btn">
-                                <a
-                                    href="https://shop.olivaclinic.com/"
+                                <NavLink to="https://shop.olivaclinic.com/"
                                     target="_blank"
                                     className="port-links ree-btn-grdt1"
                                 >
                                     Live view <i className="fas fa-arrow-right fa-btn" />
-                                </a>
-                                <a
-                                    href="https://www.targeticon.com/portfolio/performerauditions"
+                                </NavLink>
+                                <NavLink to="/portfolio/performance-audition"
                                     target="_blank"
                                     className="port-links ree-btn-grdt1"
                                 >
                                     See Details <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12  mt40 img-hover quality-work">
                             <div className="work-thumbnail">
-                                <a href="#">
+                                <NavLink to="#">
                                     {" "}
                                     <img
-                                        src=" <?php echo BASE_URL; ?>images/remodle-screen.png"
+                                        src={remodlescreen}
                                         alt="portfolio reevan"
                                         className="img-fluid"
                                     />{" "}
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="media vcenter mt20">
                                 <div className="ree-icon-set img-round80 shadows">
                                     <img
-                                        src=" <?php echo BASE_URL; ?>images/brand-logo/customer-logo-3.png"
+                                        src={customerlogo3}
                                         alt="logo"
                                         className="img-fluid"
                                     />
@@ -909,20 +928,18 @@ const Index = () => {
                                 </div>
                             </div>
                             <div className="mb20 mt20 portfolio-see-more-btn">
-                                <a
-                                    href="https://www.remodelrepublic.com/"
+                                <NavLink to="https://www.remodelrepublic.com/"
                                     target="_blank"
                                     className="port-links ree-btn-grdt1"
                                 >
                                     Live view <i className="fas fa-arrow-right fa-btn" />
-                                </a>
-                                <a
-                                    href="https://www.targeticon.com/portfolio/performerauditions"
+                                </NavLink>
+                                <NavLink to="/portfolio/performance-audition"
                                     target="_blank"
                                     className="port-links ree-btn-grdt1"
                                 >
                                     See Details <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
@@ -954,64 +971,66 @@ const Index = () => {
                         </div>
                     </div>
                     <div className="app-screenss owl-carousel mt70 dottss">
-                        <div className="appscreen">
-                            <div className="itme-img">
-                                <img
-                                    src=" <?php echo BASE_URL; ?>images/case-study/portfolio-App-screen-make-1.png"
-                                    alt="mockup"
-                                    className="img-fluid"
-                                />
+                        <OwlCarousel options={options} >
+                            <div className="appscreen">
+                                <div className="itme-img">
+                                    <img
+                                        src={portfolioappscreen}
+                                        alt="mockup"
+                                        className="img-fluid"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="appscreen">
-                            <div className="itme-img">
-                                <img
-                                    src=" <?php echo BASE_URL; ?>images/case-study/portfolio-App-screen-make-2.png"
-                                    alt="mockup"
-                                    className="img-fluid"
-                                />
+                            <div className="appscreen">
+                                <div className="itme-img">
+                                    <img
+                                        src={portfolioappscreen2}
+                                        alt="mockup"
+                                        className="img-fluid"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="appscreen">
-                            <div className="itme-img">
-                                <img
-                                    src=" <?php echo BASE_URL; ?>images/case-study/portfolio-App-screen-make-3.png"
-                                    alt="mockup"
-                                    className="img-fluid"
-                                />
+                            <div className="appscreen">
+                                <div className="itme-img">
+                                    <img
+                                        src={portfolioappscreen3}
+                                        alt="mockup"
+                                        className="img-fluid"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="appscreen">
-                            <div className="itme-img">
-                                <img
-                                    src=" <?php echo BASE_URL; ?>images/case-study/portfolio-App-screen-make-4.png"
-                                    alt="mockup"
-                                    className="img-fluid"
-                                />
+                            <div className="appscreen">
+                                <div className="itme-img">
+                                    <img
+                                        src={portfolioappscreen4}
+                                        alt="mockup"
+                                        className="img-fluid"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="appscreen">
-                            <div className="itme-img">
-                                <img
-                                    src=" <?php echo BASE_URL; ?>images/case-study/portfolio-App-screen-make-2.png"
-                                    alt="mockup"
-                                    className="img-fluid"
-                                />
+                            <div className="appscreen">
+                                <div className="itme-img">
+                                    <img
+                                        src={portfolioappscreen2}
+                                        alt="mockup"
+                                        className="img-fluid"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="appscreen">
-                            <div className="itme-img">
-                                <img
-                                    src=" <?php echo BASE_URL; ?>images/case-study/portfolio-App-screen-make-4.png"
-                                    alt="mockup"
-                                    className="img-fluid"
-                                />
+                            <div className="appscreen">
+                                <div className="itme-img">
+                                    <img
+                                        src={portfolioappscreen4}
+                                        alt="mockup"
+                                        className="img-fluid"
+                                    />
+                                </div>
                             </div>
-                        </div>
+                        </OwlCarousel>
                     </div>
                 </div>
             </section>
-            {/*item screen end*/}
+            <Tools />
             {/*start footer */}
             {/*?php include '../include/footer.php';?*/}
             {/* end footer

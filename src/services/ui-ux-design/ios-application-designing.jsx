@@ -224,7 +224,7 @@ const IosApplicationDesigning = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
+                        <div className="col-lg-4 col-md-4 col-sm-12 mt30 cardadd ">
                             <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
@@ -253,7 +253,7 @@ const IosApplicationDesigning = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-12 mt30 ">
+                        <div className="col-lg-4 col-md-4 col-sm-12 mt30 cardadd">
                             <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">05</span>

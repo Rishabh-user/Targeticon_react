@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import OursTools from "../components/our-tools";
 import EducationImg from '../assets/images/education-img.png';
 import FormIndustries from "../components/form-industries";
-import EducationService from '../assets/images/icons/education-services .png'
+import EducationService from '../assets/images/icons/education-services .png';
+
 
 
 const Education = () => {
@@ -249,9 +250,10 @@ const Education = () => {
             {/*end client testimonial  */}
 
             {/*start our tools */}
-                <OursTools />
+            <OursTools />
             {/*end our tools  */}
-            
+
+
         </div>
     );
 };

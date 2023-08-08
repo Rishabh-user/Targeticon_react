@@ -134,7 +134,7 @@ const WebAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <NavLink to="/dot-net-development">ASP.Net development</NavLink>
+                                        <NavLink to="/web-app-development/dot-net-development">ASP.Net development</NavLink>
                                     </h3>
                                     <p>
                                         ASP.Net has a large number of advantages in real world
@@ -143,7 +143,7 @@ const WebAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <NavLink to="/dot-net-development" className="ree-card-link mt40">
+                                    <NavLink to="/web-app-development/dot-net-development" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />{" "}
                                     </NavLink>
                                 </div>
@@ -169,7 +169,7 @@ const WebAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <NavLink to="/php-development">PHP development</NavLink>
+                                        <NavLink to="/web-app-development/php-development">PHP development</NavLink>
                                     </h3>
                                     <p>
                                         Being the best PHP development company in India, target Icon
@@ -178,7 +178,7 @@ const WebAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <NavLink to="/php-development" className="ree-card-link mt40">
+                                    <NavLink to="/web-app-development/php-development" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />
                                     </NavLink>
                                 </div>
@@ -204,7 +204,7 @@ const WebAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <NavLink to="/java-development">JAVA development</NavLink>
+                                        <NavLink to="/web-app-development/java-development">JAVA development</NavLink>
                                     </h3>
                                     <p>
                                         JAVA is the most popular platform used in today’s world. the
@@ -214,7 +214,7 @@ const WebAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <NavLink to="/java-development" className="ree-card-link mt40">
+                                    <NavLink to="/web-app-development/java-development" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />
                                     </NavLink>
                                 </div>
@@ -240,7 +240,7 @@ const WebAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <NavLink to="/ecommerce-development">Ecommerce development</NavLink>
+                                        <NavLink to="/web-app-development/ecommerce-development">Ecommerce development</NavLink>
                                     </h3>
                                     <p>
                                         Target Icon also provides you guidance for setting up your own
@@ -248,7 +248,7 @@ const WebAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <NavLink to="/ecommerce-development"
+                                    <NavLink to="/web-app-development/ecommerce-development"
                                         className="ree-card-link mt40"
                                     >
                                         Read More <i className="fas fa-arrow-right fa-btn" />
@@ -276,7 +276,7 @@ const WebAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <NavLink to="/progressive-web-app">Progressive web app (PWA)</NavLink>
+                                        <NavLink to="/web-app-development/progressive-web-app">Progressive web app (PWA)</NavLink>
                                     </h3>
                                     <p>
                                         These are the applications that work like regular websites but
@@ -285,7 +285,7 @@ const WebAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <NavLink to="/progressive-web-app" className="ree-card-link mt40">
+                                    <NavLink to="/web-app-development/progressive-web-app" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />
                                     </NavLink>
                                 </div>

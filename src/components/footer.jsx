@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import brandlogo from '../assets/images/brand-logo/app-futura.webp';
 import brandlogo1 from '../assets/images/brand-logo/app-futura.png';
 import appfutura1 from '../assets/images/brand-logo/appfutura-logo.png';
 import goodfirm1 from '../assets/images/brand-logo/goodfirm.png';
 import itfirm1 from '../assets/images/brand-logo/itfirm.png';
+import pdf from '../assets/images/Company_Brochure.pdf';
 
 
 const Footer = () => {
@@ -18,36 +20,36 @@ const Footer = () => {
                                 <h5>Contact info</h5>
                                 <ul className="footer-links-list social-linkz">
                                     <li>
-                                        <Link to="tel:+17183952545">
+                                        <NavLink to="tel:+17183952545">
                                             <span>
                                                 <i className="fas fa-phone-square-alt" />
                                             </span>{" "}
                                             +1 718 395 2545
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link to="https://wa.me/+919818757597" target="_blank" rel="noreferrer" >
+                                        <NavLink to="https://wa.me/+919818757597" target="_blank">
                                             <span>
                                                 <i className="fab fa-whatsapp-square" />
                                             </span>{" "}
                                             +91 981 875 7597
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link to="mailto:info@targeticon.com">
+                                        <NavLink to="mailto:info@targeticon.com">
                                             <span>
                                                 <i className="fas fa-envelope" />
                                             </span>
                                             info@targeticon.com
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link to="skype:target.icon">
+                                        <NavLink to="skype:target.icon">
                                             <span>
                                                 <i className="fab fa-skype" />
                                             </span>{" "}
                                             target.icon
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -55,45 +57,42 @@ const Footer = () => {
                                 <h5>Follow Us</h5>
                                 <ul className="footer-links-list social-linkz">
                                     <li>
-                                        <Link
-                                            to="https://www.linkedin.com/company/targeticon/"
-                                            target="_blank" rel="noreferrer" 
+                                        <NavLink to="https://www.linkedin.com/company/targeticon/"
+                                            target="_blank"
                                         >
                                             <span>
                                                 <i className="fab fa-linkedin" />
                                             </span>{" "}
                                             Linked in
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link
-                                            to="https://www.instagram.com/targeticoncompany/"
-                                            target="_blank" rel="noreferrer" 
+                                        <NavLink to="https://www.instagram.com/targeticoncompany/"
+                                            target="_blank"
                                         >
                                             <span>
                                                 <i className="fab fa-instagram" />
                                             </span>
                                             instagram
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link to="https://www.facebook.com/targeticon" target="_blank" rel="noreferrer" >
+                                        <NavLink to="https://www.facebook.com/targeticon" target="_blank">
                                             <span>
                                                 <i className="fab fa-facebook-f" />
                                             </span>{" "}
                                             Facebook
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link
-                                            to="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
-                                            target="_blank" rel="noreferrer" 
+                                        <NavLink to="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
+                                            target="_blank"
                                         >
                                             <span>
                                                 <i className="fab fa-youtube" />
                                             </span>{" "}
                                             Youtube
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -101,32 +100,35 @@ const Footer = () => {
                                 <h5>Services</h5>
                                 <ul className="footer-links-list">
                                     <li>
-                                        <Link to="/UI-UX-design">UI/UX Design</Link>
+                                        <NavLink to="/ui-ux-design">UI/UX Design</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/web-app-development">
+                                        <NavLink to="/web-app-development">
                                             Web Application Development
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/mobile-app-development">Mobile App Development</Link>
+                                        <NavLink to="/mobile-app-development">Mobile App Development</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/Cloud">Cloud</Link>
+                                        <NavLink to="/cloud">Cloud</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/JS-Stack-Development">JS Stack Development</Link>
+                                        <NavLink to="/js-stack-development">JS Stack Development</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/Oracle-Forms-Development">
-                                            Oracle Forms Development
-                                        </Link>
+                                        <NavLink to="/application">
+                                            Application
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/Enterprise-Integration">Enterprise Integration</Link>
+                                        <NavLink to="/enterprise-integration">Enterprise Integration</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="#">Website Testing</Link>
+                                        <NavLink to="/microsoft-dynamics">Microsoft Dynamics</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="#">Website Testing</NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -134,34 +136,34 @@ const Footer = () => {
                                 <h5>Industries</h5>
                                 <ul className="footer-links-list">
                                     <li>
-                                        <Link to="/Health-Care">Health Care</Link>
+                                        <NavLink to="/health-care">Health Care</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/Insurance">Insurance</Link>
+                                        <NavLink to="/insurance">Insurance</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="#">Energy Sector</Link>
+                                        <NavLink to="#">Energy Sector</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/Retail">Retail</Link>
+                                        <NavLink to="/retail">Retail</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/Banking-Finance">Banking &amp; Finance</Link>
+                                        <NavLink to="/banking-finance">Banking &amp; Finance</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/Education">Education</Link>
+                                        <NavLink to="/education">Education</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/Media-Advertising">Media &amp; Advertising</Link>
+                                        <NavLink to="/media-advertising">Media &amp; Advertising</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/Travel-Social">Travel &amp; Social</Link>
+                                        <NavLink to="/travel-social">Travel &amp; Social</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/Logistics-Business">Logistics and Business</Link>
+                                        <NavLink to="/logistics-business">Logistics and Business</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/Manufacturing">Manufacturing</Link>
+                                        <NavLink to="/manufacturing">Manufacturing</NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -169,19 +171,19 @@ const Footer = () => {
                                 <h5>Company</h5>
                                 <ul className="footer-links-list">
                                     <li>
-                                        <Link to="/about">About us</Link>
+                                        <NavLink to="/about">About us</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="#">Technologies</Link>
+                                        <NavLink to="#">Technologies</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/blog">Blog</Link>
+                                        <NavLink to="/blog">Blog</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/contact-us">Contact</Link>
+                                        <NavLink to="/contact-us">Contact</NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/portfolio">Portfolio</Link>
+                                        <NavLink to="/portfolio">Portfolio</NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -261,14 +263,14 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
+                                {/* see this also */}
                                 <div className="col-lg-3 vcenter ft-btn">
-                                    <Link
-                                        to="images/Company_Brochure.pdf"
-                                        target="_blank" rel="noreferrer" 
+                                    <NavLink to={pdf}
+                                        target="_blank"
                                         className="ree-btn ree-btn-grdt1 mw-80 no-shadows"
                                     >
                                         Our Brochure <i className="fas fa-arrow-right fa-btn" />
-                                    </Link>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>

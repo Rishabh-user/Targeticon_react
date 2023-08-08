@@ -50,6 +50,7 @@ const About = () => {
                 <title>About | Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon </title> 
             </Helmet>
             {/* <section className="pt60 pb60">
+            {/* <section className="pt60 pb60">
                 <div className="container">
                     <div className="row vcenter">
                         <div>

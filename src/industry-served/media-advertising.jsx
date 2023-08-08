@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import OursTools from "../components/our-tools";
 import MediaGif from '../assets/images/GIF/media-ad.gif';
 import FormIndustries from "../components/form-industries";
@@ -22,14 +23,13 @@ const MediaAdvertising = () => {
                                     Generate immediate results and tackle the challenges of business
                                     with the Media &amp; Advertising solutions.
                                 </p>
-                                <a
-                                    href="contact-us.php"
+                                <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40 mw-80"
                                     data-aos="fade-in"
                                     data-aos-delay={300}
                                 >
                                     Let's Talk <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-md-6 vcenter">
@@ -232,15 +232,15 @@ const MediaAdvertising = () => {
                 </div>
             </section>
             {/*services end*/}
-            
+
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
 
             {/*start our tools */}
-                <OursTools />
+            <OursTools />
             {/*end our tools  */}
-            
+
         </div>
     );
 };

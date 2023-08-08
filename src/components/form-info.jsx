@@ -184,7 +184,7 @@ const FormInfo = () => {
                                                         value={formData.user_service}
                                                         onChange={handleInputChange}
                                                     >
-                                                        <option selected="" disabled="">
+                                                        <option value="" disabled="">
                                                             Select Service
                                                         </option>
                                                         <option>Mobile App Development</option>

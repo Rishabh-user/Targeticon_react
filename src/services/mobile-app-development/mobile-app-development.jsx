@@ -241,7 +241,7 @@ const MobileAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <NavLink to="/android-app-development">
+                                        <NavLink to="/mobile-app-development/android-app-development">
                                             {" "}
                                             Android App <br />
                                             Development
@@ -253,7 +253,7 @@ const MobileAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <NavLink to="/android-app-development"
+                                    <NavLink to="/mobile-app-development/android-app-development"
                                         className="ree-card-link mt40"
                                     >
                                         Read More <i className="fas fa-arrow-right fa-btn" />{" "}
@@ -272,7 +272,7 @@ const MobileAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <NavLink to="/ios-app-development">
+                                        <NavLink to="/mobile-app-development/ios-app-development">
                                             iOS App
                                             <br /> Development
                                         </NavLink>
@@ -283,7 +283,7 @@ const MobileAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <NavLink to="/ios-app-development" className="ree-card-link mt40">
+                                    <NavLink to="/mobile-app-development/ios-app-development" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />
                                     </NavLink>
                                 </div>
@@ -300,7 +300,7 @@ const MobileAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <NavLink to="/hybrid-app-development">
+                                        <NavLink to="/mobile-app-development/hybrid-app-development">
                                             Hybrid App
                                             <br /> Development
                                         </NavLink>
@@ -311,7 +311,7 @@ const MobileAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <NavLink to="/hybrid-app-development"
+                                    <NavLink to="/mobile-app-development/hybrid-app-development"
                                         className="ree-card-link mt40"
                                     >
                                         Read More <i className="fas fa-arrow-right fa-btn" />
@@ -330,7 +330,7 @@ const MobileAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <NavLink to="/xamarin">Xamarin</NavLink>
+                                        <NavLink to="/mobile-app-development/xamarin">Xamarin</NavLink>
                                     </h3>
                                     <p>
                                         These are the apps that are available for windows and macOS.
@@ -338,7 +338,7 @@ const MobileAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <NavLink to="/xamarin" className="ree-card-link mt40">
+                                    <NavLink to="/mobile-app-development/xamarin" className="ree-card-link mt40">
                                         Read More <i className="fas fa-arrow-right fa-btn" />
                                     </NavLink>
                                 </div>
@@ -355,7 +355,7 @@ const MobileAppDevelopment = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <NavLink to="/blockchain-development">Blockchain Development</NavLink>
+                                        <NavLink to="/mobile-app-development/blockchain-development">Blockchain Development</NavLink>
                                     </h3>
                                     <p>
                                         These are the applications which are build for performing
@@ -363,7 +363,7 @@ const MobileAppDevelopment = () => {
                                     </p>
                                 </div>
                                 <div className="ree-card-content-link">
-                                    <NavLink to="/blockchain-development"
+                                    <NavLink to="/mobile-app-development/blockchain-development"
                                         className="ree-card-link mt40"
                                     >
                                         Read More <i className="fas fa-arrow-right fa-btn" />

@@ -1,11 +1,30 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { createContext, useEffect, useState } from "react";
+import { NavLink, useParams } from "react-router-dom";
+import { apiEndpoint } from "../../../js/api";
 
 const BlogDetail = () => {
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        const fetchUsers = async () => {
+            try {
+                const response = await fetch(`${apiEndpoint}/blog/get-all-blogs/`);
+                const data = await response.json();
+
+                // Initialize viewCount property for each blog post
+                const blogsWithViews = data.map(blog => ({ ...blog, viewCount: 0 }));
+                setUsers(blogsWithViews);
+            } catch (error) {
+                console.error('Error fetching users:', error);
+            }
+        };
+
+        fetchUsers();
+    }, []);
     return (
         <div>
-           
-                <div>
+            {users.map(blog => (
+                <div key={blog.id}>
                     <div className="r-bg-a pt85 pb120">
                         <div className="container w-992">
                             <div className="row pt80">
@@ -33,7 +52,8 @@ const BlogDetail = () => {
                                     <div className="col-lg-12">
                                         <div className="sol-img mt60">
                                             <p>
-                                                
+                                                {blog.shortDescription}
+                                                {console.log(blog.shortDescription)};
                                             </p>
 
                                         </div>
@@ -153,7 +173,10 @@ const BlogDetail = () => {
                         </div>
                     </div>
                 </div>
-         
+            ))}
+
+
+
         </div>
     );
 };
