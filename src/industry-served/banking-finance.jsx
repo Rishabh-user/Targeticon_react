@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import OursTools from "../components/our-tools";
 import BankiGif from '../assets/images/GIF/banking.gif';
 import BankigImg from '../assets/images/banking-imgg.png';
@@ -27,14 +27,14 @@ const BankingFinance = () => {
                                     We spread a wide range of efficient Retail services and best
                                     solutions across the online business processes.
                                 </p>
-                                <Link
+                                <NavLink
                                     to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40 mw-80"
                                     data-aos="fade-in"
                                     data-aos-delay={200}
                                 >
                                     Let's Talk <i className="fas fa-arrow-right fa-btn" />
-                                </Link>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-md-6 vcenter">
@@ -183,7 +183,7 @@ const BankingFinance = () => {
                     </div>
                     <div className="row justify-content-center mt30 vcenter">
                         <div className="col-lg-4 col-md-4 col-sm-6 mb30">
-                            <Link to="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
@@ -207,10 +207,10 @@ const BankingFinance = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mb30">
-                            <Link to="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
@@ -234,10 +234,10 @@ const BankingFinance = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 mb30 ">
-                            <Link to="#">
+                            <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
@@ -261,7 +261,7 @@ const BankingFinance = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -305,7 +305,7 @@ const BankingFinance = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <Link to="#">BPO</Link>
+                                        <NavLink to="#">BPO</NavLink>
                                     </h3>
                                     <ul className="ul-list-icon mt30">
                                         <li>
@@ -352,7 +352,7 @@ const BankingFinance = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <Link to="#">Software Services</Link>
+                                        <NavLink to="#">Software Services</NavLink>
                                     </h3>
                                     <ul className="ul-list-icon mt30">
                                         <li>
@@ -399,7 +399,7 @@ const BankingFinance = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <Link to="#">QA Testing Services</Link>
+                                        <NavLink to="#">QA Testing Services</NavLink>
                                     </h3>
                                     <ul className="ul-list-icon mt30">
                                         <li>
@@ -446,7 +446,7 @@ const BankingFinance = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <Link to="#">Technical Support Services</Link>
+                                        <NavLink to="#">Technical Support Services</NavLink>
                                     </h3>
                                     <ul className="ul-list-icon mt30">
                                         <li>
@@ -497,7 +497,7 @@ const BankingFinance = () => {
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
-                                        <Link to="#">Cyber Security Services</Link>
+                                        <NavLink to="#">Cyber Security Services</NavLink>
                                     </h3>
                                     <ul className="ul-list-icon mt30">
                                         <li>

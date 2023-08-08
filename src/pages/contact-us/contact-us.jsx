@@ -10,8 +10,6 @@ import timeon from '../../assets/images/icons/on-time.png';
 import hours from '../../assets/images/icons/24-hours.png';
 import rate from '../../assets/images/icons/rate.png';
 import trophy from '../../assets/images/icons/trophy.png';
-import FormInfo from "../../components/form-info";
-import Location from "../../components/location";
 
 const ContactUs = () => {
     return (

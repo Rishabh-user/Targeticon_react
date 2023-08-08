@@ -1,25 +1,64 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { apiEndpoint1 } from '../../js/api';
 import Undermaintenance from '../../assets/images/Under-Maintenance.png'
-//import axios from 'axios';
-import apiDomain from "../../api/api";
 
 const Blog = () => {
-    const [blogPosts, setBlogPosts] = useState([]);
+
+    const [users, setUsers] = useState([]);
+
     useEffect(() => {
-        const fetchBlogPosts = async (id) =>  {
-          try {
-            const response = await fetch(`${apiDomain}/api/blog/get-all-blogs/`); 
-            const data = await response.json();
-            setBlogPosts(data);
-          } catch (error) {
-            console.error('Error fetching blog posts:', error);
-          }
+        const fetchUsers = async () => {
+
+            try {
+                const response = await fetch(`${apiEndpoint1}/read`);
+                const data = await response.json();
+                console.log(data.items);
+                setUsers(data.items);
+
+                // Initialize viewCount property for each blog post
+                // const blogsWithViews = data.map(blog => ({ ...blog, viewCount: 0 }));
+                // setUsers(blogsWithViews);
+            } catch (error) {
+                console.error('Error fetching users:', error);
+            }
         };
-        fetchBlogPosts();
-      }, []);
-      const MAX_DESCRIPTION_LENGTH = 100;
-    
+
+        fetchUsers();
+    }, []);
+
+    const handlePostClick = (postId) => {
+        // Manually increment the view count on the frontend
+        setUsers(prevUsers =>
+            prevUsers.map(blog =>
+                blog.id === postId ? { ...blog, viewCount: blog.viewCount + 1 } : blog
+            )
+        );
+    };
+    const calculateReadingTime = (longDescription) => {
+        const description = longDescription || '';
+
+        // Count the number of words in the long description
+        const words = description.trim().split(/\s+/).length;
+
+        // Calculate the reading time in seconds based on average reading speed (150 words per minute)
+        const readingSpeed = 150; // Words per minute
+        const readingTimeInSeconds = words / readingSpeed * 60;
+
+        // Check if the reading time is less than 1 minute
+        if (readingTimeInSeconds < 60) {
+            return `${Math.round(readingTimeInSeconds)} seconds`;
+        }
+
+        // Calculate the reading time in minutes and seconds
+        const minutes = Math.floor(readingTimeInSeconds / 60);
+        const seconds = Math.round(readingTimeInSeconds % 60);
+
+        // Return the reading time in the format "X minutes Y seconds"
+        return `${minutes} minute${minutes > 1 ? 's' : ''} ${seconds} second${seconds > 1 ? 's' : ''}`;
+    };
+
+
     return (
         <div>
             {/*blog*/}
@@ -88,53 +127,109 @@ const Blog = () => {
                 <div className="container">
                     <div className="blog-post">
                         <div className="row vcenter">
-                        {blogPosts.map((post) => (
-                            <div className="col-lg-4 col-sm-6">
-                                <div className="ree-media-crd" key={post.id}>
-                                    <div className="rpl-img">
-                                        <Link to="#">
-                                            <img
-                                                src={post.featured_image}
-                                                alt="blog"
-                                                className="fill-fixed"
-                                            />{" "}
-                                        </Link>{" "}
-                                    </div>
-                                    <div className="rpl-contt">
-                                        <div className="blog-quick-inf mb10 mt30">
-                                            <span>
-                                                <i className="far fa-calendar-alt me-2" />
-                                                {new Intl.DateTimeFormat('en-IN', {
-                                                    year: 'numeric',
-                                                    month: 'long',
-                                                    day: 'numeric'
-                                                }).format(new Date(post.timestamp))}
-                                            </span>{" "}
-                                            <span>
-                                                <i className="fas fa-clock" /> 5 Min Read
-                                            </span>{" "}
+
+                            {users.map(blog => (
+                                <div className="col-lg-4 col-sm-6" key={blog.id}>
+                                    <div className="ree-media-crd"  >
+                                        <div className="ree-media-crd blog" >
+                                            <div className="rpl-img">
+                                                <NavLink to="blog/blog-details">
+                                                    <img src={blog.blog_image} alt="loading" className="fill-fixed" />
+                                                </NavLink>
+
+                                            </div>
+                                            <div className="display">
+                                                <div className="time-zone">
+                                                    <spam className="category"> </spam>
+                                                    <span className="time">
+                                                        <p>
+                                                            <i className="fas fa-book reading icon" />
+                                                            {calculateReadingTime(blog.long_desc)}
+                                                        </p>
+                                                    </span>
+                                                </div>
+                                                <div className="short-description">
+                                                    <h4>
+                                                        {blog.blog_title}
+                                                    </h4>
+                                                    <p>
+                                                        <NavLink to="/blog/blog-details">{blog.short_desc}</NavLink>
+                                                    </p>
+                                                </div>
+                                                <div className="author">
+                                                    {/* <span>
+                                                        -By
+                                                        <strong>
+                                                            <NavLink to=""> Targeticon</NavLink>
+                                                        </strong>
+                                                    </span> */}
+                                                    <p>
+                                                        <span>By</span>
+                                                        <strong><NavLink to="/"> Targeticon</NavLink></strong>
+                                                    </p>
+                                                </div>
+                                                <div className="rpl-contt calc-time ">
+                                                    <div className="blog-quick-inf mb20 mt30">
+                                                        <span>
+
+                                                            <i className="far fa-calendar-alt icon" />
+                                                            {new Intl.DateTimeFormat('en-IN', {
+                                                                year: 'numeric',
+                                                                month: 'long',
+                                                                day: 'numeric'
+                                                            }).format(new Date(blog.timestamp))}
+
+                                                        </span>
+                                                        <span>
+                                                            <i className="fas fa-clock icon" />
+                                                            {new Date(blog.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                                                            {console.log('Timestamp:', blog.timestamp)} {/* Assuming blog.readTime exists */}
+                                                            <i className="fas fa-view" />
+                                                            <p>View: {blog.viewCount}</p>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
                                         </div>
-                                        {/* {post.category && post.category.length > 0 ? (
-                                            <p>Category: {post.category[0].title}</p>
-                                        ) : (
-                                            <p>No Category</p>
-                                        )} */}
-                                        <h4>
-                                            <Link to="#">
-                                                {post.title}
-                                            </Link>
-                                        </h4>
-                                        {post.short_description && (
-                                            <p>{post.short_description.slice(0, MAX_DESCRIPTION_LENGTH)}..</p>
-                                        )}
                                     </div>
 
 
 
                                 </div>
-                            </div>
-                            ))}                           
-                            
+                            ))}
+                            {/* <div className="col-lg-4 col-sm-6">
+                                <div className="ree-media-crd">
+                                    <div className="rpl-img">
+
+                                        <a href="#">
+                                            <img
+                                                src="images/blogs/blog-img-3.jpg"
+                                                alt="blog"
+                                                className="fill-fixed"
+                                            />{" "}
+                                        </a>{" "}
+                                    </div>
+                                    <div className="rpl-contt">
+                                        <div className="blog-quick-inf mb20 mt30">
+                                            <span>
+                                                <i className="far fa-calendar-alt" /> 12 March 21
+                                            </span>{" "}
+                                            <span>
+                                                <i className="fas fa-clock" /> 5 Min Read
+                                            </span>{" "}
+                                        </div>
+                                        <h4>
+                                            <a href="#">
+                                                Finding the best social media platform for your audience and
+                                                business
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div> */}
+
+
                         </div>
                     </div>
                 </div>

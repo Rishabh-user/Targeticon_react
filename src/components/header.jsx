@@ -26,14 +26,6 @@ const Header = () => {
                             <div className="dskt-logo" >
                                 <NavLink className="nav-brand" to="/">
                                     <picture>
-                                        <source
-                                            srcSet={Logoweb}
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet={Logo}
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
                                             srcSet={Logo}

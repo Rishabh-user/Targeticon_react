@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import OursTools from "../components/our-tools";
 import EducationImg from '../assets/images/education-img.png';
 import FormIndustries from "../components/form-industries";
@@ -24,14 +24,14 @@ const Education = () => {
                                     The web development arena is where you get all the solutions to
                                     your problems. Explore this page and get your best one.
                                 </p>
-                                <Link
+                                <NavLink
                                     to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt40 mw-80"
                                     data-aos="fade-in"
                                     data-aos-delay={250}
                                 >
                                     Let's Talk <i className="fas fa-arrow-right fa-btn" />
-                                </Link>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-md-6 vcenter">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Apple from '../assets/images/apple.png';
 import Android from '../assets/images/android.png';
 import Flutter from '../assets/images/icons/flutterio-icon.svg';
@@ -69,7 +69,7 @@ const OursTools = () => {
                                         <div className="row justify-content-center">
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Apple}
@@ -83,12 +83,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>iOS</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Android}
@@ -102,12 +102,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Android</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Flutter}
@@ -121,12 +121,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Flutter</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Java}
@@ -140,12 +140,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Java</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={ReactNative}
@@ -159,12 +159,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>React Native</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Python}
@@ -178,12 +178,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Python</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={HTML5}
@@ -197,12 +197,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Html-5</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Swift}
@@ -216,12 +216,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Swift</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={PWA}
@@ -235,7 +235,7 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>PWA</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                         </div>
@@ -245,7 +245,7 @@ const OursTools = () => {
                                     <div className="row justify-content-center">
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={Angular}
@@ -259,12 +259,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Angular.JS</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={ReactNative}
@@ -278,12 +278,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>React JS</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={NpmLogo}
@@ -297,12 +297,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Npm </p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={Typescript}
@@ -316,12 +316,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Typescript</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={HTML5}
@@ -335,12 +335,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>HTML5</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={VueJs}
@@ -354,12 +354,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Vue JS</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={Bootstrap}
@@ -373,12 +373,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Bootstrap</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={NodeJs}
@@ -392,7 +392,7 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Node.JS</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                             </div>
@@ -402,7 +402,7 @@ const OursTools = () => {
                                     <div className="row justify-content-center">
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={MariaDb}
@@ -416,12 +416,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>MariaDB</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={MongoDb}
@@ -435,12 +435,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>MongoDB</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={Redis}
@@ -454,12 +454,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Redis</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={Mysql}
@@ -473,12 +473,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>MySQL</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={PostgreSql}
@@ -492,12 +492,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>PostgreSQL</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={oracle}
@@ -511,12 +511,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Oracle</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={Sqlite}
@@ -530,12 +530,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Sqlite</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={AWSRds}
@@ -549,12 +549,12 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>AWS-RDS</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                     <div className="icon-with-title">
-                                                        <Link to="preventDefault()">
+                                                        <NavLink to="preventDefault()">
                                                             <div className="iwt-icon">
                                                                 <img
                                                                     src={MicrosoftAccess}
@@ -568,7 +568,7 @@ const OursTools = () => {
                                                             <div className="iwt-content">
                                                                 <p>Microsoft-Access</p>
                                                             </div>
-                                                        </Link>
+                                                        </NavLink>
                                                     </div>
                                                 </div>
                                             </div>
@@ -578,7 +578,7 @@ const OursTools = () => {
                                         <div className="row justify-content-center">
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Sopify}
@@ -592,12 +592,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Shopify</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Magento}
@@ -611,12 +611,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Magento</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Wordpress}
@@ -630,12 +630,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Wordpress</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Joomla}
@@ -649,12 +649,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Joomla</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Drupal}
@@ -668,12 +668,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Drupal</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Wix}
@@ -687,12 +687,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Wix</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Bigcommerce}
@@ -706,12 +706,12 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Big Commerce</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                                 <div className="icon-with-title">
-                                                    <Link to="preventDefault()">
+                                                    <NavLink to="preventDefault()">
                                                         <div className="iwt-icon">
                                                             <img
                                                                 src={Woocommerce}
@@ -725,7 +725,7 @@ const OursTools = () => {
                                                         <div className="iwt-content">
                                                             <p>Woo Commerce</p>
                                                         </div>
-                                                    </Link>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                         </div>

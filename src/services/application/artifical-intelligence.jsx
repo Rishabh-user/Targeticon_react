@@ -1,14 +1,6 @@
 import React from "react";
-<<<<<<< HEAD:src/services/oracle-forms-development/d2f-forms.jsx
-import d2fforms from '../../assets/images/d2k-forms-bg.png';
-import oracleforms from '../../assets/images/oracle-forms.png';
-import oracleform3 from '../../assets/images/oracle-form3.png';
-import oracleform from '../../assets/images/oracle-form.png';
-import OursTools from "../../components/our-tools";
-=======
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
->>>>>>> 5713d05e7e681fb47a1d9c2d87d2fd160c64d122:src/services/application/artifical-intelligence.jsx
 
 
 
@@ -16,16 +8,9 @@ import Tools from '../../components/our-tools';
 const ArtificalIntelligence = () => {
     return (
         <div>
-<<<<<<< HEAD:src/services/oracle-forms-development/d2f-forms.jsx
-            <section className="header-title">
-                <img src={d2fforms} className="img-fluid" alt="d2fforms" />
-            </section>
-            {/* Header title end */}
-=======
             {/*start header  */}
             {/*?php include 'include/header.php';?*/}
             {/*header end  */}
->>>>>>> 5713d05e7e681fb47a1d9c2d87d2fd160c64d122:src/services/application/artifical-intelligence.jsx
             {/*page head*/}
             <section className="page-heading-sec r-bg-c pt60 pb60">
                 <div className="container">
@@ -335,25 +320,15 @@ const ArtificalIntelligence = () => {
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD:src/services/oracle-forms-development/d2f-forms.jsx
-            {/*Services provided in Oracle forms By Targeticon end*/}
-=======
->>>>>>> 5713d05e7e681fb47a1d9c2d87d2fd160c64d122:src/services/application/artifical-intelligence.jsx
 
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
             
             {/*start our tools */}
-<<<<<<< HEAD:src/services/oracle-forms-development/d2f-forms.jsx
-             <OursTools />
-            {/*end our tools  */}
-           
-=======
             <Tools />
             {/*end our tools  */}
 
->>>>>>> 5713d05e7e681fb47a1d9c2d87d2fd160c64d122:src/services/application/artifical-intelligence.jsx
         </div>
     );
 };
