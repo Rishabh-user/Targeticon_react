@@ -4,7 +4,7 @@ import HelmetWrapper from './js/HelmetWrapper';
 import './App.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Helmet } from 'react-helmet';
+
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Home from './pages/Home/home';
@@ -82,9 +82,7 @@ function App() {
 
   return (
     <div>
-      <Helmet>
-        <title>Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon</title>
-      </Helmet>
+
       <BrowserRouter>
         <ScrollToTop />
         <Header />

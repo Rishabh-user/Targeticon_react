@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
 
-const FinanceAndOperation = {} = () => {
+const FinanceAndOperation = () => {
     return (
         <div>
             <section className="page-heading-sec r-bg-cfd pt60 pb60">

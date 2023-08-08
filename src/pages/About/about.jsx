@@ -41,14 +41,12 @@ import resourse from '../../assets/images/icons/Dedicated-Resource.webp';
 import resourse1 from '../../assets/images/icons/Dedicated-Resource.png';
 import infrastructure from '../../assets/images/infrastructure.webp';
 import infrastructure1 from '../../assets/images/infrastructure.png';
-import { Helmet } from "react-helmet";
+
 
 const About = () => {
     return (
         <div>
-            <Helmet>
-                <title>About | Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon </title> 
-            </Helmet>
+
             {/* <section className="pt60 pb60">
             {/* <section className="pt60 pb60">
                 <div className="container">

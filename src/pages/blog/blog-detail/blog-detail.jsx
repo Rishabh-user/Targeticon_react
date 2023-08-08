@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
-import { apiEndpoint } from "../../../js/api";
+import { apiEndpoint1 } from "../../../js/api";
 
 const BlogDetail = () => {
     const [users, setUsers] = useState([]);
@@ -8,12 +8,13 @@ const BlogDetail = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await fetch(`${apiEndpoint}/blog/get-all-blogs/`);
+                const response = await fetch(`${apiEndpoint1}/read`);
                 const data = await response.json();
+                console.log(data.items);
+                setUsers(data.items);
 
-                // Initialize viewCount property for each blog post
-                const blogsWithViews = data.map(blog => ({ ...blog, viewCount: 0 }));
-                setUsers(blogsWithViews);
+
+
             } catch (error) {
                 console.error('Error fetching users:', error);
             }
@@ -52,7 +53,7 @@ const BlogDetail = () => {
                                     <div className="col-lg-12">
                                         <div className="sol-img mt60">
                                             <p>
-                                                {blog.shortDescription}
+                                                {blog.short_desc}
                                                 {console.log(blog.shortDescription)};
                                             </p>
 
@@ -67,99 +68,18 @@ const BlogDetail = () => {
                                                     By <NavLink to="#">John Doe</NavLink> • <span>4 days ago</span>{" "}
                                                 </div>
                                             </div>
-                                            <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley
-                                                of type and scrambled it to make a type specimen book. It has
-                                                survived not only five centuries, but also the leap into
-                                                electronic typesetting, remaining essentially unchanged.
-                                            </p>
-                                            <h4>Website – The quickest way to take your business online</h4>
-                                            <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley
-                                                of type and scrambled it to make a type specimen book. It has
-                                                survived not only five centuries, but also the leap into
-                                                electronic typesetting, remaining essentially unchanged.
-                                            </p>
-                                            <ul className="ul-list mb30">
-                                                <li>A Logical Roadmap</li>
-                                                <li>Crucial Business Information</li>
-                                                <li>Social Media Integration</li>
-                                                <li>A Mobile-Ready Version</li>
-                                                <li>Heading and tagline or USP</li>
-                                                <li>Testimonials and social proof</li>
-                                                <li>Optimise website speed and performance</li>
-                                                <li>Contact Information and Clear Navigation</li>
-                                                <li>Ability to easily update title tag and meta description</li>
-                                            </ul>
-                                            <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley
-                                                of type and scrambled it to make a type specimen book.
-                                            </p>
                                             <div className="sol-img mt45 mb10">
                                                 {" "}
                                                 <img
-                                                    src="images/blogs/blog-details-2.jpg"
+                                                    src={blog.blog_image}
                                                     alt="blog"
                                                     className="img-fluid"
                                                 />{" "}
                                             </div>
                                             <p className="small text-center pb25">
-                                                {" "}
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
+                                                {blog.long_desc}
                                             </p>
-                                            <h4>Preparing for the perfect brand strategy.</h4>
-                                            <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley
-                                                of type and scrambled it to make a type specimen book. It has
-                                                survived not only five centuries, but also the leap into
-                                                electronic typesetting, remaining essentially unchanged.
-                                            </p>
-                                            <h6>1. The most downloaded graphic resource</h6>
-                                            <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley
-                                                of type and scrambled it to make a type specimen book.
-                                            </p>
-                                            <h6>2. The most downloaded graphic resource</h6>
-                                            <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley
-                                                of type and scrambled it to make a type specimen book.
-                                            </p>
-                                            <h6>3. The most downloaded graphic resource</h6>
-                                            <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley
-                                                of type and scrambled it to make a type specimen book.
-                                            </p>
-                                            <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley
-                                                of type and scrambled it to make a type specimen book. It has
-                                                survived not only five centuries, but also the leap into
-                                                electronic typesetting, remaining essentially unchanged.
-                                            </p>
-                                            <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley
-                                                of type and scrambled it to make a type specimen book. It has
-                                                survived not only five centuries, but also the leap into
-                                                electronic typesetting, remaining essentially unchanged.
-                                            </p>
+
                                         </div>
                                         <div className="center-btn">
                                             {" "}

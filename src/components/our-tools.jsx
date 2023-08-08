@@ -36,9 +36,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 const OursTools = () => {
-    const handleAppleClick = () => {
-        // Your logic here when the iOS section is clicked
-    };
+
     return (
         <div>
             {/*start technologies tools*/}
@@ -242,336 +240,336 @@ const OursTools = () => {
                                     </TabPanel>
                                     {/* Frond End Start */}
                                     <TabPanel>
-                                    <div className="row justify-content-center">
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={Angular}
-                                                                    alt="Angular.JS"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Angular.JS</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={ReactNative}
-                                                                    alt="React JS"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>React JS</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={NpmLogo}
-                                                                    alt="Npm-logo"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Npm </p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={Typescript}
-                                                                    alt="typescript"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Typescript</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={HTML5}
-                                                                    alt="html-5"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>HTML5</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={VueJs}
-                                                                    alt="vuejs"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Vue JS</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={Bootstrap}
-                                                                    alt="bootstrap"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Bootstrap</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={NodeJs}
-                                                                    alt="Node.js_logo"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Node.JS</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
+                                        <div className="row justify-content-center">
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Angular}
+                                                                alt="Angular.JS"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Angular.JS</p>
+                                                        </div>
+                                                    </NavLink>
                                                 </div>
                                             </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={ReactNative}
+                                                                alt="React JS"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>React JS</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={NpmLogo}
+                                                                alt="Npm-logo"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Npm </p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Typescript}
+                                                                alt="typescript"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Typescript</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={HTML5}
+                                                                alt="html-5"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>HTML5</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={VueJs}
+                                                                alt="vuejs"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Vue JS</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Bootstrap}
+                                                                alt="bootstrap"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Bootstrap</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={NodeJs}
+                                                                alt="Node.js_logo"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Node.JS</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </TabPanel>
                                     {/* Database Start */}
                                     <TabPanel>
-                                    <div className="row justify-content-center">
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={MariaDb}
-                                                                    alt="MariaDB"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>MariaDB</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={MongoDb}
-                                                                    alt="mongodb-icon"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>MongoDB</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={Redis}
-                                                                    alt="redis"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Redis</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={Mysql}
-                                                                    alt="mysql-official"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>MySQL</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={PostgreSql}
-                                                                    alt="postgresql-icon"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>PostgreSQL</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={oracle}
-                                                                    alt="oracle-logo"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Oracle</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={Sqlite}
-                                                                    alt="sqlite"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Sqlite</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={AWSRds}
-                                                                    alt="aws-rds"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>AWS-RDS</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                                                    <div className="icon-with-title">
-                                                        <NavLink to="preventDefault()">
-                                                            <div className="iwt-icon">
-                                                                <img
-                                                                    src={MicrosoftAccess}
-                                                                    alt="microsoft-access"
-                                                                    className="img-fluid"
-                                                                    loading="lazy"
-                                                                    width={52}
-                                                                    height={52}
-                                                                />
-                                                            </div>
-                                                            <div className="iwt-content">
-                                                                <p>Microsoft-Access</p>
-                                                            </div>
-                                                        </NavLink>
-                                                    </div>
+                                        <div className="row justify-content-center">
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={MariaDb}
+                                                                alt="MariaDB"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>MariaDB</p>
+                                                        </div>
+                                                    </NavLink>
                                                 </div>
                                             </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={MongoDb}
+                                                                alt="mongodb-icon"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>MongoDB</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Redis}
+                                                                alt="redis"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Redis</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Mysql}
+                                                                alt="mysql-official"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>MySQL</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={PostgreSql}
+                                                                alt="postgresql-icon"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>PostgreSQL</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={oracle}
+                                                                alt="oracle-logo"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Oracle</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={Sqlite}
+                                                                alt="sqlite"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Sqlite</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={AWSRds}
+                                                                alt="aws-rds"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>AWS-RDS</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                <div className="icon-with-title">
+                                                    <NavLink to="preventDefault()">
+                                                        <div className="iwt-icon">
+                                                            <img
+                                                                src={MicrosoftAccess}
+                                                                alt="microsoft-access"
+                                                                className="img-fluid"
+                                                                loading="lazy"
+                                                                width={52}
+                                                                height={52}
+                                                            />
+                                                        </div>
+                                                        <div className="iwt-content">
+                                                            <p>Microsoft-Access</p>
+                                                        </div>
+                                                    </NavLink>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </TabPanel>
                                     {/* CMS Start */}
                                     <TabPanel>

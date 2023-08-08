@@ -204,13 +204,13 @@ const sociallocket = () => {
                     <div className="row justify-content-center mt40">
                         <div className="col-lg-6">
                             <div className="center-btn big-txt">
-                                <a href="#" className="ree-btn  ree-btn-grdt2">
+                                <NavLink to="#" className="ree-btn  ree-btn-grdt2">
                                     <i className="fas fa-arrow-left fa-btn mr5" /> Previous Project{" "}
-                                </a>
-                                <a href="#" className="ree-btn  ree-btn-grdt2">
+                                </NavLink>
+                                <NavLink to="#" className="ree-btn  ree-btn-grdt2">
                                     {" "}
                                     Next Project <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>

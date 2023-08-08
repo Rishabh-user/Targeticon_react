@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import brandlogo from '../assets/images/brand-logo/app-futura.webp';
 import brandlogo1 from '../assets/images/brand-logo/app-futura.png';
 import appfutura1 from '../assets/images/brand-logo/appfutura-logo.png';
 import goodfirm1 from '../assets/images/brand-logo/goodfirm.png';
