@@ -1,5 +1,6 @@
-import React from "react";
-
+import React, {useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from "./components/header";
@@ -49,20 +50,34 @@ import Manufacturing from './industry-served/manufacturing';
 import Media from './industry-served/media-advertising';
 import Retail from './industry-served/retail';
 import TravelSocial from './industry-served/travel-social';
-
+import ScrollToTop from "./scrolltop";
+import { Helmet } from "react-helmet";
+import BlogDetail from "./pages/blog/blog-detail/blog-detail";
+//import Career from "../pages/career/career";
+//import CareerDetails from "../pages/career/career-detail";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      // Global settings for AOS (if needed)
+    });
+  }, []);
+ 
   return (
-
     <div>
+      <Helmet>
+        <title>Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon</title>
+      </Helmet>
       <BrowserRouter>
-        <Header />
+      <ScrollToTop />
+        <Header />        
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/hire-app-developers" element={<HireDevelopers />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/blogdetail" element={<BlogDetail />} />
           <Route path="/mobile-app-development" element={<MobileDevelopment />} />
           <Route path="/android-app-development" element={<AndroidDevelopment />} />
           <Route path="/blockchain-development" element={<BlockchianDevelopment />} />
@@ -102,10 +117,8 @@ function App() {
           <Route path="/media-advertising" element={<Media />} />
           <Route path="/retail" element={<Retail />} />
           <Route path="/travel-social" element={<TravelSocial />} />
-
-
-
-
+          {/* <Route path="/career" element={<Career />} /> */}
+          {/* <Route path="/career-detail" element={<CareerDetails />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>

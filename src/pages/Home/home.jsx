@@ -22,10 +22,14 @@ import JoinOurTeam from "../../components/join-our-team";
 import ServeIndustries from "../../components/industries-serve";
 import FormInfo from "../../components/form-info";
 import Location from "../../components/location";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>Home | Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon </title> 
+            </Helmet>
             <Slider />
             <TopBrandsTrustSlider />
             {/*we are targeticon*/}
@@ -427,6 +431,7 @@ const Home = () => {
             {/*Industries We Serve*/}
                 <ServeIndustries />
             {/*Industries We Serve end*/}
+
 
             {/*contact info*/}
                 <FormInfo />

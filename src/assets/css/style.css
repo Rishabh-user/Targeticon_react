@@ -1563,12 +1563,19 @@ z-index: -5;
 }
 
 .blog-quick-inf {
-    /*font-weight: 300;*/
-    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
+.rpl-contt h4 {
+    margin: 0.5rem 0;
+}
 .blog-quick-inf span+span {
-    margin-left: 15px;
+    background-color: #0065b0;
+    color: #fff;
+    border-radius: 0.25rem;
+    padding: 0.35rem 0.5rem;
+    font-size: 14px;
 }
 
 .half-blog-content h4 {
@@ -2444,7 +2451,7 @@ body .bg-w {
     margin-top: 40px;
     border-radius: 14px;
     overflow: hidden;
-    border: 5px solid #f7f7f7;
+    border: 4px solid #f7f7f7;
 }
 
 .ree-media-crd:hover {
@@ -5549,3 +5556,4 @@ input[type="checkbox"] {
     text-align: center;
     margin-top: 2rem;
 }
+

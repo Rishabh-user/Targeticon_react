@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Undermaintenance from '../../assets/images/Under-Maintenance.png'
+//import axios from 'axios';
+import apiDomain from "../../api/api";
 
 const Blog = () => {
+    const [blogPosts, setBlogPosts] = useState([]);
+    useEffect(() => {
+        const fetchBlogPosts = async (id) =>  {
+          try {
+            const response = await fetch(`${apiDomain}/api/blog/get-all-blogs/`); 
+            const data = await response.json();
+            setBlogPosts(data);
+          } catch (error) {
+            console.error('Error fetching blog posts:', error);
+          }
+        };
+        fetchBlogPosts();
+      }, []);
+      const MAX_DESCRIPTION_LENGTH = 100;
+    
     return (
         <div>
            
@@ -70,65 +88,49 @@ const Blog = () => {
                 <div className="container">
                     <div className="blog-post">
                         <div className="row vcenter">
+                        {blogPosts.map((post) => (
                             <div className="col-lg-4 col-sm-6">
-                                <div className="ree-media-crd">
+                                <div className="ree-media-crd" key={post.id}>
                                     <div className="rpl-img">
-                                        <a href="#">
+                                        <Link to="#">
                                             <img
-                                                src="images/blogs/blog-img-2.jpg"
+                                                src={post.featured_image}
                                                 alt="blog"
                                                 className="fill-fixed"
                                             />{" "}
-                                        </a>{" "}
+                                        </Link>{" "}
                                     </div>
                                     <div className="rpl-contt">
-                                        <div className="blog-quick-inf mb20 mt30">
+                                        <div className="blog-quick-inf mb10 mt30">
                                             <span>
-                                                <i className="far fa-calendar-alt" /> 12 March 21
+                                                <i className="far fa-calendar-alt me-2" />
+                                                {new Intl.DateTimeFormat('en-IN', {
+                                                    year: 'numeric',
+                                                    month: 'long',
+                                                    day: 'numeric'
+                                                }).format(new Date(post.timestamp))}
                                             </span>{" "}
                                             <span>
                                                 <i className="fas fa-clock" /> 5 Min Read
                                             </span>{" "}
                                         </div>
+                                        {/* {post.category && post.category.length > 0 ? (
+                                            <p>Category: {post.category[0].title}</p>
+                                        ) : (
+                                            <p>No Category</p>
+                                        )} */}
                                         <h4>
-                                            <a href="#">
-                                                Finding the best social media platform for your audience and
-                                                business
-                                            </a>
+                                            <Link to="#">
+                                                {post.title}
+                                            </Link>
                                         </h4>
+                                        {post.short_description && (
+                                            <p>{post.short_description.slice(0, MAX_DESCRIPTION_LENGTH)}..</p>
+                                        )}
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-sm-6">
-                                <div className="ree-media-crd">
-                                    <div className="rpl-img">
-                                        <a href="#">
-                                            <img
-                                                src="images/blogs/blog-img-3.jpg"
-                                                alt="blog"
-                                                className="fill-fixed"
-                                            />{" "}
-                                        </a>{" "}
-                                    </div>
-                                    <div className="rpl-contt">
-                                        <div className="blog-quick-inf mb20 mt30">
-                                            <span>
-                                                <i className="far fa-calendar-alt" /> 12 March 21
-                                            </span>{" "}
-                                            <span>
-                                                <i className="fas fa-clock" /> 5 Min Read
-                                            </span>{" "}
-                                        </div>
-                                        <h4>
-                                            <a href="#">
-                                                Finding the best social media platform for your audience and
-                                                business
-                                            </a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                            ))}                           
                             
                         </div>
                     </div>

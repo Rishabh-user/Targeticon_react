@@ -9,11 +9,8 @@ import girlbro from '../../assets/images/girl-bro.png';
 const D2fReports = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
             <section className="header-title">
-                <img src={d2kreports} className="img-fluid" />
+                <img src={d2kreports} className="img-fluid" alt="d2kreports"  />
             </section>
             {/* Header title end */}
             {/*overview*/}

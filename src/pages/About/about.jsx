@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import marketing from '../../assets/images/GIF/marketing.gif';
 import hero from '../../assets/images/hero.webp';
 import hero1 from '../../assets/images/hero.png';
@@ -40,19 +41,24 @@ import resourse from '../../assets/images/icons/Dedicated-Resource.webp';
 import resourse1 from '../../assets/images/icons/Dedicated-Resource.png';
 import infrastructure from '../../assets/images/infrastructure.webp';
 import infrastructure1 from '../../assets/images/infrastructure.png';
+import { Helmet } from "react-helmet";
+
 const About = () => {
     return (
         <div>
-            <section className="pt60 pb60">
+            <Helmet>
+                <title>About | Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon </title> 
+            </Helmet>
+            {/* <section className="pt60 pb60">
                 <div className="container">
                     <div className="row vcenter">
-                        {/*<div>
-                <img src="images/targeticon-slider-banner.jpg" class="img-fluid ">
+                        <div>
+                <img src="images/targeticon-slider-banner.jpg" class="img-fluid " />
                 
-                </div>*/}
+                </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/*page head*/}
             <section className="page-heading-sec about-pag-head pt60 pb60">
                 <div className="container">
@@ -314,43 +320,43 @@ const About = () => {
                                 aria-orientation="vertical"
                             >
                                 <li>
-                                    <a
+                                    <Link
                                         className="nav-link active"
                                         id="mission-tab"
                                         data-toggle="pill"
-                                        href="#pills-mission"
+                                        to="#pills-mission"
                                         role="tab"
                                         aria-controls="pills-mission"
                                         aria-selected="true"
                                     >
                                         <i className="fas fa-rocket" /> Our Mission
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="nav-link"
                                         id="vision-tab"
                                         data-toggle="pill"
-                                        href="#pills-vision"
+                                        to="#pills-vision"
                                         role="tab"
                                         aria-controls="pills-vision"
                                         aria-selected="false"
                                     >
                                         <i className="far fa-eye" /> Our Vision
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="nav-link"
                                         id="comit-tab"
                                         data-toggle="pill"
-                                        href="#pills-comit"
+                                        to="#pills-comit"
                                         role="tab"
                                         aria-controls="pills-comit"
                                         aria-selected="false"
                                     >
                                         <i className="fas fa-hands-helping" /> Our Team
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -783,7 +789,7 @@ const About = () => {
                     </div>
                     <div className="row justify-content-center mt30">
                         <div className="col-lg-4 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <Link to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
@@ -826,10 +832,10 @@ const About = () => {
                                         </ul>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 mt30">
-                            <a href="#">
+                            <Link to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
@@ -870,10 +876,10 @@ const About = () => {
                                         </ul>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 mt30 ">
-                            <a href="#">
+                            <Link to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
@@ -912,7 +918,7 @@ const About = () => {
                                         </ul>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

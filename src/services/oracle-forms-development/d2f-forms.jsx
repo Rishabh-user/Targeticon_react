@@ -3,16 +3,14 @@ import d2fforms from '../../assets/images/d2k-forms-bg.png';
 import oracleforms from '../../assets/images/oracle-forms.png';
 import oracleform3 from '../../assets/images/oracle-form3.png';
 import oracleform from '../../assets/images/oracle-form.png';
+import OursTools from "../../components/our-tools";
 
 
 const D2fForms = () => {
     return (
         <div>
-            {/*start header  */}
-            {/*?php include 'include/header.php';?*/}
-            {/*header end  */}
             <section className="header-title">
-                <img src={d2fforms} className="img-fluid" />
+                <img src={d2fforms} className="img-fluid" alt="d2fforms" />
             </section>
             {/* Header title end */}
             {/*page head*/}
@@ -321,15 +319,15 @@ const D2fForms = () => {
                 </div>
             </div>
             {/*Services provided in Oracle forms By Targeticon end*/}
+
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
+            
             {/*start our tools */}
-            {/*?php include 'include/our-tools.php';?*/}
+             <OursTools />
             {/*end our tools  */}
-            {/*start footer  */}
-            {/*?php include 'include/footer.php';?*/}
-            {/*end footer  */}
+           
         </div>
     );
 };

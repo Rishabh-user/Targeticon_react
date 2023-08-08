@@ -7,7 +7,7 @@ import dotnetasp from '../../assets/images/icons/asp-dot-net-icon.png';
 import expertise from '../../assets/images/asp-dot-net-Expertise.png';
 import advancewebapp from '../../assets/images/icons/Advanced-Web-Application.png';
 import enterpriceapp from '../../assets/images/icons/Enterprise-Applications.png';
-import pwa from '../../assets/images/icons/pwa.png';
+//import pwa from '../../assets/images/icons/pwa.png';
 
 const DotNetDevelopment = () => {
     return (

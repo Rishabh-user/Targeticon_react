@@ -1,7 +1,6 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import Logo from '../assets/images/logo.png';
-import Logoweb from '../assets/images/logo.webp';
 import healthcare from '../assets/images/Industries/Health-Care.png';
 import insurance from '../assets/images/Industries/Insurance.png';
 import energysector from '../assets/images/Industries/Energy-Sector.png';
@@ -15,6 +14,25 @@ import manufacturing from '../assets/images/Industries/Manufacturing.png';
 
 
 const Header = () => {
+    // useEffect(() => {
+    //     const container = document.querySelector('#main-nav');
+    //     const toggleButton = document.querySelector('#mobile-menu-toggle');
+    
+    //     const offcanvasNav = new HCOFFCANVASNAV.Nav(container, {
+    //       button: toggleButton,
+    //       position: 'left',
+    //       pushContent: true,
+    //     });
+    
+    //     return () => {
+    //       offcanvasNav.destroy();
+    //     };
+    //   }, []);
+    // useEffect(() => {
+    //     // Use your custom function here
+    //     myCustomFunction();
+    //   }, []);
+    
     return (
         <div>
             <header className="ree-header fixed-top">
@@ -24,14 +42,6 @@ const Header = () => {
                             <div className="dskt-logo">
                                 <NavLink className="nav-brand" to="/">
                                     <picture>
-                                        <source
-                                            srcSet={Logoweb}
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcSet={Logo}
-                                            type="image/png"
-                                        />
                                         <img
                                             loading="lazy"
                                             srcSet={Logo}
@@ -631,7 +641,7 @@ const Header = () => {
                             </ul>
                         </div>
                         {/* mobile Nav */}
-                        <nav id="main-nav">
+                        <nav id="main-nav" >
                             <ul>
                                 <li>
                                     <NavLink to="/">Home</NavLink>
@@ -639,9 +649,9 @@ const Header = () => {
                                 <li>
                                     <NavLink to="/about">About us</NavLink>
                                     {/* <ul>
-                        <li><a href="portfolio.php">Portfolio</a></li>
-                        <li><a href="team.php">Team</a></li>
-                    </ul>  */}
+                                        <li><a href="portfolio.php">Portfolio</a></li>
+                                        <li><a href="team.php">Team</a></li>
+                                    </ul>  */}
                                 </li>
                                 <li>
                                     <NavLink to="#">Services</NavLink>

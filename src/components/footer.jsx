@@ -1,11 +1,8 @@
 import React from "react";
-import brandlogo from '../assets/images/brand-logo/app-futura.webp';
+import { Link } from "react-router-dom";
 import brandlogo1 from '../assets/images/brand-logo/app-futura.png';
-import appfutura from '../assets/images/brand-logo/appfutura-logo.webp';
 import appfutura1 from '../assets/images/brand-logo/appfutura-logo.png';
-import goodfirm from '../assets/images/brand-logo/goodfirm.webp';
 import goodfirm1 from '../assets/images/brand-logo/goodfirm.png';
-import itfirm from '../assets/images/brand-logo/itfirm.webp';
 import itfirm1 from '../assets/images/brand-logo/itfirm.png';
 
 
@@ -21,36 +18,36 @@ const Footer = () => {
                                 <h5>Contact info</h5>
                                 <ul className="footer-links-list social-linkz">
                                     <li>
-                                        <a href="tel:+17183952545">
+                                        <Link to="tel:+17183952545">
                                             <span>
                                                 <i className="fas fa-phone-square-alt" />
                                             </span>{" "}
                                             +1 718 395 2545
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="https://wa.me/+919818757597" target="_blank">
+                                        <Link to="https://wa.me/+919818757597" target="_blank" rel="noreferrer" >
                                             <span>
                                                 <i className="fab fa-whatsapp-square" />
                                             </span>{" "}
                                             +91 981 875 7597
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="mailto:info@targeticon.com">
+                                        <Link to="mailto:info@targeticon.com">
                                             <span>
                                                 <i className="fas fa-envelope" />
                                             </span>
                                             info@targeticon.com
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="skype:target.icon">
+                                        <Link to="skype:target.icon">
                                             <span>
                                                 <i className="fab fa-skype" />
                                             </span>{" "}
                                             target.icon
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -58,45 +55,45 @@ const Footer = () => {
                                 <h5>Follow Us</h5>
                                 <ul className="footer-links-list social-linkz">
                                     <li>
-                                        <a
-                                            href="https://www.linkedin.com/company/targeticon/"
-                                            target="_blank"
+                                        <Link
+                                            to="https://www.linkedin.com/company/targeticon/"
+                                            target="_blank" rel="noreferrer" 
                                         >
                                             <span>
                                                 <i className="fab fa-linkedin" />
                                             </span>{" "}
                                             Linked in
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
-                                            href="https://www.instagram.com/targeticoncompany/"
-                                            target="_blank"
+                                        <Link
+                                            to="https://www.instagram.com/targeticoncompany/"
+                                            target="_blank" rel="noreferrer" 
                                         >
                                             <span>
                                                 <i className="fab fa-instagram" />
                                             </span>
                                             instagram
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="https://www.facebook.com/targeticon" target="_blank">
+                                        <Link to="https://www.facebook.com/targeticon" target="_blank" rel="noreferrer" >
                                             <span>
                                                 <i className="fab fa-facebook-f" />
                                             </span>{" "}
                                             Facebook
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
-                                            href="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
-                                            target="_blank"
+                                        <Link
+                                            to="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
+                                            target="_blank" rel="noreferrer" 
                                         >
                                             <span>
                                                 <i className="fab fa-youtube" />
                                             </span>{" "}
                                             Youtube
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -104,32 +101,32 @@ const Footer = () => {
                                 <h5>Services</h5>
                                 <ul className="footer-links-list">
                                     <li>
-                                        <a href="UI-UX-design.php">UI/UX Design</a>
+                                        <Link to="/UI-UX-design">UI/UX Design</Link>
                                     </li>
                                     <li>
-                                        <a href="web-app-development.php">
+                                        <Link to="/web-app-development">
                                             Web Application Development
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="mobile-app-development.php">Mobile App Development</a>
+                                        <Link to="/mobile-app-development">Mobile App Development</Link>
                                     </li>
                                     <li>
-                                        <a href="Cloud.php">Cloud</a>
+                                        <Link to="/Cloud">Cloud</Link>
                                     </li>
                                     <li>
-                                        <a href="JS-Stack-Development.php">JS Stack Development</a>
+                                        <Link to="/JS-Stack-Development">JS Stack Development</Link>
                                     </li>
                                     <li>
-                                        <a href="Oracle-Forms-Development.php">
+                                        <Link to="/Oracle-Forms-Development">
                                             Oracle Forms Development
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="Enterprise-Integration.php">Enterprise Integration</a>
+                                        <Link to="/Enterprise-Integration">Enterprise Integration</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Website Testing</a>
+                                        <Link to="#">Website Testing</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -137,34 +134,34 @@ const Footer = () => {
                                 <h5>Industries</h5>
                                 <ul className="footer-links-list">
                                     <li>
-                                        <a href="Health-Care.php">Health Care</a>
+                                        <Link to="/Health-Care">Health Care</Link>
                                     </li>
                                     <li>
-                                        <a href="Insurance.php">Insurance</a>
+                                        <Link to="/Insurance">Insurance</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Energy Sector</a>
+                                        <Link to="#">Energy Sector</Link>
                                     </li>
                                     <li>
-                                        <a href="Retail.php">Retail</a>
+                                        <Link to="/Retail">Retail</Link>
                                     </li>
                                     <li>
-                                        <a href="Banking-Finance.php">Banking &amp; Finance</a>
+                                        <Link to="/Banking-Finance">Banking &amp; Finance</Link>
                                     </li>
                                     <li>
-                                        <a href="Education.php">Education</a>
+                                        <Link to="/Education">Education</Link>
                                     </li>
                                     <li>
-                                        <a href="Media-Advertising.php">Media &amp; Advertising</a>
+                                        <Link to="/Media-Advertising">Media &amp; Advertising</Link>
                                     </li>
                                     <li>
-                                        <a href="Travel-Social.php">Travel &amp; Social</a>
+                                        <Link to="/Travel-Social">Travel &amp; Social</Link>
                                     </li>
                                     <li>
-                                        <a href="Logistics-Business.php">Logistics and Business</a>
+                                        <Link to="/Logistics-Business">Logistics and Business</Link>
                                     </li>
                                     <li>
-                                        <a href="Manufacturing.php">Manufacturing</a>
+                                        <Link to="/Manufacturing">Manufacturing</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -172,19 +169,19 @@ const Footer = () => {
                                 <h5>Company</h5>
                                 <ul className="footer-links-list">
                                     <li>
-                                        <a href="about.php">About us</a>
+                                        <Link to="/about">About us</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Technologies</a>
+                                        <Link to="#">Technologies</Link>
                                     </li>
                                     <li>
-                                        <a href="blog.php">Blog</a>
+                                        <Link to="/blog">Blog</Link>
                                     </li>
                                     <li>
-                                        <a href="contact-us.php">Contact</a>
+                                        <Link to="/contact-us">Contact</Link>
                                     </li>
                                     <li>
-                                        <a href="portfolio.php">Portfolio</a>
+                                        <Link to="/portfolio">Portfolio</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -196,13 +193,13 @@ const Footer = () => {
                                 {/* <div class="col-lg-3 vcenter">
                     <div class="footer-ree-lg mt30 mb30">
                         <div class="footer-logo">
-                        <a href="index.php">
+                        <Link to="index.php">
                             <picture>
                                 <source srcset="images/targeticon-footer-logo.webp" type="image/webp">
                                 <source srcset="images/targeticon-footer-logo.png" type="image/png"> 
                                 <img loading="lazy" src="images/targeticon-footer-logo.png" class="img-fluid" alt="footer-logo" width="300" height="61"/>
                             </picture>
-                        </a>
+                        </Link>
                         </div>
                     </div>
                     </div> */}
@@ -213,14 +210,6 @@ const Footer = () => {
                                                 <div className="app-awards owl-carousesl">
                                                     <div className="award-achivt">
                                                         <picture>
-                                                            <source
-                                                                srcSet={brandlogo}
-                                                                type="image/webp"
-                                                            />
-                                                            <source
-                                                                srcSet={brandlogo1}
-                                                                type="image/png"
-                                                            />
                                                             <img
                                                                 loading="lazy"
                                                                 src={brandlogo1}
@@ -233,14 +222,6 @@ const Footer = () => {
                                                     </div>
                                                     <div className="award-achivt">
                                                         <picture>
-                                                            <source
-                                                                srcSet={appfutura}
-                                                                type="image/webp"
-                                                            />
-                                                            <source
-                                                                srcSet={appfutura1}
-                                                                type="image/png"
-                                                            />
                                                             <img
                                                                 loading="lazy"
                                                                 src={appfutura1}
@@ -253,14 +234,6 @@ const Footer = () => {
                                                     </div>
                                                     <div className="award-achivt">
                                                         <picture>
-                                                            <source
-                                                                srcSet={goodfirm}
-                                                                type="image/webp"
-                                                            />
-                                                            <source
-                                                                srcSet={goodfirm1}
-                                                                type="image/png"
-                                                            />
                                                             <img
                                                                 loading="lazy"
                                                                 src={goodfirm1}
@@ -273,14 +246,6 @@ const Footer = () => {
                                                     </div>
                                                     <div className="award-achivt">
                                                         <picture>
-                                                            <source
-                                                                srcSet={itfirm}
-                                                                type="image/webp"
-                                                            />
-                                                            <source
-                                                                srcSet={itfirm1}
-                                                                type="image/png"
-                                                            />
                                                             <img
                                                                 loading="lazy"
                                                                 src={itfirm1}
@@ -297,13 +262,13 @@ const Footer = () => {
                                     </div>
                                 </div>
                                 <div className="col-lg-3 vcenter ft-btn">
-                                    <a
-                                        href="images/Company_Brochure.pdf"
-                                        target="_blank"
+                                    <Link
+                                        to="images/Company_Brochure.pdf"
+                                        target="_blank" rel="noreferrer" 
                                         className="ree-btn ree-btn-grdt1 mw-80 no-shadows"
                                     >
                                         Our Brochure <i className="fas fa-arrow-right fa-btn" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
