@@ -1,6 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
+import ArtificalIntelligencebannerimg from '../../assets/images/ArtificalIntelligencebannerimg.png';
+import ArtificalIntelligence1 from '../../assets/images/ArtificalIntelligence1.png';
+import ArtificalIntelligence2 from '../../assets/images/ArtificalIntelligence2.png';
 
 
 
@@ -12,7 +15,7 @@ const ArtificalIntelligence = () => {
             {/*?php include 'include/header.php';?*/}
             {/*header end  */}
             {/*page head*/}
-            <section className="page-heading-sec r-bg-c pt60 pb60">
+            <section className="page-heading-sec machine-learn-banner pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
                         <div className="col-lg-6">
@@ -44,18 +47,18 @@ const ArtificalIntelligence = () => {
                         </div>
                         <div className="col-lg-6">
                             <div
-                                className="sol-img m-mt30"
+                                className="sol-img m-mt30 machinelearn-img"
                                 data-aos="fade-in"
                                 data-aos-delay={200}
                             >
                                 <picture>
                                     <img
                                         loading="lazy"
-                                        src={""}
+                                        src={ArtificalIntelligencebannerimg}
                                         className="img-fluid"
                                         alt="oracle-forms"
-                                        width={590}
-                                        height={492}
+                                        width={497}
+                                        height={500}
                                     />
                                 </picture>
                             </div>
@@ -75,7 +78,7 @@ const ArtificalIntelligence = () => {
                                     className="port-tags mt20 h-light"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
-                                    style={{ color: "#0067b0" }}
+                                    style={{ color: "#585858" }}
                                 >
                                     Targeticon unlocks the potential of Artificial Intelligence (AI) to propel your business forward.
                                 </p>
@@ -123,11 +126,11 @@ const ArtificalIntelligence = () => {
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={""}
+                                            src={ArtificalIntelligence1}
                                             className="img-fluid mb20"
                                             alt="overview"
-                                            width={590}
-                                            height={492}
+                                            width={500}
+                                            height={511}
                                         />
                                     </picture>
                                 </div>
@@ -256,27 +259,25 @@ const ArtificalIntelligence = () => {
                         {/* portfolio row 3 */}
                         <div className="row vcenter">
                             <div
-                                className="col-lg-5 m-order1"
+                                className="col-lg-6 m-order1"
                                 data-aos="fade-up"
                                 data-aos-delay={200}
                             >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg">
-                                        <picture>
-                                            <img
-                                                loading="lazy"
-                                                src={""}
-                                                className="img-fluid"
-                                                alt="oracle-form3"
-                                                width={590}
-                                                height={492}
-                                            />
-                                        </picture>
-                                    </div>
+                                <div className="text-center pt30 pb30">
+                                    <picture>
+                                        <img
+                                            loading="lazy"
+                                            src={ArtificalIntelligence2}
+                                            className="img-fluid"
+                                            alt="Enterprise-Integration"
+                                            width={500}
+                                            height={472}
+                                        />
+                                    </picture>
                                 </div>
                             </div>
                             <div
-                                className="col-lg-7 m-order2"
+                                className="col-lg-6 m-order2"
                                 data-aos="fade-up"
                                 data-aos-delay={200}
                             >

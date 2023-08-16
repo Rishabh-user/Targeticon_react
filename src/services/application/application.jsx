@@ -1,17 +1,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import aiicon from '../../assets/images/aiicon.png';
+import scicon from '../../assets/images/scicon.png';
+import mlicon from '../../assets/images/mlicon.png';
+import Applicationimage from '../../assets/images/Applicationimage.png';
+import Applicationbanner from '../../assets/images/Applicationbanner.png';
 
 const Application = () => {
     return (
         <div>
-            <section className="page-heading-sec r-bg-c pt60 pb60">
+            <section className="page-heading-sec application-page pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
                         <div className="col-lg-6">
                             <div className="page-headings">
                                 <h1 data-aos="fade-up" data-aos-delay={100}>
                                     <span className="ree-text rt45 mr10">Application </span>{" "}
-
                                 </h1>
                                 <p className="mt20 h-light" data-aos="fade-up" data-aos-delay={200}>
                                     Applications that perform complex tasks that once required human input,
@@ -46,11 +50,11 @@ const Application = () => {
                                 <picture>
                                     <img
                                         loading="lazy"
-                                        src={""}
+                                        src={Applicationbanner}
                                         className="img-fluid"
                                         alt="Enterprise-Integration"
-                                        width={590}
-                                        height={492}
+                                        width={568}
+                                        height={414}
                                     />
                                 </picture>
                             </div>
@@ -60,22 +64,12 @@ const Application = () => {
             </section>
             {/*page head end*/}
             {/*Enterprise Integration*/}
-            <div className="pt60 pb60">
+            <div className="pt60 pb60 application-main">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="page-headings text-center">
                                 <h2 className="mb15">Application</h2>
-                                <p
-                                    className="port-tags mt20 h-light"
-                                    data-aos="fade-up"
-                                    data-aos-delay={400}
-                                    style={{ color: "#585858" }}
-                                >
-                                    {/* We have completed thousands of projects, some of them showing
-                                    important info here. */}
-
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -83,27 +77,7 @@ const Application = () => {
                         {/* portfolio row 1 */}
                         <div className="row vcenter">
                             <div
-                                className="col-lg-6 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg text-center">
-                                        <picture>
-                                            <img
-                                                loading="lazy"
-                                                src={""}
-                                                className="img-fluid"
-                                                alt="CRM"
-                                                width={590}
-                                                height={492}
-                                            />
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-6 m-order1"
+                                className="col-md-10 m-order1 m-auto"
                                 data-aos="fade-up"
                                 data-aos-delay={200}
                             >
@@ -112,93 +86,43 @@ const Application = () => {
                                     <p
                                         className="mt20 h-light"
                                         data-aos="fade-up"
-                                        data-aos-delay={300}
+                                        data-aos-delay={50}
                                     >
                                         Targeticon provides you with a large set of services including
-                                        Artifical Intelligence, Machine Learning and Cyber Security.{" "}
-                                    </p>
-                                    <p
-                                        className="mt20 h-light"
-                                        data-aos="fade-up"
-                                        data-aos-delay={400}
-                                    >
-                                        {" "}
-                                        It is a technical field of Application which mainly
+                                        Artifical Intelligence, Machine Learning and Cyber Security. Target icon is a well established technology consulting company
+                                        which provides you information related to Artifical Intelligence,
+                                        Machine Learning. It is a technical field of Application which mainly
                                         focuses on the study of topics such as Artifical Intelligence,
                                         Machine Learning and Cyber Security.{" "}
                                     </p>
                                     <p
-                                        className="mt20 h-light"
+                                        className="mt20 mb-50 h-light"
                                         data-aos="fade-up"
-                                        data-aos-delay={500}
-                                    >
-                                        {" "}
-                                        Target icon is a well established technology consulting company
-                                        which provides you information related to Artifical Intelligence,
-                                        Machine Learning.{" "}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        {/* portfolio row 2 */}
-                        <div className="row vcenter">
-                            <div
-                                className="col-lg-6 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="portfolio-detls pdr-dtls">
-                                    {/* <h3 className="under-service-heading">Application</h3> */}
-                                    <p
-                                        className="mt20 h-light"
-                                        data-aos="fade-up"
-                                        data-aos-delay={200}
+                                        data-aos-delay={100}
                                     >
                                         {" "}
                                         If you are someone who wants to establish their business using
                                         AI or ML, then we are here for you. We provide you
-                                        with the best consultancy service in the field of application.{" "}
-                                    </p>
-                                    <p
-                                        className="mt20 h-light"
-                                        data-aos="fade-up"
-                                        data-aos-delay={300}
-                                    >
-                                        {" "}
-                                        Our professionals are filled with high ranged skill set to
+                                        with the best consultancy service in the field of application. Our professionals are filled with high ranged skill set to
                                         provide you with the right advice that will surely do wonders
-                                        for you.
-                                    </p>
-                                    <p
-                                        className="mt20 h-light"
-                                        data-aos="fade-up"
-                                        data-aos-delay={400}
-                                    >
-                                        {" "}
-                                        It also helps to enable communication between people, machines
+                                        for you. It also helps to enable communication between people, machines
                                         and computers and their efficient co-operation and
-                                        co-ordination.
+                                        co-ordination.{" "}
                                     </p>
                                 </div>
                             </div>
-                            <div
-                                className="col-lg-6 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg text-center">
-                                        <picture>
-                                            <img
-                                                loading="lazy"
-                                                src={""}
-                                                className="img-fluid"
-                                                alt="Enterprise-Integration2"
-                                                width={590}
-                                                height={492}
-                                            />
-                                        </picture>
-                                    </div>
+                            <div className="col-md-10 m-auto">
+                                <div className="text-center mt-5 pb-3">
+                                    <picture>
+                                        <img
+                                            loading="lazy"
+                                            src={Applicationimage}
+                                            className="img-fluid"
+                                            alt="Enterprise-Integration"
+                                            width={1388}
+                                            height={518}
+                                        />
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +153,14 @@ const Application = () => {
                         >
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
-                                    <img src={""} alt="services" />{" "}
+                                <img
+                                    loading="lazy"
+                                    src={aiicon}
+                                    className="img-fluid"
+                                    alt="Enterprise-Integration2"
+                                    width={40}
+                                    height={40}
+                                />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
@@ -259,7 +190,14 @@ const Application = () => {
                         >
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
-                                    <img src={""} alt="services" />{" "}
+                                <img
+                                    loading="lazy"
+                                    src={scicon}
+                                    className="img-fluid"
+                                    alt="Enterprise-Integration2"
+                                    width={40}
+                                    height={40}
+                                />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
@@ -286,7 +224,14 @@ const Application = () => {
                         >
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
-                                    <img src={""} alt="services" />{" "}
+                                <img
+                                    loading="lazy"
+                                    src={mlicon}
+                                    className="img-fluid"
+                                    alt="Enterprise-Integration2"
+                                    width={40}
+                                    height={40}
+                                />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">

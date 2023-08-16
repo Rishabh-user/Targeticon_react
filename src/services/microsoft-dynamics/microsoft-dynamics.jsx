@@ -1,18 +1,23 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
+import businesscentralicon from '../../assets/images/businesscentralicon.png';
+import FinanceOpertaionicon from '../../assets/images/FinanceOpertaionicon.png';
+import powerbi from '../../assets/images/powerbi.png';
+import Microsoftnavicon from '../../assets/images/Microsoftnavicon.png';
+import microsoftbanner from '../../assets/images/microsoftbanner.png';
+import microsoftimg from '../../assets/images/microsoftimg.png';
 
 const MicrosoftDynamics = () => {
     return (
         <div>
-            <section className="page-heading-sec r-bg-h pt60 pb60 web-app-development-banner web-app-dev">
+            <section className="page-heading-sec pt60 pb60 application-page">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
                         <div className="col-lg-6 align-item-center">
                             <div className="page-headings">
                                 <h1 data-aos="fade-up" data-aos-delay={100}>
                                     Microsoft Dynamics
-
                                 </h1>
                                 <p className="mt20 h-light" data-aos="fade-up" data-aos-delay={150}>
                                     Our main goals is to improve customer relationships, customer experience, increase productivity and sales
@@ -32,37 +37,44 @@ const MicrosoftDynamics = () => {
                         </div>
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30" data-aos="fade-in">
-                                <img
-                                    src={""}
-                                    alt="Targeticon"
-                                    className="img-fluid"
-                                />
+                                <picture>
+                                    <img
+                                        loading="lazy"
+                                        src={microsoftbanner}
+                                        className="img-fluid"
+                                        alt="Enterprise-Integration"
+                                        width={568}
+                                        height={414}
+                                    />
+                                </picture>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             {/*start Web Application Development*/}
-            <section className="r-bg-c pt60 pb60">
+            <section className="machine-learn-banner pt60 pb60">
                 <div className="container">
-                    <div className="row vcenter">
-                        <div className="col-lg-6">
-                            <div className="ct-sol-img mb15 mt20">
-                                <img
-                                    src={""}
-                                    alt="hybird-app"
-                                    className="img-fluid"
-                                />
+                    <div className="row justify-content-center">
+                        <div className="col-lg-8">
+                            <div className="page-headings text-center">
+                                <h2 className="mb15">What is Microsoft Dynamics?</h2>
                             </div>
                         </div>
-                        <div className="col-lg-6 vcenter">
+                    </div>
+                    <div className="row vcenter">
+                        <div className="col-lg-10 m-auto">
                             <div className="cta-heading mb15 mt20">
-                                <h2 className="mb15">What is Microsoft Dynamics?</h2>
-                                <p>
+                                <p className="mt20 h-light"
+                                        data-aos="fade-up"
+                                        data-aos-delay={50}>
                                     Dynamics NAV, now known as Dynamics 365 Business Central, is indeed an Enterprise Resource Planning (ERP) solution designed to cater to the needs of small and medium-sized businesses.
                                     As a comprehensive ERP system, it aims to streamline and automate various aspects of business operations, ranging from sales and purchasing to warehouse management and financial reporting. With its adaptability and customization capabilities, Dynamics 365 Business Central can be tailored to suit the specific requirements of different industries.
                                 </p>
-                                <p>
+
+                                <p className="mt20 mb-50 h-light"
+                                        data-aos="fade-up"
+                                        data-aos-delay={100}>
                                     {" "}
                                     Microsoft Dynamics 365 is a cloud-based business applications platform that
                                     combines components of customer relationship management (CRM) and enterprise resource planning (ERP),
@@ -79,10 +91,24 @@ const MicrosoftDynamics = () => {
                                 </p> */}
                             </div>
                         </div>
+                        <div className="col-md-10 m-auto">
+                                <div className="text-center mt-5 pb-3">
+                                    <picture>
+                                        <img
+                                            loading="lazy"
+                                            src={microsoftimg}
+                                            className="img-fluid"
+                                            alt="Enterprise-Integration"
+                                            width={1388}
+                                            height={518}
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </section>
-            <section className="r-bg-i sec-pad" id="service">
+            <section className="r-bg-xx sec-pad" id="service">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-9">
@@ -105,7 +131,7 @@ const MicrosoftDynamics = () => {
                         >
                             <div className="ree-card r-bg-c mt60">
                                 <div className="ree-card-img shadows">
-                                    <img src={""} alt="services" />{" "}
+                                    <img src={businesscentralicon} alt="services" />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
@@ -134,7 +160,7 @@ const MicrosoftDynamics = () => {
                         >
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
-                                    <img src={""} alt="services" />{" "}
+                                    <img src={FinanceOpertaionicon} alt="services" />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
@@ -160,7 +186,7 @@ const MicrosoftDynamics = () => {
                         >
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
-                                    <img src={""} alt="services" />{" "}
+                                    <img src={Microsoftnavicon} alt="services" />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">
@@ -189,7 +215,7 @@ const MicrosoftDynamics = () => {
                         >
                             <div className="ree-card r-bg-c  mt60">
                                 <div className="ree-card-img">
-                                    <img src={""} alt="services" />{" "}
+                                    <img src={powerbi} alt="services" />{" "}
                                 </div>
                                 <div className="ree-card-content mt40">
                                     <h3 className="mb15">

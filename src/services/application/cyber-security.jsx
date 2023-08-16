@@ -1,11 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
+import cybersecurity from '../../assets/images/cybersecurity.png';
+import cybersecurity1 from '../../assets/images/cybersecurity1.png';
+import cybersecurity2 from '../../assets/images/cybersecurity2.png';
 
 const CyberSecurity = () => {
     return (
         <div>
-            <section className="page-heading-sec r-bg-c pt60 pb60">
+            <section className="page-heading-sec machine-learn-banner pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
                         <div className="col-lg-6">
@@ -35,18 +38,18 @@ const CyberSecurity = () => {
                         </div>
                         <div className="col-lg-6">
                             <div
-                                className="sol-img m-mt30"
+                                className="sol-img m-mt30 machinelearn-img"
                                 data-aos="fade-in"
                                 data-aos-delay={200}
                             >
                                 <picture>
                                     <img
                                         loading="lazy"
-                                        src={""}
+                                        src={cybersecurity1}
                                         className="img-fluid"
                                         alt="oracle-forms"
-                                        width={590}
-                                        height={492}
+                                        width={500}
+                                        height={483}
                                     />
                                 </picture>
                             </div>
@@ -66,7 +69,7 @@ const CyberSecurity = () => {
                                     className="port-tags mt20 h-light"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
-                                    style={{ color: "#0067b0" }}
+                                    style={{ color: "#585858" }}
                                 >
                                     Targeticon unlocks the potential of Cyber Security(CS) to propel your business forward.
                                 </p>
@@ -114,11 +117,11 @@ const CyberSecurity = () => {
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={""}
+                                            src={cybersecurity}
                                             className="img-fluid mb20"
                                             alt="overview"
-                                            width={590}
-                                            height={492}
+                                            width={500}
+                                            height={500}
                                         />
                                     </picture>
                                 </div>
@@ -247,27 +250,25 @@ const CyberSecurity = () => {
                         {/* portfolio row 3 */}
                         <div className="row vcenter">
                             <div
-                                className="col-lg-5 m-order1"
+                                className="col-lg-6 m-order1"
                                 data-aos="fade-up"
                                 data-aos-delay={200}
                             >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg">
-                                        <picture>
-                                            <img
-                                                loading="lazy"
-                                                src={""}
-                                                className="img-fluid"
-                                                alt="oracle-form3"
-                                                width={590}
-                                                height={492}
-                                            />
-                                        </picture>
-                                    </div>
+                                <div className="ct-sol-img">
+                                    <picture>
+                                        <img
+                                            loading="lazy"
+                                            src={cybersecurity2}
+                                            className="img-fluid mb20"
+                                            alt="overview"
+                                            width={500}
+                                            height={318}
+                                        />
+                                    </picture>
                                 </div>
                             </div>
                             <div
-                                className="col-lg-7 m-order2"
+                                className="col-lg-6 m-order2"
                                 data-aos="fade-up"
                                 data-aos-delay={200}
                             >

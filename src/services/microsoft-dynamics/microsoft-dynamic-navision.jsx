@@ -1,11 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
+import ArtificalIntelligencebannerimg from '../../assets/images/ArtificalIntelligencebannerimg.png';
+import reportingicon from '../../assets/images/reportingicon.png';
+import ordericon from '../../assets/images/ordericon.png';
+import salesicon from '../../assets/images/salesicon.png';
+import warehouseicon from '../../assets/images/warehouseicon.png';
+import projecticon from '../../assets/images/projecticon.png';
+import manufacturingicon from '../../assets/images/manufacturingicon.png';
+import financialicon from '../../assets/images/financialicon.png';
 
 const MicrosoftDynamicsNavision = () => {
     return (
         <div>
-            <section className="page-heading-sec r-bg-k pt60 pb60">
+            <section className="page-heading-sec machine-learn-banner pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
                         <div className="col-lg-6">
@@ -38,9 +46,9 @@ const MicrosoftDynamicsNavision = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <div className="sol-img m-mt30" data-aos="fade-in">
+                            <div className="sol-img m-mt30 machinelearn-img" data-aos="fade-in">
                                 <img
-                                    src={""}
+                                    src={ArtificalIntelligencebannerimg}
                                     alt="Targeticon"
                                     className="img-fluid"
                                     width="550px"
@@ -50,7 +58,7 @@ const MicrosoftDynamicsNavision = () => {
                     </div>
                 </div>
             </section>
-            <section className="r-bg-c pt60 pb60">
+            <section className="r-bg-hire pt60 pb60">
                 <div className="container">
                     <div className="row vcenter">
                         <div className="col-lg-6 vcenter">
@@ -58,7 +66,7 @@ const MicrosoftDynamicsNavision = () => {
                                 <picture>
                                     <img
                                         loading="lazy"
-                                        src={""}
+                                        src={ArtificalIntelligencebannerimg}
                                         className="img-fluid mb20"
                                         alt="overview"
                                         width={590}
@@ -86,13 +94,13 @@ const MicrosoftDynamicsNavision = () => {
                     </div>
                 </div>
             </section>
-            <section className="r-bg-d  pt60 pb60">
+            <section className="r-bg-c pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="page-headings text-center">
                                 <h2 className="mb15">Features and Functionality</h2>
-                                <p>
+                                <p className="mb-5">
                                     Microsoft Dynamics NAV (formerly known as Navision) offers a range of important features
                                     and functionalities that have significantly impacted industries by automating manual and repetitive tasks.
                                     It covers key business processes such as finance, sales, operations, purchasing, accounts, and inventory management.
@@ -102,20 +110,20 @@ const MicrosoftDynamicsNavision = () => {
                         </div>
                     </div>
                     <div className="row justify-content-center mt30">
-                        <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15">
+                        <div className="col-lg-4 col-md-4 col-sm-6 mt-3 mb-3">
                             <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-1">01</span>
                                     <div className="process-block">
-                                        <div className="process-icon">
+                                        <div className="process-icon mb-3">
                                             <picture>
                                                 <img
                                                     loading="lazy"
-                                                    src={""}
-                                                    className="img-fluid mb20"
+                                                    src={reportingicon}
+                                                    className="img-fluid"
                                                     alt="poc-icon"
-                                                    width={50}
-                                                    height={50}
+                                                    width={60}
+                                                    height={60}
                                                 />
                                             </picture>
                                         </div>
@@ -130,20 +138,20 @@ const MicrosoftDynamicsNavision = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15">
+                        <div className="col-lg-4 col-md-4 col-sm-6 mt-3 mb-3">
                             <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-2">02</span>
                                     <div className="process-block ">
-                                        <div className="process-icon">
+                                        <div className="process-icon mb-3">
                                             <picture>
                                                 <img
                                                     loading="lazy"
-                                                    src={""}
-                                                    className="img-fluid mb20"
+                                                    src={ordericon}
+                                                    className="img-fluid"
                                                     alt="private-blockchain"
-                                                    width={50}
-                                                    height={50}
+                                                    width={60}
+                                                    height={60}
                                                 />
                                             </picture>
                                         </div>
@@ -157,20 +165,20 @@ const MicrosoftDynamicsNavision = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
+                        <div className="col-lg-4 col-md-4 col-sm-6 mt-3 mb-3 ">
                             <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">03</span>
                                     <div className="process-block">
-                                        <div className="process-icon">
+                                        <div className="process-icon mb-3">
                                             <picture>
                                                 <img
                                                     loading="lazy"
-                                                    src={""}
-                                                    className="img-fluid mb20"
+                                                    src={salesicon}
+                                                    className="img-fluid"
                                                     alt="smart-contracts"
-                                                    width={50}
-                                                    height={50}
+                                                    width={60}
+                                                    height={60}
                                                 />
                                             </picture>
                                         </div>
@@ -184,20 +192,20 @@ const MicrosoftDynamicsNavision = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
+                        <div className="col-lg-4 col-md-4 col-sm-6 mt-3 mb-3 ">
                             <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">04</span>
                                     <div className="process-block">
-                                        <div className="process-icon">
+                                        <div className="process-icon mb-3">
                                             <picture>
                                                 <img
                                                     loading="lazy"
-                                                    src={""}
-                                                    className="img-fluid mb20"
+                                                    src={warehouseicon}
+                                                    className="img-fluid"
                                                     alt="blockchain-consulting"
-                                                    width={50}
-                                                    height={50}
+                                                    width={60}
+                                                    height={60}
                                                 />
                                             </picture>
                                         </div>
@@ -211,20 +219,20 @@ const MicrosoftDynamicsNavision = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
+                        <div className="col-lg-4 col-md-4 col-sm-6 mt-3 mb-3 ">
                             <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">05</span>
                                     <div className="process-block">
-                                        <div className="process-icon">
+                                        <div className="process-icon mb-3">
                                             <picture>
                                                 <img
                                                     loading="lazy"
-                                                    src={""}
-                                                    className="img-fluid mb20"
+                                                    src={projecticon}
+                                                    className="img-fluid"
                                                     alt="hyperledger-icon"
-                                                    width={50}
-                                                    height={50}
+                                                    width={60}
+                                                    height={60}
                                                 />
                                             </picture>
                                         </div>
@@ -238,20 +246,20 @@ const MicrosoftDynamicsNavision = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
+                        <div className="col-lg-4 col-md-4 col-sm-6 mt-3 mb-3 ">
                             <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">06</span>
                                     <div className="process-block">
-                                        <div className="process-icon">
+                                        <div className="process-icon mb-3">
                                             <picture>
                                                 <img
                                                     loading="lazy"
-                                                    src={""}
-                                                    className="img-fluid mb20"
+                                                    src={manufacturingicon}
+                                                    className="img-fluid"
                                                     alt="supply-chain"
-                                                    width={50}
-                                                    height={50}
+                                                    width={60}
+                                                    height={60}
                                                 />
                                             </picture>
                                         </div>
@@ -264,20 +272,20 @@ const MicrosoftDynamicsNavision = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 mt30 mb15 ">
+                        <div className="col-lg-4 col-md-4 col-sm-6 mt-3 mb-3 ">
                             <NavLink to="#">
                                 <div className="process-content ree-card h-100">
                                     <span className="setps hst-3">07</span>
                                     <div className="process-block">
-                                        <div className="process-icon">
+                                        <div className="process-icon mb-3">
                                             <picture>
                                                 <img
                                                     loading="lazy"
-                                                    src={""}
-                                                    className="img-fluid mb20"
+                                                    src={financialicon}
+                                                    className="img-fluid"
                                                     alt="cryptocurrency"
-                                                    width={50}
-                                                    height={50}
+                                                    width={60}
+                                                    height={60}
                                                 />
                                             </picture>
                                         </div>

@@ -1136,7 +1136,7 @@
 
 @media (max-width: 991px){
     html .pb80, html .pb60{ padding-bottom: 30px; }
-    html .pt80, html .pt60{ padding-top: 30px; }
+    html .pt80, html .pt60{ padding-top: 30px !important; }
     html .mb80, html .mb60{ margin-bottom: 30px; }
     html .mt80, html .mt60, html .mt100{ margin-top: 30px; }
     .sec-pad { padding-top: 30px; padding-bottom: 30px;}
