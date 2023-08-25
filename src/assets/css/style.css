@@ -5617,7 +5617,10 @@ input[type="checkbox"] {
 .cardadd {
     margin-top: 30px;
 }
-
+/* Multiselect */
+.css-13cymwt-control{background-color: transparent !important;border: none !important;}
+.css-qbdosj-Input:after{display: none !important;}
+.css-13cymwt-control .css-1fdsijx-ValueContainer  .css-1jqq78o-placeholder{color: #fff;}
 
 /* application-page */
 .application-page { position: relative;}
