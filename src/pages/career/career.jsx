@@ -2,45 +2,96 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Select from 'react-select';
 import Tools from '../../components/our-tools';
-import { apiEndpoint } from '../../js/api';
+import { apiEndpoint1 } from '../../js/api';
 import career from '../../assets/images/career-page-img.png';
 import careerpage from '../../assets/images/career-page-img-mobile-view.png';
-// const option = [
-//     { value: 1, label: 'Java' },
-//     { value: 2, label: 'React' },
-//     { value: 3, label: 'Dot Net' },
-//     { value: 4, label: 'HTML' },
-// ];
 
 const Career = () => {
     const [users, setUsers] = useState([]);
+    const [careerOptions, setCareerOptions] = useState([]);
+    const [locationOptions, setLocationOptions] = useState([]);
+    const [selectedCareerTitles, setSelectedCareerTitles] = useState([]);
+    const [selectedLocations, setSelectedLocations] = useState([]);
+    //const [searchQuery, setSearchQuery] = useState("");
+    const [filteredUsers, setFilteredUsers] = useState([]);
 
     useEffect(() => {
-        const fetchUsers = async () => {
+        const fetchCareers = async () => {
             try {
-                // [in this we write post beacause it is a API of posts,'/posts' is the specific endpoint for retrieving posts(ie. https://green.app.sociallocket.com/api/v1/posts) ]
-                const response = await fetch(`${apiEndpoint}/career/get-all-career/`);
+                const response = await fetch(`${apiEndpoint1}/careers/read/`);
                 const data = await response.json();
-                console.log(data); // Print the data array in the console and we write data.result because we are getting the data of result array not fully api as a array
-                // 'console.log(data.result)' it assumes that the API response has a result field containing the array of users.
-                setUsers(data);
-                // [here also we have done the same to get only values that are stored in result array otherwise it take full api as a array]
+                setUsers(data.careers);
+                
+                const careerOptions = data.careers.map(career => ({
+                    value: career.title,
+                    label: career.title
+                }));
+                setCareerOptions(careerOptions);
+
+                const locationOptions = data.careers.map(career => ({
+                    value: career.location,
+                    label: career.location
+                }));
+                setLocationOptions(locationOptions);
             } catch (error) {
-                console.error('Error fetching users:', error);
+                console.error('Error fetching careers:', error);
             }
         };
-
-        fetchUsers();
+        fetchCareers();
     }, []);
-    const options = users.map(user => ({
-        value: user.id,
-        label: user.title,
-    }));
-    const option = users.map(user => ({
-        value: user.id,
-        label: user.shortDescription,
-    }));
+    
+    const handleCareerTitleChange = (selectedOptions) => {
+        setSelectedCareerTitles(selectedOptions);
+    
+        if (selectedOptions.length === 0) {
+            setFilteredUsers(users); // Show all users when no titles are selected
+        } else {
+            const filteredData = users.filter(user =>
+                selectedOptions.some(title => title.value === user.title)
+            );
+            setFilteredUsers(filteredData);
+        }
+    };
+    
+    // Similar logic for location filtering
+    const handleLocationChange = (selectedOptions) => {
+        setSelectedLocations(selectedOptions);
 
+        if (selectedOptions.length === 0) {
+            setFilteredUsers(users); // Show all users when no locations are selected
+        } else {
+            const filteredData = users.filter(user =>
+                selectedOptions.some(location => user.location === location.label)
+            );
+    
+            setFilteredUsers(filteredData);
+        }
+    };   
+    // const filteredDataSectionRef = useRef(null);
+    // const handleSearch = () => {
+    //     if (selectedCareerTitles.length === 0 && selectedLocations.length === 0) {
+    //         setFilteredUsers(users); // Show all users when no selections are made
+    //     } else {
+    //         const filteredData = users.filter(user =>
+    //             selectedCareerTitles.some(title => title.value === user.title) &&
+    //             selectedLocations.some(location => user.location === location.value)
+    //         );    
+    //         setFilteredUsers(filteredData);    
+    //         // Scroll to the filtered data section
+    //         filteredDataSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    //     const lowercaseSearchQuery = searchQuery.toLowerCase(); 
+               
+    //     const filteredData = users.filter(user => {
+    //         const lowercaseKeywords = user.keywords.map(keyword => keyword.keyword.toLowerCase());
+    //         return lowercaseKeywords.includes(lowercaseSearchQuery);
+    //     });
+
+    //     setFilteredUsers(filteredData);
+    // }; 
+  
+        
+  
     return (
         <div>
             <section className="page-heading-sec r-bg-g pt60 pb60 career-banner">
@@ -75,6 +126,8 @@ const Career = () => {
                                                         className="search form-control"
                                                         id="floatingInput"
                                                         placeholder="Keywords..."
+                                                        //value={searchQuery}
+                                                        //onChange={(e) => setSearchQuery(e.target.value)}
                                                     />
                                                 </div>
                                             </li>
@@ -82,8 +135,11 @@ const Career = () => {
                                                 <div className="Function-filter text-center">
                                                     <Select
                                                         isMulti
-                                                        options={options}
+                                                        options={careerOptions}
+                                                        value={selectedCareerTitles}
+                                                        onChange={handleCareerTitleChange}
                                                         placeholder="Choose Your Skills"
+                                                        
                                                     />
                                                 </div>
                                             </li>
@@ -91,7 +147,9 @@ const Career = () => {
                                                 <div className="Function-filter text-center">
                                                     <Select
                                                         isMulti
-                                                        options={option}
+                                                        options={locationOptions}
+                                                        value={selectedLocations}
+                                                        onChange={handleLocationChange}
                                                         placeholder="Choose Your location"
                                                     />
                                                 </div>
@@ -102,6 +160,7 @@ const Career = () => {
                                                         type="submit"
                                                         className="apply-btn w-100"
                                                         name="Find My Future"
+                                                        //onClick={handleSearch}
                                                     />
                                                 </div>
                                             </li>
@@ -177,183 +236,69 @@ const Career = () => {
                         </div>
                         <div className="col-md-9">
                             <div className="row mt30 justify-content-center">
-                                {users.map((career, index) => (
-                                    <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box" key={career.id}>
-                                        <div>
+                                {selectedCareerTitles.length === 0 && selectedLocations.length === 0 ? (
+                                    // Display all users by default
+                                    users.map((career, index) => (
+                                        <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box" key={career.id}>
                                             <div className="process-content ree-card">
                                                 <span className="setps hst-1">{index + 1}</span>
-                                                <div className="process-block">
+                                                <div className="process-block w-100">
                                                     <div className="process-icon">
                                                         <h4>{career.title}</h4>
                                                         <h6 className="mb20 txt-blue">
                                                             <i className="fas fa-map-marker-alt mr10" />
-                                                            {/* {users.category[0].subCategory[0].experience} */}
-
+                                                            {career.location}
                                                         </h6>
                                                     </div>
                                                     <hr />
                                                     <p className="mb20">
-                                                        {career.shortDescription}
-
+                                                        {career.short_desc}
                                                     </p>
                                                     <div className="text-center">
                                                         <div className="apply-button mb20">
                                                             <NavLink to="#">Apply</NavLink>
                                                         </div>
                                                         <div className="see-detail">
-                                                            <NavLink to="career/career-details">See Detail</NavLink>
+                                                            <NavLink to={`/career/${career.id}/${career.id}`}>See Detail</NavLink>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div>                                            
                                             </div>
                                         </div>
-                                    </div>
-                                ))}
-                                {/* <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box">
-                                        <div>
+                                    ))
+                                ) : filteredUsers.length > 0 ? (
+                                    // Display filtered users when selections are made
+                                    filteredUsers.map((career, index) => (
+                                        <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box" key={career.id}>
                                             <div className="process-content ree-card">
-                                                <span className="setps hst-1">02</span>
-                                                <div className="process-block">
+                                                <span className="setps hst-1">{index + 1}</span>
+                                                <div className="process-block w-100">
                                                     <div className="process-icon">
-                                                        <h4>UI/UX Designer</h4>
+                                                        <h4>{career.title}</h4>
                                                         <h6 className="mb20 txt-blue">
                                                             <i className="fas fa-map-marker-alt mr10" />
-                                                            Gurugram
+                                                            {career.location}
                                                         </h6>
                                                     </div>
                                                     <hr />
                                                     <p className="mb20">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        Ut elit tellus, luctus nec ullam.
+                                                        {career.short_desc}
                                                     </p>
                                                     <div className="text-center">
                                                         <div className="apply-button mb20">
                                                             <NavLink to="#">Apply</NavLink>
                                                         </div>
                                                         <div className="see-detail">
-                                                            <NavLink to="/career-details">See Detail</NavLink>
+                                                            <NavLink to={`/career/${career.id}`}>See Detail</NavLink>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> */}
-                                {/* <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box">
-                                        <div>
-                                            <div className="process-content ree-card">
-                                                <span className="setps hst-1">03</span>
-                                                <div className="process-block">
-                                                    <div className="process-icon">
-                                                        <h4>Graphic Designer</h4>
-                                                        <h6 className="mb20 txt-blue">
-                                                            <i className="fas fa-map-marker-alt mr10" />
-                                                            Mumbai
-                                                        </h6>
-                                                    </div>
-                                                    <hr />
-                                                    <p className="mb20">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        Ut elit tellus, luctus nec ullam.
-                                                    </p>
-                                                    <div className="text-center">
-                                                        <div className="apply-button mb20">
-                                                            <NavLink to="#">Apply</NavLink>
-                                                        </div>
-                                                        <div className="see-detail">
-                                                            <NavLink to="#">See Detail</NavLink>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box">
-                                        <div>
-                                            <div className="process-content ree-card">
-                                                <span className="setps hst-1">04</span>
-                                                <div className="process-block">
-                                                    <div className="process-icon">
-                                                        <h4>Sr. UI Designer </h4>
-                                                        <h6 className="mb20 txt-blue">
-                                                            <i className="fas fa-map-marker-alt mr10" />
-                                                            Mumbai
-                                                        </h6>
-                                                    </div>
-                                                    <hr />
-                                                    <p className="mb20">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        Ut elit tellus, luctus nec ullam.
-                                                    </p>
-                                                    <div className="text-center">
-                                                        <div className="apply-button mb20">
-                                                            <NavLink to="#">Apply</NavLink>
-                                                        </div>
-                                                        <div className="see-detail">
-                                                            <NavLink to="/career-details">See Detail</NavLink>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box">
-                                        <div>
-                                            <div className="process-content ree-card">
-                                                <span className="setps hst-1">05</span>
-                                                <div className="process-block">
-                                                    <div className="process-icon">
-                                                        <h4>Java Developer</h4>
-                                                        <h6 className="mb20 txt-blue">
-                                                            <i className="fas fa-map-marker-alt mr10" />
-                                                            Noida
-                                                        </h6>
-                                                    </div>
-                                                    <hr />
-                                                    <p className="mb20">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        Ut elit tellus, luctus nec ullam.
-                                                    </p>
-                                                    <div className="text-center">
-                                                        <div className="apply-button mb20">
-                                                            <NavLink to="#">Apply</NavLink>
-                                                        </div>
-                                                        <div className="see-detail">
-                                                            <NavLink to="/career-details">See Detail</NavLink>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box">
-                                        <div>
-                                            <div className="process-content ree-card">
-                                                <span className="setps hst-1">06</span>
-                                                <div className="process-block">
-                                                    <div className="process-icon">
-                                                        <h4>React Developer</h4>
-                                                        <h6 className="mb20 txt-blue">
-                                                            <i className="fas fa-map-marker-alt mr10" />
-                                                            Noida
-                                                        </h6>
-                                                    </div>
-                                                    <hr />
-                                                    <p className="mb20">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        Ut elit tellus, luctus nec ullam.
-                                                    </p>
-                                                    <div className="text-center">
-                                                        <div className="apply-button mb20">
-                                                            <NavLink to="#">Apply</NavLink>
-                                                        </div>
-                                                        <div className="see-detail">
-                                                            <NavLink to="/career-details">See Detail</NavLink>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
+                                    ))
+                                ) : (
+                                    <p>No matching careers found.</p>
+                                )}                           
                             </div>
                         </div>
 
