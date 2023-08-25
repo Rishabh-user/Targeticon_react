@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
-import ArtificalIntelligencebannerimg from '../../assets/images/ArtificalIntelligencebannerimg.png';
+import microsoftnavision from '../../assets/images/microsoftnavision.png';
+import microsoftnavision1 from '../../assets/images/microsoftnavision1.png';
 import reportingicon from '../../assets/images/reportingicon.png';
 import ordericon from '../../assets/images/ordericon.png';
 import salesicon from '../../assets/images/salesicon.png';
@@ -10,7 +11,7 @@ import projecticon from '../../assets/images/projecticon.png';
 import manufacturingicon from '../../assets/images/manufacturingicon.png';
 import financialicon from '../../assets/images/financialicon.png';
 
-const MicrosoftDynamicsNavision = () => {
+const MicrosoftDynamicsNavision = () => { 
     return (
         <div>
             <section className="page-heading-sec machine-learn-banner pt60 pb60">
@@ -48,10 +49,11 @@ const MicrosoftDynamicsNavision = () => {
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30 machinelearn-img" data-aos="fade-in">
                                 <img
-                                    src={ArtificalIntelligencebannerimg}
+                                    src={microsoftnavision}
                                     alt="Targeticon"
                                     className="img-fluid"
-                                    width="550px"
+                                    width={590}
+                                    height={424}
                                 />
                             </div>
                         </div>
@@ -66,11 +68,11 @@ const MicrosoftDynamicsNavision = () => {
                                 <picture>
                                     <img
                                         loading="lazy"
-                                        src={ArtificalIntelligencebannerimg}
+                                        src={microsoftnavision1}
                                         className="img-fluid mb20"
                                         alt="overview"
-                                        width={590}
-                                        height={492}
+                                        width={500}
+                                        height={488}
                                     />
                                 </picture>
                             </div>

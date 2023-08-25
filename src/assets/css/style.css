@@ -5658,3 +5658,5 @@ input[type="checkbox"] {
     background-repeat: no-repeat;
 }
 .machine-learn-banner .machinelearn-img { z-index: 99; position: relative;}
+
+.page-not-found {background-color: #eae9e8;}

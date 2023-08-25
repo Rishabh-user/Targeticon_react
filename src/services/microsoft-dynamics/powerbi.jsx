@@ -1,13 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
-import ArtificalIntelligencebannerimg from '../../assets/images/ArtificalIntelligencebannerimg.png';
+import powerbiimg from '../../assets/images/powerbiimg.png';
+import powerbi1 from '../../assets/images/powerbi1.png';
+import powerbi2 from '../../assets/images/powerbi2.png';
+import powerbi3 from '../../assets/images/powerbi3.png';
 
 const PowerBI = () => {
-    return (
-        <div>
+    return (    
+        <div> 
             <section className="page-heading-sec machine-learn-banner pt60 pb60">
-                <div className="container">
+                <div className="container"> 
                     <div className="row justify-content-center vcenter">
                         <div className="col-lg-6">
                             <div className="page-headings">
@@ -37,11 +40,11 @@ const PowerBI = () => {
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30 machinelearn-img" data-aos="fade-in">
                                 <img
-                                    src={ArtificalIntelligencebannerimg}
+                                    src={powerbiimg}
                                     alt="Targeticon"
                                     className="img-fluid"
-                                    width={590}
-                                    height={492}
+                                    width={500}
+                                    height={505}
                                 />
                             </div>
                         </div>
@@ -69,11 +72,11 @@ const PowerBI = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={50}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={ArtificalIntelligencebannerimg}
+                                            src={powerbi2}
                                             className="img-fluid"
                                             alt="java-info3"
                                             width={500}
@@ -118,11 +121,11 @@ const PowerBI = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={50}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={ArtificalIntelligencebannerimg}
+                                            src={powerbi1}
                                             className="img-fluid"
                                             alt="java-info1"
                                             width={500}
@@ -172,11 +175,11 @@ const PowerBI = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={20}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={ArtificalIntelligencebannerimg}
+                                            src={powerbi3}
                                             className="img-fluid"
                                             alt="java-info2"
                                             width={500}
@@ -245,7 +248,7 @@ const PowerBI = () => {
                                 <picture>
                                     <img
                                         loading="lazy"
-                                        src={ArtificalIntelligencebannerimg}
+                                        src={powerbi1}
                                         className="img-fluid mb20"
                                         alt="conclusion"
                                         width={500}

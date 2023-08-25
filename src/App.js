@@ -70,6 +70,7 @@ import FinanceOperation from './services/microsoft-dynamics/finance-operation';
 import MicrosoftDynamicNavision from './services/microsoft-dynamics/microsoft-dynamic-navision';
 import PowerBi from './services/microsoft-dynamics/powerbi';
 import ScrollToTop from './js/scroll';
+import PageNotFound from "./pages/page-not-found/pagenotfound";
 
 
 
@@ -149,7 +150,7 @@ function App() {
           <Route path="/microsoft-dynamics/finance&operation" element={<HelmetWrapper title="Finance & Operation| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={FinanceOperation} />} />
           <Route path="/microsoft-dynamics/microsoft-dynamic-navision" element={<HelmetWrapper title="Microsoft Dynamic Navision| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={MicrosoftDynamicNavision} />} />
           <Route path="/microsoft-dynamics/power-bi" element={<HelmetWrapper title="Power BI| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={PowerBi} />} />
-
+          <Route path="*" element={<PageNotFound/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

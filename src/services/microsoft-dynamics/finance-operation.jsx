@@ -2,6 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
 import ArtificalIntelligencebannerimg from '../../assets/images/ArtificalIntelligencebannerimg.png';
+import finance from '../../assets/images/finance.png';
+import finance1 from '../../assets/images/finance1.png';
+import finance2 from '../../assets/images/finance2.png';
+import finance3 from '../../assets/images/finance3.png';
 
 const FinanceAndOperation = () => {
     return (
@@ -37,9 +41,11 @@ const FinanceAndOperation = () => {
                         <div className="col-lg-6">
                             <div className="sol-img m-mt30 machinelearn-img" data-aos="fade-in">
                                 <img
-                                    src={ArtificalIntelligencebannerimg}
+                                    src={finance}
                                     alt="Targeticon"
                                     className="img-fluid"
+                                    width={500} 
+                                    height={338}
                                 />
                             </div>
                         </div>
@@ -68,15 +74,15 @@ const FinanceAndOperation = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={50}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={ArtificalIntelligencebannerimg}
+                                            src={finance1}
                                             className="img-fluid"
-                                            alt="java-info3"
+                                            alt="finance"
                                             width={500}
-                                            height={500}
+                                            height={460}
                                         />
                                     </picture>
                                 </div>
@@ -124,15 +130,15 @@ const FinanceAndOperation = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={50}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={ArtificalIntelligencebannerimg}
+                                            src={finance2}
                                             className="img-fluid"
                                             alt="java-info1"
                                             width={500}
-                                            height={500}
+                                            height={446}
                                         />
                                     </picture>
                                 </div>
@@ -182,15 +188,15 @@ const FinanceAndOperation = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={20}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={ArtificalIntelligencebannerimg}
+                                            src={finance3}
                                             className="img-fluid"
                                             alt="java-info2"
                                             width={500}
-                                            height={500}
+                                            height={438}
                                         />
                                     </picture>
                                 </div>
