@@ -1,52 +1,53 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import { NavLink } from "react-router-dom";
-import { apiEndpoint } from "../../js/api";
+import { useParams } from 'react-router-dom';
 import Tools from '../../components/our-tools';
+import { apiEndpoint1 } from '../../js/api';
 
-const CareerDetails = () => {
-    const [users, setUsers] = useState([]);
-
+const CareerDetails = ({ match }) => {
+    const [careerData, setCareer] = useState({});
+   const { id } = useParams();
     useEffect(() => {
-        const fetchUsers = async () => {
-            try {
-                // [in this we write post beacause it is a API of posts,'/posts' is the specific endpoint for retrieving posts(ie. https://green.app.sociallocket.com/api/v1/posts) ]
-                const response = await fetch(`${apiEndpoint}/career/get-all-career/`);
-                const data = await response.json();
-                console.log(data); // Print the data array in the console and we write data.result because we are getting the data of result array not fully api as a array
-                // 'console.log(data.result)' it assumes that the API response has a result field containing the array of users.
-                setUsers(data);
-                // [here also we have done the same to get only values that are stored in result array otherwise it take full api as a array]
-            } catch (error) {
-                console.error('Error fetching users:', error);
-            }
-        };
+        // Fetch career data from the API
+        fetch(`${apiEndpoint1}/careers/read/`) 
+            .then(response => response.json())
+            .then(data => {
+                const selectedCareer = data.careers.find(career => career.id === parseInt(id, 0));
+                setCareer(selectedCareer || {});
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }, [id]);
 
-        fetchUsers();
-    }, []);
+    const career = careerData;
+
     return (
         <div>
+            
             <section className="page-heading-sec r-bg-g pt60 pb60 career-detail-banner">
+           
                 <div className="container">
                     <div className="row vcenter">
-                        <div className="col-md-6">
-                            {users.map(career => (
-                                <div className="page-headings pb60 pt60 career-detail-head" key={career.id}>
+                        <div className="col-md-6">                       
+                                <div className="page-headings pb60 pt60 career-detail-head" >                                
                                     <h1
                                         data-aos="fade-up"
                                         data-aos-delay={100}
                                         className="ree-text txt-white mb20"
                                     >
-                                        {/* {careerdetail.title} */}
-                                    </h1>
+                                        {career.title}
+                                    </h1>                                    
                                     <h6
                                         data-aos="fade-up"
                                         data-aos-delay={50}
                                         className="ree-text txt-white"
                                     >
-                                        React/HTML
+                                    {career.skills && career.skills.map((skill, index) => (
+                                        <span key={skill.id}>{skill.title}{index < career.skills.length - 1 && " / "}</span>
+                                    ))}
                                     </h6>
+                                    
                                 </div>
-                            ))}
+                      
                         </div>
                         <div className="col-md-6 ">
                             <div className="page-headings pb60 pt60 career-detail-head">
@@ -57,7 +58,10 @@ const CareerDetails = () => {
                         </div>
                     </div>
                 </div>
+                
             </section>
+    
+        
             {/*page head end*/}
             {/*-our Integrated Development Environment*/}
             <section className="r-bg-ti pt60 pb60">
@@ -67,7 +71,8 @@ const CareerDetails = () => {
                             <div className="row mt30 justify-content-center">
                                 <div className="col-md-8 col-sm-12 mt30 career-box">
                                     <div className="career-info">
-                                        <h4 className="mb10">Who we are</h4>
+                                        <p>{career.long_desc}</p>
+                                        {/* <h4 className="mb10">Who we are</h4>
                                         <p className="mb20">
                                             We believe lorem ipsum dolor sit amet, consectetur adipiscing
                                             elit. Phasellus feugiat elit vitae enim lacinia semper. Cras
@@ -131,7 +136,7 @@ const CareerDetails = () => {
                                                 <i className="far fa-hand-point-right mr10" />
                                                 Version control and Git workflow
                                             </li>
-                                        </ul>
+                                        </ul> */}
                                     </div>
                                 </div>
                                 <div className="col-md-4 col-sm-12 mt30 career-connect">
@@ -148,11 +153,11 @@ const CareerDetails = () => {
                                                 </p>
                                                 <div className="connect">
                                                     <div className="mb20 mt20">
-                                                        <NavLink To="#">
+                                                        <NavLink to="#">
                                                             <i className="fas fa-phone-alt mr10 mb20" /> +91 981
                                                             875 7597
                                                         </NavLink>
-                                                        <NavLink To="#">
+                                                        <NavLink to="#">
                                                             <i className="fas fa-envelope mr10" />
                                                             info@targeticon.com
                                                         </NavLink>
@@ -179,7 +184,7 @@ const CareerDetails = () => {
                                                         </NavLink>
                                                     </li>
                                                     <li>
-                                                        <NavLink To="https://www.facebook.com/targeticon"
+                                                        <NavLink to="https://www.facebook.com/targeticon"
                                                             target="_blank"
                                                         >
                                                             <i className="fab fa-facebook-f" />
@@ -292,6 +297,7 @@ const CareerDetails = () => {
                     </div>
                 </div>
             </section>
+           
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
