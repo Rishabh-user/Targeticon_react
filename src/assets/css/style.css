@@ -5617,3 +5617,49 @@ input[type="checkbox"] {
 .cardadd {
     margin-top: 30px;
 }
+/* Multiselect */
+.css-13cymwt-control{background-color: transparent !important;border: none !important;}
+.css-qbdosj-Input:after{display: none !important;}
+.css-13cymwt-control .css-1fdsijx-ValueContainer  .css-1jqq78o-placeholder{color: #fff;}
+
+/* application-page */
+.application-page { position: relative;}
+.application-page:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: url(../images/our-achievement-right-bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.application-page:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/our-achievement-left-bg.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.application-main { background-color: #d1eaff;}
+.machine-learn-banner {position: relative; background: rgb(209,234,255); background: linear-gradient(79deg, rgba(209,234,255,1) 0%, rgba(0,0,0,0) 63%);}
+.machine-learn-banner:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: url(../images/machine-bg-pattern.png);
+    background-position:bottom right;
+    background-repeat: no-repeat;
+}
+.machine-learn-banner .machinelearn-img { z-index: 99; position: relative;}
+
+.page-not-found {background-color: #eae9e8;}

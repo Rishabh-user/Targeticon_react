@@ -1,12 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
+import powerbiimg from '../../assets/images/powerbiimg.png';
+import powerbi1 from '../../assets/images/powerbi1.png';
+import powerbi2 from '../../assets/images/powerbi2.png';
+import powerbi3 from '../../assets/images/powerbi3.png';
 
 const PowerBI = () => {
-    return (
-        <div>
-            <section className="page-heading-sec r-bg-cfd pt60 pb60">
-                <div className="container">
+    return (    
+        <div> 
+            <section className="page-heading-sec machine-learn-banner pt60 pb60">
+                <div className="container"> 
                     <div className="row justify-content-center vcenter">
                         <div className="col-lg-6">
                             <div className="page-headings">
@@ -23,12 +27,6 @@ const PowerBI = () => {
                                     (Model View Controller) offering J2EE improvement set apart by the
                                     diminished many-sided quality and a steady venture platform.{" "}
                                 </p>
-                                <p className="mt10 h-light" data-aos="fade-up" data-aos-delay={80}>
-                                    Targeticon is a seaward programming advancement organization
-                                    making N-level applications with inside and out usage of MVC
-                                    (Model View Controller) offering J2EE improvement set apart by the
-                                    diminished many-sided quality and a steady venture platform.{" "}
-                                </p>
                                 <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt30 cardadd"
                                     data-aos="fade-up"
@@ -40,11 +38,13 @@ const PowerBI = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <div className="sol-img m-mt30" data-aos="fade-in">
+                            <div className="sol-img m-mt30 machinelearn-img" data-aos="fade-in">
                                 <img
-                                    src={""}
+                                    src={powerbiimg}
                                     alt="Targeticon"
                                     className="img-fluid"
+                                    width={500}
+                                    height={505}
                                 />
                             </div>
                         </div>
@@ -72,15 +72,15 @@ const PowerBI = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={50}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={""}
+                                            src={powerbi2}
                                             className="img-fluid"
                                             alt="java-info3"
-                                            width={686}
-                                            height={458}
+                                            width={500}
+                                            height={500}
                                         />
                                     </picture>
                                 </div>
@@ -121,15 +121,15 @@ const PowerBI = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={50}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={""}
+                                            src={powerbi1}
                                             className="img-fluid"
                                             alt="java-info1"
-                                            width={686}
-                                            height={458}
+                                            width={500}
+                                            height={500}
                                         />
                                     </picture>
                                 </div>
@@ -175,15 +175,15 @@ const PowerBI = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={20}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={""}
+                                            src={powerbi3}
                                             className="img-fluid"
                                             alt="java-info2"
-                                            width={686}
-                                            height={458}
+                                            width={500}
+                                            height={500}
                                         />
                                     </picture>
                                 </div>
@@ -248,7 +248,7 @@ const PowerBI = () => {
                                 <picture>
                                     <img
                                         loading="lazy"
-                                        src={""}
+                                        src={powerbi1}
                                         className="img-fluid mb20"
                                         alt="conclusion"
                                         width={500}

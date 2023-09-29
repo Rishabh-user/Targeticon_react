@@ -1,202 +1,232 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import BestPrice from '../assets/images/icons/best-price.png';
 import QualityService from '../assets/images/icons/quality-service.png';
 import GoodSupport from '../assets/images/icons/good-support.png';
 import Satisfaction from '../assets/images/icons/satification.png';
+import { apiEndpoint1 } from "../js/api";
 
 const FormInfo = () => {
-    const [formData, setFormData] = useState({
-        username: '',
-        email: '',
-        phone: '',
-        skype: '',
-        message: '',
-        recaptcha: '',
+     const [services, setServices] = useState([]);
+    // const [formData, setFormData] = useState({
+    //     name: '',
+    //     email: '',
+    //     contact: '',
+    //     subject: '',
+    //     skype: '',
+    //     service: '',
+    //     message: '',
+    //     //recaptcha: '',
+    // });
+
+    // const [errors, setErrors] = useState({
+    //     name: '',
+    //     email: '',
+    //     contact: '',
+    //     subject: '',
+    //     skype: '',
+    //     service: '',
+    //     message: '',
+    //     //recaptcha: '',
+    // });
+    // // this is for setting the error
+
+    // const handleChange = (e) => {
+    //     const { name, value } = e.target;
+    //     setFormData((prevData) => ({
+    //         ...prevData,
+    //         [name]: value,
+    //       }));
+    //     // Clear the error message for the corresponding field when the user starts typing	
+    //     setErrors({
+    //         ...errors,
+    //         [name]: '',
+    //     });
+       
+    // };
+
+    // const validateForm = () => {
+    //     let isValid = true;
+    //     const newErrors = {};    //change
+
+    //     // ... (same as before)
+    //     // eslint-disable-next-line no-useless-escape
+    //     const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    //     const userRegex = /^[a-zA-Z]{3,20}$/i;
+    //     const contactRegex = /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/i;
+    //     //const skypeRegex = /^[a-zA-Z]{3,20}$/i; // Corrected regex for skype
+    //     const messageRegex = /^.{3,}$/; // Updated the regex for message to accept any 3 or more characters
+
+    //     if (!formData.name.trim()) {
+    //         isValid = false;
+    //         newErrors.name = 'Please Enter your Full Name';
+    //     } else if (!userRegex.test(formData.name)) {
+    //         isValid = false;
+    //         newErrors.name = 'Please Enter a valid Full Name (3-20 characters, only letters)';
+    //     }
+
+    //     if (!formData.email.trim()) {
+    //         isValid = false;
+    //         newErrors.email = 'Please Enter your Email ID';
+    //     } else if (!emailRegex.test(formData.email)) {
+    //         isValid = false;
+    //         newErrors.email = 'Please Enter a valid Email ID';
+    //     }
+
+    //     if (!formData.contact.trim()) {
+    //         isValid = false;
+    //         newErrors.contact = 'Please Enter a valid contact Number';
+    //     } else if (!contactRegex.test(formData.contact)) {
+    //         isValid = false;
+    //         newErrors.contact = 'Please Enter a valid contact Number';
+    //     }       
+
+    //     if (!formData.message.trim()) {
+    //         isValid = false;
+    //         newErrors.message = 'Please Enter your Message';
+    //     } else if (!messageRegex.test(formData.message)) {
+    //         isValid = false;
+    //         newErrors.message = 'Please Enter a valid Message (at least 3 characters)';
+    //     }
+
+    //     setErrors(newErrors);
+    //     console.log('formData:', formData); // Debugging statement to log formData
+    //     console.log('errors:', errors); // Debugging statement to log errors
+    //     return isValid;
+    // };
+    useEffect(() => {
+        fetch(`${apiEndpoint1}/services/read/`)
+          .then(response => response.json())
+          .then(data => setServices(data.services))
+          .catch(error => console.error('Error fetching services:', error));
+      }, []);
+
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+
+    //     const isValid = validateForm();
+
+    //     if (isValid) {
+    //         try {
+    //             const response = await fetch(`${apiEndpoint1}/contactus/contact`, {
+    //                 method: 'POST', // Change to your desired HTTP method/
+    //                 headers: {
+    //                     'Content-Type': 'application/json',
+    //                     'Access-Control-Allow-Origin' : '*'
+    //                 },
+    //                 body: JSON.stringify(formData),
+                    
+    //             });
+                
+    //             if (response.ok) {
+    //                 console.log('Form submitted successfully');
+    //                 // Handle success or other UI updates here
+    //             } else {
+    //                 console.error('Form submission failed');
+    //                 // Handle error or other UI updates here
+    //             }
+    //         } catch (error) {
+    //             console.error('Error sending form data:', error);
+    //             // Handle error or other UI updates here
+    //         }
+
+    //         // Reset the form fields after successful submission
+    //         setFormData({
+    //             name: "",
+    //             email: "",
+    //             contact: "",
+    //             subject: '',
+    //             skype: "",
+    //             service: '',
+    //             message: "",
+    //             //recaptcha: "",
+    //         });
+
+    //         // Clear the errors state
+    //         setErrors({
+    //             name: '',
+    //             email: '',
+    //             contact: '',
+    //             subject: '',
+    //             skype: '',
+    //             service: '',
+    //             message: '',
+    //             //recaptcha: '',
+    //         });
+    //     // } else {
+    //     //     console.log('Form validation failed:', errors);
+    //     // }
+    // };
+    const [formData, setFormData] =  useState({
+        name: "",
+        email: "",
+        contact: "",
+        skype: "",
+        subject: "",
+        service: "",
+        message: ""
     });
+    const [errors, setErrors] = useState({});
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData((prevData) => ({ ...prevData, [name]: value }));
+        setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
+      };
+  
+    let handleSubmit = async (e) => {
+      e.preventDefault();
+      const validationErrors = {};
 
-    const [errors, setErrors] = useState({
-        username: '',
-        email: '',
-        phone: '',
-        skype: '',
-        message: '',
-        recaptcha: '',
-    });
-    // this is for setting the error
+    // Validate name
+    if (!formData.name) {
+      validationErrors.name = 'Name is required';
+    }
 
-    const [successMessage, setSuccessMessage] = useState('');
-    const [successMessage1, setSuccessMessage1] = useState('');
-    const [successMessage2, setSuccessMessage2] = useState('');
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
+    // Validate email
+    if (!formData.email) {
+      validationErrors.email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      validationErrors.email = 'Invalid email format';
+    }
+
+    // Validate contact
+    if (!formData.contact) {
+      validationErrors.contact = 'Contact is required';
+    }
+
+    // Validate message
+    if (!formData.message) {
+      validationErrors.message = 'Message is required';
+    }
+
+
+    if (Object.keys(validationErrors).length === 0) {
+      try {
+        let res = await fetch("https://targeticon.com/api/v2/contactus/contact", {
+          method: "POST",
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            service: formData.service,
+            contact: formData.contact,
+            subject: formData.subject,
+            skype: formData.skype,
+            message: formData.message,
+          }),
         });
-        // Clear the error message for the corresponding field when the user starts typing	
-        setErrors({
-            ...errors,
-            [name]: '',
-        });
-        switch (name) {
-            case 'username':
-                if (value.trim() && /^[a-zA-Z]{3,20}$/i.test(value)) {
-                    setErrors({
-                        ...errors,
-                        [name]: '',
-                    });
-                    setSuccessMessage('correct');
-                }
-                else {
-                    setSuccessMessage('');
-                }
-                break;
-            case 'email':
-                // eslint-disable-next-line no-useless-escape
-                if (value.trim() && /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+.)+[a-zA-Z]{2,}))$/.test(value)) {
-                    setErrors({
-                        ...errors,
-                        [name]: '',
-                    });
-                    setSuccessMessage1('correct');
-                }
-                else {
-                    setSuccessMessage1('');
-                }
-                break;
-            case 'phone':
-                if (value.trim() && /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/.test(value)) {
-                    setErrors({
-                        ...errors,
-                        [name]: '',
-                    });
-                    setSuccessMessage2('correct');
-                }
-                else {
-                    setSuccessMessage2('');
-                }
-                break;
-            case 'skype':
-                if (value.trim() && /^[a-zA-Z]{3,20}$/i.test(value)) {
-                    setErrors({
-                        ...errors,
-                        [name]: '',
-                    });
-                    setSuccessMessage('correct');
-                }
-                else {
-                    setSuccessMessage('');
-                }
-                break;
-            // case 'message':
-            //     if (value.trim() && /^.{3,}$/.test(value)) {
-            //         setErrors({
-            //             ...errors,
-            //             [name]: '',
-            //         });
-            //         setSuccessMessage('correct');
-            //     }
-            //     else {
-            //         setSuccessMessage('');
-            //     }
-            //     break;
-            default:
-                setSuccessMessage('');
-                break;
-        }
-    };
-
-    const validateForm = () => {
-        let isValid = true;
-        const newErrors = {};    //change
-
-        // ... (same as before)
-        // eslint-disable-next-line no-useless-escape
-        const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        const userRegex = /^[a-zA-Z]{3,20}$/i;
-        const phoneRegex = /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/i;
-        const skypeRegex = /^[a-zA-Z]{3,20}$/i; // Corrected regex for skype
-        const messageRegex = /^.{3,}$/; // Updated the regex for message to accept any 3 or more characters
-
-        if (!formData.username.trim()) {
-            isValid = false;
-            newErrors.username = 'Please Enter your Full Name';
-        } else if (!userRegex.test(formData.username)) {
-            isValid = false;
-            newErrors.username = 'Please Enter a valid Full Name (3-20 characters, only letters)';
-        }
-
-        if (!formData.email.trim()) {
-            isValid = false;
-            newErrors.email = 'Please Enter your Email ID';
-        } else if (!emailRegex.test(formData.email)) {
-            isValid = false;
-            newErrors.email = 'Please Enter a valid Email ID';
-        }
-
-
-        if (!formData.phone.trim()) {
-            isValid = false;
-            newErrors.phone = 'Please Enter a valid Phone Number';
-        } else if (!phoneRegex.test(formData.phone)) {
-            isValid = false;
-            newErrors.phone = 'Please Enter a valid Phone Number';
-        }
-
-        if (!formData.skype.trim()) {
-            isValid = false;
-            newErrors.skype = 'Please Enter your Skype ID';
-        } else if (!skypeRegex.test(formData.skype)) {
-            isValid = false;
-            newErrors.skype = 'Please Enter a valid Skype ID (3-20 characters, only letters)';
-        }
-
-        if (!formData.message.trim()) {
-            isValid = false;
-            newErrors.message = 'Please Enter your Message';
-        } else if (!messageRegex.test(formData.message)) {
-            isValid = false;
-            newErrors.message = 'Please Enter a valid Message (at least 3 characters)';
-        }
-
-        setErrors(newErrors);
-        console.log('formData:', formData); // Debugging statement to log formData
-        console.log('errors:', errors); // Debugging statement to log errors
-        return isValid;
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        const isValid = validateForm();
-
-        if (isValid) {
-            // Submit the form data to your backend or perform other actions here
-            console.log('Form submitted:', formData);
-
-            // Reset the form fields after successful submission
-            setFormData({
-                username: "",
-                email: "",
-                phone: "",
-                skype: "",
-                message: "",
-                recaptcha: "",
-            });
-
-            // Clear the errors state
-            setErrors({
-                username: '',
-                email: '',
-                phone: '',
-                skype: '',
-                message: '',
-                recaptcha: '',
-            });
+        let resJson = await res.json();
+        if (res.status === 200) {
+          console.log(resJson.message);
+          
         } else {
-            console.log('Form validation failed:', errors);
+          console.log(resJson.message);
         }
+      } catch (err) {
+        console.log(err);
+      }
+    } else {
+        setErrors(validationErrors);
+      }
     };
 
 
@@ -221,12 +251,12 @@ const FormInfo = () => {
                                                         id="user_name"
                                                         className="txtName validate"
                                                         placeholder="Full Name"
-                                                        name="username"
-                                                        value={formData.username}
+                                                        name="name"
+                                                        value={formData.name}
                                                         onChange={handleChange}
                                                     />
-                                                    {errors.username && <div className="error">{errors.username}</div>}
-                                                    {successMessage && <div className="success">{successMessage}</div>}
+                                                    {errors.name && <div className="error">{errors.name}</div>}
+                                                    {/* {successMessage && <div className="success">{successMessage}</div>} */}
                                                     {/* <span id="errName" /> */}
 
                                                 </div>
@@ -243,23 +273,23 @@ const FormInfo = () => {
                                                     {/* <span id="errEmail" /> */}
 
                                                     {errors.email && <div className="error">{errors.email}</div>}
-                                                    {<div className="success">{successMessage1}</div>}
+                                                    {/* {<div className="success">{successMessage1}</div>} */}
                                                 </div>
                                             </div>
                                             <div className="fieldsets row">
                                                 <div className="col-md-6">
                                                     <input
                                                         type="number"
-                                                        id="user_phone"
+                                                        id="user_contact"
                                                         className="txtPhone 10digit validate"
                                                         placeholder="Contact Number"
-                                                        name="phone"
-                                                        value={formData.phone}
+                                                        name="contact"
+                                                        value={formData.contact}
                                                         onChange={handleChange}
                                                     />
-                                                    {/* <span id="errPhoneno" /> */}
-                                                    {errors.phone && <div className="error">{errors.phone}</div>}
-                                                    {<div className="success">{successMessage2}</div>}
+                                                    {/* <span id="errcontactno" /> */}
+                                                    {errors.contact && <div className="error">{errors.contact}</div>}
+                                                    {/* {<div className="success">{successMessage2}</div>} */}
                                                     {/* {successMessage && <div className="success"><spam>{successMessage2}</spam></div>} */}
 
 
@@ -271,6 +301,8 @@ const FormInfo = () => {
                                                         placeholder="Skype"
                                                         className="validate"
                                                         name="skype"
+                                                        value={formData.skype}
+                                                        onChange={handleChange}
                                                     />
 
                                                 </div>
@@ -282,40 +314,39 @@ const FormInfo = () => {
                                                         id="user_subject"
                                                         placeholder="Subject"
                                                         className="validate"
-                                                        name="Subject"
+                                                        name="subject"
+                                                        value={formData.subject}
+                                                        onChange={handleChange}
                                                     />
-                                                    <span id="errSubject" />
+                                                    {/* <span id="errSubject" /> */}
                                                 </div>
                                                 <div className="col-md-6">
                                                     <select
-                                                        id="user_service"
+                                                        //id="user_service"
                                                         className="validate"
-                                                        name="Services"
+                                                        name="service"
+                                                        
+                                                        onChange={handleChange}
                                                     >
-                                                        <option value="" disabled="">
-                                                            Select Service
+                                                      <option>Select a service</option>
+                                                        {services.map(service => (
+                                                        <option key={service.id} value={service.name}>
+                                                            {service.name}
                                                         </option>
-                                                        <option>Mobile App Development</option>
-                                                        <option>Web Application Development</option>
-                                                        <option>UI/UX Design</option>
-                                                        <option>ITES/BPO Services</option>
-                                                        <option>Cloud</option>
-                                                        <option>JS Stack Development</option>
-                                                        <option>Oracle Forms Development</option>
-                                                        <option>Enterprise Integration</option>
+                                                        ))}
                                                     </select>
-                                                    <span id="errServices" />
+                                                    {/* <span id="errServices" /> */}
                                                 </div>
                                             </div>
                                             <div className="fieldsets">
                                                 <textarea
                                                     placeholder="Message"
-                                                    id="user_message"
+                                                    //id="user_message"
                                                     className="validate"
-                                                    name="Message"
-                                                    defaultValue={""}
+                                                    name="message"
+                                                    onChange={handleChange}
                                                 />
-                                                <span id="errMessage" className="error" />
+                                                {errors.message && <p className="error">{errors.message}</p>}
                                             </div>
                                             <div className="md-form mb-5">
                                                 <div
@@ -341,19 +372,19 @@ const FormInfo = () => {
                                                     Targeticon.
                                                 </label>
                                             </div>
-                                            <input
+                                            {/* <input
                                                 id="page_URL"
                                                 type="hidden"
                                                 defaultValue=""
                                                 name="Entry"
-                                            />
+                                            /> */}
                                             <div className="fieldsets mt20">
                                                 <input
-                                                    type="button"
-                                                    id="submit"
+                                                    type="submit"
+                                                    //id="submit"
                                                     className="ree-btn ree-btn-grdt1 w-100"
                                                     name="submit"
-                                                    onClick={handleSubmit}
+                                                    //onClick={handleSubmit}
                                                     defaultValue="Send your inquiry"
                                                 />
                                                 <div className="form-response" />

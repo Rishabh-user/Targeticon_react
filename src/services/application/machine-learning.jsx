@@ -1,13 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
+import machineimg from '../../assets/images/machineimg.png';
+import machineimg1 from '../../assets/images/machineimg1.png';
+import machineimg2 from '../../assets/images/machineimg2.png';
 
 
 
-const MachineLearning = () => {
+const MachineLearning = () => { 
     return (
         <div>
-            <section className="page-heading-sec r-bg-c pt60 pb60">
+            <section className="page-heading-sec machine-learn-banner pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
                         <div className="col-lg-6">
@@ -38,18 +41,18 @@ const MachineLearning = () => {
                         </div>
                         <div className="col-lg-6">
                             <div
-                                className="sol-img m-mt30"
+                                className="sol-img m-mt30 machinelearn-img"
                                 data-aos="fade-in"
                                 data-aos-delay={200}
                             >
                                 <picture>
                                     <img
                                         loading="lazy"
-                                        src={""}
+                                        src={machineimg}
                                         className="img-fluid"
-                                        alt="oracle-forms"
-                                        width={590}
-                                        height={492}
+                                        alt="Enterprise-Integration"
+                                        width={497}
+                                        height={520}
                                     />
                                 </picture>
                             </div>
@@ -69,7 +72,7 @@ const MachineLearning = () => {
                                     className="port-tags mt20 h-light"
                                     data-aos="fade-up"
                                     data-aos-delay={400}
-                                    style={{ color: "#0067b0" }}
+                                    style={{ color: "#585858" }}
                                 >
                                     Targeticon unlocks the potential of Machine Learning(ML) to propel your business forward.
                                 </p>
@@ -79,7 +82,7 @@ const MachineLearning = () => {
 
                     <div className="portfolio-items mt60">
                         <div className="row vcenter">
-                            <div className="col-md-6 col-sm-12 vcenter">
+                            <div className="col-lg-6 col-sm-12 vcenter">
                                 <div className="hero-content-x">
                                     {/* <h3 className="mb15">Hire iPhone Application Developers</h3> */}
                                     <p>ML enables computers to recognize patterns, process data, and make intelligent decisions through experience.
@@ -90,23 +93,21 @@ const MachineLearning = () => {
                                         Unlike traditional programming, where instructions are manually coded, ML systems learn from data, iteratively
                                         refining their performance and enhancing their accuracy over time.{" "}
                                     </p>
-                                    <p style={{ fontWeight: "bold" }}>
+                                    <p style={{ fontWeight: "500" }}>
                                         Machine learning algorithms use historical data as input to predict new output values.{" "}
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-lg-6 ">
+                            <div className="col-lg-6">
                                 <div className="text-center pt30 pb30">
                                     <picture>
-                                        <source srcSet={""} type="image/webp" />
-                                        <source srcSet={""} type="image/png" />
                                         <img
                                             loading="lazy"
-                                            src={""}
-                                            className="img-fluid mb20"
-                                            alt="hire-developer"
-                                            width={500}
-                                            height={415}
+                                            src={machineimg2}
+                                            className="img-fluid"
+                                            alt="Enterprise-Integration"
+                                            width={400}
+                                            height={404}
                                         />
                                     </picture>
                                 </div>
@@ -233,29 +234,9 @@ const MachineLearning = () => {
                             </div>
                         </div> */}
                         {/* portfolio row 3 */}
-                        <div className="row vcenter">
+                        <div className="row vcenter flex-row-reverse">
                             <div
-                                className="col-lg-5 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg">
-                                        <picture>
-                                            <img
-                                                loading="lazy"
-                                                src={""}
-                                                className="img-fluid"
-                                                alt="oracle-form3"
-                                                width={590}
-                                                height={492}
-                                            />
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-7 m-order2"
+                                className="col-lg-6 m-order2"
                                 data-aos="fade-up"
                                 data-aos-delay={200}
                             >
@@ -295,6 +276,24 @@ const MachineLearning = () => {
                                     </p>
                                 </div>
                             </div>
+                            <div
+                                    className="col-lg-6 m-order1"
+                                    data-aos="fade-up"
+                                    data-aos-delay={200}
+                                >
+                                    <div className="text-center pt30 pb30">
+                                        <picture>
+                                            <img
+                                                loading="lazy"
+                                                src={machineimg1}
+                                                className="img-fluid"
+                                                alt="ArtificalIntelligence"
+                                                width={500}
+                                                height={341}
+                                            />
+                                        </picture>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>

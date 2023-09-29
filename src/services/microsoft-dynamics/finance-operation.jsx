@@ -1,11 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
+import ArtificalIntelligencebannerimg from '../../assets/images/ArtificalIntelligencebannerimg.png';
+import finance from '../../assets/images/finance.png';
+import finance1 from '../../assets/images/finance1.png';
+import finance2 from '../../assets/images/finance2.png';
+import finance3 from '../../assets/images/finance3.png';
 
 const FinanceAndOperation = () => {
     return (
         <div>
-            <section className="page-heading-sec r-bg-cfd pt60 pb60">
+            <section className="page-heading-sec machine-learn-banner pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
                         <div className="col-lg-6">
@@ -23,12 +28,6 @@ const FinanceAndOperation = () => {
                                     related to management of the supply chain, encompassing engineering, manufacturing, warehousing, and distribution.
                                     {" "}
                                 </p>
-                                <p className="mt10 h-light" data-aos="fade-up" data-aos-delay={80}>
-                                    Targeticon is a seaward programming advancement organization
-                                    making N-level applications with inside and out usage of MVC
-                                    (Model View Controller) offering J2EE improvement set apart by the
-                                    diminished many-sided quality and a steady venture platform.{" "}
-                                </p>
                                 <NavLink to="/contact-us"
                                     className="ree-btn  ree-btn-grdt1 mt30 cardadd"
                                     data-aos="fade-up"
@@ -40,11 +39,13 @@ const FinanceAndOperation = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <div className="sol-img m-mt30" data-aos="fade-in">
+                            <div className="sol-img m-mt30 machinelearn-img" data-aos="fade-in">
                                 <img
-                                    src={""}
+                                    src={finance}
                                     alt="Targeticon"
                                     className="img-fluid"
+                                    width={500} 
+                                    height={338}
                                 />
                             </div>
                         </div>
@@ -73,15 +74,15 @@ const FinanceAndOperation = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={50}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={""}
+                                            src={finance1}
                                             className="img-fluid"
-                                            alt="java-info3"
-                                            width={686}
-                                            height={458}
+                                            alt="finance"
+                                            width={500}
+                                            height={460}
                                         />
                                     </picture>
                                 </div>
@@ -129,15 +130,15 @@ const FinanceAndOperation = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={50}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={""}
+                                            src={finance2}
                                             className="img-fluid"
                                             alt="java-info1"
-                                            width={686}
-                                            height={458}
+                                            width={500}
+                                            height={446}
                                         />
                                     </picture>
                                 </div>
@@ -187,15 +188,15 @@ const FinanceAndOperation = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={20}
                             >
-                                <div className="boxs-img text-center mt20 mb20">
+                                <div className=" text-center mt20 mb20">
                                     <picture>
                                         <img
                                             loading="lazy"
-                                            src={""}
+                                            src={finance3}
                                             className="img-fluid"
                                             alt="java-info2"
-                                            width={686}
-                                            height={458}
+                                            width={500}
+                                            height={438}
                                         />
                                     </picture>
                                 </div>
@@ -276,7 +277,7 @@ const FinanceAndOperation = () => {
                                 <picture>
                                     <img
                                         loading="lazy"
-                                        src={""}
+                                        src={ArtificalIntelligencebannerimg}
                                         className="img-fluid mb20"
                                         alt="conclusion"
                                         width={500}
