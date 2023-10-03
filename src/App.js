@@ -12,6 +12,7 @@ import About from "./pages/About/about";
 import Contact from "./pages/contact-us/contact-us";
 import Blog from "./pages/blog/blog";
 import BlogDetail from "./pages/blog/blog-detail/blog-detail";
+import Category from "./pages/blog/blog-detail/category";
 import Career from "./pages/career/career";
 import CareerDetails from "./pages/career/career-details";
 import HireDevelopers from "./pages/hire-app-developers/hire-app-developers";
@@ -122,6 +123,7 @@ function App() {
               />
             }
           />
+          <Route path="/career/:id" element={<HelmetWrapper title="Career Details| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={CareerDetails} />} />
           <Route
             path="/contact-us"
             element={
@@ -158,6 +160,8 @@ function App() {
               />
             }
           />
+          <Route path="/blog/:id/:title" element={<HelmetWrapper title="Blog Details| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={BlogDetail} />} />
+          <Route path="blog/category/:categoryId/:categoryTitle" element={<HelmetWrapper title="Category| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon" component={Category} />} />
           <Route
             path="/mobile-app-development"
             element={
