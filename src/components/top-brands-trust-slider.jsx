@@ -1,5 +1,5 @@
 import React from "react";
-import OwlCarousel from 'react-owl-carousel2';
+import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Zanducare from '../assets/images/brand-logo/customer-logo-1.png'
@@ -22,12 +22,12 @@ const TopBrandsTrustSlider = () => {
     return (
         
             <div className="container">
-                <div className="row py-5">
+                <div className="row py-5 mt-5">
                     <div className="col-lg-12">
                         <div className="brand-title text-center mb-5">
                             <h4>The World's Top Brands Trust Us</h4>
                         </div>
-                        <OwlCarousel options={options}>                             
+                        <OwlCarousel {...options}>                             
                             <div className="item">
                                 <picture>
                                     <img loading="lazy" 

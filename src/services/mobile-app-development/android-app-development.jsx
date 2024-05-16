@@ -1,7 +1,7 @@
 import React from "react";
 import Tools from "../../components/our-tools";
 import { NavLink } from "react-router-dom";
-import OwlCarousel from 'react-owl-carousel2';
+import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import androidgif from '../../assets/images/GIF/Android.gif';
@@ -95,7 +95,7 @@ const AndroidAppDevelopment = () => {
                     <div className="row mt60">
                         <div className="col-lg-12 new">
                             <div className="full-work-block  owl-carousel">
-                                <OwlCarousel options={options} className="full-work-block ">
+                                <OwlCarousel {...options} className="full-work-block ">
                                     <div className="fwb-main-x fwb-a h-100">
                                         <div className="work-thumbnails">
                                             <NavLink to="#">

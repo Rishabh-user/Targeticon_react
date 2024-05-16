@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import OwlCarousel from 'react-owl-carousel2';
+import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
@@ -16,8 +16,8 @@ const Slider = () => {
     return (
         <div>
             {/*start main slider  */}
-            <section className="hero-owl">
-                <OwlCarousel options={options}>
+            <section className="hero-owl slide-hero">
+                <OwlCarousel {...options}>
                     <div className='item career-detail-banner'>
                         <div className="container">
                             <div className="row flex-row-reverse">

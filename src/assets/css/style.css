@@ -4490,7 +4490,7 @@ html body .header-bhv.sticky .mini-header-bar {
 
 .slide-hero .owl-dots {
     position: absolute;
-    bottom: 10px;
+    bottom: -40px;
     right: 0;
     left: 0;
     text-align: center;
