@@ -1,15 +1,15 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useParams } from 'react-router-dom';
 import Tools from '../../components/our-tools';
-import { apiEndpoint1 } from '../../js/api';
+import { apicareer } from '../../js/api';
 
 const CareerDetails = ({ match }) => {
     const [careerData, setCareer] = useState({});
-   const { id } = useParams();
+    const { id } = useParams();
     useEffect(() => {
         // Fetch career data from the API
-        fetch(`${apiEndpoint1}/careers/read/`) 
+        fetch(`${apicareer}/careers/read/`)
             .then(response => response.json())
             .then(data => {
                 const selectedCareer = data.careers.find(career => career.id === parseInt(id, 0));
@@ -22,32 +22,32 @@ const CareerDetails = ({ match }) => {
 
     return (
         <div>
-            
+
             <section className="page-heading-sec r-bg-g pt60 pb60 career-detail-banner">
-           
+
                 <div className="container">
                     <div className="row vcenter">
-                        <div className="col-md-6">                       
-                                <div className="page-headings pb60 pt60 career-detail-head" >                                
-                                    <h1
-                                        data-aos="fade-up"
-                                        data-aos-delay={100}
-                                        className="ree-text txt-white mb20"
-                                    >
-                                        {career.title}
-                                    </h1>                                    
-                                    <h6
-                                        data-aos="fade-up"
-                                        data-aos-delay={50}
-                                        className="ree-text txt-white"
-                                    >
+                        <div className="col-md-6">
+                            <div className="page-headings pb60 pt60 career-detail-head" >
+                                <h1
+                                    data-aos="fade-up"
+                                    data-aos-delay={100}
+                                    className="ree-text txt-white mb20"
+                                >
+                                    {career.title}
+                                </h1>
+                                <h6
+                                    data-aos="fade-up"
+                                    data-aos-delay={50}
+                                    className="ree-text txt-white"
+                                >
                                     {career.skills && career.skills.map((skill, index) => (
                                         <span key={skill.id}>{skill.title}{index < career.skills.length - 1 && " / "}</span>
                                     ))}
-                                    </h6>
-                                    
-                                </div>
-                      
+                                </h6>
+
+                            </div>
+
                         </div>
                         <div className="col-md-6 ">
                             <div className="page-headings pb60 pt60 career-detail-head">
@@ -58,10 +58,10 @@ const CareerDetails = ({ match }) => {
                         </div>
                     </div>
                 </div>
-                
+
             </section>
-    
-        
+
+
             {/*page head end*/}
             {/*-our Integrated Development Environment*/}
             <section className="r-bg-ti pt60 pb60">
@@ -297,7 +297,7 @@ const CareerDetails = ({ match }) => {
                     </div>
                 </div>
             </section>
-           
+
             {/*start client testimonial  */}
             {/*?php include 'include/client-testimonial.php';?*/}
             {/*end client testimonial  */}
