@@ -60,7 +60,7 @@ const JsStactDevelopment = () => {
             </section>
             {/*page head end*/}
             {/*start Cloud Services*/}
-            <section className="r-bg-a pt60 pb60">
+            <section className="r-bg-xx pt60 pb60">
                 <div className="container">
                     <div className="row vcenter">
                         <div
@@ -121,7 +121,7 @@ const JsStactDevelopment = () => {
             </section>
             {/*end Cloud Services*/}
             {/*-our The Process of UX Designing*/}
-            <section className="r-bg-xx pt60 pb60">
+            <section className="r-bg-c pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-10">

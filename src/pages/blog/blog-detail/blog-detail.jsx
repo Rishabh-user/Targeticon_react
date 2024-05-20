@@ -75,10 +75,10 @@ const BlogDetail = () => {
     };
 
     return (
-    <div>
+    <div> 
         {blog.map(blogs => (
             <div key={blogs.id}>
-                <div className="r-bg-a pt85 pb120">
+                <div className="pt120 pb120 blog-details-banner">
                     <div className="container w-992">
                         <div className="row pt80">
                             <div className="col-lg-12">
@@ -147,12 +147,12 @@ const BlogDetail = () => {
                                                 {/* <NavLink to="#">#Marketing</NavLink> <NavLink to="#">#Seo</NavLink> */}
                                             </div>
                                         </div >
-                                        <div className="sol-img mt45 mb10">
+                                        <div className="sol-img mt45 mb45">
                                             {" "}
                                             <img
                                                 src={blogs.blog_image}
-                                                alt="blog"
-                                                className="img-fluid"
+                                                alt="blog"     
+                                                className="img-fluid" 
                                             />{" "}
                                         </div>
                                         <p className="small text-center pb25">

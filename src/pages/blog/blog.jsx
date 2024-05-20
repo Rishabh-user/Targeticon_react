@@ -72,28 +72,14 @@ const Blog = () => {
     return (
         <div>
             {/*blog*/}
-            <div className="r-bg-we pt60 pb60">
+            <div className=" pt60 pb60 blog-banner">
                 <div className="container">
-                    <div className="row vcenter">
-                        <div className="col-lg-5">
+                    <div className="row vcenter justify-content-center">
+                        <div className="col-lg-12">
                             <div className="page-headings">
-                                <h1 className="mb15">Our Blogs</h1>
+                                {/* <h1 className="mb15 text-white text-center">Our Blogs</h1> */}
                             </div >
-                        </div >
-                        <div className="col-lg-7">
-                            <div className="text-center mt30 mb30">
-                                <picture>
-                                    <img
-                                        loading="lazy"
-                                        src={Undermaintenance}
-                                        className="img-fluid mb20"
-                                        alt="Under-Maintenance"
-                                        width={590}
-                                        height={379}
-                                    />
-                                </picture>
-                            </div>
-                        </div>
+                        </div >                        
                     </div >
                 </div >
             </div >
@@ -113,16 +99,17 @@ const Blog = () => {
                                                     </NavLink>
                                                 </div>
                                                 <div className="display">
-                                                    <div className="rpl-conttt ">
+                                                    <div className="rpl-conttt post-date">
                                                         <div className="blog-quick-inf mb-3 calc-time">
                                                             <span className="calender">
-
-                                                                <i className="far fa-calendar-alt icon" />
-                                                                {new Intl.DateTimeFormat('en-IN', {
+                                                                <i className="far fa-calendar-alt icon" /> 
+                                                                
+                                                                    {new Intl.DateTimeFormat('en-IN', {
                                                                     year: 'numeric',
                                                                     month: 'long',
                                                                     day: 'numeric'
                                                                 }).format(new Date(blog.timestamp))}
+                                                               
                                                                 <span className="calenderlink">
                                                                     <NavLink to="/" className="company"> / By Targeticon</NavLink>
                                                                 </span>
@@ -148,54 +135,35 @@ const Blog = () => {
 
                                                                 return null;
                                                             })}
-
                                                         </span>
-                                                        <span className="time">
+                                                        <span className="reading-time">
                                                             <p>
                                                                 <i className="fas fa-book reading icon readbook" />
                                                                 {calculateReadingTime(blog.long_desc)}
                                                             </p>
                                                         </span>
                                                     </div>
-                                                    <div className="short-description">
+                                                    <div className="heading-description">
                                                         <h4>
                                                             <NavLink to={`/blog/${blog.id}/${blog.blog_title ? encodeURIComponent(blog.blog_title.replace(/[^a-zA-Z0-9]+/g, '-')) : ''}`}>
                                                                 {blog.blog_title}
                                                             </NavLink>
                                                         </h4>
-                                                        <p className="shortdesc">
-
-
+                                                        <p className="short-description">
                                                             {typeof blog.short_desc === 'string' ? (
                                                                 <p dangerouslySetInnerHTML={{ __html: limitParagraph(blog.short_desc, 120) }} />
                                                             ) : null}
-
-
                                                         </p>
                                                     </div>
-                                                    {/* <div className="author">
-                                        <span>
-                                            -By
-                                            <strong>
-                                                <NavLink to=""> Targeticon</NavLink>
-                                            </strong>
-                                        </span> */}
-                                                    <p>
-                                                        <span>By</span>
-                                                        <strong><NavLink to="/"> Targeticon</NavLink></strong>
-                                                    </p>
-
-                                                    <div className="blogtitle">
+                                                    <div className="read-button">
                                                         <NavLink to={`/blog/${blog.id}/${blog.blog_title ? encodeURIComponent(blog.blog_title.replace(/[^a-zA-Z0-9]+/g, '-')) : ''}`} className="details">
                                                             Read More{" "}
                                                         </NavLink>
                                                         <spam>
                                                             <i className="fas fa-eye icon" />
                                                             {blog.views}
-
                                                         </spam>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>

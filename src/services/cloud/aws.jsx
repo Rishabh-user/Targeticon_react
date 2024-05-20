@@ -75,7 +75,7 @@ const AWS = () => {
                             data-aos-delay={200}
                         >
                             <div className="hovr-scale-main text-center">
-                                <div className="portfolio-flimg ">
+                                <div className="text-center">
                                     <picture>
                                         <img
                                             loading="lazy"

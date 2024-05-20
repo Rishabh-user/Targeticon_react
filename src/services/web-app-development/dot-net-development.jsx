@@ -62,7 +62,7 @@ const DotNetDevelopment = () => {
             </section>
             {/*page head end*/}
             {/*start overview*/}
-            <section className="r-bg-c pt60 pb60">
+            <section className="r-bg-xx pt60 pb60">
                 <div className="container">
                     <div className="row vcenter">
                         <div className="col-lg-6 vcenter">
@@ -102,7 +102,7 @@ const DotNetDevelopment = () => {
             </section>
             {/*end overview*/}
             {/*-our How PWA Works*/}
-            <section className="r-bg-xx pt60 pb60">
+            <section className="r-bg-c pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center vcenter">
                         <div className="col-lg-10">

@@ -59,7 +59,7 @@ const Cloud = () => {
             </section>
             {/*page head end*/}
             {/*start Cloud Services*/}
-            <section className="r-bg-we pt60 pb60">
+            <section className="r-bg-c pt60 pb60">
                 <div className="container">
                     <div className="row vcenter">
                         <div
@@ -68,7 +68,7 @@ const Cloud = () => {
                             data-aos-delay={200}
                         >
                             <div className="hovr-scale-main text-center">
-                                <div className="portfolio-flimg text-center">
+                                <div className="text-center">
                                     <picture>
                                         <img
                                             loading="lazy"
@@ -138,7 +138,7 @@ const Cloud = () => {
                             data-aos-delay={300}
                         >
                             <div className="hovr-scale-main">
-                                <div className="portfolio-flimg text-center">
+                                <div className="text-center">
                                     <picture>
                                         <img
                                             loading="lazy"
@@ -187,7 +187,7 @@ const Cloud = () => {
                             data-aos-delay={200}
                         >
                             <div className="hovr-scale-main">
-                                <div className="portfolio-flimg text-center">
+                                <div className="text-center">
                                     <img
                                         src={azuregif}
                                         alt="portfolio"

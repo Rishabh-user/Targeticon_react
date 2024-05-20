@@ -62,7 +62,7 @@ const MeanStact = () => {
             </section>
             {/*page head end*/}
             {/*start Overview*/}
-            <section className="r-bg-a pt60 pb60">
+            <section className="r-bg-xx pt60 pb60">
                 <div className="container">
                     <div className="row vcenter">
                         <div
@@ -71,7 +71,7 @@ const MeanStact = () => {
                             data-aos-delay={200}
                         >
                             <div className="hovr-scale-main">
-                                <div className="portfolio-flimg text-center">
+                                <div className="text-center">
                                     <picture>
                                         <img
                                             loading="lazy"
@@ -118,7 +118,7 @@ const MeanStact = () => {
             </section>
             {/*end Overview*/}
             {/*-our The Process of UX Designing*/}
-            <section className="r-bg-xx pt60 pb60">
+            <section className="r-bg-c pt60 pb60">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-10">
@@ -288,7 +288,7 @@ const MeanStact = () => {
                             </div>
                         </div>
                         <div className="col-lg-6 vcenter">
-                            <div className="portfolio-flimg text-center">
+                            <div className="text-center">
                                 <picture>
                                     <img
                                         loading="lazy"

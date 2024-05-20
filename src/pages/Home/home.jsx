@@ -29,7 +29,7 @@ const Home = () => {
         <div>
 
             <Slider />
-            <TopBrandsTrustSlider />
+            <TopBrandsTrustSlider /> 
             {/*we are targeticon*/}
             <section
                 className="home-about pt60 pb60 r-bg-acf"
