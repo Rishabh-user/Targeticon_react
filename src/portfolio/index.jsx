@@ -54,7 +54,26 @@ const Index = () => {
         dot: true,
         loop: true,
         nav: false,
+        responsive: {
+            0: {
+                items: 2, 
+                margin: 10,
+            },
+            590: {
+                items: 2, 
+                margin: 10,
+            },
+            768: {
+                items: 3, 
+                margin: 15, 
+            },
+            1024: {
+                items: 5, 
+                margin: 20, 
+            }
+        }
     };
+    
 
     return (
         <div>
@@ -63,7 +82,7 @@ const Index = () => {
                 {/*?php include '../include/header.php';?*/}
                 {/* Header End */}
                 {/*page head*/}
-                <div className="port-head-sec pt80 pb80 portfolio-page">
+                <div className="col-lg-12 port-head-sec pt80 pb80 portfolio-page vcenter d-flex">
                     <div className="container">
                     <div className="row vcenter ">
                         <div className="col-lg-12">
@@ -83,9 +102,7 @@ const Index = () => {
                                 href="contact-us.php"
                                 className="ree-btn  ree-btn-grdt1 mt40"
                                 data-aos="fade-in"
-                                data-aos-delay={400}
-                                >
-                                Get Quote <i className="fas fa-arrow-right fa-btn" />
+                                data-aos-delay={400}>Get Quote <i className="fas fa-arrow-right fa-btn" />
                                 </a>
                             </div>
                         </div>
@@ -95,7 +112,7 @@ const Index = () => {
                 {/*page head end*/}
                 {/*portfolio items*/}
                 {/* Tabs */}
-                <section className="zup pt60 pb60" style={{ backgroundColor: "#fff" }}>
+                <section className="col-lg-12 zup pt60 pb60 portfolio-brand">
                     <div className="container">
                     <div className="row justify-content-center vcenter portfolio">
                         <div className="col-lg-8">
@@ -110,7 +127,7 @@ const Index = () => {
                         </div>
                     </div>
                     <div className="row justify-content-center">
-                        <div className="col-lg-12 mt60">
+                        <div className="col-lg-12 col-md-12 col-sm-12 mt60">
                         <div className="tab-17 tabs-layout">
                             <Tabs>
                                 <TabList>
@@ -123,7 +140,7 @@ const Index = () => {
                                 </TabList>
                                 <TabPanel>
                                     <div className="row justify-content-center">
-                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="col-lg-4 col-md-6  col-sm-12 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
                                             <a href="#">
@@ -995,7 +1012,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/oliva-shop-screen.png"
+                                                src={oliva}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1005,7 +1022,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/customer-logo-2.png"
+                                                    src={olivalogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1828,7 +1845,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/virtuallyvocal.png"
+                                                src={virtuallyvocal}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1838,7 +1855,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/virtuallyvocal-logo.png"
+                                                    src={VirtuallyVocallogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -2116,7 +2133,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/m&s-img.png"
+                                                src={ms}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -2126,7 +2143,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/m&s-logo.png"
+                                                    src={mslogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -2164,7 +2181,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/zandu-care-screen.png"
+                                                src={zandu}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -2174,7 +2191,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/zandu-logo.png"
+                                                    src={zandulogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -2212,7 +2229,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/n1-building-screen.png"
+                                                src={n1building}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -2222,7 +2239,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/n1-Building-logo.png"
+                                                    src={n1buildinglogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -2260,7 +2277,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/rafawater-screen.png"
+                                                src={rafawater}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -2270,7 +2287,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/rafawater-logo.png"
+                                                    src={rafawaterlogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -2356,7 +2373,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/oliva-shop-screen.png"
+                                                src={oliva}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -2366,7 +2383,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/customer-logo-2.png"
+                                                    src={oliva}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -2408,7 +2425,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/rafawater-screen.png"
+                                                src={rafawater}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -2418,7 +2435,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/rafawater-logo.png"
+                                                    src={rafawaterlogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -2460,7 +2477,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/oliva-shop-screen.png"
+                                                src={oliva}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -2470,7 +2487,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/customer-logo-2.png"
+                                                    src={olivalogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />

@@ -61,7 +61,7 @@ const Application = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> 
             {/*page head end*/}
             {/*Enterprise Integration*/}
             <div className="pt60 pb60 application-main">

@@ -155,7 +155,7 @@ const BlogDetail = () => {
                                                 className="img-fluid" 
                                             />{" "}
                                         </div>
-                                        <p className="small text-center pb25">
+                                        <p className="small pb25">
                                             {/* {blogs.long_desc} */}
                                             {typeof blogs.long_desc === 'string' ? (
                                                 <p dangerouslySetInnerHTML={{ __html: blogs.long_desc }} className="longdesc" />
