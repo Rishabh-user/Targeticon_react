@@ -8,6 +8,7 @@ import pdf from '../assets/images/Company_Brochure.pdf';
 
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <div>
 
@@ -279,7 +280,7 @@ const Footer = () => {
                             <div className="col-lg-12">
                                 <div className="ft-copyright ft-r text-center">
                                     <p>
-                                        Copyright © 2023 Targeticon Digital Services Private Limited |
+                                        Copyright © {currentYear} Targeticon Digital Services Private Limited |
                                         CIN: U74999UP2016PTC087825. All rights reserved.
                                     </p>
                                 </div>
