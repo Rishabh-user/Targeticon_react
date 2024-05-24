@@ -107,7 +107,7 @@ const Slider = () => {
                                 </div>
                                 <div className="col-lg-6 col-sm-12">
                                     <div className="slider-content me-5">
-                                        <h5>WE DONE</h5>
+                                        <h5>WE SPECIALIZE IN</h5>
                                         <h1 className="txt-white" data-aos="fade-in" data-aos-delay={200}>
                                             UI/UX Creative Designing 
                                         </h1>
