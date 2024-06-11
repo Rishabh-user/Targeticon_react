@@ -30,7 +30,7 @@ const JoinOurTeam = () => {
                                     <h2 className="mb15">
                                         Hire world-class{" "}
                                         <span className="ree-text rt40">Developers</span> for your
-                                        <span className="ree-text rt40">Project</span>
+                                        <span className="ree-text rt40"> Project</span>
                                     </h2>
                                     <p
                                         className="hire-world-class-developers-content"

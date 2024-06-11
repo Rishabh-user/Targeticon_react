@@ -223,6 +223,7 @@
 }
 
 @media only screen and (max-width:1200px) {
+    .creative-banner-img { display: none;}
     .home-creative-agency {
         height: 645px
     }
@@ -238,6 +239,8 @@
 }
 
 @media only screen and (max-width:992px) {
+    .hire-app-list-mobile { display: block !important;}
+    .high-light-links { display: none;}
     .portfolio-brand .react-tabs__tab-list {
         border-bottom: 1px solid #dee2e6;
         display: flex;
@@ -1092,11 +1095,14 @@
     }
     .Industries-serve ul{ flex-wrap: wrap;  }
     .Industries-serve ul li{ padding: 15px; flex: 0 50%; max-width: 50%; justify-content: center; text-align: center;}
+    .creative-banner .hire-app-list ul li { padding: 1rem;}
+    .creative-banner .hire-app-list ul li i { margin-bottom: 1rem;}
 
 }
 
 @media only screen and (max-width:420px) {
-
+    .creative-banner .hire-app-list ul {flex-wrap: wrap;}
+    .creative-banner .hire-app-list ul li i {margin-bottom: .5rem; font-size: 2rem;}
     .ref-links a {
         line-height: 30px
     }

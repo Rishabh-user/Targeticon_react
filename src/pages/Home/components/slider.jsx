@@ -5,6 +5,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import developer from '../../../assets/images/developer.png';
 import slideruxdesign from '../../../assets/images/sliderux-design-img.png';
+import bannerlaptop from '../../../assets/images/banner-laptop.png';
 
 
 const Slider = () => {
@@ -20,6 +21,77 @@ const Slider = () => {
             {/*start main slider  */}
             <section className="hero-owl slide-hero">
                 <OwlCarousel {...options}>
+                    <div className='item creative-banner'>
+                        <div className="container">
+                            <div className="row flex-row-reverse">
+                                <div className='col-lg-6 col-sm-12 vcenter'>
+                                        <div className='high-light-links'>
+                                            <div className="right-side-text">                                                
+                                                <h1 className="" data-aos="fade-in" data-aos-delay={50}>
+                                                    design
+                                                </h1>
+                                                <h5>& Development</h5>
+                                                <p>
+                                                    "Transforming ideas into digital experiences with innovative design and cutting-edge development,
+                                                     ensuring your projects stand out with creativity, functionality, and precision to drive success in the digital world."
+                                                </p>
+                                            </div>
+                                            <div className="hire-app-list">
+                                                <ul>
+                                                    <li className="">
+                                                        <i className="fas fa-cogs"/>
+                                                        <h5>Innovative Design</h5>
+                                                    </li>
+                                                    <li className="">
+                                                        <i className="fas fa-cogs"/>
+                                                        <h5>Customized Solutions</h5>
+                                                    </li>
+                                                    <li className="">
+                                                        <i className="fas fa-cogs"/>
+                                                        <h5>Responsive Design</h5>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div className="col-lg-6 col-sm-12 vcenter">
+                                    <div className='banner-left-side d-flex vcenter'>
+                                        <div className='graphic-design-text'>
+                                            <div>
+                                                <h5 className='graphic' data-aos="fade-in" data-aos-delay={300}>Graphic</h5>
+                                                <h5 className='design' data-aos="fade-in" data-aos-delay={500}>esign</h5>
+                                                {/* <NavLink to="/hire-app-developers"
+                                                    className="ree-btn  ree-btn-grdt1 mt40 mb40 mw-80"
+                                                    data-aos="fade-in"
+                                                    data-aos-delay={100}>
+                                                    Let's Talk <i className="fas fa-arrow-right fa-btn" />
+                                                </NavLink> */}
+                                            </div>
+                                        </div>
+                                        <div className='creative-banner-img' data-aos="fade-in" data-aos-delay={300}>
+                                            <img loading="lazy" srcSet={bannerlaptop} className="logo-anim img-fluid" alt="Targeticon"width={1122} height={1237}/>
+                                        </div>                                        
+                                    </div>
+                                    <div className="hire-app-list hire-app-list-mobile">
+                                        <ul>
+                                            <li className="">
+                                                <i className="fas fa-cogs"/>
+                                                <h5>Innovative Design</h5>
+                                            </li>
+                                            <li className="">
+                                                <i className="fas fa-cogs"/>
+                                                <h5>Customized Solutions</h5>
+                                            </li>
+                                            <li className="">
+                                                <i className="fas fa-cogs"/>
+                                                <h5>Responsive Design</h5>
+                                            </li>
+                                        </ul>
+                                    </div>                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='item hire-app-dev-slider-banner'>
                         <div className="container">
                             <div className="row flex-row-reverse">
@@ -66,7 +138,6 @@ const Slider = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div className='item software-slider'>
                         <div className="container">
