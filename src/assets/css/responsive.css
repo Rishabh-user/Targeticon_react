@@ -1316,10 +1316,13 @@ h2 { font-size: 22px; line-height: 32px; }
 .key-highlt-b p {font-size: 15px; line-height: 24px}
 }
 
-@media screen and ( min-width: 1151px) and (max-width: 1299px){
-.dskt-logo .nav-brand img { width: 240px; }
-.ree-nav .nav-list li a.menu-links { font-size: 15px; }
-
+@media screen and ( min-width: 1151px) and (max-width: 1366px){
+.dskt-logo .nav-brand img { width: auto;height: 45px; }
+.ree-nav .nav-list li a.menu-links { font-size: 14px; }
+.ree-nav-cta a.ree-btn.ree-btn0.ree-btn-grdt2 {
+    line-height: 36px !important;
+    padding: 0 20px;
+}
 }
 
 @media (max-width: 349px){
