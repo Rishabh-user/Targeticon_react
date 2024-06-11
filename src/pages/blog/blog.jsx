@@ -1,42 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import axios from 'axios';
 import { apiEndpoint1 } from '../../js/api';
+import { apiCategory } from '../../js/api'
 import Undermaintenance from '../../assets/images/Under-Maintenance.png'
 
 const Blog = () => {
 
-    const [users, setUsers] = useState([]);
+    const [users, setBlogs] = useState([]);
+    const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        const fetchUsers = async () => {
+        // Fetch blog and category data from APIs
+        axios.get(`${apiEndpoint1}/read`).then(response => {
+            setBlogs(response.data.items);
+        });
 
-            try {
-                const response = await fetch(`${apiEndpoint1}/read`);
-                const data = await response.json();
-                console.log(data.items);
-                setUsers(data.items);
-
-                // Initialize viewCount property for each blog post
-                // const blogsWithViews = data.map(blog => ({ ...blog, viewCount: 0 }));
-                // setUsers(blogsWithViews);
-            } catch (error) {
-                console.error('Error fetching users:', error);
-            }
-        };
-
-        fetchUsers();
+        axios.get(`${apiCategory}/read`).then(response => {
+            setCategories(response.data.skills);
+        });
     }, []);
 
-    const handlePostClick = (postId) => {
-        // Manually increment the view count on the frontend
-        setUsers(prevUsers =>
-            prevUsers.map(blog =>
-                blog.id === postId ? { ...blog, viewCount: blog.viewCount + 1 } : blog
-            )
-        );
-    };
-    const calculateReadingTime = (longDescription) => {
-        const description = longDescription || '';
+
+    const calculateReadingTime = (long_desc) => {
+        const description = long_desc || '';
 
         // Count the number of words in the long description
         const words = description.trim().split(/\s+/).length;
@@ -45,197 +32,150 @@ const Blog = () => {
         const readingSpeed = 150; // Words per minute
         const readingTimeInSeconds = words / readingSpeed * 60;
 
-        // Check if the reading time is less than 1 minute
-        if (readingTimeInSeconds < 60) {
-            return `${Math.round(readingTimeInSeconds)} seconds`;
+        if (readingTimeInSeconds < 1) {
+            return 'Less than a minute';
         }
 
-        // Calculate the reading time in minutes and seconds
-        const minutes = Math.floor(readingTimeInSeconds / 60);
+        // Calculate the reading time in minutes, hours, and seconds
+        const hours = Math.floor(readingTimeInSeconds / 3600);
+        const minutes = Math.floor((readingTimeInSeconds % 3600) / 60);
         const seconds = Math.round(readingTimeInSeconds % 60);
 
-        // Return the reading time in the format "X minutes Y seconds"
-        return `${minutes} minute${minutes > 1 ? 's' : ''} ${seconds} second${seconds > 1 ? 's' : ''}`;
-    };
+        let result = '';
 
+        if (hours > 0) {
+            result += `${hours} hrs${hours > 1 ? 's' : ''}`;
+        }
+
+        if (minutes > 0) {
+            if (result !== '') {
+                result += ' ';
+            }
+            result += `${minutes} min${minutes > 1 ? 's' : ''}`;
+        }
+
+        if (seconds > 0 && result === '') {
+            result += `${seconds} sec${seconds > 1 ? 's' : ''}`;
+        }
+
+        return result;
+    };
+    const limitParagraph = (text, limit) => {
+        const paragraphs = text.split('</p>');
+        const firstParagraph = paragraphs[0];
+        if (firstParagraph && firstParagraph.length > limit) {
+            return `${firstParagraph.substr(0, limit)}...`;
+        }
+        return firstParagraph;
+    };
 
     return (
         <div>
             {/*blog*/}
-            <div className="r-bg-we pt60 pb60">
+            <div className=" pt60 pb60 blog-banner">
                 <div className="container">
-                    <div className="row vcenter">
-                        <div className="col-lg-5">
+                    <div className="row vcenter justify-content-center">
+                        <div className="col-lg-12">
                             <div className="page-headings">
-                                <h1 className="mb15">Our Blog Coming Soon</h1>
-                                <p style={{ color: "#f00" }}>Under Maintenance</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-7">
-                            <div className="text-center mt30 mb30">
-                                <picture>
-                                    <img
-                                        loading="lazy"
-                                        src={Undermaintenance}
-                                        className="img-fluid mb20"
-                                        alt="Under-Maintenance"
-                                        width={590}
-                                        height={379}
-                                    />
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="r-bg-a pt60 pb60">
-                <div className="container">
-                    <div className="row vcenter">
-                        <div className="col-lg-5">
-                            <div className="page-headings">
-                                <span className="sub-heading mb15">
-                                    <i className="fas fa-book mr5" /> Blogs &amp; News
-                                </span>
-                                <h1 className="mb15">
-                                    Our <span className="ree-text rt40">Blog</span>
-                                </h1>
-                                <p>What would you love to learn how to do?</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-7">
-                            <div className="ree-subs-from">
-                                <h4>Subscribe to get the latest insights in your inbox.</h4>
-                                <form className="mt20">
-                                    <input
-                                        type="text"
-                                        name="subs"
-                                        id="subs-email"
-                                        placeholder="Your email please"
-                                        className="subs-input"
-                                    />
-                                    <button className="ree-btn-grdt1 subs-btn">
-                                        <i className="fas fa-arrow-right" />
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                {/* <h1 className="mb15 text-white text-center">Our Blogs</h1> */}
+                            </div >
+                        </div >                        
+                    </div >
+                </div >
+            </div >
             {/* {console.log(users)}; */}
             <div className="blog-block pt60 pb60">
                 <div className="container">
                     <div className="blog-post">
-                        <div className="row vcenter">
-
-                            {users.map(blog => (
-                                <div className="col-lg-4 col-sm-6" key={blog.id}>
-                                    <div className="ree-media-crd"  >
-                                        <div className="ree-media-crd blog" >
-                                            <div className="rpl-img">
-                                                <NavLink to="blog/blog-details">
-                                                    <img src={blog.blog_image} alt="loading" className="fill-fixed" />
-                                                </NavLink>
-
-                                            </div>
-                                            <div className="display">
-                                                <div className="time-zone">
-                                                    <spam className="category"> </spam>
-                                                    <span className="time">
-                                                        <p>
-                                                            <i className="fas fa-book reading icon" />
-                                                            {calculateReadingTime(blog.long_desc)}
-                                                        </p>
-                                                    </span>
+                        <div className="row justify-content-center">
+                            <div className="col-md-12">
+                                <div className="row">
+                                    {users.map(blog => (
+                                        <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={blog.id}>
+                                            <div className="ree-media-crd">
+                                                <div className="rpl-img">
+                                                    <NavLink to={`/blog/${blog.id}/${blog.blog_title ? encodeURIComponent(blog.blog_title.replace(/[^a-zA-Z0-9]+/g, '-')) : ''}`}>
+                                                        <img src={blog.blog_image} alt="loading" className="fill-fixed" />
+                                                    </NavLink>
                                                 </div>
-                                                <div className="short-description">
-                                                    <h4>
-                                                        {blog.blog_title}
-                                                    </h4>
-                                                    <p>
-                                                        <NavLink to="/blog/blog-details">{blog.short_desc}</NavLink>
-                                                    </p>
-                                                </div>
-                                                <div className="author">
-                                                    {/* <span>
-                                                        -By
-                                                        <strong>
-                                                            <NavLink to=""> Targeticon</NavLink>
-                                                        </strong>
-                                                    </span> */}
-                                                    <p>
-                                                        <span>By</span>
-                                                        <strong><NavLink to="/"> Targeticon</NavLink></strong>
-                                                    </p>
-                                                </div>
-                                                <div className="rpl-contt calc-time ">
-                                                    <div className="blog-quick-inf mb20 mt30">
-                                                        <span>
+                                                <div className="display">
+                                                    <div className="rpl-conttt post-date">
+                                                        <div className="blog-quick-inf mb-3 calc-time">
+                                                            <span className="calender">
+                                                                <i className="far fa-calendar-alt icon" /> 
+                                                                
+                                                                    {new Intl.DateTimeFormat('en-IN', {
+                                                                    year: 'numeric',
+                                                                    month: 'long',
+                                                                    day: 'numeric'
+                                                                }).format(new Date(blog.timestamp))}
+                                                               
+                                                                <span className="calenderlink">
+                                                                    <NavLink to="/" className="company"> / By Targeticon</NavLink>
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div className="time-zone">
+                                                        <span className="category" style={{ color: "#83858f;" }}>
 
-                                                            <i className="far fa-calendar-alt icon" />
-                                                            {new Intl.DateTimeFormat('en-IN', {
-                                                                year: 'numeric',
-                                                                month: 'long',
-                                                                day: 'numeric'
-                                                            }).format(new Date(blog.timestamp))}
+                                                            {blog.categories.map((blogCategory, index) => {
+                                                                const matchingCategory = categories.find(
+                                                                    category => category.id === blogCategory.id
+                                                                );
 
+                                                                if (matchingCategory) {
+                                                                    return (
+                                                                        <span key={matchingCategory.id} >
+                                                                            {matchingCategory.category_title}
+                                                                            {index < blog.categories.length - 1 ? ',' : ''}
+                                                                        </span>
+                                                                    );
+                                                                }
+
+                                                                return null;
+                                                            })}
                                                         </span>
-                                                        <span>
-                                                            <i className="fas fa-clock icon" />
-                                                            {new Date(blog.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
-                                                            {console.log('Timestamp:', blog.timestamp)} {/* Assuming blog.readTime exists */}
-                                                            <i className="fas fa-view" />
-                                                            <p>View: {blog.viewCount}</p>
+                                                        <span className="reading-time">
+                                                            <p>
+                                                                <i className="fas fa-book reading icon readbook" />
+                                                                {calculateReadingTime(blog.long_desc)}
+                                                            </p>
                                                         </span>
                                                     </div>
+                                                    <div className="heading-description">
+                                                        <h4>
+                                                            <NavLink to={`/blog/${blog.id}/${blog.blog_title ? encodeURIComponent(blog.blog_title.replace(/[^a-zA-Z0-9]+/g, '-')) : ''}`}>
+                                                                {blog.blog_title}
+                                                            </NavLink>
+                                                        </h4>
+                                                        <p className="short-description">
+                                                            {typeof blog.short_desc === 'string' ? (
+                                                                <p dangerouslySetInnerHTML={{ __html: limitParagraph(blog.short_desc, 120) }} />
+                                                            ) : null}
+                                                        </p>
+                                                    </div>
+                                                    <div className="read-button">
+                                                        <NavLink to={`/blog/${blog.id}/${blog.blog_title ? encodeURIComponent(blog.blog_title.replace(/[^a-zA-Z0-9]+/g, '-')) : ''}`} className="details">
+                                                            Read More{" "}
+                                                        </NavLink>
+                                                        <spam>
+                                                            <i className="fas fa-eye icon" />
+                                                            {blog.views}
+                                                        </spam>
+                                                    </div>
                                                 </div>
-
                                             </div>
                                         </div>
-                                    </div>
-
-
-
+                                    ))}
                                 </div>
-                            ))}
-                            {/* <div className="col-lg-4 col-sm-6">
-                                <div className="ree-media-crd">
-                                    <div className="rpl-img">
-
-                                        <a href="#">
-                                            <img
-                                                src="images/blogs/blog-img-3.jpg"
-                                                alt="blog"
-                                                className="fill-fixed"
-                                            />{" "}
-                                        </a>{" "}
-                                    </div>
-                                    <div className="rpl-contt">
-                                        <div className="blog-quick-inf mb20 mt30">
-                                            <span>
-                                                <i className="far fa-calendar-alt" /> 12 March 21
-                                            </span>{" "}
-                                            <span>
-                                                <i className="fas fa-clock" /> 5 Min Read
-                                            </span>{" "}
-                                        </div>
-                                        <h4>
-                                            <a href="#">
-                                                Finding the best social media platform for your audience and
-                                                business
-                                            </a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div> */}
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            </div>
+                        </div >
+                    </div >
+                </div >
+            </div >
             {/*blog end*/}
-        </div>
+        </div >
     );
 };
 export default Blog;

@@ -114,7 +114,7 @@ const MsCrm = () => {
                                 data-aos-delay={200}
                             >
                                 <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg text-center">
+                                    <div className="text-center">
                                         <picture>
                                             <img
                                                 loading="lazy"
@@ -197,7 +197,7 @@ const MsCrm = () => {
                                 data-aos-delay={200}
                             >
                                 <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg text-center">
+                                    <div className="text-center">
                                         <picture>
                                             <img
                                                 loading="lazy"
@@ -220,7 +220,7 @@ const MsCrm = () => {
                                 data-aos-delay={200}
                             >
                                 <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg text-center">
+                                    <div className="text-center">
                                         <picture>
                                             <img
                                                 loading="lazy"
@@ -307,7 +307,7 @@ const MsCrm = () => {
                                 data-aos-delay={200}
                             >
                                 <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg text-center">
+                                    <div className="text-center">
                                         <picture>
                                             <img
                                                 loading="lazy"

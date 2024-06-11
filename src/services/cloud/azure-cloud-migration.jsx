@@ -67,7 +67,7 @@ const AzureCloudMigration = () => {
                             data-aos-delay={200}
                         >
                             <div className="hovr-scale-main">
-                                <div className="portfolio-flimg text-center">
+                                <div className="text-center">
                                     <picture>
                                         <img
                                             loading="lazy"
@@ -149,7 +149,7 @@ const AzureCloudMigration = () => {
                             data-aos="fade-up"
                             data-aos-delay={200}
                         >
-                            <div className="portfolio-flimg text-center">
+                            <div className="text-center">
                                 <picture>
                                     <img
                                         loading="lazy"

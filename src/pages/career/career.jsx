@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Select from 'react-select';
 import Tools from '../../components/our-tools';
-import { apiEndpoint1 } from '../../js/api';
+import { apicareer } from '../../js/api';
 import career from '../../assets/images/career-page-img.png';
 import careerpage from '../../assets/images/career-page-img-mobile-view.png';
 
@@ -18,10 +18,10 @@ const Career = () => {
     useEffect(() => {
         const fetchCareers = async () => {
             try {
-                const response = await fetch(`${apiEndpoint1}/careers/read/`);
+                const response = await fetch(`${apicareer}/careers/read/`);
                 const data = await response.json();
                 setUsers(data.careers);
-                
+
                 const careerOptions = data.careers.map(career => ({
                     value: career.title,
                     label: career.title
@@ -39,10 +39,10 @@ const Career = () => {
         };
         fetchCareers();
     }, []);
-    
+
     const handleCareerTitleChange = (selectedOptions) => {
         setSelectedCareerTitles(selectedOptions);
-    
+
         if (selectedOptions.length === 0) {
             setFilteredUsers(users); // Show all users when no titles are selected
         } else {
@@ -52,7 +52,7 @@ const Career = () => {
             setFilteredUsers(filteredData);
         }
     };
-    
+
     // Similar logic for location filtering
     const handleLocationChange = (selectedOptions) => {
         setSelectedLocations(selectedOptions);
@@ -63,10 +63,10 @@ const Career = () => {
             const filteredData = users.filter(user =>
                 selectedOptions.some(location => user.location === location.label)
             );
-    
+
             setFilteredUsers(filteredData);
         }
-    };   
+    };
     // const filteredDataSectionRef = useRef(null);
     // const handleSearch = () => {
     //     if (selectedCareerTitles.length === 0 && selectedLocations.length === 0) {
@@ -81,7 +81,7 @@ const Career = () => {
     //         filteredDataSectionRef.current.scrollIntoView({ behavior: 'smooth' });
     //     }
     //     const lowercaseSearchQuery = searchQuery.toLowerCase(); 
-               
+
     //     const filteredData = users.filter(user => {
     //         const lowercaseKeywords = user.keywords.map(keyword => keyword.keyword.toLowerCase());
     //         return lowercaseKeywords.includes(lowercaseSearchQuery);
@@ -89,9 +89,9 @@ const Career = () => {
 
     //     setFilteredUsers(filteredData);
     // }; 
-  
-        
-  
+
+
+
     return (
         <div>
             <section className="page-heading-sec r-bg-g pt60 pb60 career-banner">
@@ -126,8 +126,8 @@ const Career = () => {
                                                         className="search form-control"
                                                         id="floatingInput"
                                                         placeholder="Keywords..."
-                                                        //value={searchQuery}
-                                                        //onChange={(e) => setSearchQuery(e.target.value)}
+                                                    //value={searchQuery}
+                                                    //onChange={(e) => setSearchQuery(e.target.value)}
                                                     />
                                                 </div>
                                             </li>
@@ -139,7 +139,7 @@ const Career = () => {
                                                         value={selectedCareerTitles}
                                                         onChange={handleCareerTitleChange}
                                                         placeholder="Choose Your Skills"
-                                                        
+
                                                     />
                                                 </div>
                                             </li>
@@ -160,7 +160,7 @@ const Career = () => {
                                                         type="submit"
                                                         className="apply-btn w-100"
                                                         name="Find My Future"
-                                                        //onClick={handleSearch}
+                                                    //onClick={handleSearch}
                                                     />
                                                 </div>
                                             </li>
@@ -262,7 +262,7 @@ const Career = () => {
                                                             <NavLink to={`/career/${career.id}/${career.id}`}>See Detail</NavLink>
                                                         </div>
                                                     </div>
-                                                </div>                                            
+                                                </div>
                                             </div>
                                         </div>
                                     ))
@@ -298,7 +298,7 @@ const Career = () => {
                                     ))
                                 ) : (
                                     <p>No matching careers found.</p>
-                                )}                           
+                                )}
                             </div>
                         </div>
 

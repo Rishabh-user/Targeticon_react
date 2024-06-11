@@ -1,18 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../components/our-tools';
-import OwlCarousel from 'react-owl-carousel2';
+import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import user from '../assets/images/users/user4.jpg';
+import investtelangana from '../assets/images/invest-telangana.png';
+import investtelanganalogo from '../assets/images/invest-telangana-logo.png';
 import fgil from '../assets/images/FGLI-screen-short.png';
-import customerlogo from '../assets/images/brand-logo/customer-logo-4.png';
+import delhimetro from '../assets/images/delhi-metro.png';
+import delhimetrologo from '../assets/images/delhi-metro-logo.png';
 import oliva from '../assets/images/oliva-screen-short.png';
-import customerlogo2 from '../assets/images/brand-logo/customer-logo-2.png';
+import farming from '../assets/images/farming-screen.png';
+import farminglogo from '../assets/images/farming-logo.png';
+import olivalogo from '../assets/images/oliva-logo.png';
 import tstpc from '../assets/images/TSTPC-screen-short.png';
-import tstpclogo from '../assets/images/brand-logo/TSTPC-logo.png';
+import tstpclogo from '../assets/images/TSTPC-logo.png';
+import FDscreen from '../assets/images/floor-direct-screen.png';
+import FDlogo from '../assets/images/FD-logo.png';
 import tsig from '../assets/images/T-SIG.png';
-import tsocial from '../assets/images/brand-logo/t-social.png';
+import qyred from '../assets/images/qyred-screen.png'; 
+import qyredlogo from '../assets/images/qryde-logo.png';
 import gcli from '../assets/images/GCFL.png';
 import gclilogo from '../assets/images/brand-logo/GCFL-logo.png';
 import virtuallyvocal from '../assets/images/virtuallyvocal.png';
@@ -21,1020 +28,2722 @@ import sociallocket from '../assets/images/sociallocket-screen.png';
 import sociallocketlogo from '../assets/images/brand-logo/sociallocket-logo.png';
 import performanceauditions from '../assets/images/Performer-Auditions-screen.png';
 import performanceauditionslogo from '../assets/images/brand-logo/PerformerAuditions-logo.png';
+import ms from '../assets/images/ms-img.png';
+import mslogo from '../assets/images/ms-logo.png';
 import zandu from '../assets/images/zandu-care-screen.png';
-import zandulogo from '../assets/images/brand-logo/zandu-logo.png';
+import zandulogo from '../assets/images/zandu-logo.png';
 import n1building from '../assets/images/n1-building-screen.png';
 import n1buildinglogo from '../assets/images/brand-logo/n1-Building-logo.png';
 import rafawater from '../assets/images/rafawater-screen.png';
 import rafawaterlogo from '../assets/images/brand-logo/rafawater-logo.png';
-import olivashop from '../assets/images/oliva-shop-screen.png';
 import remodlescreen from '../assets/images/remodle-screen.png';
-import customerlogo3 from '../assets/images/brand-logo/customer-logo-3.png';
+import remodlelogo from '../assets/images/remodel-logo.png';
 import portfolioappscreen from '../assets/images/case-study/portfolio-App-screen-make-1.png';
 import portfolioappscreen2 from '../assets/images/case-study/portfolio-App-screen-make-2.png';
 import portfolioappscreen3 from '../assets/images/case-study/portfolio-App-screen-make-3.png';
 import portfolioappscreen4 from '../assets/images/case-study/portfolio-App-screen-make-4.png';
-
+import olivaappscreen from '../assets/images/portfolio-App-screen-oliva.png';
+import ramsunappscreen from '../assets/images/portfolio-App-screen-ramsun.png';
+import Dmetroappscreen from '../assets/images/portfolio-App-screen-Delhi-metro.png';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const Index = () => {
     const options = {
-        items: 4,
+        items: 5,
         margin: 20,
         dot: true,
         loop: true,
         nav: false,
+        responsive: {
+            0: {
+                items: 2, 
+                margin: 10,
+            },
+            590: {
+                items: 2, 
+                margin: 10,
+            },
+            768: {
+                items: 3, 
+                margin: 15, 
+            },
+            1024: {
+                items: 5, 
+                margin: 20, 
+            }
+        }
     };
+    
 
     return (
         <div>
-            {/* Start Header */}
-            {/*?php include '../include/header.php';?*/}
-            {/* Header End */}
-            {/*page head*/}
-            <div className="port-head-sec pt80 pb80 portfolio-page">
-                <div className="container">
+            <>
+                {/* Start Header */}
+                {/*?php include '../include/header.php';?*/}
+                {/* Header End */}
+                {/*page head*/}
+                <div className="col-lg-12 port-head-sec pt80 pb80 portfolio-page vcenter d-flex">
+                    <div className="container">
                     <div className="row vcenter ">
-                        <div className="col-lg-7">
-                            <div className="page-headings">
-                                <span
-                                    className="sub-heading mb15 txt-orange"
-                                    data-aos="fade-in"
-                                    data-aos-delay={100}
-                                >
-                                    <i className="fas fa-briefcase mr5" /> Quality Work
-                                </span>
+                        <div className="col-lg-12">
+                            <div className="page-headings text-center">
+                                {/* <span class="sub-heading mb15 txt-white" data-aos="fade-in" data-aos-delay="100"><i class="fas fa-briefcase mr5"></i> Quality Work</span> */}
                                 <h1
-                                    className="mb15 txt-white"
-                                    data-aos="fade-in"
-                                    data-aos-delay={200}
+                                className="mb15 txt-white"
+                                data-aos="fade-in"
+                                data-aos-delay={200}
                                 >
-                                    Some of our <span className="ree-text rt40">Finest</span> work.
+                                Some of our <span className="ree-text rt40">Finest</span> work.
                                 </h1>
                                 <p className="txt-white" data-aos="fade-in" data-aos-delay={300}>
-                                    We Have Built High Impact Solutions Across Industries.
+                                We Have Built High Impact Solutions Across Industries.
                                 </p>
-                                <NavLink to="/contact-us"
-                                    className="ree-btn  ree-btn-grdt1 mt40"
-                                    data-aos="fade-in"
-                                    data-aos-delay={400}
-                                >
-                                    Get Quote <i className="fas fa-arrow-right fa-btn" />
-                                </NavLink>
-                            </div>
-                        </div>
-                        <div className="col-lg-5">
-                            <div
-                                className="ree-card m-mt30 trust-review owl-carousel"
+                                <a
+                                href="contact-us.php"
+                                className="ree-btn  ree-btn-grdt1 mt40"
                                 data-aos="fade-in"
-                                data-aos-delay={500}
-                            >
-                                <div className="items">
-                                    <div className="review-text">
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's
-                                            standard dummy text ever since the 1500s, when an unknown
-                                            printer took a galley of type and scrambled it to make a type.
-                                        </p>
-                                    </div>
-                                    <div className="ree-row-set mt30">
-                                        <div className="media vcenter">
-                                            <div className="ree-icon-set img-round80">
-                                                <img
-                                                    src={user}
-                                                    alt="img"
-                                                    className="img-fluid"
-                                                />
-                                            </div>
-                                            <div className="ree-details-set user-info">
-                                                <h5>Lora Myka</h5>
-                                                <p>
-                                                    ABC Business, <small>Jaipur, Rajasthan</small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="items">
-                                    <div className="review-text">
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's
-                                            standard dummy text ever since the 1500s, when an unknown
-                                            printer took a galley of type and scrambled it to make a type.
-                                        </p>
-                                    </div>
-                                    <div className="ree-row-set mt30">
-                                        <div className="media vcenter">
-                                            <div className="ree-icon-set img-round80">
-                                                <img
-                                                    src={user}
-                                                    alt="img"
-                                                    className="img-fluid"
-                                                />
-                                            </div>
-                                            <div className="ree-details-set user-info">
-                                                <h5>Lora Myka</h5>
-                                                <p>
-                                                    ABC Business, <small>Jaipur, Rajasthan</small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                data-aos-delay={400}>Get Quote <i className="fas fa-arrow-right fa-btn" />
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div className="row mt50">
-                        <div className="col-lg-12">
-                            <div className="company-special-work">
-                                {/*?php include'../include/top-brands-trust-slider.php';?*/}
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-            {/*page head end*/}
-            {/*portfolio items*/}
-            <div className="pt60 pb60">
-                <div className="container">
-                    <div className="row justify-content-center">
+                {/*page head end*/}
+                {/*portfolio items*/}
+                {/* Tabs */}
+                <section className="col-lg-12 zup pt60 pb60 portfolio-brand">
+                    <div className="container">
+                    <div className="row justify-content-center vcenter portfolio">
                         <div className="col-lg-8">
-                            <div className="page-headings text-center">
-                                <h2 className="mb15">Creative work</h2>
-                                <p>
-                                    We have completed thousands of projects, some of them showing
-                                    important projects here.
-                                </p>
-                            </div>
+                        <div className="sec-heading text-center pera-block">
+                            <h2>
+                            <span className="ree-text rt40 txt-blue">
+                                Quality is more important than quantity{" "}
+                            </span>
+                            </h2>
+                            <p>Take a look of our latest work.</p>
+                        </div>
                         </div>
                     </div>
-                    <div className="portfolio-items mt60">
-                        {/* portfolio row 1 */}
-                        <div className="row vcenter">
-                            <div
-                                className="col-lg-7 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg hovr-scale-base">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
-                                                src={fgil}
-                                                alt="portfolio"
-                                                className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-5 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={300}
-                            >
-                                <div className="portfolio-detls pdr-dtls">
-                                    <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <NavLink to="#" className="port-title-main">
-                                        FGLI Creative Designing Service by Targeticon
-                                    </NavLink>
-                                    <div className="client-of-item mt30">
-                                        <div className="mb20">
-                                            <p>
-                                                Life insurance is an irreplaceable part of a sound financial
-                                                plan. It helps in securing your family
-                                            </p>
-                                        </div>
-                                        <div className="mb20 portfolio-see-more-btn">
-                                            <NavLink to="https://life.futuregenerali.in/"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                            <NavLink to="/portfolio/future-general-life-insurance"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                        </div>
-                                        <div className="media vcenter ">
-                                            <div className="ree-icon-set img-round80 shadows">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-12 col-md-12 col-sm-12 mt60">
+                        <div className="tab-17 tabs-layout">
+                            <Tabs>
+                                <TabList>
+                                    <Tab>All</Tab>
+                                    <Tab> Webiste UI</Tab>
+                                    <Tab>Application UI</Tab>
+                                    <Tab>Website Development</Tab>
+                                    <Tab>Application Development</Tab>
+                                    <Tab>Payment Gateway</Tab>
+                                </TabList>
+                                <TabPanel>
+                                    <div className="row justify-content-center">
+                                        <div className="col-lg-4 col-md-6  col-sm-12 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
                                                 <img
-                                                    src={customerlogo}
+                                                src={fgil}
+                                                alt="portfolio targeticon"
+                                                className="img-fluid"
+                                                />{" "}
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/brand-logo/customer-logo-4.png"
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
-                                            </div>
-                                            <div className="ree-details-set user-info">
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
                                                 <h5>Future Generali Life Insurance</h5>
-                                                <p>Design by Targeticon</p>
+                                                <span>Design by Targeticon</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* portfolio row 2 */}
-                        <div className="row vcenter flex-row-reverse">
-                            <div
-                                className="col-lg-7 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={300}
-                            >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg hovr-scale-base">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
-                                                src={oliva}
-                                                alt="portfolio"
-                                                className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-5 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="portfolio-detls pdr-dtls">
-                                    <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <NavLink to="#" className="port-title-main">
-                                        Oliva Skin &amp; Hair Clinic Creative Designing Service by
-                                        Targeticon
-                                    </NavLink>
-                                    <div className="client-of-item mt30">
-                                        <div className="mb20">
                                             <p>
-                                                Oliva Skin &amp; Hair Clinic irreplaceable part of a sound
+                                                Life insurance is an irreplaceable part of a sound
                                                 financial plan. It helps in securing your family
                                             </p>
-                                        </div>
-                                        <div className="mb20 portfolio-see-more-btn">
-                                            <NavLink to="https://www.olivaclinic.com/"
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://life.futuregenerali.in/"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
-                                            >
-                                                Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                            <NavLink to="/portfolio/oliva-clinic"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/future-generali-life-insurance"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
-                                            >
-                                                See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
                                         </div>
-                                        <div className="media vcenter ">
-                                            <div className="ree-icon-set img-round80 shadows">
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
                                                 <img
-                                                    src={customerlogo2}
+                                                src={oliva}
+                                                alt="portfolio targeticon"
+                                                className="img-fluid"
+                                                />{" "}
+                                            </a>
+                                            </div>
+                                            <div className="work-details portfolio-user-info">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={olivalogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
-                                            </div>
-                                            <div className="ree-details-set user-info">
+                                                </div>
+                                                <div className="ree-details-set">
                                                 <h5>Oliva Skin &amp; Hair Clinic</h5>
-                                                <p>Design by Targeticon</p>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Oliva Skin &amp; Hair Clinic irreplaceable part of a
+                                                sound financial plan. It helps in securing your
+                                                family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.olivaclinic.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/oliva-clinic"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* portfolio row 3 */}
-                        <div className="row vcenter">
-                            <div
-                                className="col-lg-7 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg hovr-scale-base">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
-                                                src={tstpc}
-                                                alt="portfolio"
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={tstpc}                                            alt="portfolio targeticon"
                                                 className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-5 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={300}
-                            >
-                                <div className="portfolio-detls pdr-dtls">
-                                    <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <NavLink to="#" className="port-title-main">
-                                        TSTPC Ltd. Designing Service by Targeticon
-                                    </NavLink>
-                                    <div className="client-of-item mt30">
-                                        <div className="mb20">
-                                            <p>
-                                                Telangana State Trade Promotion Corporation Ltd. part of a
-                                                sound financial plan. It helps in securing your family
-                                            </p>
-                                        </div>
-                                        <div className="mb20 portfolio-see-more-btn">
-                                            <NavLink to="https://tstpc.telangana.gov.in/"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                            <NavLink to="/portfolio/tstpc"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                        </div>
-                                        <div className="media vcenter ">
-                                            <div className="ree-icon-set img-round80 shadows">
+                                                />{" "}
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
                                                 <img
                                                     src={tstpclogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>TSTPC Ltd</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
                                             </div>
-                                            <div className="ree-details-set user-info">
-                                                <h5>TSTPC Ltd.</h5>
-                                                <p>Design by Targeticon</p>
+                                            <p>
+                                                Telangana State Trade Promotion Corporation Ltd.
+                                                part of a sound financial plan. It helps in securing
+                                                your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://tstpc.telangana.gov.in/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* portfolio row 4 */}
-                        <div className="row vcenter flex-row-reverse">
-                            <div
-                                className="col-lg-7 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={300}
-                            >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg hovr-scale-base">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
                                                 src={tsig}
                                                 alt="portfolio"
                                                 className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-5 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="portfolio-detls pdr-dtls">
-                                    <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <NavLink to="#" className="port-title-main">
-                                        T-SIG Ltd. Designing Service by Targeticon
-                                    </NavLink>
-                                    <div className="client-of-item mt30">
-                                        <div className="mb20">
-                                            <p>
-                                                T-Social Impact Group Ltd. part of a sound financial plan.
-                                                It helps in securing your family
-                                            </p>
-                                        </div>
-                                        <div className="mb20 portfolio-see-more-btn">
-                                            <NavLink to="https://csr.telangana.gov.in/"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                            <NavLink to="/portfolio/t-sig"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                        </div>
-                                        <div className="media vcenter ">
-                                            <div className="ree-icon-set img-round80 shadows">
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src={tsocial}
+                                                    src={tstpclogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>TSTPC Ltd</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
                                             </div>
-                                            <div className="ree-details-set user-info">
-                                                <h5>T-SIG Ltd.</h5>
-                                                <p>Design by Targeticon</p>
+                                            <p>
+                                                Telangana State Trade Promotion Corporation Ltd.
+                                                part of a sound financial plan. It helps in securing
+                                                your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://tstpc.telangana.gov.in/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* portfolio row 5 */}
-                        <div className="row vcenter">
-                            <div
-                                className="col-lg-7 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg hovr-scale-base">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
                                                 src={gcli}
                                                 alt="portfolio"
                                                 className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-5 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={300}
-                            >
-                                <div className="portfolio-detls pdr-dtls">
-                                    <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <NavLink to="#" className="port-title-main">
-                                        GetCashForLaptop Designing Service by Targeticon
-                                    </NavLink>
-                                    <div className="client-of-item mt30">
-                                        <div className="mb20">
-                                            <p>
-                                                Get Cash For Laptop part of a sound financial plan. It helps
-                                                in securing your family
-                                            </p>
-                                        </div>
-                                        <div className="mb20 portfolio-see-more-btn">
-                                            <NavLink to="https://www.getcashforlaptop.com/"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                            <NavLink to="/portfolio/get-cash-for-laptop"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                        </div>
-                                        <div className="media vcenter ">
-                                            <div className="ree-icon-set img-round80 shadows">
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
                                                 <img
                                                     src={gclilogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Get Cash For Laptop</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
                                             </div>
-                                            <div className="ree-details-set user-info">
-                                                <h5>GetCashForLaptop</h5>
-                                                <p>Design by Targeticon</p>
+                                            <p>
+                                                Get Cash For Laptop part of a sound financial plan.
+                                                It helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.getcashforlaptop.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* portfolio row 6 */}
-                        <div className="row vcenter flex-row-reverse">
-                            <div
-                                className="col-lg-7 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={300}
-                            >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg hovr-scale-base">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
                                                 src={virtuallyvocal}
                                                 alt="portfolio"
                                                 className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-5 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="portfolio-detls pdr-dtls">
-                                    <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <NavLink to="#" className="port-title-main">
-                                        Virtually Vocal Designing Service by Targeticon
-                                    </NavLink>
-                                    <div className="client-of-item mt30">
-                                        <div className="mb20">
-                                            <p>
-                                                Virtually Vocal part of a sound financial plan. It helps in
-                                                securing your family
-                                            </p>
-                                        </div>
-                                        <div className="mb20 portfolio-see-more-btn">
-                                            <NavLink to="https://www.virtuallyvocal.com/"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                            <NavLink to="/portfolio/virtually-vocal"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                        </div>
-                                        <div className="media vcenter ">
-                                            <div className="ree-icon-set img-round80 shadows">
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
                                                 <img
                                                     src={VirtuallyVocallogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
-                                            </div>
-                                            <div className="ree-details-set user-info">
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
                                                 <h5>Virtually Vocal</h5>
-                                                <p>Design by Targeticon</p>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Virtually Vocal part of a sound financial plan. It
+                                                helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.virtuallyvocal.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* portfolio row 7 */}
-                        <div className="row vcenter">
-                            <div
-                                className="col-lg-7 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg hovr-scale-base">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
                                                 src={sociallocket}
                                                 alt="portfolio"
                                                 className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-5 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={300}
-                            >
-                                <div className="portfolio-detls pdr-dtls">
-                                    <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <NavLink to="#" className="port-title-main">
-                                        Social Locket Designing Service by Targeticon
-                                    </NavLink>
-                                    <div className="client-of-item mt30">
-                                        <div className="mb20">
-                                            <p>
-                                                Social Locket part of a sound financial plan. It helps in
-                                                securing your family
-                                            </p>
-                                        </div>
-                                        <div className="mb20 portfolio-see-more-btn">
-                                            <NavLink to="https://green.app.sociallocket.com/da"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                            <NavLink to="/portfolio/social-locket"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                        </div>
-                                        <div className="media vcenter ">
-                                            <div className="ree-icon-set img-round80 shadows">
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
                                                 <img
                                                     src={sociallocketlogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
-                                            </div>
-                                            <div className="ree-details-set user-info">
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
                                                 <h5>Social Locket</h5>
-                                                <p>Design by Targeticon</p>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Social Locket part of a sound financial plan. It
+                                                helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://green.app.sociallocket.com/da"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* portfolio row 8 */}
-                        <div className="row vcenter flex-row-reverse">
-                            <div
-                                className="col-lg-7 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={300}
-                            >
-                                <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg hovr-scale-base">
-                                        <NavLink to="#">
-                                            {" "}
-                                            <img
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
                                                 src={performanceauditions}
                                                 alt="portfolio"
                                                 className="img-fluid"
-                                            />{" "}
-                                        </NavLink>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-5 m-order1"
-                                data-aos="fade-up"
-                                data-aos-delay={200}
-                            >
-                                <div className="portfolio-detls pdr-dtls">
-                                    <p className="port-tags">UX, UI, Graphic Design</p>
-                                    <NavLink to="#" className="port-title-main">
-                                        Performer Auditions Designing Service by Targeticon
-                                    </NavLink>
-                                    <div className="client-of-item mt30">
-                                        <div className="mb20">
-                                            <p>
-                                                Performer Auditions part of a sound financial plan. It helps
-                                                in securing your family
-                                            </p>
-                                        </div>
-                                        <div className="mb20 portfolio-see-more-btn">
-                                            <NavLink to="http://stage.performerauditions.com/"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                Live view <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                            <NavLink to="/portfolio/performance-audition"
-                                                target="_blank"
-                                                className="port-links ree-btn-grdt1"
-                                            >
-                                                See Details <i className="fas fa-arrow-right fa-btn" />
-                                            </NavLink>
-                                        </div>
-                                        <div className="media vcenter ">
-                                            <div className="ree-icon-set img-round80 shadows">
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
                                                 <img
                                                     src={performanceauditionslogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
-                                            </div>
-                                            <div className="ree-details-set user-info">
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
                                                 <h5>Performer Auditions</h5>
-                                                <p>Design by Targeticon</p>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Performer Auditions part of a sound financial plan.
+                                                It helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="http://stage.performerauditions.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
                                             </div>
                                         </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={FDscreen}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={FDlogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Floor Direct</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                When you are looking for flooring in Islington and
+                                                around London there is only one place to call.
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.floordirectltd.co.uk/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={qyred}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={qyredlogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>QRyde by HBSS</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Provide dispatchers greater control over their rides
+                                                and enable them to re-route and alert the riders
+                                                accordingly
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://qryde.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={farming}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={farminglogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Farm &amp; Rural Mission PVT LTD.</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Farm &amp; Rural Mission PVT. LTD. Cultivating Smart
+                                                Growth Ideas.
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://xd.adobe.com/view/648b071c-e88b-41f8-bafe-412fccb85840-31d8/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={investtelangana}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={investtelanganalogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Invest Telangana</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                The Best State to do Business in India, One of the
+                                                Best Performing States
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://securestaging.net/invest-telangana/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={delhimetro}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={delhimetrologo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Delhi Metro</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                DMRC to start QR code-based entry system at stations
+                                                soon in India.
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://securestaging.net/delhimetrorail/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={ms}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={mslogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Marks &amp; Spencer London</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Marks &amp; Spencer London Change your life Style
+                                                with Marks &amp; Spencer
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.marksandspencer.in/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={zandu}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={zandulogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Zandu Care</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Zandu Care, the online store of Zandu, The best
+                                                place to shop Ayurvedic medicines
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://zanducare.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={n1building}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={n1buildinglogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>N1 Building Contractors Ltd.</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                N1 Building Contractors remodeling &amp; redesign
+                                                your Dream Bathrooms and Kitchens
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.n1buildingcontractors.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={rafawater}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={rafawaterlogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Rafa Water</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Water is the most important natural resource on
+                                                earth, and the most vital one for all forms of life,
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.rafawater.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={remodlescreen}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={remodlelogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Remodel Republic</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Remodel Republic remodeling &amp; redesign your
+                                                Dream home and gardens
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.remodelrepublic.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={oliva}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={olivalogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Shop Oliva Clinic</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Shop Oliva Clinic The best place to hair and face
+                                                Treatment medicines
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.olivaclinic.com/ask-oliva/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                </TabPanel>
+                                <TabPanel>
+                                    <div className="row justify-content-center">
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={fgil}
+                                                alt="portfolio targeticon"
+                                                className="img-fluid"
+                                                />{" "}
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/brand-logo/customer-logo-4.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Future Generali Life Insurance</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Life insurance is an irreplaceable part of a sound
+                                                financial plan. It helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://life.futuregenerali.in/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/future-generali-life-insurance"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/sociallocket-screen.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/brand-logo/sociallocket-logo.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Social Locket</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Social Locket part of a sound financial plan. It
+                                                helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://green.app.sociallocket.com/da"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/Performer-Auditions-screen.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/brand-logo/PerformerAuditions-logo.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Performer Auditions</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Performer Auditions part of a sound financial plan.
+                                                It helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="http://stage.performerauditions.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/floor-direct-screen.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/brand-logo/floor.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Floor Direct</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                When you are looking for flooring in Islington and
+                                                around London there is only one place to call.
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.floordirectltd.co.uk/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/delhi-metro-img.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/delhi-metro-logo.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Delhi Metro</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                DMRC to start QR code-based entry system at stations
+                                                soon
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://securestaging.net/delhimetrorail/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/GCFL.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={gclilogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Get Cash For Laptop</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Get Cash For Laptop part of a sound financial plan.
+                                                It helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.getcashforlaptop.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/farming-screen.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/brand-logo/farming-logo.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Farm &amp; Rural Mission PVT LTD.</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Farm &amp; Rural Mission PVT. LTD. Cultivating Smart
+                                                Growth Ideas.
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://xd.adobe.com/view/648b071c-e88b-41f8-bafe-412fccb85840-31d8/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={tstpc}
+                                                alt="portfolio targeticon"
+                                                className="img-fluid"
+                                                />{" "}
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={tstpclogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>TSTPC Ltd</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Telangana State Trade Promotion Corporation Ltd.
+                                                part of a sound financial plan. It helps in securing
+                                                your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://tstpc.telangana.gov.in/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={tsig}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={tstpclogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>TSTPC Ltd</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Telangana State Trade Promotion Corporation Ltd.
+                                                part of a sound financial plan. It helps in securing
+                                                your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://tstpc.telangana.gov.in/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/invest-telangana-img.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/invest-telangana-logo.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Invest Telangana</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                The Best State to do Business in India, One of the
+                                                Best Performing States
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://securestaging.net/invest-telangana/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </TabPanel>
+                                <TabPanel>
+                                    <div className="row justify-content-center">
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/delhi-metro-img.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/delhi-metro-logo.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Delhi Metro</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                DMRC to start QR code-based entry system at stations
+                                                soon
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://securestaging.net/delhimetrorail/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </TabPanel>
+                                <TabPanel>
+                                    <div className="row justify-content-center">
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={fgil}
+                                                alt="portfolio targeticon"
+                                                className="img-fluid"
+                                                />{" "}
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/brand-logo/customer-logo-4.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Future Generali Life Insurance</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Life insurance is an irreplaceable part of a sound
+                                                financial plan. It helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://life.futuregenerali.in/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/future-generali-life-insurance"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={oliva}
+                                                alt="portfolio targeticon"
+                                                className="img-fluid"
+                                                />{" "}
+                                            </a>
+                                            </div>
+                                            <div className="work-details portfolio-user-info">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={olivalogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set">
+                                                <h5>Oliva Skin &amp; Hair Clinic</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Oliva Skin &amp; Hair Clinic irreplaceable part of a
+                                                sound financial plan. It helps in securing your
+                                                family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.olivaclinic.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/oliva-clinic"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={tstpc}
+                                                alt="portfolio targeticon"
+                                                className="img-fluid"
+                                                />{" "}
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={tstpclogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>TSTPC Ltd</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Telangana State Trade Promotion Corporation Ltd.
+                                                part of a sound financial plan. It helps in securing
+                                                your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://tstpc.telangana.gov.in/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={tsig}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={tstpclogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>TSTPC Ltd</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Telangana State Trade Promotion Corporation Ltd.
+                                                part of a sound financial plan. It helps in securing
+                                                your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://tstpc.telangana.gov.in/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/GCFL.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/brand-logo/GCFL-logo.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Get Cash For Laptop</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Get Cash For Laptop part of a sound financial plan.
+                                                It helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.getcashforlaptop.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={virtuallyvocal}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={VirtuallyVocallogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Virtually Vocal</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Virtually Vocal part of a sound financial plan. It
+                                                helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.virtuallyvocal.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/sociallocket-screen.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/brand-logo/sociallocket-logo.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Social Locket</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Social Locket part of a sound financial plan. It
+                                                helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://green.app.sociallocket.com/da"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/Performer-Auditions-screen.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/brand-logo/PerformerAuditions-logo.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Performer Auditions</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Performer Auditions part of a sound financial plan.
+                                                It helps in securing your family
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="http://stage.performerauditions.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/floor-direct-screen.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/brand-logo/floor.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Floor Direct</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                When you are looking for flooring in Islington and
+                                                around London there is only one place to call.
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.floordirectltd.co.uk/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/invest-telangana-img.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/invest-telangana-logo.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Invest Telangana</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                The Best State to do Business in India, One of the
+                                                Best Performing States
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://securestaging.net/invest-telangana/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src=" https://www.targeticon.com/images/delhi-metro-img.png"
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src=" https://www.targeticon.com/images/delhi-metro-logo.png"
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Delhi Metro</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                DMRC to start QR code-based entry system at stations
+                                                soon
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://securestaging.net/delhimetrorail/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={ms}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={mslogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Marks &amp; Spencer London</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Marks &amp; Spencer London Change your life Style
+                                                with Marks &amp; Spencer
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.marksandspencer.in/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={zandu}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={zandulogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Zandu Care</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Zandu Care, the online store of Zandu, The best
+                                                place to shop Ayurvedic medicines
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://zanducare.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={n1building}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={n1buildinglogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>N1 Building Contractors Ltd.</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                N1 Building Contractors remodeling &amp; redesign
+                                                your Dream Bathrooms and Kitchens
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.n1buildingcontractors.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={rafawater}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={rafawaterlogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Rafa Water</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Water is the most important natural resource on
+                                                earth, and the most vital one for all forms of life,
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.rafawater.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={remodlescreen}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={remodlelogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Remodel Republic</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Remodel Republic remodeling &amp; redesign your
+                                                Dream home and gardens
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.remodelrepublic.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={oliva}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={oliva}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Shop Oliva Clinic</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Shop Oliva Clinic The best place to hair and face
+                                                Treatment medicines
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.olivaclinic.com/ask-oliva/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </TabPanel>
+                                <TabPanel>
+                                    <div className="row justify-content-center">
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={rafawater}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={rafawaterlogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Rafa Water</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Water is the most important natural resource on
+                                                earth, and the most vital one for all forms of life,
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.rafawater.com/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </TabPanel>
+                                <TabPanel>
+                                    <div className="row justify-content-center">
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                        <div className="fwb-main-x portfolio-frame fwb-a">
+                                            <div className="work-thumbnails">
+                                            <a href="#">
+                                                <img
+                                                src={oliva}
+                                                alt="portfolio"
+                                                className="img-fluid"
+                                                />
+                                            </a>
+                                            </div>
+                                            <div className="work-details">
+                                            <div className="media vcenter mb20">
+                                                <div className="ree-icon-set img-round80">
+                                                <img
+                                                    src={olivalogo}
+                                                    alt="logo"
+                                                    className="img-fluid"
+                                                />
+                                                </div>
+                                                <div className="ree-details-set poruser-info">
+                                                <h5>Shop Oliva Clinic</h5>
+                                                <span>Design by Targeticon</span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Shop Oliva Clinic The best place to hair and face
+                                                Treatment medicines
+                                            </p>
+                                            <div className="portfolio-read-btn">
+                                                <a
+                                                href="https://www.olivaclinic.com/ask-oliva/"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                Live view
+                                                </a>
+                                                <a
+                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                target="_blank"
+                                                className="port-links ree-btn-grdt1"
+                                                >
+                                                See Details
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </TabPanel>
+                            </Tabs>
+                          
+                            
                         </div>
-                        {/* <div class="row">
-                <div class="col-lg-12 col-sm-12">
-                    <ul class="pagination shadows">
-                        <li><a href="#" class="prev">Prev</a></li>
-                        <li class="pageNumber active"><a href="#">1</a></li>
-                        <li class="pageNumber"><a href="#">2</a></li>
-                        <li class="pageNumber"><a href="#">3</a></li>
-                        <li class="pageNumber"><a href="#">4</a></li>
-                        <li><a href="#" class="next">Next</a></li>
-                    </ul>
-                </div>
-            </div> */}
+                        </div>
                     </div>
-                </div>
-            </div>
-            {/*portfolio end*/}
-            {/*creative portfolio*/}
-            <section className="dark-light-a pt60 pb60">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-8 col-sm-8 vcenter text-center">
-                            <div className="heading-hz-btn">
-                                <span className="sub-heading mb15">
-                                    {/* QUALITY WORK */}Quality is more important than quantity
-                                </span>
-                                <h2 className="w-txt">
-                                    Some of our <span className="ree-text rt40">Finest</span> Work
-                                </h2>
-                            </div>
-                        </div>
                     </div>
-                    <div className="row mt20 dark-bg">
-                        <div className="col-lg-4 col-md-6 col-sm-12 mt40 img-hover quality-work">
-                            <div className="work-thumbnail">
-                                <NavLink to="https://zanducare.com/" target="_blank">
-                                    {" "}
-                                    <img
-                                        src={zandu}
-                                        alt="portfolio reevan"
-                                        className="img-fluid"
-                                    />{" "}
-                                </NavLink>
-                            </div>
-                            <div className="media vcenter mt20">
-                                <div className="ree-icon-set img-round80 shadows">
-                                    <img
-                                        src={zandulogo}
-                                        alt="logo"
-                                        className="img-fluid"
-                                    />
-                                </div>
-                                <div className="port-title">
-                                    <h4 className="mb5">Zandu Care</h4>
-                                    <p>UX, UI, Graphic Design</p>
-                                </div>
-                            </div>
-                            <div className="mb20 mt20 portfolio-see-more-btn">
-                                <NavLink to="https://zanducare.com/"
-                                    target="_blank"
-                                    className="port-links ree-btn-grdt1"
-                                >
-                                    Live view <i className="fas fa-arrow-right fa-btn" />
-                                </NavLink>
-                                <NavLink to="/portfolio/performance-audition"
-                                    target="_blank"
-                                    className="port-links ree-btn-grdt1"
-                                >
-                                    See Details <i className="fas fa-arrow-right fa-btn" />
-                                </NavLink>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12 mt40 img-hover quality-work">
-                            <div className="work-thumbnail">
-                                <NavLink to="https://www.n1buildingcontractors.com/" target="_blank">
-                                    {" "}
-                                    <img
-                                        src={n1building}
-                                        alt="portfolio reevan"
-                                        className="img-fluid"
-                                    />{" "}
-                                </NavLink>
-                            </div>
-                            <div className="media vcenter mt20">
-                                <div className="ree-icon-set img-round80 shadows">
-                                    <img
-                                        src={n1buildinglogo}
-                                        alt="logo"
-                                        className="img-fluid"
-                                    />
-                                </div>
-                                <div className="port-title">
-                                    <h4 className="mb5">N1 Building Contractors Ltd.</h4>
-                                    <p>UX, UI, Graphic Design</p>
-                                </div>
-                            </div>
-                            <div className="mb20 mt20 portfolio-see-more-btn">
-                                <NavLink to="https://www.n1buildingcontractors.com/"
-                                    target="_blank"
-                                    className="port-links ree-btn-grdt1"
-                                >
-                                    Live view <i className="fas fa-arrow-right fa-btn" />
-                                </NavLink>
-                                <NavLink to="/portfolio/performance-audition"
-                                    target="_blank"
-                                    className="port-links ree-btn-grdt1"
-                                >
-                                    See Details <i className="fas fa-arrow-right fa-btn" />
-                                </NavLink>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12 mt40 img-hover quality-work">
-                            <div className="work-thumbnail">
-                                <NavLink to="https://www.rafawater.com/">
-                                    {" "}
-                                    <img
-                                        src={rafawater}
-                                        alt="portfolio reevan"
-                                        className="img-fluid"
-                                    />{" "}
-                                </NavLink>
-                            </div>
-                            <div className="media vcenter mt20">
-                                <div className="ree-icon-set img-round80 shadows">
-                                    <img
-                                        src={rafawaterlogo}
-                                        alt="logo"
-                                        className="img-fluid"
-                                    />
-                                </div>
-                                <div className="port-title">
-                                    <h4 className="mb5">Rafa Water</h4>
-                                    <p>UX, UI, Graphic Design</p>
-                                </div>
-                            </div>
-                            <div className="mb20 mt20 portfolio-see-more-btn">
-                                <NavLink to="https://www.rafawater.com/"
-                                    target="_blank"
-                                    className="port-links ree-btn-grdt1"
-                                >
-                                    Live view <i className="fas fa-arrow-right fa-btn" />
-                                </NavLink>
-                                <NavLink to="/portfolio/performance-audition"
-                                    target="_blank"
-                                    className="port-links ree-btn-grdt1"
-                                >
-                                    See Details <i className="fas fa-arrow-right fa-btn" />
-                                </NavLink>
-                            </div>
-                        </div>
-                        <div className="col-lg-8 col-md-6 col-sm-12 mt40 img-hover quality-work">
-                            <div className="work-thumbnail">
-                                <NavLink to="#">
-                                    {" "}
-                                    <img
-                                        src={olivashop}
-                                        alt="portfolio reevan"
-                                        className="img-fluid"
-                                    />{" "}
-                                </NavLink>
-                            </div>
-                            <div className="media vcenter mt20">
-                                <div className="ree-icon-set img-round80 shadows">
-                                    <img
-                                        src={customerlogo2}
-                                        alt="logo"
-                                        className="img-fluid"
-                                    />
-                                </div>
-                                <div className="port-title">
-                                    <h4 className="mb5">Shop Oliva Clinic</h4>
-                                    <p>UX, UI, Graphic Design</p>
-                                </div>
-                            </div>
-                            <div className="mb20 mt20 portfolio-see-more-btn">
-                                <NavLink to="https://shop.olivaclinic.com/"
-                                    target="_blank"
-                                    className="port-links ree-btn-grdt1"
-                                >
-                                    Live view <i className="fas fa-arrow-right fa-btn" />
-                                </NavLink>
-                                <NavLink to="/portfolio/performance-audition"
-                                    target="_blank"
-                                    className="port-links ree-btn-grdt1"
-                                >
-                                    See Details <i className="fas fa-arrow-right fa-btn" />
-                                </NavLink>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12  mt40 img-hover quality-work">
-                            <div className="work-thumbnail">
-                                <NavLink to="#">
-                                    {" "}
-                                    <img
-                                        src={remodlescreen}
-                                        alt="portfolio reevan"
-                                        className="img-fluid"
-                                    />{" "}
-                                </NavLink>
-                            </div>
-                            <div className="media vcenter mt20">
-                                <div className="ree-icon-set img-round80 shadows">
-                                    <img
-                                        src={customerlogo3}
-                                        alt="logo"
-                                        className="img-fluid"
-                                    />
-                                </div>
-                                <div className="port-title">
-                                    <h4 className="mb5">Remodel Republic</h4>
-                                    <p>UX, UI, Graphic Design</p>
-                                </div>
-                            </div>
-                            <div className="mb20 mt20 portfolio-see-more-btn">
-                                <NavLink to="https://www.remodelrepublic.com/"
-                                    target="_blank"
-                                    className="port-links ree-btn-grdt1"
-                                >
-                                    Live view <i className="fas fa-arrow-right fa-btn" />
-                                </NavLink>
-                                <NavLink to="/portfolio/performance-audition"
-                                    target="_blank"
-                                    className="port-links ree-btn-grdt1"
-                                >
-                                    See Details <i className="fas fa-arrow-right fa-btn" />
-                                </NavLink>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <div class="row justify-content-center text-center mt60">
-            <div class="col-lg-10">
-                <div class="cta-heading-wide-bt">
-                    <h3 class="w-txt">Take a look of our quality work</h3>
-                    <a href="https://separateweb.com/" class="ree-btn  ree-btn-grdt1 mw-80 no-shadows">View All Work <i class="fas fa-arrow-right fa-btn"></i></a> 
-                </div>
-            </div>
-            </div> */}
-                </div>
-            </section>
-            {/*end portfolio*/}
-            {/*item screen*/}
-            <section className="home-partners-block r-bg-x pt60 pb60">
-                <div className="container">
+                </section>
+                {/* Tabs */}
+
+                
+                {/*item screen*/}
+                <section className="home-partners-block portfolio-App-screen pt60 pb60">
+                    <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
-                            <div className="sec-heading text-center">
-                                <h2 className="mb15">
-                                    <span className="ree-text rt40">App</span> Screens
-                                </h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                    commodo ligula eget dolor. Aenean massa.
-                                </p>
-                            </div>
+                        <div className="sec-heading text-center">
+                            <h2 className="mb15 txt-white">
+                            <span className="ree-text rt40">App</span> Screens
+                            </h2>
+                            <p className="txt-white">
+                            Experience Seamless Navigation Through Our App's Dynamic Interface
+                            and Functionality Showcase
+                            </p>
+                        </div>
                         </div>
                     </div>
                     <div className="app-screenss owl-carousel mt70 dottss">
-                        <OwlCarousel options={options} >
-                            <div className="appscreen">
-                                <div className="itme-img">
-                                    <img
-                                        src={portfolioappscreen}
-                                        alt="mockup"
-                                        className="img-fluid"
-                                    />
+                        <OwlCarousel {...options}>                             
+                                <div className="item">
+                                    <div className="itme-img">
+                                        <a href="https://projects.invisionapp.com/d/main#/console/20209552/427240198/preview?scrollOffset=522#project_console" target="_blank">
+                                        <img
+                                            src={portfolioappscreen}
+                                            alt="mockup"
+                                            className="img-fluid"
+                                        />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="appscreen">
-                                <div className="itme-img">
-                                    <img
-                                        src={portfolioappscreen2}
-                                        alt="mockup"
-                                        className="img-fluid"
-                                    />
+                                <div className="item">
+                                    <div className="itme-img">
+                                        <a href="https://www.figma.com/design/WXY0RTRzuiFQdeAF511UAt/Telangana-survey?node-id=0-1&t=h5VHZF2Yy4DCS16j-0" target="_blank">
+                                        <img
+                                            src={portfolioappscreen2}
+                                            alt="mockup"
+                                            className="img-fluid"
+                                        />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="appscreen">
-                                <div className="itme-img">
-                                    <img
-                                        src={portfolioappscreen3}
-                                        alt="mockup"
-                                        className="img-fluid"
-                                    />
+                                <div className="item">
+                                    <div className="itme-img">
+                                        <a href="#">
+                                        <img
+                                            src={portfolioappscreen3}
+                                            alt="mockup"
+                                            className="img-fluid"
+                                        />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="appscreen">
-                                <div className="itme-img">
-                                    <img
-                                        src={portfolioappscreen4}
-                                        alt="mockup"
-                                        className="img-fluid"
-                                    />
+                                <div className="item">
+                                    <div className="itme-img">
+                                        <a href="#">
+                                        <img
+                                            src={portfolioappscreen4}
+                                            alt="mockup"
+                                            className="img-fluid"
+                                        />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="appscreen">
-                                <div className="itme-img">
-                                    <img
-                                        src={portfolioappscreen2}
-                                        alt="mockup"
-                                        className="img-fluid"
-                                    />
+                                <div className="item">
+                                    <div className="itme-img">
+                                        <a href="https://www.figma.com/proto/58cLM560auUeQO19mNB1zr/Ask-our-doc?page-id=0%3A1&node-id=18-1480&viewport=243%2C48%2C0.56&scaling=min-zoom&starting-point-node-id=507%3A145&show-proto-sidebar=1" target="_blank">
+                                        <img
+                                            src={olivaappscreen}
+                                            alt="mockup"
+                                            className="img-fluid"
+                                        />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="appscreen">
-                                <div className="itme-img">
-                                    <img
-                                        src={portfolioappscreen4}
-                                        alt="mockup"
-                                        className="img-fluid"
-                                    />
+                                <div className="item">
+                                    <div className="itme-img">
+                                        <a href="https://xd.adobe.com/spec/747ef59c-a22d-48ad-5525-3719bfc0726a-024f/grid" target="_blank">
+                                        <img
+                                            src={ramsunappscreen}
+                                            alt="mockup"
+                                            className="img-fluid"
+                                        />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </OwlCarousel>
+                                <div className="item">
+                                    <div className="itme-img">
+                                        <a href="https://xd.adobe.com/view/95665555-ffdf-4889-95c3-9679390a304c-c035/" target="_blank">
+                                        <img
+                                            src={Dmetroappscreen}
+                                            alt="mockup"
+                                            className="img-fluid"
+                                        />
+                                        </a>
+                                    </div>
+                                </div>                            
+                        </OwlCarousel> 
                     </div>
-                </div>
-            </section>
-            <Tools />
-            {/*start footer */}
-            {/*?php include '../include/footer.php';?*/}
-            {/* end footer
-            */}
+                                       
+                    {/* <div className="app-screenss owl-carousel mt70 dottss">
+                        <div className="appscreen">
+                        
+                        </div>
+                        <div className="appscreen">
+                        <div className="itme-img">
+                            <a href="#">
+                            <img
+                                src={portfolioappscreen}
+                                alt="mockup"
+                                className="img-fluid"
+                            />
+                            </a>
+                        </div>
+                        </div>
+                        <div className="appscreen">
+                        <div className="itme-img">
+                            <a href="#">
+                            <img
+                                src={portfolioappscreen2}
+                                alt="mockup"
+                                className="img-fluid"
+                            />
+                            </a>
+                        </div>
+                        </div>
+                        <div className="appscreen">
+                        <div className="itme-img">
+                            <a href="#">
+                            <img
+                                src={portfolioappscreen3}
+                                alt="mockup"
+                                className="img-fluid"
+                            />
+                            </a>
+                        </div>
+                        </div>
+                        <div className="appscreen">
+                        <div className="itme-img">
+                            <a href="#">
+                            <img
+                                src={portfolioappscreen4}
+                                alt="mockup"
+                                className="img-fluid"
+                            />
+                            </a>
+                        </div>
+                        </div>
+                        <div className="appscreen">
+                        <div className="itme-img">
+                            <a href="#">
+                            <img
+                                src=" <?php echo BASE_URL; ?>images/case-study/portfolio-App-screen-make-4.png"
+                                alt="mockup"
+                                className="img-fluid"
+                            />
+                            </a>
+                        </div>
+                        </div>
+                        <div className="appscreen">
+                        <div className="itme-img">
+                            <a href="https://xd.adobe.com/spec/747ef59c-a22d-48ad-5525-3719bfc0726a-024f/specs/">
+                            <img
+                                src=" <?php echo BASE_URL; ?>images/portfolio-App-screen-ramsun.png"
+                                alt="mockup"
+                                className="img-fluid"
+                            />
+                            </a>
+                        </div>
+                        </div>
+                        <div className="appscreen">
+                        <div className="itme-img">
+                            <a href="https://www.figma.com/proto/58cLM560auUeQO19mNB1zr/Ask-our-doc?page-id=0%3A1&node-id=18-1480&viewport=243%2C48%2C0.56&scaling=min-zoom&starting-point-node-id=507%3A145&show-proto-sidebar=1">
+                            <img
+                                src=" <?php echo BASE_URL; ?>images/portfolio-App-screen-oliva.png"
+                                alt="mockup"
+                                className="img-fluid"
+                            />
+                            </a>
+                        </div>
+                        </div>
+                        <div className="appscreen">
+                        <div className="itme-img">
+                            <a href="https://projects.invisionapp.com/d/main#/console/20209552/427240198/preview?scrollOffset=522#project_console">
+                            <img
+                                src=" <?php echo BASE_URL; ?>images/portfolio-App-screen-invision.png"
+                                alt="mockup"
+                                className="img-fluid"
+                            />
+                            </a>
+                        </div>
+                        </div>
+                        <div className="appscreen">
+                        <div className="itme-img">
+                            <a href="https://xd.adobe.com/view/95665555-ffdf-4889-95c3-9679390a304c-c035/">
+                            <img
+                                src=" <?php echo BASE_URL; ?>images/portfolio-App-screen-Delhi-metro.png"
+                                alt="mockup"
+                                className="img-fluid"
+                            />
+                            </a>
+                        </div>
+                        </div>
+                    </div> */}
+                    </div>
+                </section>
+                {/*item screen end*/}
+                {/*start footer */}
+                {/*?php include '../include/footer.php';?*/}
+                {/* end footer
+                */}
+                </>
+
         </div>
     );
 };

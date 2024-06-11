@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import OwlCarousel from 'react-owl-carousel2';
+import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import developer from '../../../assets/images/developer.png';
+import slideruxdesign from '../../../assets/images/sliderux-design-img.png';
 
 
 const Slider = () => {
@@ -16,52 +18,48 @@ const Slider = () => {
     return (
         <div>
             {/*start main slider  */}
-            <section className="hero-owl">
-                <OwlCarousel options={options}>
-                    <div className='item career-detail-banner'>
+            <section className="hero-owl slide-hero">
+                <OwlCarousel {...options}>
+                    <div className='item hire-app-dev-slider-banner'>
                         <div className="container">
                             <div className="row flex-row-reverse">
                                 <div className="col-lg-6 col-sm-12">
                                     <div className="sol-image m-mt30 mt50">
-
+                                        &nbsp;
                                     </div>
                                 </div>
-                                <div className="col-md-6 col-sm-12">
-                                    <div className="hero-content-x">
-                                        <h1
-                                            className="mb30 mt50 txt-white"
-                                            data-aos="fade-in"
-                                            data-aos-delay={200}
-                                        >
+                                <div className="col-lg-6 col-sm-12">
+                                    <div className="slider-content">
+                                        <h5>WE PROVIDE</h5>
+                                        <h1 className="" data-aos="fade-in" data-aos-delay={50}>
                                             Hire App Developers
                                         </h1>
-                                        <ul className="ul-list-icon mt30">
-                                            <li className="txt-white">
-                                                <i className="far fa-hand-point-right" />
+                                        <ul className="hire-app-list">
+                                            <li className="">
+                                                <i className="fas fa-arrow-right fa-btn me-2"/>
                                                 Monthly/Yearly hiring
                                             </li>
-                                            <li className="txt-white">
-                                                <i className="far fa-hand-point-right" />
+                                            <li className="">
+                                                <i className="fas fa-arrow-right fa-btn me-2"/>
                                                 Direct Access of resource
                                             </li>
-                                            <li className="txt-white">
-                                                <i className="far fa-hand-point-right" />
+                                            <li className="">
+                                                <i className="fas fa-arrow-right fa-btn me-2"/>
                                                 160 man hours guaranteed
                                             </li>
-                                            <li className="txt-white">
-                                                <i className="far fa-hand-point-right" />
+                                            <li className="">
+                                                <i className="fas fa-arrow-right fa-btn me-2"/>
                                                 Daily/Weekly/Monthly reporting via email
                                             </li>
-                                            <li className="txt-white">
-                                                <i className="far fa-hand-point-right" />
+                                            <li className="">
+                                                <i className="fas fa-arrow-right fa-btn me-2"/>
                                                 Flexible Office hours depend on timezone
                                             </li>
                                         </ul>
                                         <NavLink to="/hire-app-developers"
-                                            className="ree-btn  ree-btn-grdt1 mt40 mw-80"
+                                            className="ree-btn  ree-btn-grdt1 mt40 mb40 mw-80"
                                             data-aos="fade-in"
-                                            data-aos-delay={800}
-                                        >
+                                            data-aos-delay={100}>
                                             Let's Talk <i className="fas fa-arrow-right fa-btn" />
                                         </NavLink>
                                     </div>
@@ -72,22 +70,19 @@ const Slider = () => {
                     </div>
                     <div className='item software-slider'>
                         <div className="container">
-                            <div className="row flex-row-reverse">
+                            <div className="row flex-row-reverse vcenter">
                                 <div className="col-lg-6 col-sm-12">
-                                    <div className="sol-image m-mt30 mt50">
-
+                                    <div className="software-img text-center">
+                                        <img loading="lazy" srcSet={developer} className="logo-anim img-fluid" alt="Targeticon"width={1380} height={920}/>
                                     </div>
                                 </div>
-                                <div className="col-md-6 col-sm-12">
-                                    <div className="hero-content-x">
-                                        <h1
-                                            className="mb30 mt50 txt-white"
-                                            data-aos="fade-in"
-                                            data-aos-delay={200}
-                                        >
+                                <div className="col-lg-6 col-sm-12">
+                                    <div className="slider-content me-5">
+                                        <h5>WE ARE</h5>
+                                        <h1 className="" data-aos="fade-in" data-aos-delay={200}>
                                             Software Development Company
                                         </h1>
-                                        <p className="txt-white">
+                                        <p className="">
                                             We build transformative software solutions, combining
                                             expertise with innovation. Our skilled team creates scalable,
                                             secure, and user-friendly applications to drive business
@@ -96,11 +91,39 @@ const Slider = () => {
                                         <NavLink to="/contact-us"
                                             className="ree-btn  ree-btn-grdt1 mt40 mw-80"
                                             data-aos="fade-in"
-                                            data-aos-delay={800}
-                                        >
+                                            data-aos-delay={100}>
                                             Let's Talk <i className="fas fa-arrow-right fa-btn" />
                                         </NavLink>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='item UI-UX-slider'>
+                        <div className="container">
+                            <div className="row flex-row-reverse vcenter">
+                                <div className="col-lg-6 col-sm-12">
+                                    &nbsp;
+                                </div>
+                                <div className="col-lg-6 col-sm-12">
+                                    <div className="slider-content me-5">
+                                        <h5>WE SPECIALIZE IN</h5>
+                                        <h1 className="txt-white" data-aos="fade-in" data-aos-delay={200}>
+                                            UI/UX Creative Designing 
+                                        </h1>
+                                        <p className="txt-white">
+                                            Completed UI/UX design showcases creativity, enhancing user experience with innovative elements, intuitive navigation, and visually appealing aesthetics. Satisfaction guaranteed.
+                                        </p>
+                                        <NavLink to="/contact-us"
+                                            className="ree-btn ree-btn-grdt2 mt40 mw-80"
+                                            data-aos="fade-in"
+                                            data-aos-delay={100}>
+                                            Let's Talk <i className="fas fa-arrow-right fa-btn" />
+                                        </NavLink>
+                                    </div>
+                                </div>
+                                <div className="slider-ux-img">
+                                    <img loading="lazy" srcSet={slideruxdesign} className="logo-anim img-fluid" alt="Targeticon"width={800} height={500}/>
                                 </div>
                             </div>
                         </div>

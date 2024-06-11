@@ -4,6 +4,7 @@ import Slider from "./components/slider";
 import TopBrandsTrustSlider from "../../components/top-brands-trust-slider";
 import officeviewimg from '../../assets/images/others/office-view-2.png';
 import Tageticoncircle from '../../assets/images/Target-icon.png';
+import aboutmain from '../../assets/images/about-main.jpg';
 import Cicleround from '../../assets/images/others/app-development.webp';
 import TopIt from '../../assets/images/brand-logo/top-it.png';
 import AppfuturaLogo from '../../assets/images/brand-logo/appfutura-logo.png';
@@ -27,9 +28,9 @@ import Location from "../../components/location";
 const Home = () => {
     return (
         <div>
-
+ 
             <Slider />
-            <TopBrandsTrustSlider />
+            <TopBrandsTrustSlider /> 
             {/*we are targeticon*/}
             <section
                 className="home-about pt60 pb60 r-bg-acf"
@@ -65,7 +66,7 @@ const Home = () => {
                             />
                             <img
                                 loading="lazy"
-                                srcSet={officeviewimg}
+                                srcSet={aboutmain}
                                 className="w-100 img-fluid"
                                 alt="Office-team"
                                 width={1600}

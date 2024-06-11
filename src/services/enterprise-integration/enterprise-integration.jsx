@@ -1,4 +1,4 @@
-import React from "react";
+    import React from "react";
 import { NavLink } from "react-router-dom";
 import Tools from '../../components/our-tools';
 import enterpriseIntegration from '../../assets/images/Enterprise-Integration.png';
@@ -95,7 +95,7 @@ const EnterpriseIntegration = () => {
                                 data-aos-delay={200}
                             >
                                 <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg text-center">
+                                    <div className="text-center">
                                         <picture>
                                             <img
                                                 loading="lazy"
@@ -198,7 +198,7 @@ const EnterpriseIntegration = () => {
                                 data-aos-delay={200}
                             >
                                 <div className="hovr-scale-main">
-                                    <div className="portfolio-flimg text-center">
+                                    <div className="text-center">
                                         <picture>
                                             <img
                                                 loading="lazy"

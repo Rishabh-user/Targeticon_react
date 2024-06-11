@@ -238,6 +238,18 @@
 }
 
 @media only screen and (max-width:992px) {
+    .portfolio-brand .react-tabs__tab-list {
+        border-bottom: 1px solid #dee2e6;
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+        padding-bottom: 1px;
+        width: 100%;
+        flex-wrap: inherit;
+    }
+    .portfolio-brand .tab-17.tabs-layout .react-tabs__tab{
+        font-size: 18px;
+    }
     .hero-right-cnt .media {
         margin-top: 60px
     }
@@ -583,6 +595,7 @@
 }
 
 @media only screen and (max-width:767px) {
+    
     .ree-btn {
         font-size: 16px;
         padding: 0 26px;
@@ -1130,8 +1143,29 @@
     
 }
 
+@media (max-width: 1600px){
+    .UI-UX-slider .slider-ux-img {
+        top: 60px;
+        right: -13rem;
+        width: 75%;
+    }
+}
+
+@media (max-width: 1366px){
+    .UI-UX-slider .slider-ux-img {
+        top: 75px;
+        right: -11rem;
+        width: 75%;
+    }
+}
+
 @media (max-width: 1280px){
     .container{ max-width: inherit; width: 98%;}
+    .UI-UX-slider .slider-ux-img {
+        top: 100px;
+        right: -12rem;
+        width: 75%;
+    }
 }
 
 @media (max-width: 991px){
@@ -1146,13 +1180,13 @@
     .hero-content { margin-top: 30px; margin-bottom: 30px; }
     .JS-Stack-Development-img { margin-bottom: 30px; }
     .head-dez3 { padding-top: 40px; }
-    .ree-card{ height: auto; margin-bottom: 30px; }
-    
+    .ree-card{ height: auto; margin-bottom: 30px; }    
     .agency-picture{ display:none;}
     .key-and-award { margin-top: 0px;}
-
     .join-team-bg{ background: #0c0c0c;}
     .hide-for-mobile{ display:block;}
+    .software-slider .software-img {display: none;}
+    .UI-UX-slider .slider-ux-img { display: none;}
     
 }
 
@@ -1240,6 +1274,9 @@ h2.please-fill-form {font-size: 30px; line-height: 36px; }
 
 }
 
+@media (max-width: 480px){
+.slider-content .hire-app-list{display: grid; grid-template-columns: repeat(1, 1fr);}
+}
 
 
 @media (max-width: 400px){

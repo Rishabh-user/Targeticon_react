@@ -73,7 +73,7 @@ const UxDesign = () => {
                             data-aos-delay={200}
                         >
                             <div className="hovr-scale-main text-center">
-                                <div className="portfolio-flimg">
+                                <div className="portfolio-flimgg">
                                     <picture>
                                         <img
                                             loading="lazy"
