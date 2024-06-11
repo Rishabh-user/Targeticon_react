@@ -5181,8 +5181,8 @@ background-color: #f00; width: 100%; height: 100%; display: block; position: abs
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.creative-banner .graphic-design-text .graphic {color: #dbdbdb; font-size: 4.5rem; margin-bottom: 2.5rem; font-weight: 600; margin-left: 5rem;}
-.creative-banner .graphic-design-text .design {color: #272727; font-size: 4.5rem; margin-left: 10rem; font-weight: 600;}
+.creative-banner .graphic-design-text .graphic {color: #dbdbdb; font-size: 4.5rem; margin-bottom: 2.5rem; font-weight: 600; margin-left: 6rem;}
+.creative-banner .graphic-design-text .design {color: #272727; font-size: 4.5rem; margin-left: 11rem; font-weight: 600;}
 .creative-banner .creative-banner-img { width: 500px; margin-left: -130px;}
 .creative-banner .right-side-text {text-align: right;}
 .creative-banner .right-side-text h1{color: #fff; font-size: 6rem; margin-bottom: 1rem;}
