@@ -19,7 +19,7 @@ const Header = () => {
 
     return (
         <div>
-             <header className="ree-header fixed-top">
+            <header className="ree-header fixed-top">
                 <div className="container-fluid m-p-l-r-0">
                     <div className="menu-header horzontl">
                         <div className="menu-logo" >
@@ -42,7 +42,7 @@ const Header = () => {
                             <ul className="nav-list">
                                 <li className="megamenu mega-small">
                                     <NavLink to="/" className="menu-links">
-                                        Home
+                                        Home Rishabh
                                     </NavLink>
                                 </li>
                                 <li className="megamenu mega-small">
