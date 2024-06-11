@@ -19,7 +19,7 @@ const BlogList = ({ initialData, onUpdate }) => {
     const handleDelete = async (blogId) => {
         try {
             // Send a POST request to your API for blog post deletion
-            const response = await axios.post(`${apiEndpoint}/v2/items/delete`, {
+            const response = await axios.post(`${apiEndpoint}/items/delete`, {
                 id: blogId // Send the ID to be deleted in the request body
             });
 

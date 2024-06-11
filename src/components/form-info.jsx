@@ -96,7 +96,7 @@ const FormInfo = () => {
     //     return isValid;
     // };
     useEffect(() => {
-        fetch(`${apiEndpoint1}/services/read/`)
+        fetch(`${apiEndpoint}/services/read/`)
           .then(response => response.json())
           .then(data => setServices(data.services))
           .catch(error => console.error('Error fetching services:', error));
@@ -203,7 +203,7 @@ const FormInfo = () => {
 
     if (Object.keys(validationErrors).length === 0) {
       try {
-        let res = await fetch(`${apiEndpoint}/v2/contactus/contact`, {
+        let res = await fetch(`${apiEndpoint}/contactus/contact`, {
           method: "POST",
           body: JSON.stringify({
             name: formData.name,
