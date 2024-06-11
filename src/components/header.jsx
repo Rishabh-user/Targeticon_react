@@ -42,7 +42,7 @@ const Header = () => {
                             <ul className="nav-list">
                                 <li className="megamenu mega-small">
                                     <NavLink to="/" className="menu-links">
-                                        Home Rishabh
+                                        Home
                                     </NavLink>
                                 </li>
                                 <li className="megamenu mega-small">
