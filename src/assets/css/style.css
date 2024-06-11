@@ -5166,6 +5166,42 @@ background-color: #f00; width: 100%; height: 100%; display: block; position: abs
     background-image: url(../images/new-slide-img.jpg);
 }
 
+.creative-banner {background-image: url(../images/creative-banner.jpg);}
+.creative-banner .graphic-design-text {position: relative; width: 300px; height: 300px; justify-content: center; align-items: center; display: flex;}
+.creative-banner .graphic-design-text::before {
+    content: 'D';
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 124, 222, 1) 0%, rgba(4, 62, 106, 1) 100%);
+    font-size: 15rem;
+    z-index: -1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.creative-banner .graphic-design-text .graphic {color: #dbdbdb; font-size: 4.5rem; margin-bottom: 2.5rem; font-weight: 600; margin-left: 5rem;}
+.creative-banner .graphic-design-text .design {color: #272727; font-size: 4.5rem; margin-left: 10rem; font-weight: 600;}
+.creative-banner .creative-banner-img { width: 500px; margin-left: -130px;}
+.creative-banner .right-side-text {text-align: right;}
+.creative-banner .right-side-text h1{color: #fff; font-size: 6rem; margin-bottom: 1rem;}
+.creative-banner .right-side-text h5{color: #fff; font-size: 1.5rem; font-weight: 200; margin-bottom: 2rem; margin-right: 110px;}
+.creative-banner .right-side-text p {color: #f1f1f1; font-weight: 300; margin-bottom: 2rem;}
+.creative-banner .hire-app-list-mobile { display: none; }
+.creative-banner .hire-app-list ul { display: flex; gap: 30px; justify-content: center;}
+.creative-banner .hire-app-list ul li { background-color: #fff; padding: 2rem; border-radius: 6px; width: 100%; flex-wrap: wrap; 
+    -webkit-box-shadow: 0 19px 40px -10px #0065b036;
+    box-shadow: 0 19px 40px -10px #0065b036;
+}
+.creative-banner .hire-app-list ul i {
+    background: linear-gradient(180deg, rgba(0, 124, 222, 1) 0%, rgba(4, 62, 106, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
 .UI-UX-slider {background-color: #0067b0;}
 .UI-UX-slider .slider-ux-img {position: absolute; top: 40px; right: -16rem; width: 70%;}
 

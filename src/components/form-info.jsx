@@ -5,6 +5,7 @@ import QualityService from '../assets/images/icons/quality-service.png';
 import GoodSupport from '../assets/images/icons/good-support.png';
 import Satisfaction from '../assets/images/icons/satification.png';
 import { apiEndpoint1 } from "../js/api";
+import { apiEndpoint } from "../js/api";
 
 const FormInfo = () => {
      const [services, setServices] = useState([]);
@@ -202,7 +203,7 @@ const FormInfo = () => {
 
     if (Object.keys(validationErrors).length === 0) {
       try {
-        let res = await fetch("https://targeticon.com/api/v2/contactus/contact", {
+        let res = await fetch(`${apiEndpoint}/v2/contactus/contact`, {
           method: "POST",
           body: JSON.stringify({
             name: formData.name,

@@ -3,6 +3,7 @@ import axios from "axios";
 import { useParams, NavLink } from "react-router-dom";
 import { apiEndpoint1 } from "../../../js/api";
 import { Table, Container, Button } from 'react-bootstrap';
+import { apiEndpoint } from "../../../js/api";
 
 const BlogList = ({ initialData, onUpdate }) => {
     const [blogs, setBlogs] = useState([]);
@@ -18,7 +19,7 @@ const BlogList = ({ initialData, onUpdate }) => {
     const handleDelete = async (blogId) => {
         try {
             // Send a POST request to your API for blog post deletion
-            const response = await axios.post(`https://targeticon.com/api/v2/items/delete`, {
+            const response = await axios.post(`${apiEndpoint}/v2/items/delete`, {
                 id: blogId // Send the ID to be deleted in the request body
             });
 
