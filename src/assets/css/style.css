@@ -5685,8 +5685,8 @@ input[type="checkbox"] {
 
 .blog-block {background-color: #f8fbff;}
 .blog-post .ree-media-crd {border: none; height: 100%;}
-.reading-time {background-color: #ff0; padding: 3px 10px; border-radius: 6px; transform: translateY(-120px);}
-.reading-time p i {-webkit-text-stroke-width: 1px; color: #ff0; -webkit-text-stroke-color: #000;}
+.reading-time {background-color: #ff0; padding: 6px; border-radius: 6px; transform: translateY(-120px);font-size: 12px;}
+.reading-time i {-webkit-text-stroke-width: 1px; color: #ff0; -webkit-text-stroke-color: #000;}
 .time-zone {border-bottom: 1px solid #e9e9e9;}
 .calender {font-size: 17px;}
 .calender i {font-size: 15px; font-weight: lighter; }
@@ -5744,3 +5744,5 @@ input[type="checkbox"] {
 }
 .API-Category-banner .page-headings {position: relative; z-index: 999;}
 /* API Category page css by Anil End*/
+
+.css-1jqq78o-placeholder{color:#fff !important;}

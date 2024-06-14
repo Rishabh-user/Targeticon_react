@@ -5,7 +5,41 @@ import Tools from '../../components/our-tools';
 import { apicareer } from '../../js/api';
 import career from '../../assets/images/career-page-img.png';
 import careerpage from '../../assets/images/career-page-img-mobile-view.png';
-
+import Loader from "../../components/loader";
+const customStyles = {
+    control: (provided, state) => ({
+        ...provided,
+        backgroundColor: state.isFocused ? 'transparent' : 'transparent', 
+        borderColor: state.isFocused ? 'transparent' : 'transparent', 
+        color: '#ffffff',
+        '&:hover': {
+            borderColor: state.isFocused ? 'transparent' : 'transparent'
+        }
+    }),
+    option: (provided, state) => ({
+        ...provided,
+        backgroundColor: state.isSelected ? 'transparent' : 'transparent', 
+        color: state.isSelected ? 'transparent' : '#ffffff' 
+    }),
+    menu: (provided, state) => ({
+        ...provided,
+        backgroundColor: '#0065b0', 
+        borderColor: state.isFocused ? 'transparent' : 'transparent',
+    }),
+    multiValue: (provided) => ({
+        ...provided,
+        backgroundColor: '#0366d6', 
+        color: '#ffffff' 
+    }),
+    multiValueLabel: (provided) => ({
+        ...provided,
+        color: '#ffffff' 
+    }),
+    multiValueRemove: (provided) => ({
+        ...provided,
+        color: '#ffffff',        
+    })
+};
 const Career = () => {
     const [users, setUsers] = useState([]);
     const [careerOptions, setCareerOptions] = useState([]);
@@ -14,6 +48,7 @@ const Career = () => {
     const [selectedLocations, setSelectedLocations] = useState([]);
     //const [searchQuery, setSearchQuery] = useState("");
     const [filteredUsers, setFilteredUsers] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchCareers = async () => {
@@ -42,7 +77,7 @@ const Career = () => {
 
     const handleCareerTitleChange = (selectedOptions) => {
         setSelectedCareerTitles(selectedOptions);
-
+        setLoading(false);
         if (selectedOptions.length === 0) {
             setFilteredUsers(users); // Show all users when no titles are selected
         } else {
@@ -56,7 +91,7 @@ const Career = () => {
     // Similar logic for location filtering
     const handleLocationChange = (selectedOptions) => {
         setSelectedLocations(selectedOptions);
-
+        setLoading(false);
         if (selectedOptions.length === 0) {
             setFilteredUsers(users); // Show all users when no locations are selected
         } else {
@@ -139,7 +174,7 @@ const Career = () => {
                                                         value={selectedCareerTitles}
                                                         onChange={handleCareerTitleChange}
                                                         placeholder="Choose Your Skills"
-
+                                                        styles={customStyles}
                                                     />
                                                 </div>
                                             </li>
@@ -151,6 +186,7 @@ const Career = () => {
                                                         value={selectedLocations}
                                                         onChange={handleLocationChange}
                                                         placeholder="Choose Your location"
+                                                        styles={customStyles}
                                                     />
                                                 </div>
                                             </li>
@@ -235,71 +271,75 @@ const Career = () => {
                             </div>
                         </div>
                         <div className="col-md-9">
-                            <div className="row mt30 justify-content-center">
-                                {selectedCareerTitles.length === 0 && selectedLocations.length === 0 ? (
-                                    // Display all users by default
-                                    users.map((career, index) => (
-                                        <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box" key={career.id}>
-                                            <div className="process-content ree-card">
-                                                <span className="setps hst-1">{index + 1}</span>
-                                                <div className="process-block w-100">
-                                                    <div className="process-icon">
-                                                        <h4>{career.title}</h4>
-                                                        <h6 className="mb20 txt-blue">
-                                                            <i className="fas fa-map-marker-alt mr10" />
-                                                            {career.location}
-                                                        </h6>
-                                                    </div>
-                                                    <hr />
-                                                    <p className="mb20">
-                                                        {career.short_desc}
-                                                    </p>
-                                                    <div className="text-center">
-                                                        <div className="apply-button mb20">
-                                                            <NavLink to="#">Apply</NavLink>
+                            {loading ? (
+                                <Loader />
+                            ) : (
+                                <div className="row mt30 justify-content-center">
+                                    {selectedCareerTitles.length === 0 && selectedLocations.length === 0 ? (
+                                        // Display all users by default
+                                        users.map((career, index) => (
+                                            <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box" key={career.id}>
+                                                <div className="process-content ree-card">
+                                                    <span className="setps hst-1">{index + 1}</span>
+                                                    <div className="process-block w-100">
+                                                        <div className="process-icon">
+                                                            <h4>{career.title}</h4>
+                                                            <h6 className="mb20 txt-blue">
+                                                                <i className="fas fa-map-marker-alt mr10" />
+                                                                {career.location}
+                                                            </h6>
                                                         </div>
-                                                        <div className="see-detail">
-                                                            <NavLink to={`/career/${career.id}/${career.id}`}>See Detail</NavLink>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))
-                                ) : filteredUsers.length > 0 ? (
-                                    // Display filtered users when selections are made
-                                    filteredUsers.map((career, index) => (
-                                        <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box" key={career.id}>
-                                            <div className="process-content ree-card">
-                                                <span className="setps hst-1">{index + 1}</span>
-                                                <div className="process-block w-100">
-                                                    <div className="process-icon">
-                                                        <h4>{career.title}</h4>
-                                                        <h6 className="mb20 txt-blue">
-                                                            <i className="fas fa-map-marker-alt mr10" />
-                                                            {career.location}
-                                                        </h6>
-                                                    </div>
-                                                    <hr />
-                                                    <p className="mb20">
-                                                        {career.short_desc}
-                                                    </p>
-                                                    <div className="text-center">
-                                                        <div className="apply-button mb20">
-                                                            <NavLink to="#">Apply</NavLink>
-                                                        </div>
-                                                        <div className="see-detail">
-                                                            <NavLink to={`/career/${career.id}`}>See Detail</NavLink>
+                                                        <hr />
+                                                        <p className="mb20">
+                                                            {career.short_desc}
+                                                        </p>
+                                                        <div className="text-center">
+                                                            <div className="apply-button mb20">
+                                                                <NavLink to="#">Apply</NavLink>
+                                                            </div>
+                                                            <div className="see-detail">
+                                                                <NavLink to={`/career/${career.id}/${career.id}`}>See Detail</NavLink>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    ))
-                                ) : (
-                                    <p>No matching careers found.</p>
-                                )}
-                            </div>
+                                        ))
+                                    ) : filteredUsers.length > 0 ? (
+                                        // Display filtered users when selections are made
+                                        filteredUsers.map((career, index) => (
+                                            <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box" key={career.id}>
+                                                <div className="process-content ree-card">
+                                                    <span className="setps hst-1">{index + 1}</span>
+                                                    <div className="process-block w-100">
+                                                        <div className="process-icon">
+                                                            <h4>{career.title}</h4>
+                                                            <h6 className="mb20 txt-blue">
+                                                                <i className="fas fa-map-marker-alt mr10" />
+                                                                {career.location}
+                                                            </h6>
+                                                        </div>
+                                                        <hr />
+                                                        <p className="mb20">
+                                                            {career.short_desc}
+                                                        </p>
+                                                        <div className="text-center">
+                                                            <div className="apply-button mb20">
+                                                                <NavLink to="#">Apply</NavLink>
+                                                            </div>
+                                                            <div className="see-detail">
+                                                                <NavLink to={`/career/${career.id}`}>See Detail</NavLink>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))
+                                    ) : (
+                                        <p>No matching careers found.</p>
+                                    )}
+                                </div>
+                            )}
                         </div>
 
                     </div>
