@@ -5,7 +5,7 @@ const loaderContainerStyle = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '20vh',
+    height: '40vh',
     flexDirection: 'column',
 };
 
