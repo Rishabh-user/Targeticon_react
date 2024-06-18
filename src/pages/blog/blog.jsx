@@ -4,20 +4,23 @@ import axios from 'axios';
 import { apiEndpoint1 } from '../../js/api';
 import { apiCategory } from '../../js/api'
 import Undermaintenance from '../../assets/images/Under-Maintenance.png'
+import Loader from "../../components/loader";
 
 const Blog = () => {
 
     const [users, setBlogs] = useState([]);
     const [categories, setCategories] = useState([]);
-
+    const [loading, setLoading] = useState(true);
     useEffect(() => {
         // Fetch blog and category data from APIs
         axios.get(`${apiEndpoint1}/read`).then(response => {
             setBlogs(response.data.items);
+            setLoading(false);
         });
 
         axios.get(`${apiCategory}/read`).then(response => {
             setCategories(response.data.skills);
+            setLoading(false);
         });
     }, []);
 
@@ -68,7 +71,7 @@ const Blog = () => {
         }
         return firstParagraph;
     };
-
+   
     return (
         <div>
             {/*blog*/}
@@ -86,11 +89,14 @@ const Blog = () => {
             {/* {console.log(users)}; */}
             <div className="blog-block pt60 pb60">
                 <div className="container">
+                {loading ? (
+                    <Loader />
+                ) : (
                     <div className="blog-post">
                         <div className="row justify-content-center">
                             <div className="col-md-12">
-                                <div className="row">
-                                    {users.map(blog => (
+                                <div className="row">                               
+                                        {users.map(blog => (
                                         <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={blog.id}>
                                             <div className="ree-media-crd">
                                                 <div className="rpl-img">
@@ -136,11 +142,9 @@ const Blog = () => {
                                                                 return null;
                                                             })}
                                                         </span>
-                                                        <span className="reading-time">
-                                                            <p>
-                                                                <i className="fas fa-book reading icon readbook" />
-                                                                {calculateReadingTime(blog.long_desc)}
-                                                            </p>
+                                                        <span className="reading-time">                                                            
+                                                            <i className="fas fa-book reading icon readbook" />
+                                                            {calculateReadingTime(blog.long_desc)}                                                            
                                                         </span>
                                                     </div>
                                                     <div className="heading-description">
@@ -172,6 +176,7 @@ const Blog = () => {
                             </div>
                         </div >
                     </div >
+                )}
                 </div >
             </div >
             {/*blog end*/}

@@ -155,7 +155,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/customer-logo-4.png"
+                                                    src={fgil}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -178,7 +178,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/future-generali-life-insurance"
+                                                href="/portfolio/future-generali-life-insurance"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -227,7 +227,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/oliva-clinic"
+                                                href="/portfolio/oliva-clinic"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -275,7 +275,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -324,7 +324,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -372,7 +372,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -420,7 +420,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -468,7 +468,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -516,7 +516,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -564,7 +564,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -613,7 +613,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -661,7 +661,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -709,7 +709,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -757,7 +757,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -805,7 +805,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -853,7 +853,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -901,7 +901,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -949,7 +949,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -997,7 +997,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1045,7 +1045,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1074,7 +1074,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/customer-logo-4.png"
+                                                    src={fgil}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1097,7 +1097,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/future-generali-life-insurance"
+                                                href="/portfolio/future-generali-life-insurance"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1112,7 +1112,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/sociallocket-screen.png"
+                                                src={sociallocket}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1122,7 +1122,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/sociallocket-logo.png"
+                                                    src={sociallocketlogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1145,7 +1145,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1160,7 +1160,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/Performer-Auditions-screen.png"
+                                                src={performanceauditions}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1170,7 +1170,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/PerformerAuditions-logo.png"
+                                                    src={performanceauditionslogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1193,7 +1193,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1208,7 +1208,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/floor-direct-screen.png"
+                                                src={FDscreen}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1218,7 +1218,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/floor.png"
+                                                    src={FDlogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1241,7 +1241,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1256,7 +1256,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/delhi-metro-img.png"
+                                                src={delhimetro}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1266,7 +1266,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/delhi-metro-logo.png"
+                                                    src={delhimetrologo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1289,7 +1289,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1304,7 +1304,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/GCFL.png"
+                                                src={gcli}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1337,7 +1337,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1352,7 +1352,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/farming-screen.png"
+                                                src={farming}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1362,7 +1362,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/farming-logo.png"
+                                                    src={farminglogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1385,7 +1385,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1434,7 +1434,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1483,7 +1483,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1498,7 +1498,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/invest-telangana-img.png"
+                                                src={tstpc}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1508,7 +1508,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/invest-telangana-logo.png"
+                                                    src={tstpclogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1531,7 +1531,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1550,7 +1550,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/delhi-metro-img.png"
+                                                src={delhimetro}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1560,7 +1560,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/delhi-metro-logo.png"
+                                                    src={delhimetrologo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1583,7 +1583,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1612,7 +1612,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/customer-logo-4.png"
+                                                    src={fgil}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1635,7 +1635,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/future-generali-life-insurance"
+                                                href="/portfolio/future-generali-life-insurance"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1684,7 +1684,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/oliva-clinic"
+                                                href="/portfolio/oliva-clinic"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1733,7 +1733,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1782,7 +1782,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1797,7 +1797,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/GCFL.png"
+                                                src={gcli}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1807,7 +1807,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/GCFL-logo.png"
+                                                    src={gclilogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1830,7 +1830,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1878,7 +1878,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1893,7 +1893,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/sociallocket-screen.png"
+                                                src={sociallocket}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1903,7 +1903,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/sociallocket-logo.png"
+                                                    src={sociallocketlogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1926,7 +1926,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1941,7 +1941,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/Performer-Auditions-screen.png"
+                                                src={performanceauditions}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1951,7 +1951,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/PerformerAuditions-logo.png"
+                                                    src={performanceauditionslogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1974,7 +1974,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -1989,7 +1989,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/floor-direct-screen.png"
+                                                src={FDscreen}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -1999,7 +1999,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/brand-logo/floor.png"
+                                                    src={FDlogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -2022,7 +2022,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -2037,7 +2037,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/invest-telangana-img.png"
+                                                src={investtelangana}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -2047,7 +2047,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/invest-telangana-logo.png"
+                                                    src={investtelanganalogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -2070,7 +2070,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -2085,7 +2085,7 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <a href="#">
                                                 <img
-                                                src=" https://www.targeticon.com/images/delhi-metro-img.png"
+                                                src={delhimetro}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
@@ -2095,7 +2095,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src=" https://www.targeticon.com/images/delhi-metro-logo.png"
+                                                    src={delhimetrologo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -2118,7 +2118,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -2166,7 +2166,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -2214,7 +2214,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -2262,7 +2262,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -2310,7 +2310,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -2358,7 +2358,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -2406,7 +2406,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -2458,7 +2458,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -2510,7 +2510,7 @@ const Index = () => {
                                                 Live view
                                                 </a>
                                                 <a
-                                                href="https://www.targeticon.com/portfolio/tstpc-ltd"
+                                                href="/portfolio/tstpc-ltd"
                                                 target="_blank"
                                                 className="port-links ree-btn-grdt1"
                                                 >
