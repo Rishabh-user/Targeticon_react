@@ -11,35 +11,54 @@ const Blog = () => {
     const [users, setBlogs] = useState([]);
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(true);
-    useEffect(() => {
-        // Fetch blog and category data from APIs
-        axios.get(`${apiEndpoint1}/read`).then(response => {
-            setBlogs(response.data.items);
-            setLoading(false);
-        });
+    // useEffect(() => {
+    //     // Fetch blog and category data from APIs
+    //     axios.get(`${apiEndpoint1}/read`).then(response => {
+    //         setBlogs(response.data.items);
+    //         setLoading(false);
+    //     });
 
-        axios.get(`${apiCategory}/read`).then(response => {
-            setCategories(response.data.skills);
-            setLoading(false);
-        });
+    //     axios.get(`${apiCategory}/read`).then(response => {
+    //         setCategories(response.data.skills);
+    //         setLoading(false);
+    //     });
+    // }, []);
+
+    useEffect(() => {
+        const fetchBlogs = async () => {
+            try {
+                const response = await axios.get(`${apiEndpoint1}/read`);
+                setBlogs(response.data.items);
+                setLoading(false)
+            } catch (error) {
+                console.error("Error fetching blogs:", error);
+            }
+        };
+
+        const fetchCategories = async () => {
+            try {
+                const response = await axios.get(`${apiCategory}/read`);
+                setCategories(response.data.skills);
+                setLoading(false);
+            } catch (error) {
+                console.error("Error fetching categories:", error);
+            }
+        };
+
+        fetchBlogs();
+        fetchCategories();
     }, []);
 
 
     const calculateReadingTime = (long_desc) => {
         const description = long_desc || '';
-
-        // Count the number of words in the long description
         const words = description.trim().split(/\s+/).length;
-
-        // Calculate the reading time in seconds based on average reading speed (150 words per minute)
-        const readingSpeed = 150; // Words per minute
+        const readingSpeed = 150; 
         const readingTimeInSeconds = words / readingSpeed * 60;
 
         if (readingTimeInSeconds < 1) {
             return 'Less than a minute';
         }
-
-        // Calculate the reading time in minutes, hours, and seconds
         const hours = Math.floor(readingTimeInSeconds / 3600);
         const minutes = Math.floor((readingTimeInSeconds % 3600) / 60);
         const seconds = Math.round(readingTimeInSeconds % 60);
@@ -101,7 +120,7 @@ const Blog = () => {
                                             <div className="ree-media-crd">
                                                 <div className="rpl-img">
                                                     <NavLink to={`/blog/${blog.id}/${blog.blog_title ? encodeURIComponent(blog.blog_title.replace(/[^a-zA-Z0-9]+/g, '-')) : ''}`}>
-                                                        <img src={blog.blog_image} alt="loading" className="fill-fixed" />
+                                                        <img loading="lazy" src={blog.blog_image} alt="loading" className="fill-fixed" />
                                                     </NavLink>
                                                 </div>
                                                 <div className="display">
@@ -123,7 +142,7 @@ const Blog = () => {
                                                         </div>
                                                     </div>
                                                     <div className="time-zone">
-                                                        <span className="category" style={{ color: "#83858f;" }}>
+                                                        <span className="category" >
 
                                                             {blog.categories.map((blogCategory, index) => {
                                                                 const matchingCategory = categories.find(
