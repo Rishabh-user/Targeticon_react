@@ -192,6 +192,11 @@ const Header = () => {
                                                                             Azure Cloud Migration
                                                                         </NavLink>
                                                                     </li>
+                                                                    <li>
+                                                                        <NavLink to="/application/cyber-security" className="">
+                                                                            Cyber Security
+                                                                        </NavLink>
+                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                             <div className="inner-blockss">
@@ -216,7 +221,7 @@ const Header = () => {
                                                             <div className="inner-blockss">
                                                                 <label className="menu-headings">
                                                                     <NavLink to="/application">
-                                                                        Application
+                                                                        Artificial Intelligence
                                                                     </NavLink>
                                                                 </label>
                                                                 <ul className="menu-li-link">
@@ -230,11 +235,7 @@ const Header = () => {
                                                                             Artificial Intelligence
                                                                         </NavLink>
                                                                     </li>
-                                                                    <li>
-                                                                        <NavLink to="/application/cyber-security" className="">
-                                                                            Cyber Security
-                                                                        </NavLink>
-                                                                    </li>
+
                                                                 </ul>
                                                             </div>
                                                             <div className="inner-blockss">
