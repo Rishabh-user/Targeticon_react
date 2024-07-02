@@ -54,7 +54,7 @@ const Tstpc = () => {
                                     penatibus et magnis.
                                 </p>
                                 <NavLink to="https://tstpc.telangana.gov.in/"
-                                    target="_blank"
+                                     target="_blank" rel="noreferrer"
                                     className="port-links mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={500}

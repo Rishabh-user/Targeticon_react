@@ -2,8 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Slider from "./components/slider";
 import TopBrandsTrustSlider from "../../components/top-brands-trust-slider";
-import officeviewimg from '../../assets/images/others/office-view-2.png';
+//import officeviewimg from '../../assets/images/others/office-view-2.png';
 import Tageticoncircle from '../../assets/images/Target-icon.png';
+import Blockchain from '../../assets/images/Blockchain-img.png';
+import AI from '../../assets/images/AI-service.png';
+import softwaredev from '../../assets/images/software-dev-img.png';
 import aboutmain from '../../assets/images/about-main.jpg';
 import Cicleround from '../../assets/images/others/app-development.webp';
 import TopIt from '../../assets/images/brand-logo/top-it.png';
@@ -15,7 +18,7 @@ import MobileAppDevelopment from '../../assets/images/Awesome-Services/mobile-ap
 import Webapplication from '../../assets/images/Awesome-Services/web-application.png';
 import UiUx from '../../assets/images/Awesome-Services/ui-ux.png';
 import Cloud from '../../assets/images/Awesome-Services/cloud.png';
-import JS from '../../assets/images/Awesome-Services/js.png';
+//import JS from '../../assets/images/Awesome-Services/js.png';
 import Webtesting from '../../assets/images/Awesome-Services/web-testing.png';
 import Enterprise from '../../assets/images/Awesome-Services/enterprice-intergration.png';
 import OursTools from "../../components/our-tools";
@@ -364,6 +367,66 @@ const Home = () => {
                                 </div>
                             </NavLink>
                         </div>
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={100}>
+                            <NavLink to="/mobile-app-development" className="ree-card reebgb h-100">
+                                <div className="creative-cntnt">
+                                    <h4 className="mb15">Software Development</h4>
+                                    <p>Custom Software Development Solutions for Innovative and Scalable Business Growth</p>
+                                </div>
+                                <div className="creative-img">
+                                    <picture>
+                                        <img
+                                            loading="lazy"
+                                            src={softwaredev}
+                                            className="img-fluid"
+                                            alt="Mobile App Development"
+                                            width={500}
+                                            height={500}
+                                        />
+                                    </picture>
+                                </div>
+                            </NavLink>
+                        </div>
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={200}>
+                            <NavLink to="/web-app-development" className="ree-card reebgd h-100">
+                                <div className="creative-cntnt">
+                                    <h4 className="mb15">Blockchain</h4>
+                                    <p>Empowering Secure, Transparent Transactions Through Advanced Blockchain Solutions. </p>
+                                </div>
+                                <div className="creative-img">
+                                    <picture>
+                                        <img
+                                            loading="lazy"
+                                            src={Blockchain}
+                                            className="img-fluid"
+                                            alt="Web Application Development"
+                                            width={500}
+                                            height={500}
+                                        />
+                                    </picture>
+                                </div>
+                            </NavLink>
+                        </div>
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={400}>
+                            <NavLink to="/cloud" className="ree-card reebgc h-100">
+                                <div className="creative-cntnt">
+                                    <h4 className="mb15">Artificial Intelligence</h4>
+                                    <p>Revolutionizing Software Development with Cutting-Edge AI Solutions and Services.</p>
+                                </div>
+                                <div className="creative-img">
+                                    <picture>
+                                        <img
+                                            loading="lazy"
+                                            src={AI}
+                                            className="img-fluid"
+                                            alt="Cloud"
+                                            width={500}
+                                            height={500}
+                                        />
+                                    </picture>
+                                </div>
+                            </NavLink>
+                        </div>
                     </div>
                     <div className="cta-block-wide mt50">
                         <div className="row justify-content-center text-center">
@@ -371,7 +434,7 @@ const Home = () => {
                                 <div className="cta-heading-wide-bt">
                                     <h3> Hire World-Class{" "}<span className="ree-text rt40">Developers</span>
                                     </h3>
-                                    <NavLink to="/hire-app-developers" target="_blank" className="ree-btn  ree-btn-grdt1 mw-80"
+                                    <NavLink to="/hire-app-developers"  target="_blank" rel="noreferrer" className="ree-btn  ree-btn-grdt1 mw-80"
                                     > Hire Now <i className="fas fa-arrow-right fa-btn" />
                                     </NavLink>
                                 </div>

@@ -53,7 +53,7 @@ const GetCashForLaptop = () => {
                                     penatibus et magnis.
                                 </p>
                                 <NavLink to="https://www.getcashforlaptop.com/"
-                                    target="_blank"
+                                     target="_blank" rel="noreferrer"
                                     className="port-links mt40"
                                     data-aos="fade-up"
                                     data-aos-delay={500}

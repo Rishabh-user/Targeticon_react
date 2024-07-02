@@ -28,9 +28,7 @@ const JoinOurTeam = () => {
                             <div className="col-lg-6 vcenter">
                                 <div className="cta-heading">
                                     <h2 className="mb15">
-                                        Hire world-class{" "}
-                                        <span className="ree-text rt40">Developers</span> for your
-                                        <span className="ree-text rt40"> Project</span>
+                                        Setup your offshore tech team
                                     </h2>
                                     <p
                                         className="hire-world-class-developers-content"
@@ -43,11 +41,11 @@ const JoinOurTeam = () => {
                                         delivers the project on timeline.
                                     </p>
                                     <Link
-                                        to="/hire-app-developers"
-                                        target="_blank"
+                                        to="/contact-us"
+                                         target="_blank" rel="noreferrer"
                                         className="ree-btn  ree-btn-grdt1 mw-80 mt40"
                                     >
-                                        Start Your Project <i className="fas fa-arrow-right fa-btn" />
+                                        Let's Talk <i className="fas fa-arrow-right fa-btn" />
                                     </Link>
                                 </div>
                             </div>

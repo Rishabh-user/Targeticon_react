@@ -58,7 +58,7 @@ const Location = () => {
                                     <div className="loc-contct mt20">
                                         <Link
                                             to="https://goo.gl/maps/41xxF5oywoTKUusLA"
-                                            target="_blank"
+                                             target="_blank" rel="noreferrer"
                                             className="btn-outline rount-btn"
                                             data-toggle="tooltip"
                                             title="Map Location"
@@ -67,7 +67,7 @@ const Location = () => {
                                         </Link>
                                         <Link
                                             to="mailto:sales@targeticon.com"
-                                            target="_blank"
+                                             target="_blank" rel="noreferrer"
                                             className="btn-outline rount-btn"
                                             data-toggle="tooltip"
                                             title="Email Address"
@@ -76,7 +76,7 @@ const Location = () => {
                                         </Link>
                                         <Link
                                             to="skype:target.icon?chat"
-                                            target="_blank"
+                                             target="_blank" rel="noreferrer"
                                             className="btn-outline rount-btn"
                                             data-toggle="tooltip"
                                             title="Skype Id"

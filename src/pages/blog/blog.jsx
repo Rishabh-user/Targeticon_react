@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import axios from 'axios';
 import { apiEndpoint1 } from '../../js/api';
 import { apiCategory } from '../../js/api'
-import Undermaintenance from '../../assets/images/Under-Maintenance.png'
 import Loader from "../../components/loader";
 
 const Blog = () => {
