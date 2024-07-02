@@ -1,6 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import Tools from '../components/our-tools';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -46,6 +44,7 @@ import olivaappscreen from '../assets/images/portfolio-App-screen-oliva.png';
 import ramsunappscreen from '../assets/images/portfolio-App-screen-ramsun.png';
 import Dmetroappscreen from '../assets/images/portfolio-App-screen-Delhi-metro.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Link } from "react-router-dom";
 
 const Index = () => {
     const options = {
@@ -98,12 +97,12 @@ const Index = () => {
                                 <p className="txt-white" data-aos="fade-in" data-aos-delay={300}>
                                 We Have Built High Impact Solutions Across Industries.
                                 </p>
-                                <a
-                                href="contact-us.php"
+                                <Link
+                                to="contact-us.php"
                                 className="ree-btn  ree-btn-grdt1 mt40"
                                 data-aos="fade-in"
                                 data-aos-delay={400}>Get Quote <i className="fas fa-arrow-right fa-btn" />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -143,13 +142,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-12 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={fgil}
                                                 alt="portfolio targeticon"
                                                 className="img-fluid"
                                                 />{" "}
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -170,20 +169,20 @@ const Index = () => {
                                                 financial plan. It helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://life.futuregenerali.in/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://life.futuregenerali.in/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/future-generali-life-insurance"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/future-generali-life-insurance"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -191,13 +190,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={oliva}
                                                 alt="portfolio targeticon"
                                                 className="img-fluid"
                                                 />{" "}
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details portfolio-user-info">
                                             <div className="media vcenter mb20">
@@ -219,20 +218,20 @@ const Index = () => {
                                                 family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.olivaclinic.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.olivaclinic.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/oliva-clinic"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/oliva-clinic"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -240,12 +239,12 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={tstpc}                                            alt="portfolio targeticon"
                                                 className="img-fluid"
                                                 />{" "}
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -267,20 +266,20 @@ const Index = () => {
                                                 your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://tstpc.telangana.gov.in/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://tstpc.telangana.gov.in/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -288,13 +287,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={tsig}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -316,20 +315,20 @@ const Index = () => {
                                                 your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://tstpc.telangana.gov.in/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://tstpc.telangana.gov.in/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -337,13 +336,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={gcli}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -364,20 +363,20 @@ const Index = () => {
                                                 It helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.getcashforlaptop.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.getcashforlaptop.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -385,13 +384,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={virtuallyvocal}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -412,20 +411,20 @@ const Index = () => {
                                                 helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.virtuallyvocal.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.virtuallyvocal.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -433,13 +432,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={sociallocket}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -460,20 +459,20 @@ const Index = () => {
                                                 helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://green.app.sociallocket.com/da"
-                                                target="_blank"
+                                                <Link
+                                                to="https://green.app.sociallocket.com/da"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -481,13 +480,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={performanceauditions}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -508,20 +507,20 @@ const Index = () => {
                                                 It helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="http://stage.performerauditions.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="http://stage.performerauditions.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -529,13 +528,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={FDscreen}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -556,20 +555,20 @@ const Index = () => {
                                                 around London there is only one place to call.
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.floordirectltd.co.uk/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.floordirectltd.co.uk/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -577,13 +576,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={qyred}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -605,20 +604,20 @@ const Index = () => {
                                                 accordingly
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://qryde.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://qryde.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -626,13 +625,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={farming}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -653,20 +652,20 @@ const Index = () => {
                                                 Growth Ideas.
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://xd.adobe.com/view/648b071c-e88b-41f8-bafe-412fccb85840-31d8/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://xd.adobe.com/view/648b071c-e88b-41f8-bafe-412fccb85840-31d8/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -674,13 +673,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={investtelangana}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -701,20 +700,20 @@ const Index = () => {
                                                 Best Performing States
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://securestaging.net/invest-telangana/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://securestaging.net/invest-telangana/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -722,13 +721,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={delhimetro}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -749,20 +748,20 @@ const Index = () => {
                                                 soon in India.
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://securestaging.net/delhimetrorail/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://securestaging.net/delhimetrorail/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -770,13 +769,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={ms}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -797,20 +796,20 @@ const Index = () => {
                                                 with Marks &amp; Spencer
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.marksandspencer.in/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.marksandspencer.in/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -818,13 +817,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={zandu}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -845,20 +844,20 @@ const Index = () => {
                                                 place to shop Ayurvedic medicines
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://zanducare.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://zanducare.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -866,13 +865,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={n1building}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -893,20 +892,20 @@ const Index = () => {
                                                 your Dream Bathrooms and Kitchens
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.n1buildingcontractors.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.n1buildingcontractors.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -914,13 +913,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={rafawater}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -941,20 +940,20 @@ const Index = () => {
                                                 earth, and the most vital one for all forms of life,
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.rafawater.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.rafawater.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -962,13 +961,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={remodlescreen}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -989,20 +988,20 @@ const Index = () => {
                                                 Dream home and gardens
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.remodelrepublic.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.remodelrepublic.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1010,13 +1009,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={oliva}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1037,20 +1036,20 @@ const Index = () => {
                                                 Treatment medicines
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.olivaclinic.com/ask-oliva/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.olivaclinic.com/ask-oliva/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1062,13 +1061,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={fgil}
                                                 alt="portfolio targeticon"
                                                 className="img-fluid"
                                                 />{" "}
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1089,20 +1088,20 @@ const Index = () => {
                                                 financial plan. It helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://life.futuregenerali.in/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://life.futuregenerali.in/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/future-generali-life-insurance"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/future-generali-life-insurance"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1110,13 +1109,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={sociallocket}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1137,20 +1136,20 @@ const Index = () => {
                                                 helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://green.app.sociallocket.com/da"
-                                                target="_blank"
+                                                <Link
+                                                to="https://green.app.sociallocket.com/da"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1158,13 +1157,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={performanceauditions}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1185,20 +1184,20 @@ const Index = () => {
                                                 It helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="http://stage.performerauditions.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="http://stage.performerauditions.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1206,13 +1205,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={FDscreen}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1233,20 +1232,20 @@ const Index = () => {
                                                 around London there is only one place to call.
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.floordirectltd.co.uk/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.floordirectltd.co.uk/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1254,13 +1253,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={delhimetro}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1281,20 +1280,20 @@ const Index = () => {
                                                 soon
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://securestaging.net/delhimetrorail/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://securestaging.net/delhimetrorail/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1302,13 +1301,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={gcli}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1329,20 +1328,20 @@ const Index = () => {
                                                 It helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.getcashforlaptop.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.getcashforlaptop.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1350,13 +1349,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={farming}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1377,20 +1376,20 @@ const Index = () => {
                                                 Growth Ideas.
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://xd.adobe.com/view/648b071c-e88b-41f8-bafe-412fccb85840-31d8/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://xd.adobe.com/view/648b071c-e88b-41f8-bafe-412fccb85840-31d8/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1398,13 +1397,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={tstpc}
                                                 alt="portfolio targeticon"
                                                 className="img-fluid"
                                                 />{" "}
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1426,20 +1425,20 @@ const Index = () => {
                                                 your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://tstpc.telangana.gov.in/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://tstpc.telangana.gov.in/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1447,13 +1446,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={tsig}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1475,20 +1474,20 @@ const Index = () => {
                                                 your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://tstpc.telangana.gov.in/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://tstpc.telangana.gov.in/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1496,13 +1495,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={tstpc}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1523,20 +1522,20 @@ const Index = () => {
                                                 Best Performing States
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://securestaging.net/invest-telangana/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://securestaging.net/invest-telangana/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1548,13 +1547,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={delhimetro}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1575,20 +1574,20 @@ const Index = () => {
                                                 soon
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://securestaging.net/delhimetrorail/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://securestaging.net/delhimetrorail/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1600,13 +1599,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={fgil}
                                                 alt="portfolio targeticon"
                                                 className="img-fluid"
                                                 />{" "}
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1627,20 +1626,20 @@ const Index = () => {
                                                 financial plan. It helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://life.futuregenerali.in/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://life.futuregenerali.in/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/future-generali-life-insurance"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/future-generali-life-insurance"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1648,13 +1647,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={oliva}
                                                 alt="portfolio targeticon"
                                                 className="img-fluid"
                                                 />{" "}
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details portfolio-user-info">
                                             <div className="media vcenter mb20">
@@ -1676,20 +1675,20 @@ const Index = () => {
                                                 family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.olivaclinic.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.olivaclinic.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/oliva-clinic"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/oliva-clinic"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1697,13 +1696,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={tstpc}
                                                 alt="portfolio targeticon"
                                                 className="img-fluid"
                                                 />{" "}
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1725,20 +1724,20 @@ const Index = () => {
                                                 your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://tstpc.telangana.gov.in/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://tstpc.telangana.gov.in/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1746,13 +1745,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={tsig}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1774,20 +1773,20 @@ const Index = () => {
                                                 your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://tstpc.telangana.gov.in/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://tstpc.telangana.gov.in/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1795,13 +1794,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={gcli}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1822,20 +1821,20 @@ const Index = () => {
                                                 It helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.getcashforlaptop.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.getcashforlaptop.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1843,13 +1842,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={virtuallyvocal}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1870,20 +1869,20 @@ const Index = () => {
                                                 helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.virtuallyvocal.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.virtuallyvocal.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1891,13 +1890,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={sociallocket}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1918,20 +1917,20 @@ const Index = () => {
                                                 helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://green.app.sociallocket.com/da"
-                                                target="_blank"
+                                                <Link
+                                                to="https://green.app.sociallocket.com/da"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1939,13 +1938,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={performanceauditions}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -1966,20 +1965,20 @@ const Index = () => {
                                                 It helps in securing your family
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="http://stage.performerauditions.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="http://stage.performerauditions.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -1987,13 +1986,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={FDscreen}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -2014,20 +2013,20 @@ const Index = () => {
                                                 around London there is only one place to call.
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.floordirectltd.co.uk/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.floordirectltd.co.uk/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -2035,13 +2034,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={investtelangana}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -2062,20 +2061,20 @@ const Index = () => {
                                                 Best Performing States
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://securestaging.net/invest-telangana/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://securestaging.net/invest-telangana/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -2083,13 +2082,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={delhimetro}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -2110,20 +2109,20 @@ const Index = () => {
                                                 soon
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://securestaging.net/delhimetrorail/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://securestaging.net/delhimetrorail/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -2131,13 +2130,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={ms}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -2158,20 +2157,20 @@ const Index = () => {
                                                 with Marks &amp; Spencer
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.marksandspencer.in/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.marksandspencer.in/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -2179,13 +2178,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={zandu}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -2206,20 +2205,20 @@ const Index = () => {
                                                 place to shop Ayurvedic medicines
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://zanducare.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://zanducare.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -2227,13 +2226,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={n1building}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -2254,20 +2253,20 @@ const Index = () => {
                                                 your Dream Bathrooms and Kitchens
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.n1buildingcontractors.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.n1buildingcontractors.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -2275,13 +2274,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={rafawater}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -2302,20 +2301,20 @@ const Index = () => {
                                                 earth, and the most vital one for all forms of life,
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.rafawater.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.rafawater.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -2323,13 +2322,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={remodlescreen}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -2350,20 +2349,20 @@ const Index = () => {
                                                 Dream home and gardens
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.remodelrepublic.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.remodelrepublic.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -2371,13 +2370,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={oliva}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -2398,20 +2397,20 @@ const Index = () => {
                                                 Treatment medicines
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.olivaclinic.com/ask-oliva/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.olivaclinic.com/ask-oliva/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -2423,13 +2422,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={rafawater}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -2450,20 +2449,20 @@ const Index = () => {
                                                 earth, and the most vital one for all forms of life,
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.rafawater.com/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.rafawater.com/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -2475,13 +2474,13 @@ const Index = () => {
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                 src={oliva}
                                                 alt="portfolio"
                                                 className="img-fluid"
                                                 />
-                                            </a>
+                                            </Link>
                                             </div>
                                             <div className="work-details">
                                             <div className="media vcenter mb20">
@@ -2502,20 +2501,20 @@ const Index = () => {
                                                 Treatment medicines
                                             </p>
                                             <div className="portfolio-read-btn">
-                                                <a
-                                                href="https://www.olivaclinic.com/ask-oliva/"
-                                                target="_blank"
+                                                <Link
+                                                to="https://www.olivaclinic.com/ask-oliva/"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 Live view
-                                                </a>
-                                                <a
-                                                href="/portfolio/tstpc-ltd"
-                                                target="_blank"
+                                                </Link>
+                                                <Link
+                                                to="/portfolio/tstpc-ltd"
+                                                 target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
                                                 See Details
-                                                </a>
+                                                </Link>
                                             </div>
                                             </div>
                                         </div>
@@ -2553,79 +2552,79 @@ const Index = () => {
                         <OwlCarousel {...options}>                             
                                 <div className="item">
                                     <div className="itme-img">
-                                        <a href="https://projects.invisionapp.com/d/main#/console/20209552/427240198/preview?scrollOffset=522#project_console" target="_blank">
+                                        <Link to="https://projects.invisionapp.com/d/main#/console/20209552/427240198/preview?scrollOffset=522#project_console"  target="_blank" rel="noreferrer">
                                         <img
                                             src={portfolioappscreen}
                                             alt="mockup"
                                             className="img-fluid"
                                         />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="itme-img">
-                                        <a href="https://www.figma.com/design/WXY0RTRzuiFQdeAF511UAt/Telangana-survey?node-id=0-1&t=h5VHZF2Yy4DCS16j-0" target="_blank">
+                                        <Link to="https://www.figma.com/design/WXY0RTRzuiFQdeAF511UAt/Telangana-survey?node-id=0-1&t=h5VHZF2Yy4DCS16j-0"  target="_blank" rel="noreferrer">
                                         <img
                                             src={portfolioappscreen2}
                                             alt="mockup"
                                             className="img-fluid"
                                         />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="itme-img">
-                                        <a href="#">
+                                        <Link to="#">
                                         <img
                                             src={portfolioappscreen3}
                                             alt="mockup"
                                             className="img-fluid"
                                         />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="itme-img">
-                                        <a href="#">
+                                        <Link to="#">
                                         <img
                                             src={portfolioappscreen4}
                                             alt="mockup"
                                             className="img-fluid"
                                         />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="itme-img">
-                                        <a href="https://www.figma.com/proto/58cLM560auUeQO19mNB1zr/Ask-our-doc?page-id=0%3A1&node-id=18-1480&viewport=243%2C48%2C0.56&scaling=min-zoom&starting-point-node-id=507%3A145&show-proto-sidebar=1" target="_blank">
+                                        <Link to="https://www.figma.com/proto/58cLM560auUeQO19mNB1zr/Ask-our-doc?page-id=0%3A1&node-id=18-1480&viewport=243%2C48%2C0.56&scaling=min-zoom&starting-point-node-id=507%3A145&show-proto-sidebar=1"  target="_blank" rel="noreferrer">
                                         <img
                                             src={olivaappscreen}
                                             alt="mockup"
                                             className="img-fluid"
                                         />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="itme-img">
-                                        <a href="https://xd.adobe.com/spec/747ef59c-a22d-48ad-5525-3719bfc0726a-024f/grid" target="_blank">
+                                        <Link to="https://xd.adobe.com/spec/747ef59c-a22d-48ad-5525-3719bfc0726a-024f/grid"  target="_blank" rel="noreferrer">
                                         <img
                                             src={ramsunappscreen}
                                             alt="mockup"
                                             className="img-fluid"
                                         />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="itme-img">
-                                        <a href="https://xd.adobe.com/view/95665555-ffdf-4889-95c3-9679390a304c-c035/" target="_blank">
+                                        <Link to="https://xd.adobe.com/view/95665555-ffdf-4889-95c3-9679390a304c-c035/"  target="_blank" rel="noreferrer">
                                         <img
                                             src={Dmetroappscreen}
                                             alt="mockup"
                                             className="img-fluid"
                                         />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>                            
                         </OwlCarousel> 
@@ -2637,101 +2636,101 @@ const Index = () => {
                         </div>
                         <div className="appscreen">
                         <div className="itme-img">
-                            <a href="#">
+                            <Link to="#">
                             <img
                                 src={portfolioappscreen}
                                 alt="mockup"
                                 className="img-fluid"
                             />
-                            </a>
+                            </Link>
                         </div>
                         </div>
                         <div className="appscreen">
                         <div className="itme-img">
-                            <a href="#">
+                            <Link to="#">
                             <img
                                 src={portfolioappscreen2}
                                 alt="mockup"
                                 className="img-fluid"
                             />
-                            </a>
+                            </Link>
                         </div>
                         </div>
                         <div className="appscreen">
                         <div className="itme-img">
-                            <a href="#">
+                            <Link to="#">
                             <img
                                 src={portfolioappscreen3}
                                 alt="mockup"
                                 className="img-fluid"
                             />
-                            </a>
+                            </Link>
                         </div>
                         </div>
                         <div className="appscreen">
                         <div className="itme-img">
-                            <a href="#">
+                            <Link to="#">
                             <img
                                 src={portfolioappscreen4}
                                 alt="mockup"
                                 className="img-fluid"
                             />
-                            </a>
+                            </Link>
                         </div>
                         </div>
                         <div className="appscreen">
                         <div className="itme-img">
-                            <a href="#">
+                            <Link to="#">
                             <img
                                 src=" <?php echo BASE_URL; ?>images/case-study/portfolio-App-screen-make-4.png"
                                 alt="mockup"
                                 className="img-fluid"
                             />
-                            </a>
+                            </Link>
                         </div>
                         </div>
                         <div className="appscreen">
                         <div className="itme-img">
-                            <a href="https://xd.adobe.com/spec/747ef59c-a22d-48ad-5525-3719bfc0726a-024f/specs/">
+                            <Link to="https://xd.adobe.com/spec/747ef59c-a22d-48ad-5525-3719bfc0726a-024f/specs/">
                             <img
                                 src=" <?php echo BASE_URL; ?>images/portfolio-App-screen-ramsun.png"
                                 alt="mockup"
                                 className="img-fluid"
                             />
-                            </a>
+                            </Link>
                         </div>
                         </div>
                         <div className="appscreen">
                         <div className="itme-img">
-                            <a href="https://www.figma.com/proto/58cLM560auUeQO19mNB1zr/Ask-our-doc?page-id=0%3A1&node-id=18-1480&viewport=243%2C48%2C0.56&scaling=min-zoom&starting-point-node-id=507%3A145&show-proto-sidebar=1">
+                            <Link to="https://www.figma.com/proto/58cLM560auUeQO19mNB1zr/Ask-our-doc?page-id=0%3A1&node-id=18-1480&viewport=243%2C48%2C0.56&scaling=min-zoom&starting-point-node-id=507%3A145&show-proto-sidebar=1">
                             <img
                                 src=" <?php echo BASE_URL; ?>images/portfolio-App-screen-oliva.png"
                                 alt="mockup"
                                 className="img-fluid"
                             />
-                            </a>
+                            </Link>
                         </div>
                         </div>
                         <div className="appscreen">
                         <div className="itme-img">
-                            <a href="https://projects.invisionapp.com/d/main#/console/20209552/427240198/preview?scrollOffset=522#project_console">
+                            <Link to="https://projects.invisionapp.com/d/main#/console/20209552/427240198/preview?scrollOffset=522#project_console">
                             <img
                                 src=" <?php echo BASE_URL; ?>images/portfolio-App-screen-invision.png"
                                 alt="mockup"
                                 className="img-fluid"
                             />
-                            </a>
+                            </Link>
                         </div>
                         </div>
                         <div className="appscreen">
                         <div className="itme-img">
-                            <a href="https://xd.adobe.com/view/95665555-ffdf-4889-95c3-9679390a304c-c035/">
+                            <Link to="https://xd.adobe.com/view/95665555-ffdf-4889-95c3-9679390a304c-c035/">
                             <img
                                 src=" <?php echo BASE_URL; ?>images/portfolio-App-screen-Delhi-metro.png"
                                 alt="mockup"
                                 className="img-fluid"
                             />
-                            </a>
+                            </Link>
                         </div>
                         </div>
                     </div> */}

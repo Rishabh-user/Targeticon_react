@@ -28,7 +28,7 @@ const Footer = () => {
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="https://wa.me/+919818757597" target="_blank">
+                                        <NavLink to="https://wa.me/+919818757597"  target="_blank" rel="noreferrer" >
                                             <span>
                                                 <i className="fab fa-whatsapp-square" />
                                             </span>{" "}
@@ -58,7 +58,7 @@ const Footer = () => {
                                 <ul className="footer-links-list social-linkz">
                                     <li>
                                         <NavLink to="https://www.linkedin.com/company/targeticon/"
-                                            target="_blank"
+                                             target="_blank" rel="noreferrer" 
                                         >
                                             <span>
                                                 <i className="fab fa-linkedin" />
@@ -68,7 +68,7 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <NavLink to="https://www.instagram.com/targeticoncompany/"
-                                            target="_blank"
+                                             target="_blank" rel="noreferrer" 
                                         >
                                             <span>
                                                 <i className="fab fa-instagram" />
@@ -77,7 +77,7 @@ const Footer = () => {
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="https://www.facebook.com/targeticon" target="_blank">
+                                        <NavLink to="https://www.facebook.com/targeticon"  target="_blank" rel="noreferrer" >
                                             <span>
                                                 <i className="fab fa-facebook-f" />
                                             </span>{" "}
@@ -86,7 +86,7 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <NavLink to="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
-                                            target="_blank"
+                                             target="_blank" rel="noreferrer"
                                         >
                                             <span>
                                                 <i className="fab fa-youtube" />
@@ -266,7 +266,7 @@ const Footer = () => {
                                 {/* see this also */}
                                 <div className="col-lg-3 vcenter ft-btn">
                                     <NavLink to={pdf}
-                                        target="_blank"
+                                         target="_blank" rel="noreferrer"
                                         className="ree-btn ree-btn-grdt1 mw-80 no-shadows"
                                     >
                                         Our Brochure <i className="fas fa-arrow-right fa-btn" />

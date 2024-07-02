@@ -4,7 +4,7 @@ import BestPrice from '../assets/images/icons/best-price.png';
 import QualityService from '../assets/images/icons/quality-service.png';
 import GoodSupport from '../assets/images/icons/good-support.png';
 import Satisfaction from '../assets/images/icons/satification.png';
-import { apiEndpoint1 } from "../js/api";
+//import { apiEndpoint1 } from "../js/api";
 import { apiEndpoint } from "../js/api";
 
 const FormInfo = () => {
@@ -292,34 +292,6 @@ const FormInfo = () => {
                                                     {errors.contact && <div className="error">{errors.contact}</div>}
                                                     {/* {<div className="success">{successMessage2}</div>} */}
                                                     {/* {successMessage && <div className="success"><spam>{successMessage2}</spam></div>} */}
-
-
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <input
-                                                        type="text"
-                                                        id="user_skype"
-                                                        placeholder="Skype"
-                                                        className="validate"
-                                                        name="skype"
-                                                        value={formData.skype}
-                                                        onChange={handleChange}
-                                                    />
-
-                                                </div>
-                                            </div>
-                                            <div className="fieldsets row">
-                                                <div className="col-md-6">
-                                                    <input
-                                                        type="text"
-                                                        id="user_subject"
-                                                        placeholder="Subject"
-                                                        className="validate"
-                                                        name="subject"
-                                                        value={formData.subject}
-                                                        onChange={handleChange}
-                                                    />
-                                                    {/* <span id="errSubject" /> */}
                                                 </div>
                                                 <div className="col-md-6">
                                                     <select
@@ -339,7 +311,8 @@ const FormInfo = () => {
                                                     {/* <span id="errServices" /> */}
                                                 </div>
                                             </div>
-                                            <div className="fieldsets">
+                                            
+                                            <div className="fieldsets ">
                                                 <textarea
                                                     placeholder="Message"
                                                     //id="user_message"
@@ -477,9 +450,9 @@ const FormInfo = () => {
                                 <h3>Get in touch</h3>
                                 <div className="contact-detalnk">
                                     <NavLink to="tel:+911204171403">
-                                        <i className="fas fa-phone-alt" /> <span>+91-120-4171403</span>
+                                        <i className="fas fa-phone-alt" /><span>+91-120-4171403</span>
                                     </NavLink>
-                                    <NavLink to="https://wa.me/+919818757597" target="_blank">
+                                    <NavLink to="https://wa.me/+919818757597"  target="_blank" rel="noreferrer">
                                         <i className="fab fa-whatsapp" /> <span>+91-9818757597</span>
                                     </NavLink>
                                     <NavLink to="mailto:info@targeticon.com">
@@ -494,24 +467,24 @@ const FormInfo = () => {
                                 <div className="contact-detalnk">
                                     <NavLink
                                         to="https://goo.gl/maps/41xxF5oywoTKUusLA"
-                                        target="_blank"
+                                         target="_blank" rel="noreferrer"
                                         className="contact-addressii"
                                     >
                                         <i className="fas fa-map-marker-alt" />
                                         Office No: 12A01, 13<sup>th</sup> Floor, The Iconic Corenthum,
                                         <br /> A-41, Sector-62, Noida (UP) - 201301{" "}
                                     </NavLink>
-                                    <NavLink to="https://goo.gl/maps/41xxF5oywoTKUusLA" target="_blank">
+                                    <NavLink to="https://goo.gl/maps/41xxF5oywoTKUusLA"  target="_blank" rel="noreferrer">
                                         <i className="fas fa-location-arrow" />{" "}
                                         <span>Get Directions</span>
                                     </NavLink>
                                 </div>
                                 <h3 className="mt60">Follow us</h3>
-                                <ul className="footer_social mt30">
+                                <ul className="footer_social mt10">
                                     <li>
                                         <NavLink
                                             to="https://www.linkedin.com/company/targeticon/"
-                                            target="_blank"
+                                             target="_blank" rel="noreferrer"
                                             data-toggle="tooltip"
                                             title=""
                                             data-original-title="Linkedin Account"
@@ -523,7 +496,7 @@ const FormInfo = () => {
                                         {" "}
                                         <NavLink
                                             to="https://www.instagram.com/targeticon_tech/?igshid=YmMyMTA2M2Y%3D"
-                                            target="_blank"
+                                             target="_blank" rel="noreferrer"
                                             data-toggle="tooltip"
                                             title=""
                                             data-original-title="Instagram Profile"
@@ -535,7 +508,7 @@ const FormInfo = () => {
                                         {" "}
                                         <NavLink
                                             to="https://www.facebook.com/targeticon"
-                                            target="_blank"
+                                             target="_blank" rel="noreferrer"
                                             data-toggle="tooltip"
                                             title=""
                                             data-original-title="Facebook Profile"
@@ -546,7 +519,7 @@ const FormInfo = () => {
                                     <li>
                                         <NavLink
                                             to="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
-                                            target="_blank"
+                                             target="_blank" rel="noreferrer"
                                             data-toggle="tooltip"
                                             title=""
                                             data-original-title="Youtube Channel"

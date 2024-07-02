@@ -46,8 +46,7 @@ const OursTools = () => {
                         <div className="col-lg-8">
                             <div className="sec-heading text-center pera-block">
                                 <h2>
-                                    <span className="ree-text rt40">Technologies Tools </span> we work
-                                    with
+                                    <span className="ree-text rt40">Technologies & Tools</span>
                                 </h2>
                             </div>
                         </div>

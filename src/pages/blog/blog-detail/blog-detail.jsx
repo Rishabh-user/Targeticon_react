@@ -8,7 +8,7 @@ const BlogDetail = () => {
     const [blog, setBlog] = useState([]);
     const [categories, setCategories] = useState([]);
     const [selectedCategoryId, setSelectedCategoryId] = useState([null]);
-    const [people, setPeople] = useState([]);
+    //const [people, setPeople] = useState([]);
     const {id} = useParams();
 
     useEffect(() => {

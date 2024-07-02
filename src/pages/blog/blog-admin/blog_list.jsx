@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useParams, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { apiEndpoint1 } from "../../../js/api";
 import { Table, Container, Button } from 'react-bootstrap';
 import { apiEndpoint } from "../../../js/api";
 
 const BlogList = ({ initialData, onUpdate }) => {
     const [blogs, setBlogs] = useState([]);
-    const { id } = useParams();
+    //const { id } = useParams();
 
     useEffect(() => {
         // Fetch blog data from your API when the component mounts

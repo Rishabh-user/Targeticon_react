@@ -2,8 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Slider from "./components/slider";
 import TopBrandsTrustSlider from "../../components/top-brands-trust-slider";
-import officeviewimg from '../../assets/images/others/office-view-2.png';
+//import officeviewimg from '../../assets/images/others/office-view-2.png';
 import Tageticoncircle from '../../assets/images/Target-icon.png';
+import Blockchain from '../../assets/images/Blockchain-img.png';
+import AI from '../../assets/images/AI-service.png';
+import softwaredev from '../../assets/images/software-dev-img.png';
 import aboutmain from '../../assets/images/about-main.jpg';
 import Cicleround from '../../assets/images/others/app-development.webp';
 import TopIt from '../../assets/images/brand-logo/top-it.png';
@@ -15,7 +18,7 @@ import MobileAppDevelopment from '../../assets/images/Awesome-Services/mobile-ap
 import Webapplication from '../../assets/images/Awesome-Services/web-application.png';
 import UiUx from '../../assets/images/Awesome-Services/ui-ux.png';
 import Cloud from '../../assets/images/Awesome-Services/cloud.png';
-import JS from '../../assets/images/Awesome-Services/js.png';
+//import JS from '../../assets/images/Awesome-Services/js.png';
 import Webtesting from '../../assets/images/Awesome-Services/web-testing.png';
 import Enterprise from '../../assets/images/Awesome-Services/enterprice-intergration.png';
 import OursTools from "../../components/our-tools";
@@ -28,9 +31,9 @@ import Location from "../../components/location";
 const Home = () => {
     return (
         <div>
- 
+
             <Slider />
-            <TopBrandsTrustSlider /> 
+            <TopBrandsTrustSlider />
             {/*we are targeticon*/}
             <section
                 className="home-about pt60 pb60 r-bg-acf"
@@ -43,15 +46,9 @@ const Home = () => {
                             <div className="about-content-home text-center">
                                 {/*<h3 class="mb15" style="color: #0067b0;">We the Targeticon</h3>*/}
                                 <h2 className="mb15">
-                                    Started in 2016, We are the Best &amp; Trusted Application
-                                    Development &amp; Mobile Apps development company recognised and
+                                    Started in 2016, We are the Best &amp; Trusted Software &amp; Mobile Apps development company recognised and
                                     awarded for delivering top-notch projects.
                                 </h2>
-                                <p>
-                                    Targeticon started its operation in the year 2015. We are
-                                    Worldwide, based Web, App and Digital Marketing Company. Our main
-                                    Domain is Web Design, App Development.
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -82,7 +79,7 @@ const Home = () => {
                                         to="/about"
                                         className="ree-btn ree-btn-grdt2 mw-80 m-mt30"
                                     >
-                                        Know More Targeticon
+                                        Know More
                                         <i className="fas fa-arrow-right fa-btn" />
                                     </NavLink>
                                 </div>
@@ -106,17 +103,17 @@ const Home = () => {
                                         </div>
                                         <div className="key-highlt-b">
                                             <h3>
-                                                <span>50</span>
+                                                <span>55</span>
                                                 <span>+</span>
                                             </h3>
-                                            <p>Experts Team</p>
+                                            <p>Professionals</p>
                                         </div>
                                         <div className="key-highlt-b">
                                             <h3>
-                                                <span>6</span>
+                                                <span>8</span>
                                                 <span>+</span>
                                             </h3>
-                                            <p>Success Years</p>
+                                            <p>Successful Years</p>
                                         </div>
                                     </div>
                                     <div className="agency-info-anim text-center">
@@ -234,16 +231,12 @@ const Home = () => {
                     <div className="row justify-content-center vcenter">
                         <div className="col-lg-9">
                             <div className="sec-heading text-center pera-block">
-                                <h2>Awesome Services</h2>
-                                <p>
-                                    At Targeticon, our adept developers implement the latest and
-                                    choicest resources and technologies, which aids in enhancing
-                                    performance.
-                                </p>
+                                <h2>Our Services</h2>
+
                             </div>
                         </div>
                     </div>
-                    <div className="row mt30 justify-content-center">
+                    <div className="row justify-content-center">
                         <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={100}>
                             <NavLink to="/mobile-app-development" className="ree-card reebgb h-100">
                                 <div className="creative-cntnt">
@@ -330,31 +323,10 @@ const Home = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="col-lg-3 col-sm-6 mt30 cardadd" data-aos="fade-up" data-aos-delay={500}>
-                            <NavLink to="/js-stack-development" className="ree-card reebgc h-100">
-                                <div className="creative-cntnt">
-                                    <h4 className="mb15">JS Stack Development</h4>
-                                    <p>This versatile and robust development is convenient to use and
-                                        enhances progress.</p>
-                                </div>
-                                <div className="creative-img">
-                                    <picture>
-                                        <img
-                                            loading="lazy"
-                                            src={JS}
-                                            className="img-fluid"
-                                            alt="JS Stack Development"
-                                            width={500}
-                                            height={500}
-                                        />
-                                    </picture>
-                                </div>
-                            </NavLink>
-                        </div>
                         <div className="col-lg-3 col-sm-6 mt30 cardadd" data-aos="fade-up" data-aos-delay={600}>
                             <NavLink to="" className="ree-card reebgd h-100">
                                 <div className="creative-cntnt">
-                                    <h4 className="mb15">Website Testing</h4>
+                                    <h4 className="mb15">Quality Assurance</h4>
                                     <p>Website for problems before you make that web application or
                                         website live.</p>
                                 </div>
@@ -395,6 +367,66 @@ const Home = () => {
                                 </div>
                             </NavLink>
                         </div>
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={100}>
+                            <NavLink to="/mobile-app-development" className="ree-card reebgb h-100">
+                                <div className="creative-cntnt">
+                                    <h4 className="mb15">Software Development</h4>
+                                    <p>Custom Software Development Solutions for Innovative and Scalable Business Growth</p>
+                                </div>
+                                <div className="creative-img">
+                                    <picture>
+                                        <img
+                                            loading="lazy"
+                                            src={softwaredev}
+                                            className="img-fluid"
+                                            alt="Mobile App Development"
+                                            width={500}
+                                            height={500}
+                                        />
+                                    </picture>
+                                </div>
+                            </NavLink>
+                        </div>
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={200}>
+                            <NavLink to="/web-app-development" className="ree-card reebgd h-100">
+                                <div className="creative-cntnt">
+                                    <h4 className="mb15">Blockchain</h4>
+                                    <p>Empowering Secure, Transparent Transactions Through Advanced Blockchain Solutions. </p>
+                                </div>
+                                <div className="creative-img">
+                                    <picture>
+                                        <img
+                                            loading="lazy"
+                                            src={Blockchain}
+                                            className="img-fluid"
+                                            alt="Web Application Development"
+                                            width={500}
+                                            height={500}
+                                        />
+                                    </picture>
+                                </div>
+                            </NavLink>
+                        </div>
+                        <div className="col-lg-3 col-sm-6 mt30" data-aos="fade-up" data-aos-delay={400}>
+                            <NavLink to="/cloud" className="ree-card reebgc h-100">
+                                <div className="creative-cntnt">
+                                    <h4 className="mb15">Artificial Intelligence</h4>
+                                    <p>Revolutionizing Software Development with Cutting-Edge AI Solutions and Services.</p>
+                                </div>
+                                <div className="creative-img">
+                                    <picture>
+                                        <img
+                                            loading="lazy"
+                                            src={AI}
+                                            className="img-fluid"
+                                            alt="Cloud"
+                                            width={500}
+                                            height={500}
+                                        />
+                                    </picture>
+                                </div>
+                            </NavLink>
+                        </div>
                     </div>
                     <div className="cta-block-wide mt50">
                         <div className="row justify-content-center text-center">
@@ -402,7 +434,7 @@ const Home = () => {
                                 <div className="cta-heading-wide-bt">
                                     <h3> Hire World-Class{" "}<span className="ree-text rt40">Developers</span>
                                     </h3>
-                                    <NavLink to="/hire-app-developers" target="_blank" className="ree-btn  ree-btn-grdt1 mw-80"
+                                    <NavLink to="/hire-app-developers"  target="_blank" rel="noreferrer" className="ree-btn  ree-btn-grdt1 mw-80"
                                     > Hire Now <i className="fas fa-arrow-right fa-btn" />
                                     </NavLink>
                                 </div>

@@ -171,28 +171,28 @@ const CareerDetails = ({ match }) => {
                                                 <ul className="footer-links-list social-linkz d-flex">
                                                     <li>
                                                         <NavLink to="https://www.linkedin.com/company/targeticon/"
-                                                            target="_blank"
+                                                             target="_blank" rel="noreferrer"
                                                         >
                                                             <i className="fab fa-linkedin" />
                                                         </NavLink>
                                                     </li>
                                                     <li>
                                                         <NavLink to="https://www.instagram.com/targeticoncompany/"
-                                                            target="_blank"
+                                                             target="_blank" rel="noreferrer"
                                                         >
                                                             <i className="fab fa-instagram" />
                                                         </NavLink>
                                                     </li>
                                                     <li>
                                                         <NavLink to="https://www.facebook.com/targeticon"
-                                                            target="_blank"
+                                                             target="_blank" rel="noreferrer"
                                                         >
                                                             <i className="fab fa-facebook-f" />
                                                         </NavLink>
                                                     </li>
                                                     <li>
                                                         <NavLink to="https://www.youtube.com/channel/UCb_vpek2kqoYph9uTCFbAeg"
-                                                            target="_blank"
+                                                             target="_blank" rel="noreferrer"
                                                         >
                                                             <i className="fab fa-whatsapp" />
                                                         </NavLink>
