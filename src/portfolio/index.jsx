@@ -5,6 +5,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import investtelangana from '../assets/images/invest-telangana.png';
 import investtelanganalogo from '../assets/images/invest-telangana-logo.png';
 import fgil from '../assets/images/FGLI-screen-short.png';
+import fglilogo from '../assets/images/brand-logo/fgli-logo.png';
 import delhimetro from '../assets/images/delhi-metro.png';
 import delhimetrologo from '../assets/images/delhi-metro-logo.png';
 import oliva from '../assets/images/oliva-screen-short.png';
@@ -34,6 +35,14 @@ import n1building from '../assets/images/n1-building-screen.png';
 import n1buildinglogo from '../assets/images/brand-logo/n1-Building-logo.png';
 import rafawater from '../assets/images/rafawater-screen.png';
 import rafawaterlogo from '../assets/images/brand-logo/rafawater-logo.png';
+import fabindialogo from '../assets/images/brand-logo/fabindia-logo.png';
+import fabindia from '../assets/images/fabindia-screen.png';
+import orgranicindialogo from '../assets/images/brand-logo/orgranicindia-logo.png';
+import orgranicindia from '../assets/images/orgranicindia-screen.png';
+import awslogo from '../assets/images/brand-logo/aws-logo.png';
+import awsscreen from '../assets/images/aws-screen.png';
+import lucidantlogo from '../assets/images/brand-logo/lucidant-logo.png';
+import lucidantscreen from '../assets/images/lucidant-screen.png';
 import remodlescreen from '../assets/images/remodle-screen.png';
 import remodlelogo from '../assets/images/remodel-logo.png';
 import portfolioappscreen from '../assets/images/case-study/portfolio-App-screen-make-1.png';
@@ -131,13 +140,13 @@ const Index = () => {
                             <Tabs>
                                 <TabList>
                                     <Tab>All</Tab>
-                                    <Tab> Webiste UI</Tab>
+                                    <Tab> Website UI</Tab>
                                     <Tab>Application UI</Tab>
                                     <Tab>Website Development</Tab>
                                     <Tab>Application Development</Tab>
                                     <Tab>Payment Gateway</Tab>
                                 </TabList>
-                                <TabPanel>
+                                <TabPanel title="ALL">
                                     <div className="row justify-content-center">
                                         <div className="col-lg-4 col-md-6  col-sm-12 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
@@ -154,7 +163,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src={fgil}
+                                                    src={fglilogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -241,7 +250,8 @@ const Index = () => {
                                             <div className="work-thumbnails">
                                             <Link to="#">
                                                 <img
-                                                src={tstpc}                                            alt="portfolio targeticon"
+                                                src={tstpc}
+                                                alt="portfolio targeticon"
                                                 className="img-fluid"
                                                 />{" "}
                                             </Link>
@@ -959,104 +969,292 @@ const Index = () => {
                                         </div>
                                         </div>
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
-                                        <div className="fwb-main-x portfolio-frame fwb-a">
-                                            <div className="work-thumbnails">
-                                            <Link to="#">
-                                                <img
-                                                src={remodlescreen}
-                                                alt="portfolio"
-                                                className="img-fluid"
-                                                />
-                                            </Link>
-                                            </div>
-                                            <div className="work-details">
-                                            <div className="media vcenter mb20">
-                                                <div className="ree-icon-set img-round80">
-                                                <img
-                                                    src={remodlelogo}
-                                                    alt="logo"
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={remodlescreen}
+                                                    alt="portfolio"
                                                     className="img-fluid"
-                                                />
-                                                </div>
-                                                <div className="ree-details-set poruser-info">
-                                                <h5>Remodel Republic</h5>
-                                                <span>Design by Targeticon</span>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Remodel Republic remodeling &amp; redesign your
-                                                Dream home and gardens
-                                            </p>
-                                            <div className="portfolio-read-btn">
-                                                <Link
-                                                to="https://www.remodelrepublic.com/"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                Live view
+                                                    />
                                                 </Link>
-                                                <Link
-                                                to="/portfolio/tstpc-ltd"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                See Details
-                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={remodlelogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>Remodel Republic</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Remodel Republic remodeling &amp; redesign your
+                                                    Dream home and gardens
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://www.remodelrepublic.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
                                             </div>
-                                            </div>
-                                        </div>
                                         </div>
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
-                                        <div className="fwb-main-x portfolio-frame fwb-a">
-                                            <div className="work-thumbnails">
-                                            <Link to="#">
-                                                <img
-                                                src={oliva}
-                                                alt="portfolio"
-                                                className="img-fluid"
-                                                />
-                                            </Link>
-                                            </div>
-                                            <div className="work-details">
-                                            <div className="media vcenter mb20">
-                                                <div className="ree-icon-set img-round80">
-                                                <img
-                                                    src={olivalogo}
-                                                    alt="logo"
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={oliva}
+                                                    alt="portfolio"
                                                     className="img-fluid"
-                                                />
-                                                </div>
-                                                <div className="ree-details-set poruser-info">
-                                                <h5>Shop Oliva Clinic</h5>
-                                                <span>Design by Targeticon</span>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Shop Oliva Clinic The best place to hair and face
-                                                Treatment medicines
-                                            </p>
-                                            <div className="portfolio-read-btn">
-                                                <Link
-                                                to="https://www.olivaclinic.com/ask-oliva/"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                Live view
+                                                    />
                                                 </Link>
-                                                <Link
-                                                to="/portfolio/tstpc-ltd"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                See Details
-                                                </Link>
-                                            </div>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={olivalogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>Shop Oliva Clinic</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Shop Oliva Clinic The best place to hair and face
+                                                    Treatment medicines
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://shop.olivaclinic.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={fabindia}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={fabindialogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>fabindia</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Fabindia was established in 1960 primarily to promote the fascinating crafts of India.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://www.fabindia.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={orgranicindia}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={orgranicindialogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>Orgranic India</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                At ORGANIC INDIA we celebrate the healing power of Mother Nature to nourish.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://organicindia.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={awsscreen}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={awslogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>AWS Asian Worldwide Services</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    ASIAN WORLDWIDE SERVICES (INDIA) PVT. LTD. a joint venture company of AWS Singapore.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://aws-india.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={lucidantscreen}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={lucidantlogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>Lucidant Polymers</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                High-performance polymer matrices for your biological separations or nanolayer-active coating.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://www.lucidant.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </TabPanel>
-                                <TabPanel>
+                                <TabPanel title="Website UI">
                                     <div className="row justify-content-center">
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
@@ -1073,7 +1271,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src={fgil}
+                                                    src={fglilogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -1540,9 +1738,197 @@ const Index = () => {
                                             </div>
                                         </div>
                                         </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={fabindia}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={fabindialogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>fabindia</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Fabindia was established in 1960 primarily to promote the fascinating crafts of India.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://www.fabindia.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={orgranicindia}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={orgranicindialogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>Orgranic India</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                At ORGANIC INDIA we celebrate the healing power of Mother Nature to nourish.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://organicindia.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={awsscreen}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={awslogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>AWS Asian Worldwide Services</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    ASIAN WORLDWIDE SERVICES (INDIA) PVT. LTD. a joint venture company of AWS Singapore.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://aws-india.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={lucidantscreen}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={lucidantlogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>Lucidant Polymers</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                High-performance polymer matrices for your biological separations or nanolayer-active coating.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://www.lucidant.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </TabPanel>
-                                <TabPanel>
+                                <TabPanel title="Application UI">
                                     <div className="row justify-content-center">
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
@@ -1594,7 +1980,7 @@ const Index = () => {
                                         </div>
                                     </div>
                                 </TabPanel>
-                                <TabPanel>
+                                <TabPanel title="Website Development">
                                     <div className="row justify-content-center">
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
@@ -1611,7 +1997,7 @@ const Index = () => {
                                             <div className="media vcenter mb20">
                                                 <div className="ree-icon-set img-round80">
                                                 <img
-                                                    src={fgil}
+                                                    src={fglilogo}
                                                     alt="logo"
                                                     className="img-fluid"
                                                 />
@@ -2368,56 +2754,243 @@ const Index = () => {
                                         </div>
                                         </div>
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
-                                        <div className="fwb-main-x portfolio-frame fwb-a">
-                                            <div className="work-thumbnails">
-                                            <Link to="#">
-                                                <img
-                                                src={oliva}
-                                                alt="portfolio"
-                                                className="img-fluid"
-                                                />
-                                            </Link>
-                                            </div>
-                                            <div className="work-details">
-                                            <div className="media vcenter mb20">
-                                                <div className="ree-icon-set img-round80">
-                                                <img
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
                                                     src={oliva}
-                                                    alt="logo"
+                                                    alt="portfolio"
                                                     className="img-fluid"
-                                                />
-                                                </div>
-                                                <div className="ree-details-set poruser-info">
-                                                <h5>Shop Oliva Clinic</h5>
-                                                <span>Design by Targeticon</span>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Shop Oliva Clinic The best place to hair and face
-                                                Treatment medicines
-                                            </p>
-                                            <div className="portfolio-read-btn">
-                                                <Link
-                                                to="https://www.olivaclinic.com/ask-oliva/"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                Live view
+                                                    />
                                                 </Link>
-                                                <Link
-                                                to="/portfolio/tstpc-ltd"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                See Details
-                                                </Link>
-                                            </div>
+                                                </div>
+                                                <div className="work-details">
+                                                    <div className="media vcenter mb20">
+                                                        <div className="ree-icon-set img-round80">
+                                                        <img
+                                                            src={oliva}
+                                                            alt="logo"
+                                                            className="img-fluid"
+                                                        />
+                                                        </div>
+                                                        <div className="ree-details-set poruser-info">
+                                                        <h5>Shop Oliva Clinic</h5>
+                                                        <span>Design by Targeticon</span>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        Fabindia was established in 1960 primarily to promote the fascinating crafts of India.
+                                                    </p>
+                                                    <div className="portfolio-read-btn">
+                                                        <Link
+                                                        to="https://www.fabindia.com/"
+                                                        target="_blank" rel="noreferrer"
+                                                        className="port-links ree-btn-grdt1"
+                                                        >
+                                                        Live view
+                                                        </Link>
+                                                        <Link
+                                                        to="/portfolio/tstpc-ltd"
+                                                        target="_blank" rel="noreferrer"
+                                                        className="port-links ree-btn-grdt1"
+                                                        >
+                                                        See Details
+                                                        </Link>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={fabindia}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={fabindialogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>fabindia</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Fabindia was established in 1960 primarily to promote the fascinating crafts of India.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://www.fabindia.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={orgranicindia}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={orgranicindialogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>Orgranic India</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                At ORGANIC INDIA we celebrate the healing power of Mother Nature to nourish.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://organicindia.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={awsscreen}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={awslogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>AWS Asian Worldwide Services</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    ASIAN WORLDWIDE SERVICES (INDIA) PVT. LTD. a joint venture company of AWS Singapore.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://aws-india.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={lucidantscreen}
+                                                    alt="portfolio"
+                                                    className="img-fluid"
+                                                    />
+                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={lucidantlogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>Lucidant Polymers</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                High-performance polymer matrices for your biological separations or nanolayer-active coating.
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://www.lucidant.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </TabPanel>
-                                <TabPanel>
+                                <TabPanel title="Application Development">
                                     <div className="row justify-content-center">
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
@@ -2469,7 +3042,7 @@ const Index = () => {
                                         </div>
                                     </div>
                                 </TabPanel>
-                                <TabPanel>
+                                <TabPanel title="Payment Gateway">
                                     <div className="row justify-content-center">
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
@@ -2521,8 +3094,7 @@ const Index = () => {
                                         </div>
                                     </div>
                                 </TabPanel>
-                            </Tabs>
-                          
+                            </Tabs>                         
                             
                         </div>
                         </div>
