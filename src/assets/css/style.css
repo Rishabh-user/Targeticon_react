@@ -1810,7 +1810,6 @@ body .bg-w {
 }
 
 .location-home {
-    padding-top: 60px;
     background: #ffff;
 }
 
@@ -4740,9 +4739,10 @@ figure.location-image {
 .location-home {
     background-image: url(../images/dotted-map-gray.png);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: bottom left;
 }
 
+.location-home .loc-icon-nam p {line-height: normal;}
 .Industries-menu {
     display: flex;
     flex-wrap: wrap;
