@@ -36,10 +36,33 @@ const Slider = () => {
                                             Software & Product Development Company
                                         </h1>
                                         <p className="">
-                                            We build transformative software solutions, combining
-                                            expertise with innovation. Our skilled team creates scalable,
-                                            secure, and user-friendly applications to drive business
-                                            success.
+                                        Empowering businesses with innovative software and product development solutions, we deliver custom, scalable, and user-centric products designed to drive growth and transform your digital landscape.
+                                        </p>
+                                        <NavLink to="/contact-us"
+                                            className="ree-btn  ree-btn-grdt1 mt40 mw-80"
+                                            data-aos="fade-in"
+                                            data-aos-delay={100}>
+                                            Let's Talk <i className="fas fa-arrow-right fa-btn" />
+                                        </NavLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='item AI-slider'>
+                        <div className="container">
+                            <div className="row flex-row-reverse vcenter">
+                                <div className="col-lg-6 col-sm-12">
+                                    &nbsp;
+                                </div>
+                                <div className="col-lg-6 col-sm-12">
+                                    <div className="slider-content me-5">
+                                        <h5>Artificial intelligence</h5>
+                                        <h1 className="" data-aos="fade-in" data-aos-delay={200}>
+                                            Introduction to AI Services in Software Development
+                                        </h1>
+                                        <p className="">
+                                        AI services revolutionize software development by automating tasks, improving accuracy, and accelerating project timelines, thus enabling developers to focus on innovative solutions and strategic growth.
                                         </p>
                                         <NavLink to="/contact-us"
                                             className="ree-btn  ree-btn-grdt1 mt40 mw-80"
@@ -81,32 +104,7 @@ const Slider = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='item AI-slider'>
-                        <div className="container">
-                            <div className="row flex-row-reverse vcenter">
-                                <div className="col-lg-6 col-sm-12">
-                                    &nbsp;
-                                </div>
-                                <div className="col-lg-6 col-sm-12">
-                                    <div className="slider-content me-5">
-                                        <h5>Artificial intelligence</h5>
-                                        <h1 className="" data-aos="fade-in" data-aos-delay={200}>
-                                            Introduction to AI Services in Software Development
-                                        </h1>
-                                        <p className="">
-                                        AI services revolutionize software development by automating tasks, improving accuracy, and accelerating project timelines, thus enabling developers to focus on innovative solutions and strategic growth.
-                                        </p>
-                                        <NavLink to="/contact-us"
-                                            className="ree-btn  ree-btn-grdt1 mt40 mw-80"
-                                            data-aos="fade-in"
-                                            data-aos-delay={100}>
-                                            Let's Talk <i className="fas fa-arrow-right fa-btn" />
-                                        </NavLink>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div className='item UI-UX-slider'>
                         <div className="container">
                             <div className="row flex-row-reverse vcenter">
