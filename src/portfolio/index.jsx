@@ -855,7 +855,7 @@ const Index = () => {
                                             </p>
                                             <div className="portfolio-read-btn">
                                                 <Link
-                                                to="https://zanducare.com/"
+                                                to="https://consult.zanducare.com/"
                                                  target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
@@ -2592,7 +2592,7 @@ const Index = () => {
                                             </p>
                                             <div className="portfolio-read-btn">
                                                 <Link
-                                                to="https://zanducare.com/"
+                                                to="https://consult.zanducare.com/"
                                                  target="_blank" rel="noreferrer"
                                                 className="port-links ree-btn-grdt1"
                                                 >
