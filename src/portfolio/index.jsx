@@ -196,55 +196,55 @@ const Index = () => {
                                             </div>
                                         </div>
                                         </div>
-                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
-                                        <div className="fwb-main-x portfolio-frame fwb-a">
-                                            <div className="work-thumbnails">
-                                            <Link to="#">
-                                                <img
-                                                src={oliva}
-                                                alt="portfolio targeticon"
-                                                className="img-fluid"
-                                                />{" "}
-                                            </Link>
-                                            </div>
-                                            <div className="work-details portfolio-user-info">
-                                            <div className="media vcenter mb20">
-                                                <div className="ree-icon-set img-round80">
-                                                <img
-                                                    src={olivalogo}
-                                                    alt="logo"
+                                        {/* <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={oliva}
+                                                    alt="portfolio targeticon"
                                                     className="img-fluid"
-                                                />
-                                                </div>
-                                                <div className="ree-details-set">
-                                                <h5>Oliva Skin &amp; Hair Clinic</h5>
-                                                <span>Design by Targeticon</span>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Oliva Skin &amp; Hair Clinic irreplaceable part of a
-                                                sound financial plan. It helps in securing your
-                                                family
-                                            </p>
-                                            <div className="portfolio-read-btn">
-                                                <Link
-                                                to="https://www.olivaclinic.com/"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                Live view
+                                                    />{" "}
                                                 </Link>
-                                                <Link
-                                                to="/portfolio/oliva-clinic"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                See Details
-                                                </Link>
+                                                </div>
+                                                <div className="work-details portfolio-user-info">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={olivalogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set">
+                                                    <h5>Oliva Skin &amp; Hair Clinic</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Oliva Skin &amp; Hair Clinic irreplaceable part of a
+                                                    sound financial plan. It helps in securing your
+                                                    family
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://www.olivaclinic.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/oliva-clinic"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
                                             </div>
-                                            </div>
-                                        </div>
-                                        </div>
+                                        </div> */}
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
@@ -343,54 +343,54 @@ const Index = () => {
                                             </div>
                                         </div>
                                         </div>
-                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
-                                        <div className="fwb-main-x portfolio-frame fwb-a">
-                                            <div className="work-thumbnails">
-                                            <Link to="#">
-                                                <img
-                                                src={gcli}
-                                                alt="portfolio"
-                                                className="img-fluid"
-                                                />
-                                            </Link>
-                                            </div>
-                                            <div className="work-details">
-                                            <div className="media vcenter mb20">
-                                                <div className="ree-icon-set img-round80">
-                                                <img
-                                                    src={gclilogo}
-                                                    alt="logo"
+                                        {/* <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={gcli}
+                                                    alt="portfolio"
                                                     className="img-fluid"
-                                                />
-                                                </div>
-                                                <div className="ree-details-set poruser-info">
-                                                <h5>Get Cash For Laptop</h5>
-                                                <span>Design by Targeticon</span>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Get Cash For Laptop part of a sound financial plan.
-                                                It helps in securing your family
-                                            </p>
-                                            <div className="portfolio-read-btn">
-                                                <Link
-                                                to="https://www.getcashforlaptop.com/"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                Live view
+                                                    />
                                                 </Link>
-                                                <Link
-                                                to="/portfolio/tstpc-ltd"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                See Details
-                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={gclilogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>Get Cash For Laptop</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Get Cash For Laptop part of a sound financial plan.
+                                                    It helps in securing your family
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://www.getcashforlaptop.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
                                             </div>
-                                            </div>
-                                        </div>
-                                        </div>
+                                        </div> */}
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
@@ -1475,7 +1475,7 @@ const Index = () => {
                                             </div>
                                             <p>
                                                 DMRC to start QR code-based entry system at stations
-                                                soon
+                                                soon in India.
                                             </p>
                                             <div className="portfolio-read-btn">
                                                 <Link
@@ -1496,54 +1496,54 @@ const Index = () => {
                                             </div>
                                         </div>
                                         </div>
-                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
-                                        <div className="fwb-main-x portfolio-frame fwb-a">
-                                            <div className="work-thumbnails">
-                                            <Link to="#">
-                                                <img
-                                                src={gcli}
-                                                alt="portfolio"
-                                                className="img-fluid"
-                                                />
-                                            </Link>
-                                            </div>
-                                            <div className="work-details">
-                                            <div className="media vcenter mb20">
-                                                <div className="ree-icon-set img-round80">
-                                                <img
-                                                    src={gclilogo}
-                                                    alt="logo"
+                                        {/* <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={gcli}
+                                                    alt="portfolio"
                                                     className="img-fluid"
-                                                />
-                                                </div>
-                                                <div className="ree-details-set poruser-info">
-                                                <h5>Get Cash For Laptop</h5>
-                                                <span>Design by Targeticon</span>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Get Cash For Laptop part of a sound financial plan.
-                                                It helps in securing your family
-                                            </p>
-                                            <div className="portfolio-read-btn">
-                                                <Link
-                                                to="https://www.getcashforlaptop.com/"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                Live view
+                                                    />
                                                 </Link>
-                                                <Link
-                                                to="/portfolio/tstpc-ltd"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                See Details
-                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={gclilogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>Get Cash For Laptop</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Get Cash For Laptop part of a sound financial plan.
+                                                    It helps in securing your family
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://www.getcashforlaptop.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
                                             </div>
-                                            </div>
-                                        </div>
-                                        </div>
+                                        </div> */}
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
@@ -1957,7 +1957,7 @@ const Index = () => {
                                             </div>
                                             <p>
                                                 DMRC to start QR code-based entry system at stations
-                                                soon
+                                                soon in India.
                                             </p>
                                             <div className="portfolio-read-btn">
                                                 <Link
@@ -2177,54 +2177,54 @@ const Index = () => {
                                             </div>
                                         </div>
                                         </div>
-                                        <div className="col-lg-4 col-md-6  col-sm-6 mt30">
-                                        <div className="fwb-main-x portfolio-frame fwb-a">
-                                            <div className="work-thumbnails">
-                                            <Link to="#">
-                                                <img
-                                                src={gcli}
-                                                alt="portfolio"
-                                                className="img-fluid"
-                                                />
-                                            </Link>
-                                            </div>
-                                            <div className="work-details">
-                                            <div className="media vcenter mb20">
-                                                <div className="ree-icon-set img-round80">
-                                                <img
-                                                    src={gclilogo}
-                                                    alt="logo"
+                                        {/* <div className="col-lg-4 col-md-6  col-sm-6 mt30">
+                                            <div className="fwb-main-x portfolio-frame fwb-a">
+                                                <div className="work-thumbnails">
+                                                <Link to="#">
+                                                    <img
+                                                    src={gcli}
+                                                    alt="portfolio"
                                                     className="img-fluid"
-                                                />
-                                                </div>
-                                                <div className="ree-details-set poruser-info">
-                                                <h5>Get Cash For Laptop</h5>
-                                                <span>Design by Targeticon</span>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Get Cash For Laptop part of a sound financial plan.
-                                                It helps in securing your family
-                                            </p>
-                                            <div className="portfolio-read-btn">
-                                                <Link
-                                                to="https://www.getcashforlaptop.com/"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                Live view
+                                                    />
                                                 </Link>
-                                                <Link
-                                                to="/portfolio/tstpc-ltd"
-                                                 target="_blank" rel="noreferrer"
-                                                className="port-links ree-btn-grdt1"
-                                                >
-                                                See Details
-                                                </Link>
+                                                </div>
+                                                <div className="work-details">
+                                                <div className="media vcenter mb20">
+                                                    <div className="ree-icon-set img-round80">
+                                                    <img
+                                                        src={gclilogo}
+                                                        alt="logo"
+                                                        className="img-fluid"
+                                                    />
+                                                    </div>
+                                                    <div className="ree-details-set poruser-info">
+                                                    <h5>Get Cash For Laptop</h5>
+                                                    <span>Design by Targeticon</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Get Cash For Laptop part of a sound financial plan.
+                                                    It helps in securing your family
+                                                </p>
+                                                <div className="portfolio-read-btn">
+                                                    <Link
+                                                    to="https://www.getcashforlaptop.com/"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    Live view
+                                                    </Link>
+                                                    <Link
+                                                    to="/portfolio/tstpc-ltd"
+                                                    target="_blank" rel="noreferrer"
+                                                    className="port-links ree-btn-grdt1"
+                                                    >
+                                                    See Details
+                                                    </Link>
+                                                </div>
+                                                </div>
                                             </div>
-                                            </div>
-                                        </div>
-                                        </div>
+                                        </div> */}
                                         <div className="col-lg-4 col-md-6  col-sm-6 mt30">
                                         <div className="fwb-main-x portfolio-frame fwb-a">
                                             <div className="work-thumbnails">
@@ -2492,7 +2492,7 @@ const Index = () => {
                                             </div>
                                             <p>
                                                 DMRC to start QR code-based entry system at stations
-                                                soon
+                                                soon in India.
                                             </p>
                                             <div className="portfolio-read-btn">
                                                 <Link
