@@ -168,6 +168,8 @@ const FormInfo = () => {
         message: ""
     });
     const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false);
+    const [isDisabled, setIsDisabled] = useState(false);
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -202,6 +204,8 @@ const FormInfo = () => {
 
 
     if (Object.keys(validationErrors).length === 0) {
+        setLoading(true);
+        setIsDisabled(true);
       try {
         let res = await fetch(`${apiEndpoint}/contactus/contact`, {
           method: "POST",
@@ -218,13 +222,27 @@ const FormInfo = () => {
         let resJson = await res.json();
         if (res.status === 200) {
           console.log(resJson.message);
-          
+          setFormData({
+            name: '',
+            email: '',
+            service: '',
+            contact: '',
+            subject: '',
+            skype: '',
+            message: ''
+          });
+          setErrors({});
         } else {
           console.log(resJson.message);
         }
       } catch (err) {
         console.log(err);
-      }
+      } finally {  
+        setLoading(false);          
+        setTimeout(() => {
+          setIsDisabled(false);
+        }, 5000);
+    }
     } else {
         setErrors(validationErrors);
       }
@@ -298,7 +316,7 @@ const FormInfo = () => {
                                                         //id="user_service"
                                                         className="validate"
                                                         name="service"
-                                                        
+                                                        value={formData.service}
                                                         onChange={handleChange}
                                                     >
                                                       <option>Select a service</option>
@@ -318,6 +336,7 @@ const FormInfo = () => {
                                                     //id="user_message"
                                                     className="validate"
                                                     name="message"
+                                                    value={formData.message}
                                                     onChange={handleChange}
                                                 />
                                                 {errors.message && <p className="error">{errors.message}</p>}
@@ -359,7 +378,9 @@ const FormInfo = () => {
                                                     className="ree-btn ree-btn-grdt1 w-100"
                                                     name="submit"
                                                     //onClick={handleSubmit}
+                                                    value={loading ? 'Submitting...' : 'Submit'}
                                                     defaultValue="Send your inquiry"
+                                                    disabled={isDisabled}
                                                 />
                                                 <div className="form-response" />
                                             </div>
