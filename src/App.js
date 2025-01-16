@@ -115,7 +115,7 @@ function App() {
             }
           />
           <Route
-            path="career/career-details"
+            path="career/career-details/:id"
             element={
               <HelmetWrapper
                 title="Career Details| Mobile App Development | Portal & Software Development | Website Design in USA, India | Targeticon"
@@ -657,7 +657,6 @@ function App() {
               />
             }
           />
-          <Route path="*" element={<PageNotFound />} />
           <Route
             path="/blog/blogform"
             element={
@@ -685,6 +684,7 @@ function App() {
               />
             }
           />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
