@@ -63,19 +63,28 @@ const Career = () => {
                 }));
                 setCareerOptions(careerOptions);
 
-                const locationOptions = data.careers.map(career => ({
+                let locationOptions = data.careers.map(career => ({
                     value: career.location,
                     label: career.location
                 }));
-                setLocationOptions(locationOptions);
+                let uniqueLocationOptions = Array.from(
+                    new Map(locationOptions.map(item => [item.value, item])).values()
+                  );
+                locationOptions = new Set(locationOptions);
+                setLocationOptions(uniqueLocationOptions);
+                setSelectedCareerTitles([]);
+                setSelectedLocations([]);
             } catch (error) {
                 console.error('Error fetching careers:', error);
+            } finally {
+                setLoading(false);
             }
         };
         fetchCareers();
     }, []);
 
     const handleCareerTitleChange = (selectedOptions) => {
+        console.log("selectedOptions",selectedOptions)
         setSelectedCareerTitles(selectedOptions);
         setLoading(false);
         if (selectedOptions.length === 0) {
@@ -279,6 +288,7 @@ const Career = () => {
                                         // Display all users by default
                                         users.map((career, index) => (
                                             <div className="col-lg-4 col-md-6 col-sm-12 mt30 career-box" key={career.id}>
+                                                
                                                 <div className="process-content ree-card">
                                                     <span className="setps hst-1">{index + 1}</span>
                                                     <div className="process-block w-100">
@@ -298,7 +308,7 @@ const Career = () => {
                                                                 <NavLink to="#">Apply</NavLink>
                                                             </div>
                                                             <div className="see-detail">
-                                                                <NavLink to={`/career/${career.id}/${career.id}`}>See Detail</NavLink>
+                                                                <NavLink to={`career-details/${career.id}`}>See Detail</NavLink>
                                                             </div>
                                                         </div>
                                                     </div>
