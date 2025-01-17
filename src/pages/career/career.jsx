@@ -6,7 +6,6 @@ import { apicareer } from '../../js/api';
 import career from '../../assets/images/career-page-img.png';
 import careerpage from '../../assets/images/career-page-img-mobile-view.png';
 import Loader from "../../components/loader";
-import { map } from "jquery";
 const customStyles = {
     control: (provided, state) => ({
         ...provided,
