@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import FormIndustries from "../components/form-industries";
 import Tools from '../components/our-tools';
@@ -6,6 +6,73 @@ import retailgif from '../assets/images/GIF/retail.gif';
 import retailservice from '../assets/images/icons/retail-service1.png';
 
 const Retail = () => {
+
+    useEffect(() => {
+        // Add CSS to hide ".powered-by"
+        const style = document.createElement("style");
+        style.type = "text/css";
+        style.innerHTML = ".powered-by { display: none !important; }";
+        document.head.appendChild(style);
+    
+        return () => {
+          // Cleanup: Remove CSS when leaving the page
+          if (document.head.contains(style)) {
+            document.head.removeChild(style);
+          }
+        };
+      }, []);
+    
+      useEffect(() => {
+        const reactScriptId = "react-sdk-script";
+        const reactDomScriptId = "react-dom-sdk-script";
+        const vozzoScriptId = "vozzo-sdk-script";
+    
+        // Function to add a script dynamically
+        const addScript = (id, src) => {
+          if (!document.getElementById(id)) {
+            const script = document.createElement("script");
+            script.id = id;
+            script.src = src;
+            script.async = true;
+            document.body.appendChild(script);
+          }
+        };
+    
+        // Add all required scripts
+        addScript(reactScriptId, "https://unpkg.com/react@18.2.0/umd/react.production.min.js");
+        addScript(reactDomScriptId, "https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js");
+        addScript(vozzoScriptId, "https://vozzo-jsx.s3.eu-north-1.amazonaws.com/agent-web-sdk-dev.js");
+    
+        // Wait for the VozzoAI script to load before calling `VozzoAI.open`
+        const vozzoScript = document.getElementById(vozzoScriptId);
+        if (vozzoScript) {
+          vozzoScript.onload = () => {
+            if (window.VozzoAI) {
+              window.VozzoAI.open("704ab62e-b494-46c5-b185-f14aef1cb16a");
+            } else {
+              console.error("VozzoAI SDK failed to load.");
+            }
+          };
+        }
+    
+        return () => {
+          // Cleanup: Remove scripts after unmounting
+          setTimeout(() => {
+            [reactScriptId, reactDomScriptId, vozzoScriptId].forEach((id) => {
+              const script = document.getElementById(id);
+              if (script && document.body.contains(script)) {
+                document.body.removeChild(script);
+              }
+            });
+    
+            // Remove VozzoAI from memory
+            if (window.VozzoAI) {
+              window.VozzoAI = undefined;
+            }
+          }, 100);
+        };
+      }, []);
+
     return (
         <div>
             <section className="page-heading-sec r-bg-k pt60 pb60">
