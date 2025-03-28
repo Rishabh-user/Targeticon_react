@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import OursTools from "../components/our-tools";
 import EducationImg from '../assets/images/education-img.png';
@@ -8,6 +8,56 @@ import EducationService from '../assets/images/icons/education-services .png';
 
 
 const Education = () => {
+  useEffect(() => {
+    // Add CSS to hide ".powered-by"
+    const style = document.createElement("style");
+    style.type = "text/css";
+    style.innerHTML = ".powered-by { display: none !important; }";
+    document.head.appendChild(style);
+
+    return () => {
+      // Cleanup: Remove CSS when leaving the page
+      if (document.head.contains(style)) {
+        document.head.removeChild(style);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const scriptId = "vozzo-sdk-script";
+
+    // Check if script is already present to avoid duplicates
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement("script");
+      script.id = scriptId;
+      script.src = "https://vozzo-jsx.s3.eu-north-1.amazonaws.com/agent-web-sdk-dev.js";
+      script.async = true;
+      document.body.appendChild(script);
+
+      script.onload = () => {
+        if (window.VozzoAI) {
+          window.VozzoAI.open("66d82b4c-44a9-4d4e-8085-1b8df1fbe2a7");
+        } else {
+          console.error("VozzoAI SDK failed to load.");
+        }
+      };
+    }
+
+    return () => {
+      // Cleanup: Remove script when leaving the page
+      setTimeout(() => {
+        const existingScript = document.getElementById(scriptId);
+        if (existingScript && document.body.contains(existingScript)) {
+          document.body.removeChild(existingScript);
+        }
+        // Ensuring that VozzoAI is properly removed from memory
+        if (window.VozzoAI) {
+          window.VozzoAI = undefined;
+        }
+      }, 100);
+    };
+  }, []);
+
     return (
         <div>
             {/*start Hero Section  */}
