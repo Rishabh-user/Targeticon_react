@@ -13,52 +13,26 @@ const BankingFinance = () => {
     
     
     useEffect(() => {
-        // Add CSS to hide ".powered-by"
-        const style = document.createElement("style");
-        style.type = "text/css";
-        style.innerHTML = ".powered-by { display: none !important; }";
-        document.head.appendChild(style);
+        // Dynamically load the SDK script
+        const script = document.createElement('script');
+        script.src = 'https://unpkg.com/react@18.2.0/umd/react.production.min.js';
+        script.src = 'https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js';
+        script.src = 'https://vozzo-jsx.s3.eu-north-1.amazonaws.com/agent-web-sdk-dev.js';
+        script.async = true;
     
-        return () => {
-          // Cleanup: Remove CSS when leaving the page
-          if (document.head.contains(style)) {
-            document.head.removeChild(style);
+        script.onload = () => {
+          // @ts-ignore: Ignore TypeScript error if VozzoAI is not typed
+          if (window.VozzoAI) {
+            // Replace with your actual ID
+            window.VozzoAI.open('b9fc1e3c-2d39-45f7-8844-09ec204c098e');
           }
         };
-      }, []);
     
-      useEffect(() => {
-        const scriptId = "vozzo-sdk-script";
-    
-        // Check if script is already present to avoid duplicates
-        if (!document.getElementById(scriptId)) {
-          const script = document.createElement("script");
-          script.id = scriptId;
-          script.src = "https://vozzo-jsx.s3.eu-north-1.amazonaws.com/agent-web-sdk-dev.js";
-          script.async = true;
-          document.body.appendChild(script);
-    
-          script.onload = () => {
-            if (window.VozzoAI) {
-              window.VozzoAI.open("b9fc1e3c-2d39-45f7-8844-09ec204c098e");
-            } else {
-              console.error("VozzoAI SDK failed to load.");
-            }
-          };
-        }
+        document.body.appendChild(script);
     
         return () => {
-          // Cleanup: Remove script when leaving the page
-          setTimeout(() => {
-            const existingScript = document.getElementById(scriptId);
-            if (existingScript && document.body.contains(existingScript)) {
-              document.body.removeChild(existingScript);
-            }
-            // Ensuring that VozzoAI is properly removed from memory
-            if (window.VozzoAI) {
-              window.VozzoAI = undefined;
-            }
-          }, 100);
+          // Optional cleanup if needed
+          document.body.removeChild(script);
         };
       }, []);
 
