@@ -104,7 +104,7 @@ header nav .navbar-nav{gap:50px; }
 .contact-us a {background-color:var(--theme-color); font-size: 18px; padding: 10px 15px; border-radius: 100px; align-items: center; border-color: var(--theme-color); color:#fff; text-wrap-mode: nowrap; display: flex; gap:10px;}
 /**********Form************/
 .mobile-form-field {display: none;}
-.sticky-form{ width: 420px; position: fixed;top: 150px; right: 100px; box-shadow: 0px 24px 50px 0px rgba(0, 0, 0, 0.10);border-radius: 20px; background-color: #F5F5F5; padding: 0; overflow: hidden; z-index: 99; border:1px solid #f9f9f9;}
+.sticky-form{ width: 420px; position: fixed;top: 150px; right: 50px; box-shadow: 0px 24px 50px 0px rgba(0, 0, 0, 0.10);border-radius: 20px; background-color: #F5F5F5; padding: 0; overflow: hidden; z-index: 99; border:1px solid #f9f9f9;}
 .form-heading h3 {
     font-size: 28px;
     color: var(--primary);
