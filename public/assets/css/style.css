@@ -222,11 +222,11 @@ letter-spacing: 4px; text-transform: uppercase;}
 .banner .content ul li .banner-list figcaption{ flex: 1; }
 .banner .content ul li .banner-list figcaption h6{ font-size: 14px; font-weight: 700; }
 .banner-heading span { background-color: red; padding: .5rem .8rem; color: #fff; border-radius: 50px; font-size: 16px !important; font-weight: 700 !important; text-wrap-mode: nowrap;}
-.banner-heading::after {
+/*.banner-heading::after {
     content: '|';
     display: inline-block;
     animation: blink 0.7s infinite;    
-}
+}*/
 
 @keyframes blink {
 
