@@ -146,6 +146,7 @@ jQuery(document).ready(function () {
             '<div class="alert alert-danger mt-3">' + response.message + "</div>"
           );
         } else {
+          window.location.href = "https://www.targeticon.com/thankyou.html";
           jQuery(".form-response").html(
             '<div class="alert alert-success mt-3">' + response.message + "</div>"
           );
