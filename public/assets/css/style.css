@@ -481,7 +481,7 @@ footer .copy-right p { font-size: 14px; font-weight: 300; color: #fff;margin-bot
 @media (max-width:1199px) 
 {
 	.container{width: 90%;max-width: inherit;}
-	.sticky-form{display: none;}
+	.sticky-form{display: block; position: relative; top: inherit; right: inherit !important;     margin: 0 auto;}
 	.sticky-form form { padding: 30px; }
 	.banner .calc-width, .calc-width{ width: 100%; }
 	.modal .sticky-form { display: block; position: relative;top: inherit;right: inherit;width: 100%}
