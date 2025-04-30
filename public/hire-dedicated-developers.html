@@ -43,7 +43,7 @@
         <div class="row">
           <div class="header-nav">
             <div class="header-nav-menu">
-              <a class="navbar-brand" href="">
+              <a class="navbar-brand" href="https://www.targeticon.com/hire-dedicated-developers.html">
                 <img src="images/logo.png" alt="logo" width="250" height="61" class="img-fluid">
               </a>
               <nav>
@@ -74,7 +74,7 @@
     <!-- Header -->
 
     <!-- Section -->
-    <div class="container mx-auto px-4 overflow-hidden">
+    <div class="container mx-auto px-4 overflow-hidden" id="scroll-form">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div class="lg:col-span-2">
 
@@ -89,7 +89,7 @@
                   <p>Fill out the form below to discuss your project requirements</p>
                   <div class="form mb-4">
                     <label>Enter Your Name</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Full Name *" />
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Full Name *" autofocus/>
                     <span id="errName"></span>
                   </div>
                   <div class="form mb-4">
@@ -688,10 +688,34 @@
         </div>
       </div>
     </footer>
+
+    <div class="sticky-contact-us">
+      <a href="#scroll-form">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headset-icon lucide-headset"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></svg>
+      </a>
+    </div>
+    <div class="sticky-whatsapp">
+      <a href="https://wa.me/+919818757597" target="_blank" title="Connect in Whatsapp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+          <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+        </svg>
+      </a>
+    </div>
     <!-- Footer -->
 
     <script type="text/javascript" src="js/jquery-3.6.0.min.js" ></script>
     <script type="text/javascript" src="js/form_submit.js" ></script>
-
+    <script>
+      document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        window.scrollTo({
+          top: target.offsetTop - 50, // adjust offset for sticky nav
+          behavior: 'smooth'
+        });
+        });
+      });
+    </script>
   </body>
 </html>
