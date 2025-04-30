@@ -33,6 +33,11 @@ jQuery(document).ready(function () {
       return pattern.test(user_phone);
     }
 
+    function isValidUserMessage(user_message) {
+      var pattern = new RegExp(/^([a-zA-Z]{3,20})/i);
+      return pattern.test(user_message);
+    }
+
     // validation of name
     if (user_name == "") {
       jQuery("#contactus #name")
@@ -103,6 +108,31 @@ jQuery(document).ready(function () {
         .attr("class", "error")
         .text("Please Enter your Phone Number");
       user_phone_temp = "1";
+    }
+
+
+    // validation of message
+    if (user_message == "") {
+      jQuery("#contactus #message")
+        .parent()
+        .find("span")
+        .attr("class", "error")
+        .text("Please Enter your Message");
+      user_message_temp = "1";
+    } else if (isValidUserMessage(user_message)) {
+      jQuery("#contactus #message")
+        .parent()
+        .find("span")
+        .attr("class", "success")
+        .text("");
+      user_message_temp = "0";
+    } else {
+      jQuery("#contactus #message")
+        .parent()
+        .find("span")
+        .attr("class", "error")
+        .text("Please Enter your Message");
+      user_message_temp = "1";
     }
 
    
@@ -192,6 +222,11 @@ jQuery(document).ready(function () {
         return pattern.test(user_phone);
       }
 
+      function isValidUserMessage(user_message) {
+        var pattern = new RegExp(/^([a-zA-Z]{3,20})/i);
+        return pattern.test(user_message);
+      }
+
       // validation of name
       if (user_name == "") {
         jQuery("#contactus_mobile #name")
@@ -262,6 +297,31 @@ jQuery(document).ready(function () {
           .attr("class", "error")
           .text("Please Enter your Phone Number");
         user_phone_temp = "1";
+      }
+
+
+      // validation of message
+      if (user_message == "") {
+        jQuery("#contactus_mobile #message")
+          .parent()
+          .find("span")
+          .attr("class", "error")
+          .text("Please Enter your Message");
+        user_message_temp = "1";
+      } else if (isValidUserMessage(user_message)) {
+        jQuery("#contactus_mobile #message")
+          .parent()
+          .find("span")
+          .attr("class", "success")
+          .text("");
+        user_message_temp = "0";
+      } else {
+        jQuery("#contactus_mobile #message")
+          .parent()
+          .find("span")
+          .attr("class", "error")
+          .text("Please Enter your Message");
+        user_name_temp = "1";
       }
 
      
