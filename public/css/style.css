@@ -180,6 +180,8 @@ header nav ul li a{ display:inline-block; color:#000; padding:1rem; }
     transform: scale(1);
   }
 }
+
+.sticky-contact-us,.sticky-whatsapp{ display:none; }
 /*Sticky*/
 
 
@@ -216,6 +218,7 @@ header nav ul li a{ display:inline-block; color:#000; padding:1rem; }
     .industries ul li img{ height: 50px; }
     .our-technologies ul{ grid-template-columns: repeat(4, minmax(0, 1fr)); }
     .hire-developers ul{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .sticky-contact-us a, .sticky-whatsapp a{ width:40px; height:40px; }
 }
 
 @media (max-width:767px){

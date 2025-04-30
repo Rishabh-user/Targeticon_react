@@ -705,7 +705,7 @@
 
     <script type="text/javascript" src="js/jquery-3.6.0.min.js" ></script>
     <script type="text/javascript" src="js/form_submit.js" ></script>
-    <script>
+    <script type="text/javascript">
       document.querySelectorAll('nav a').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -716,6 +716,20 @@
         });
         });
       });
+    </script>
+    <script type="text/javascript">
+      window.addEventListener('scroll', function () {
+      const contactUs = document.querySelector('.sticky-contact-us');
+      const whatsapp = document.querySelector('.sticky-whatsapp');
+      
+      if (window.scrollY >= 200) {
+        contactUs.style.display = 'block';
+        whatsapp.style.display = 'block';
+      } else {
+        contactUs.style.display = 'none';
+        whatsapp.style.display = 'none';
+      }
+    });
     </script>
   </body>
 </html>
