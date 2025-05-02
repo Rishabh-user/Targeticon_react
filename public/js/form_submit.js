@@ -144,9 +144,25 @@ jQuery(document).ready(function () {
       return false;
     }
 
+
+    // --- ✅ 1. SEND TO GOOGLE SHEETS ---
+    const form = document.querySelector(".contactus");
+    const formData = new FormData(form);
+    fetch("https://script.google.com/macros/s/AKfycbzWQ9uhG03TZBv-ox2yzsoApMaI5bB_on2V20jlmzank_t2F9oiJ_y4S_wl6HW7SGUF/exec", {
+      method: "POST",
+      body: formData
+    })
+      .then(response => response.text())
+      .then(text => {
+        console.log("Google Sheet Response:", text);
+      })
+      .catch(error => {
+        console.error("Google Sheets Error:", error);
+      });
+
     // Send data via AJAX
     jQuery.ajax({
-      url: "https://api.securestaging.net/api/v2/contactus/contactus",
+      url: "https://api.targeticon.com/api/v2/contactus/contactus",
       type: "POST",
       contentType: "application/json", // Ensure the request is sent as JSON
       dataType: "json",
@@ -333,9 +349,24 @@ jQuery(document).ready(function () {
         return false;
       }
 
+      // --- ✅ 1. SEND TO GOOGLE SHEETS ---
+      const form = document.querySelector(".contactus_mobile");
+      const formData = new FormData(form);
+      fetch("https://script.google.com/macros/s/AKfycbzWQ9uhG03TZBv-ox2yzsoApMaI5bB_on2V20jlmzank_t2F9oiJ_y4S_wl6HW7SGUF/exec", {
+        method: "POST",
+        body: formData
+      })
+      .then(response => response.text())
+      .then(text => {
+        console.log("Google Sheet Response:", text);
+      })
+      .catch(error => {
+        console.error("Google Sheets Error:", error);
+      });
+
       // Send data via AJAX
       jQuery.ajax({
-        url: "https://api.securestaging.net/api/v2/contactus/contactus",
+        url: "https://api.targeticon.com/api/v2/contactus/contactus",
         type: "POST",
         contentType: "application/json", // Ensure the request is sent as JSON
         dataType: "json",
